@@ -288,7 +288,7 @@ function FeedScreen() {
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA" || (e.target as HTMLElement)?.isContentEditable)
         return;
-      if (!feedItems) return;
+      if (!feedResult.items) return;
       if (e.key === "ArrowDown" || (e.key === "j" && !e.metaKey && !e.ctrlKey)) {
         e.preventDefault();
         scrollToIndex(activeIndex + 1);
@@ -306,18 +306,18 @@ function FeedScreen() {
         scrollToIndex(0);
       } else if (e.key === "End") {
         e.preventDefault();
-        scrollToIndex(feedItems.length - 1);
+        scrollToIndex(feedResult.items.length - 1);
       } else if (e.key === " " || e.key === "Spacebar") {
         // Space = expand/collapse is handled per-card; prevent page scroll hijack in feed
       }
     },
-    [activeIndex, scrollToIndex, feedItems],
+    [activeIndex, scrollToIndex, feedResult.items],
   );
 
   // Sync activeIndex with scroll position (scroll-snap section tracking)
   useEffect(() => {
     const root = containerRef.current;
-    if (!root || !feedItems || feedNeedsTopics) return;
+    if (!root || !feedResult.items || feedResult.needsTopics) return;
     let ticking = false;
     const onScroll = () => {
       if (ticking) return;
@@ -343,7 +343,7 @@ function FeedScreen() {
     };
     root.addEventListener("scroll", onScroll, { passive: true });
     return () => root.removeEventListener("scroll", onScroll);
-  }, [feedItems, feedNeedsTopics, visibleCount]);
+  }, [feedResult.items, feedResult.needsTopics, visibleCount]);
 
   useEffect(() => {
     if (hydrated && !onboardingComplete) navigate({ to: "/onboarding" });

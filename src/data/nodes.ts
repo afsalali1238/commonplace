@@ -1,4 +1,7 @@
-export type Node = {
+export type EpistemicStatus = "Canonical" | "Contemporary" | "Speculative";
+
+/** What every screen has for every node, always. */
+export type NodeIndex = {
   id: string;
   clusterId: string;
   title: string;

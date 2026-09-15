@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
+import { Bone } from "@/components/Skeleton";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
