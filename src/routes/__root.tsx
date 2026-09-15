@@ -95,12 +95,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       // Absolute URL is required by most scrapers; generated from the
       // brand tokens by scripts/brand-assets.ts (see docs/VISUAL-SYSTEM.md).
-      { property: "og:image", content: `${SITE_URL}/brand/og.png` },
+      { property: "og:image", content: `${SITE_URL}/og.png` },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Commonplace — A latticework of powerful ideas" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${SITE_URL}/brand/og.png` },
+      { name: "twitter:image", content: `${SITE_URL}/og.png` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
