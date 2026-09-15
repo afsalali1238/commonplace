@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
 import { Bone } from "@/components/Skeleton";
+import { safeArchiveId, safeHttpUrl } from "@/lib/url";
 
 const readSearchSchema = z.object({
   label: z.string().optional(),
@@ -79,10 +80,16 @@ function ReadScreen() {
   const [status, setStatus] = useState<"loading" | "error" | "ready">("loading");
   const [data, setData] = useState<ParsedArchive | null>(null);
 
+  const archiveId = safeArchiveId(id);
+
   useEffect(() => {
     let cancelled = false;
+    if (!archiveId) {
+      setStatus("error");
+      return;
+    }
     setStatus("loading");
-    fetch(`/content/sources/${id}.md`)
+    fetch(`/content/sources/${archiveId}.md`)
       .then((r) => {
         if (!r.ok) throw new Error("not found");
         return r.text();
@@ -98,12 +105,12 @@ function ReadScreen() {
     return () => {
       cancelled = true;
     };
-  }, [id]);
+  }, [archiveId]);
 
   const title = data?.title ?? label;
   const displayAuthor = data?.author ?? "";
   const displaySource = data?.source ?? source;
-  const originalUrl = data?.url ?? url;
+  const originalUrl = safeHttpUrl(data?.url) ?? safeHttpUrl(url);
 
   return (
     <article className="mx-auto max-w-2xl px-5 pt-8 pb-16">

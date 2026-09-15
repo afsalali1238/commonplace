@@ -9,6 +9,14 @@ export const APP_TAGLINE = "A latticework of powerful ideas";
  * scripts (generate-sitemap), this constant is the code-level default.
  */
 export const SITE_URL = "https://commonplace.app";
+
+/** Absolute URL for a site path. Query strings are stripped — they are never canonical. */
+export function absoluteUrl(pathname: string): string {
+  const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  const noQuery = path.split("?")[0] || "/";
+  return `${SITE_URL}${noQuery === "/" ? "/" : noQuery}`;
+}
+
 /**
  * Support contact. Empty = not configured yet; UI falls back to a
  * "coming soon" note instead of rendering a fake address.

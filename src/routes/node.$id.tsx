@@ -19,6 +19,7 @@ import { AudioBar } from "@/components/AudioBar";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
+import { absoluteUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/node/$id")({
@@ -30,13 +31,16 @@ export const Route = createFileRoute("/node/$id")({
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Not found — Commonplace" }] };
     const n = loaderData.node;
+    const canonical = absoluteUrl(`/node/${n.id}`);
     return {
       meta: [
         { title: `${n.title} — Commonplace` },
         { name: "description", content: n.thesis },
         { property: "og:title", content: `${n.title} — Commonplace` },
         { property: "og:description", content: n.thesis },
+        { property: "og:url", content: canonical },
       ],
+      links: [{ rel: "canonical", href: canonical }],
       // Structured data for search rich results. BCE/approximate years are
       // intentionally not mapped to datePublished (schema.org expects ISO
       // dates); the human-readable year stays in the page body.
@@ -188,6 +192,14 @@ function DownloadButton({
     try {
       const res = await fetch(fileUrl, { cache: "reload" });
       if (!res.ok) throw new Error("failed to fetch");
+      // Put the bytes in Cache Storage ourselves — previously this relied
+      // on the service worker intercepting the fetch, so tapping Download
+      // before the SW controlled the page (or with SW unregistered) left
+      // caches.match empty and the "Downloaded" badge lied.
+      if ("caches" in window) {
+        const cache = await caches.open("commonplace-downloads");
+        await cache.put(fileUrl, res.clone());
+      }
       setState("done");
     } catch {
       setState("error");

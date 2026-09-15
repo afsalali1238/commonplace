@@ -15,6 +15,15 @@ const idbStorage: StateStorage = {
   },
 };
 
+// SSR / vitest without `window`: persist used to pass `undefined as never`,
+// which crashed the first time the middleware called getItem. A no-op
+// storage keeps the store usable on the server and in node test envs.
+const noopStorage: StateStorage = {
+  getItem: () => null,
+  setItem: () => {},
+  removeItem: () => {},
+};
+
 export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
 const DAY_MS = 86400000;
 
@@ -177,13 +186,17 @@ export const useStore = create<State & Actions>()(
             console.error("Invalid state JSON structure:", validated.error);
             return false;
           }
+          resetFeedSession();
           set({ ...initial, ...validated.data });
           return true;
         } catch {
           return false;
         }
       },
-      reset: () => set(initial),
+      reset: () => {
+        resetFeedSession();
+        set(initial);
+      },
       // Any change to interests invalidates the session's feed order (see
       // lib/feedSession.ts) so the new topics take effect immediately.
       setInterests: (tags) => {
@@ -231,9 +244,7 @@ export const useStore = create<State & Actions>()(
     {
       name: "unknown:v1",
       version: 2,
-      storage: createJSONStorage(() =>
-        typeof window !== "undefined" ? idbStorage : (undefined as never),
-      ),
+      storage: createJSONStorage(() => (typeof window !== "undefined" ? idbStorage : noopStorage)),
       skipHydration: false,
       // Merges persisted state with defaults so adding new fields never wipes
       // existing user data (streaks, bookmarks, gotIt, etc.).

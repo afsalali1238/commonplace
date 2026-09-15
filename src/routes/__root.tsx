@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, absoluteUrl } from "@/lib/site";
 import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 import { useThemeSync } from "@/hooks/useThemeSync";
@@ -71,55 +71,66 @@ function ErrorComponent({ error, reset }: { error: unknown; reset: () => void })
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      // Matches manifest.webmanifest's theme_color - was mismatched (paper
-      // background here vs. accent everywhere else), so PWA chrome tinting
-      // differed depending on whether a browser read this tag or the
-      // manifest.
-      { name: "theme-color", content: "#fcfbf9" },
-      { title: "Commonplace — A latticework of powerful ideas" },
-      {
-        name: "description",
-        content:
-          "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
-      },
-      { property: "og:title", content: "Commonplace — A latticework of powerful ideas" },
-      {
-        property: "og:description",
-        content:
-          "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
-      },
-      { property: "og:type", content: "website" },
-      // Absolute URL is required by most scrapers; generated from the
-      // brand tokens by scripts/brand-assets.ts (see docs/VISUAL-SYSTEM.md).
-      { property: "og:image", content: `${SITE_URL}/og.png` },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Commonplace — A latticework of powerful ideas" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${SITE_URL}/og.png` },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      // SVG favicon for browsers that support it, ICO fallback (favicon.ico
-      // already existed as a generated asset but was never actually linked)
-      // for the ones that don't, apple-touch-icon for iOS "Add to Home
-      // Screen" (which ignores the manifest's icon list entirely).
-      { rel: "icon", href: "/logo.svg", type: "image/svg+xml" },
-      { rel: "icon", href: "/favicon.ico", sizes: "48x48" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-      { rel: "manifest", href: "/manifest.webmanifest" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
-      },
-    ],
-  }),
+  head: ({ matches }) => {
+    const pathname = matches[matches.length - 1]?.pathname ?? "/";
+    const canonical = absoluteUrl(pathname);
+    return {
+      meta: [
+        { charSet: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
+        // Matches manifest.webmanifest's theme_color - was mismatched (paper
+        // background here vs. accent everywhere else), so PWA chrome tinting
+        // differed depending on whether a browser read this tag or the
+        // manifest. Dark twin is swapped in by useThemeSync after hydration.
+        { name: "theme-color", content: "#fcfbf9" },
+        { title: "Commonplace — A latticework of powerful ideas" },
+        {
+          name: "description",
+          content:
+            "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
+        },
+        { property: "og:title", content: "Commonplace — A latticework of powerful ideas" },
+        {
+          property: "og:description",
+          content:
+            "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonical },
+        // Absolute URL is required by most scrapers; generated from the
+        // brand tokens by scripts/brand-assets.ts (see docs/VISUAL-SYSTEM.md).
+        { property: "og:image", content: `${SITE_URL}/og.png` },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "Commonplace — A latticework of powerful ideas" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: `${SITE_URL}/og.png` },
+      ],
+      links: [
+        { rel: "stylesheet", href: appCss },
+        { rel: "canonical", href: canonical },
+        // Light/dark SVG pair: the light mark is near-black ink on a
+        // transparent ground and vanishes against dark browser chrome.
+        // Fonts are self-hosted via Fontsource in styles.css — do not
+        // re-add Google Fonts; CSP font-src is 'self' and would block them.
+        {
+          rel: "icon",
+          href: "/logo.svg",
+          type: "image/svg+xml",
+          media: "(prefers-color-scheme: light)",
+        },
+        {
+          rel: "icon",
+          href: "/logo-dark.svg",
+          type: "image/svg+xml",
+          media: "(prefers-color-scheme: dark)",
+        },
+        { rel: "icon", href: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "manifest", href: "/manifest.webmanifest" },
+      ],
+    };
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
