@@ -10,9 +10,16 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { SITE_URL } from "@/lib/site";
 import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 import { useThemeSync } from "@/hooks/useThemeSync";
+
+/** Canonical origin for absolute URLs in meta tags. Override per deploy with
+ *  VITE_SITE_URL (e.g. a preview URL); defaults to production. */
+const SITE_URL =
+  (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ??
+  "https://unknown-ighb.vercel.app";
 
 function NotFoundComponent() {
   return (
@@ -21,13 +28,13 @@ function NotFoundComponent() {
         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">404</p>
         <h1 className="mt-3 font-serif text-4xl text-ink">Not in the lattice</h1>
         <p className="mt-3 text-sm text-ink-soft">
-          This idea isn't wired up. Head back to the map and follow another thread.
+          This idea isn't wired up. Head back to the feed and follow another thread.
         </p>
         <Link
           to="/"
           className="mt-6 inline-flex items-center justify-center border border-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:bg-ink hover:text-paper"
         >
-          Back to map
+          Back to feed
         </Link>
       </div>
     </div>
@@ -76,20 +83,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // differed depending on whether a browser read this tag or the
       // manifest.
       { name: "theme-color", content: "#fcfbf9" },
-      { title: "Unknown — A latticework of powerful ideas" },
+      { title: "Commonplace — A latticework of powerful ideas" },
       {
         name: "description",
         content:
           "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
       },
-      { property: "og:title", content: "Unknown — A latticework of powerful ideas" },
+      { property: "og:title", content: "Commonplace — A latticework of powerful ideas" },
       {
         property: "og:description",
         content:
           "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
       },
       { property: "og:type", content: "website" },
+      // Absolute URL is required by most scrapers; generated from the
+      // brand tokens by scripts/brand-assets.ts (see docs/VISUAL-SYSTEM.md).
+      { property: "og:image", content: `${SITE_URL}/brand/og.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Commonplace — A latticework of powerful ideas" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE_URL}/brand/og.png` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

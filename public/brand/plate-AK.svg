@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Media Theory &amp; Information">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 71.88 21.94 A 6 6 0 0 1 66.43 26.45" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 74.55 39.41 A 20.76 20.76 0 0 1 45.44 22.77" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.80"/>
+    <path d="M 61.84 55.74 A 35.53 35.53 0 0 1 38.86 -2.39" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.60"/>
+    <path d="M 59.09 70.26 A 50.29 50.29 0 0 1 35.54 -19.5" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.40"/>
+    <path d="M 9.02 51.74 A 65.06 65.06 0 0 1 104.27 -32.2" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.20"/>
+    <path d="M 0.26 65.63 A 79.82 79.82 0 1 0 122.82 -35.68" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.00"/>
+    <path d="M -2 52.82 L 35.97 32.03 L 63.17 54.36 L 102 26.02" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="63.17" cy="54.36" r="3.19" fill="#b45309"/>
+</svg>

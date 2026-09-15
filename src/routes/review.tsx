@@ -94,6 +94,10 @@ function ReviewScreen() {
           key={node.id}
           node={node}
           hideHeader
+          // Box number as the shuffle salt: each time this node comes back
+          // around the options sit in a different order, so a 3rd sitting
+          // can't be passed by remembering "it was C last time".
+          salt={review[node.id]?.box ?? 0}
           renderFooter={() => (
             <div className="mt-6 border-t border-line pt-6">
               <p className="font-serif text-lg leading-snug text-ink">

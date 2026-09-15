@@ -25,7 +25,7 @@ import {
 export const Route = createFileRoute("/you")({
   head: () => ({
     meta: [
-      { title: "You — Unknown" },
+      { title: "You — Commonplace" },
       { name: "description", content: "Streak, stats, bookmarks, glossary, and backup." },
     ],
   }),
@@ -93,7 +93,7 @@ function YouScreen() {
         </div>
       </Section>
 
-      <Section title="Stats" icon={BarChart3}>
+      <Section title="Stats" index={3} icon={BarChart3}>
         <div className="grid grid-cols-3 gap-3">
           <Stat label="Learned" value={learned} hydrated={hydrated} />
           <Stat label="In review" value={inReview} hydrated={hydrated} />
@@ -111,7 +111,7 @@ function YouScreen() {
 
       <Section title="Saved" icon={Bookmark}>
         {!hydrated ? (
-          <div className="h-24 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+          <Bone className="h-24 border border-line" />
         ) : bookmarked.length === 0 ? (
           <div className="border border-line border-dashed p-6 text-center">
             <p className="font-serif text-lg text-ink">Nothing saved yet.</p>
@@ -122,7 +122,7 @@ function YouScreen() {
               to="/"
               className="mt-4 inline-block bg-ink text-paper px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em]"
             >
-              Explore the map
+              Open the feed
             </Link>
           </div>
         ) : (
@@ -171,9 +171,9 @@ function Reading() {
     : [];
 
   return (
-    <Section title="Reading" icon={BookOpen}>
+    <Section title="Reading" index={4} icon={BookOpen}>
       {!hydrated ? (
-        <div className="h-16 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+        <Bone className="h-16 border border-line" />
       ) : (
         <>
           <div className="flex items-baseline gap-3">
@@ -233,21 +233,24 @@ function Reading() {
   );
 }
 
+// Review is a bottom-nav tab (with the due badge) — this section is the
+// progress view of the same queue: how it's distributed across the Leitner
+// boxes, plus a link through. It deliberately doesn't restate the mechanic
+// the tab already explains.
 function ReviewSection() {
   const hydrated = useHydrated();
   const review = useStore((s) => s.review);
   const due = hydrated ? dueCount(review) : 0;
-  const total = Object.keys(review).length;
+  const entries = Object.values(review);
+  const total = entries.length;
+  const boxes = [0, 1, 2, 3, 4, 5].map((b) => entries.filter((r) => r.box === b).length);
+  const max = Math.max(1, ...boxes);
 
   return (
-    <Section title="Review" icon={RotateCcw}>
-      <p className="text-sm text-ink-soft">
-        Spaced repetition for what you've already read — a quiz queue that resurfaces ideas right
-        before you'd forget them.
-      </p>
+    <Section title="Review" index={5} icon={RotateCcw}>
       <Link
         to="/review"
-        className="mt-4 flex items-center justify-between border border-line p-4 hover:border-ink"
+        className="flex items-center justify-between border border-line p-4 hover:border-ink"
       >
         <div>
           <p className="font-serif text-lg text-ink">
@@ -263,6 +266,28 @@ function ReviewSection() {
         </div>
         <ArrowRight className="h-4 w-4 text-ink-soft" />
       </Link>
+      {hydrated && total > 0 && (
+        <div className="mt-4">
+          <MicroLabel>Leitner boxes · 0 = just learned, 5 = 35-day interval</MicroLabel>
+          <div className="mt-2 flex items-end gap-1" aria-hidden="true">
+            {boxes.map((count, b) => (
+              <div key={b} className="flex flex-1 flex-col items-center gap-1">
+                <div className="flex h-10 w-full items-end">
+                  <div
+                    className={cn(
+                      "w-full origin-bottom transition-[height] duration-[var(--duration-slow)] ease-[var(--ease-out)]",
+                      b >= 4 ? "bg-accent" : "bg-ink",
+                    )}
+                    style={{ height: `${Math.max(count > 0 ? 8 : 2, (count / max) * 100)}%` }}
+                  />
+                </div>
+                <span className="font-mono text-[10px] text-ink-soft">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="sr-only">{boxes.map((c, b) => `box ${b}: ${c}`).join(", ")}</p>
+        </div>
+      )}
     </Section>
   );
 }
@@ -271,13 +296,19 @@ function Section({
   title,
   icon: Icon,
   children,
+  index,
 }: {
   title: string;
   icon?: React.ElementType;
   children: React.ReactNode;
+  /** Position on the page; sections settle in top-to-bottom. */
+  index?: number;
 }) {
   return (
-    <section className="border-t border-line pt-6">
+    <section
+      className="settle border-t border-line pt-6"
+      style={{ "--i": index ?? 0 } as React.CSSProperties}
+    >
       <div className="flex items-center gap-2 text-ink-soft">
         {Icon && <Icon className="w-4 h-4" />}
         <MicroLabel>{title}</MicroLabel>
@@ -293,7 +324,7 @@ function Stat({ label, value, hydrated }: { label: string; value: number; hydrat
       {hydrated ? (
         <p className="font-mono text-3xl text-ink leading-none">{value}</p>
       ) : (
-        <span aria-hidden="true" className="block h-7 w-8 animate-pulse rounded-sm bg-line" />
+        <Bone className="h-7 w-8" />
       )}
       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
         {label}

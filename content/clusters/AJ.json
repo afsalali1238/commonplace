@@ -1,0 +1,323 @@
+{
+  "cluster": {
+    "id": "AJ",
+    "title": "Game Theory & Strategy",
+    "subtitle": "Nash equilibrium, signaling, and the prisoner's dilemma — strategy when others are also thinking",
+    "icon": "Swords"
+  },
+  "nodes": [
+    {
+      "id": "AJ1",
+      "clusterId": "AJ",
+      "title": "Nash Equilibrium",
+      "author": "John Nash",
+      "year": 1950,
+      "medium": "Paper",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "In any strategic game, a stable outcome exists where no player can improve their result by changing strategy alone — everyone is already playing their best response to everyone else.",
+      "layer0": "Nash proved it in one page in 1950: every game has at least one point where nobody can do better by switching strategy alone. That point isn't necessarily the best outcome for anyone — just the one nobody can unilaterally escape.",
+      "layer1": "A Nash equilibrium is a set of strategies, one per player, where each is the best response to everyone else, so no single player benefits from changing course alone. Nash's 1950 PNAS paper proved such a point always exists in any finite game, which is why it became the backbone of economics and auction design. An equilibrium can be collectively terrible, as in the prisoner's dilemma, while still individually unbeatable.",
+      "layer2": "Where are you and someone else stuck in a mutually worse outcome that neither of you can improve by moving alone, and what would it take to change the game itself instead of your move within it?",
+      "quiz": {
+        "question": "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
+        "options": [
+          "Every player is achieving their absolute best possible outcome",
+          "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
+          "All players have identical payoffs",
+          "The game has ended and no further moves are possible"
+        ],
+        "correctIndex": 1,
+        "explanation": "Stability in game theory means no unilateral improvement is possible — it says nothing about collective optimality, which is exactly why equilibria like the prisoner's dilemma can trap everyone in a worse outcome that no one can escape alone."
+      },
+      "related": ["AJ2", "M4", "AI1"],
+      "furtherReading": [
+        {
+          "label": "Equilibrium Points in N-Person Games (1950, PNAS)",
+          "source": "paper",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1063129/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ1-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Incentives & Systems"]
+    },
+    {
+      "id": "AJ2",
+      "clusterId": "AJ",
+      "title": "The Prisoner's Dilemma",
+      "author": "Merrill Flood and Melvin Dresher",
+      "year": 1950,
+      "medium": "Model",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Two rational actors who cannot communicate or trust each other will often choose mutual betrayal even when mutual cooperation would leave both better off.",
+      "layer0": "Two RAND researchers stumbled into game theory's most famous parable in 1950, later christened the prisoner's dilemma — showing rational self-interest can trap two people in a worse outcome than cooperation.",
+      "layer1": "The setup: two suspects held separately are each offered a lighter sentence for betraying the other, but both get a light sentence if neither confesses. Betraying is rational regardless of what the other does — free if they stay silent, safer if they also betray. So both rationally betray, worse off than if they'd cooperated. Flood and Dresher found the pattern at RAND in 1950; Tucker gave it the prison framing for a psychology audience.",
+      "layer2": "Where are you and someone else stuck defecting against each other by default — undercutting, hoarding information, competing instead of cooperating — because neither of you can verify the other will hold up their end?",
+      "quiz": {
+        "question": "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
+        "options": [
+          "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
+          "Because the two suspects can freely communicate and coordinate before deciding",
+          "Because each player assumes the other will automatically choose to cooperate",
+          "Because the payoffs are identical no matter what either player chooses"
+        ],
+        "correctIndex": 0,
+        "explanation": "The trap is structural: no matter what the other player does, betraying yields a better individual outcome than cooperating, so purely rational self-interest pushes both players toward mutual betrayal — a worse combined outcome than if they'd both cooperated."
+      },
+      "related": ["AJ1", "M4", "J13"],
+      "furtherReading": [
+        {
+          "label": "Prisoner's Dilemma",
+          "source": "article",
+          "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ2-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Incentives & Systems"]
+    },
+    {
+      "id": "AJ3",
+      "clusterId": "AJ",
+      "title": "Game Theory (Bonanno)",
+      "author": "Giacomo Bonanno",
+      "year": 2015,
+      "medium": "Textbook",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Non-cooperative game theory formalizes strategic interaction — situations where your best move depends on what others do — starting from strategic-form games and building up to the equilibrium concepts that predict how rational agents behave under mutual interdependence.",
+      "layer0": "Most decisions that matter aren't made in isolation — they're made against other people who are also deciding. Game theory is the formal language for that situation.",
+      "layer1": "Bonanno's textbook builds from strategic-form (normal-form) games — where players choose actions simultaneously and payoffs depend on the combination chosen — toward the equilibrium concepts (like Nash equilibrium) that predict stable outcomes when every player is best-responding to everyone else. The core move is representing a strategic situation formally enough that you can reason about it rigorously instead of just intuiting it.",
+      "layer2": "The value of formalizing strategic interaction is that intuition about 'what the other side will do' is often wrong in specific, predictable ways — the same way intuition about probability is wrong in predictable ways. Where in your own decisions are you failing to model the other player's incentives explicitly?",
+      "quiz": {
+        "question": "What does a 'strategic-form' (normal-form) game formally represent?",
+        "options": [
+          "A game where players take turns and can see all prior moves.",
+          "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
+          "A game with only one possible outcome regardless of player choices.",
+          "A cooperative negotiation where players share all payoffs equally."
+        ],
+        "correctIndex": 1,
+        "explanation": "Strategic-form games are the foundational representation in non-cooperative game theory: simultaneous choice, interdependent payoffs, no assumed communication or binding agreements between players."
+      },
+      "related": ["AJ1", "AJ2"],
+      "furtherReading": [
+        {
+          "label": "Game Theory",
+          "source": "Giacomo Bonanno, UC Davis (open textbook)",
+          "url": "https://x.com/techwith_ram/status/2033924852961444264",
+          "type": "paper",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ3-0.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "AJ4",
+      "clusterId": "AJ",
+      "title": "Repeated Games & Axelrod's Tournaments",
+      "author": "Robert Axelrod",
+      "year": 1984,
+      "medium": "Book",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Axelrod invited game theorists to submit programs for iterated prisoner's dilemma and the simplest — Tit for Tat, cooperate first then copy the opponent — won, showing cooperation can evolve without central authority when the shadow of the future is long enough.",
+      "layer0": "Axelrod ran a computer Olympics for prisoner's dilemmas in 1980: every submitted strategy played every other for 200 rounds. The winner was four lines long.",
+      "layer1": "Tit for Tat's four properties — nice (starts cooperatively), retaliatory (punishes defection immediately), forgiving (returns to cooperation after the opponent does), and clear — make its intentions legible. In a repeated game, the expected value of future cooperation outweighs the one-shot gain from defection, so 'live and let live' equilibria emerge even among egoists. Extensions (generosity, contrition) handle noise, but the core lesson stands: design the repetition, not just the single move.",
+      "layer2": "What single-play defection in your organization would collapse if you stretched the 'shadow of the future' — made the next interaction certain, visible, and soon?",
+      "quiz": {
+        "question": "Why did Tit for Tat win Axelrod's iterated prisoner's dilemma tournaments despite its simplicity?",
+        "options": [
+          "It was nice, retaliatory, forgiving, and clear, which made sustained mutual cooperation the most profitable long-run strategy when future rounds were expected",
+          "It defected on every single round, maximizing its score against all cooperative opponents",
+          "It used a complex machine-learning model that predicted opponents' moves with near-perfect accuracy",
+          "It won only because Axelrod manually disqualified stronger strategies before the tournament"
+        ],
+        "correctIndex": 0,
+        "explanation": "Axelrod's analysis showed Tit for Tat's legibility and reciprocity turns a one-shot temptation to defect into a repeated incentive to cooperate, because the future casts a shadow over the present."
+      },
+      "related": ["AJ5", "AJ2", "AJ1", "M4"],
+      "furtherReading": [
+        {
+          "label": "The Evolution of Cooperation — Tit for Tat (Axelrod's tournaments)",
+          "source": "Robert Axelrod / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tit_for_tat",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ4-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Incentives & Systems"]
+    },
+    {
+      "id": "AJ5",
+      "clusterId": "AJ",
+      "title": "Signaling & Costly Signaling Theory",
+      "author": "Amotz Zahavi / Michael Spence",
+      "year": 1973,
+      "medium": "Theory",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Zahavi and Spence showed signals become credible only when they are costly enough that faking them would not pay — so reliable signaling is about burning resources you couldn't afford to burn if you were lying.",
+      "layer0": "Zahavi watched Arabian babblers make extravagant, dangerous displays to signal status — wasting energy precisely to prove they could afford to waste it.",
+      "layer1": "Cheap talk is free, so it carries no information; a costly signal — a peacock's tail, a pricey degree, a startup's funded runway, a crisp rejection-free write-up — is credible because a weaker type couldn't profitably mimic it. Spence formalized this for job markets: education signals ability not primarily through content learned but through the differential cost of completing it. Design implication: if you want to be believed, don't explain harder, pay a cost your imitator couldn't bear.",
+      "layer2": "What claim are you making that is currently cheap talk — and what verifiable cost could you pay this week to turn it into a credible costly signal?",
+      "quiz": {
+        "question": "What makes a signal credible under costly signaling theory?",
+        "options": [
+          "It imposes a cost that a liar or weaker type could not profitably afford to mimic, so only honest types find it worthwhile to send",
+          "It is as cheap and easy to produce as possible, so that everyone can send it regardless of type",
+          "The signal's credibility comes from the sender's verbal insistence that it is true",
+          "Costly signals are never credible and always indicate dishonesty"
+        ],
+        "correctIndex": 0,
+        "explanation": "Zahavi and Spence's condition is differential cost: a signal separates types only when faking it is unprofitable for the weaker type, making the cost the carrier of information."
+      },
+      "related": ["AJ6", "AJ1", "M5", "A9"],
+      "furtherReading": [
+        {
+          "label": "Job Market Signaling (Spence, 1973)",
+          "source": "Michael Spence / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Signalling_(economics)",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ5-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Incentives & Systems", "Power & Persuasion"]
+    },
+    {
+      "id": "AJ6",
+      "clusterId": "AJ",
+      "title": "Chicken & Brinkmanship",
+      "author": "Bertrand Russell / Thomas Schelling",
+      "year": 1959,
+      "medium": "Model",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "The game of Chicken models situations where each side wins most by not swerving, but mutual non-swerving is catastrophic — so the art is credibly committing to not swerving while leaving the opponent a face-saving exit.",
+      "layer0": "Russell used Chicken — two cars racing toward each other, first to swerve loses — as a metaphor for nuclear crisis. Schelling turned it into the doctrine of brinkmanship: deliberately approach the brink to force the other side to back down.",
+      "layer1": "Payoffs are: swerve / don't swerve. If you can credibly commit — throw the steering wheel out the window where the opponent sees it — you win by forcing their swerve. But if both commit, both crash. Brinkmanship is managed commitment: create just enough shared risk of disaster that the more risk-averse side concedes, while keeping a last-second exit so catastrophe remains avoidable. Cuban Missile Crisis and price wars both run on this edge.",
+      "layer2": "Where are you locked in a Chicken game — two teams refusing to swerve on a deadline — and what credible commitment or graceful exit would let one side yield without humiliation?",
+      "quiz": {
+        "question": "What is the strategic logic of credibly committing not to swerve in Chicken?",
+        "options": [
+          "By visibly removing your ability to swerve, you force a rational opponent to swerve to avoid mutual catastrophe, provided you leave them a face-saving exit",
+          "Committing never helps because the opponent will simply ignore any visible commitment you make",
+          "The optimal play is always to swerve immediately regardless of what the opponent does or signals",
+          "Brinkmanship only works when both sides have identical risk tolerance and neither can gain by committing"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chicken rewards visible commitment plus an off-ramp: seen irrevocability shifts the opponent's best response to swerving, but mutual commitment without an exit produces the worst outcome for both."
+      },
+      "related": ["AJ7", "AJ1", "AL14", "AI1"],
+      "furtherReading": [
+        {
+          "label": "The Strategy of Conflict — chicken, brinkmanship, commitment (Schelling, 1960)",
+          "source": "Thomas Schelling / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Brinkmanship",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ6-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Power & Persuasion"]
+    },
+    {
+      "id": "AJ7",
+      "clusterId": "AJ",
+      "title": "Mechanism Design & Auctions",
+      "author": "Leonid Hurwicz / William Vickrey",
+      "year": 1960,
+      "medium": "Theory",
+      "category": "Economics",
+      "epistemicStatus": "Canonical",
+      "thesis": "Mechanism design reverses game theory: instead of predicting play given rules, it engineers rules so that self-interested play produces the outcome you want — most cleanly in auctions where truthful bidding can be made the best strategy.",
+      "layer0": "Hurwicz asked the inverse question of game theory: don't predict how people will play this game — design a game people will play truthfully even while pursuing self-interest.",
+      "layer1": "Vickrey's second-price auction makes truthful bidding a dominant strategy: you pay the second-highest bid, so bidding your true valuation can't hurt you and shading it can only lose you a profitable win. Myerson and Maskin generalized the revelation principle — any outcome achievable with strategic play is also achievable with a truthful mechanism. Power appears in ad auctions, spectrum sales, and kickstarters where rule design, not exhortation, produces honesty.",
+      "layer2": "What behavior you currently try to produce by persuasion could instead be produced by redesigning the payment or ranking rule so that honesty is the privately optimal move?",
+      "quiz": {
+        "question": "What does a second-price (Vickrey) auction make individually optimal for bidders?",
+        "options": [
+          "Bidding your true private valuation, because you pay the second-highest price and shading your bid can only cause you to lose a profitable win",
+          "Always bidding far below your valuation to ensure you never overpay, regardless of the pricing rule",
+          "Bidding randomly, since the mechanism makes all bidding strategies equally profitable",
+          "Colluding with other bidders to jointly lower all bids to the minimum"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vickrey's mechanism aligns private incentive with truthful revelation: the winner pays not his own bid but the next highest, removing the penalty for honesty that first-price induces."
+      },
+      "related": ["AJ8", "AJ1", "M4", "AJ5"],
+      "furtherReading": [
+        {
+          "label": "Counterspeculation, Auctions, and Competitive Sealed Tenders (Vickrey, 1961)",
+          "source": "William Vickrey / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vickrey_auction",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ7-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Incentives & Systems", "Decision-Making"]
+    },
+    {
+      "id": "AJ8",
+      "clusterId": "AJ",
+      "title": "Zero-Sum vs Positive-Sum Games",
+      "author": "John von Neumann / Oskar Morgenstern",
+      "year": 1944,
+      "medium": "Theory",
+      "category": "Game Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Von Neumann distinguished zero-sum games — where one player's gain is exactly another's loss — from positive-sum games where mutually beneficial moves exist, arguing that misclassifying a positive-sum situation as zero-sum is one of the costliest strategic errors.",
+      "layer0": "In 1944 von Neumann and Morgenstern formalized games where the chips on the table never change: poker hands, fixed-budget negotiations, and wars for territory are zero-sum; trade, innovation, and trust-building are not.",
+      "layer1": "Zero-sum payoffs sum to zero by definition, so strategy is pure competition; positive-sum payoffs allow both sides to grow the pie and then argue over the split. The error is framing a positive-sum interaction — a hire, a partnership, a product ecosystem — as zero-sum, which drives both sides to defect where they could have cooperated. Much of negotiation and product strategy is first correctly classifying which game you are actually in.",
+      "layer2": "What negotiation are you currently playing as zero-sum — fixed pie, hard split — that has positive-sum moves (expand scope, add option, share risk) you haven't yet surfaced?",
+      "quiz": {
+        "question": "Why does misclassifying a positive-sum game as zero-sum damage outcomes?",
+        "options": [
+          "It pushes both sides toward competitive extraction when cooperative moves that could grow the total payoff exist and are left unplayed",
+          "Zero-sum and positive-sum are just different names for the same strategic situation, so misclassification has no effect",
+          "Positive-sum games never contain any competitive element, so treating them competitively is always correct",
+          "All strategic interactions are zero-sum, so any positive-sum framing is automatically a misclassification"
+        ],
+        "correctIndex": 0,
+        "explanation": "In zero-sum the pie is fixed, in positive-sum it can grow; labeling a growable interaction as fixed drives both players to fight over the split instead of expanding the pie first."
+      },
+      "related": ["AJ4", "AJ2", "AL1", "M6"],
+      "furtherReading": [
+        {
+          "label": "Theory of Games and Economic Behavior (1944)",
+          "source": "von Neumann & Morgenstern / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Theory_of_Games_and_Economic_Behavior",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AJ8-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Decision-Making", "Incentives & Systems"]
+    }
+  ]
+}

@@ -25,7 +25,7 @@ jobs:
           else
             npm install --legacy-peer-deps
           fi
-      - name: Validate nodes
+      - name: Validate nodes (incl. generated-content freshness)
         run: npx tsx scripts/validate-nodes.ts
       - name: Lint
         run: npx eslint . --max-warnings 10
@@ -39,3 +39,30 @@ jobs:
         run: |
           npx tsx scripts/topics-index.ts
           git diff --exit-code docs/TOPICS-INDEX.md docs/TOPICS-INDEX.csv || (echo "::warning::TOPICS-INDEX out of date — run npx tsx scripts/topics-index.ts and commit" && exit 1)
+      - name: Bundle size limit
+        # Hard limit since the data-layer split (TECH_DEBT §2): the largest
+        # client chunk is the generated index (~124 KB gzipped at 451 nodes,
+        # 2026-09-14), down from ~442 KB before the split. The limit is set
+        # well above that so normal feature work fits but accidentally
+        # bundling the node bodies (or another 100 KB of content into the
+        # index) fails loudly instead of silently regressing.
+        env:
+          LIMIT_KB: 260
+        run: |
+          max=0; maxf=""
+          {
+            echo "### Client bundle (gzipped, limit ${LIMIT_KB} KB per chunk)"
+            echo '```'
+            for f in dist/client/assets/*.js; do
+              kb=$(( $(gzip -c "$f" | wc -c) / 1024 ))
+              if [ "$kb" -gt "$max" ]; then max=$kb; maxf=$(basename "$f"); fi
+              printf "%8s KB  %s\n" "$kb" "$(basename "$f")"
+            done | sort -rn | head -8
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "largest chunk: ${maxf} = ${max} KB gz"
+          if [ "$max" -gt "$LIMIT_KB" ]; then
+            echo "::error::${maxf} is ${max} KB gzipped, over the ${LIMIT_KB} KB limit. Did the node bodies end up in the bundle? See docs/CONTENT-LAYER.md."
+            exit 1
+          fi
+

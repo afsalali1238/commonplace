@@ -1,0 +1,382 @@
+{
+  "cluster": {
+    "id": "R",
+    "title": "Big Hypotheses",
+    "subtitle": "Open questions science and philosophy haven't settled — simulation, consciousness, the Fermi paradox",
+    "icon": "Telescope"
+  },
+  "nodes": [
+    {
+      "id": "R1",
+      "clusterId": "R",
+      "title": "Are You Living in a Computer Simulation?",
+      "author": "Nick Bostrom",
+      "year": 2003,
+      "medium": "Paper",
+      "category": "Open Questions",
+      "epistemicStatus": "Contemporary",
+      "thesis": "At least one of three propositions must be true: civilizations almost never reach the technological stage capable of running ancestor-simulations, or those that reach it choose not to run them, or we are almost certainly living inside a simulation ourselves — and there's no principled way to rule out the third.",
+      "layer0": "Bostrom's argument doesn't claim we are in a simulation — it's a trilemma. If any future civilization eventually gains enough computing power to simulate entire conscious populations of their ancestors, and nothing stops them from wanting to, the number of simulated minds would vastly outnumber the one original population by many orders of magnitude. So if you accept that such simulations are possible and that at least some civilizations would choose to run many of them, simple probability suggests an average observer picked at random is far more likely to be one of the many simulated minds than the one original.",
+      "layer1": "The argument is structured as a disjunction, not a prediction: almost all civilizations go extinct before reaching posthuman technological capability, or posthuman civilizations exist but choose not to run ancestor-simulations for ethical, resource, or interest reasons, or we are almost certainly in a simulation. Bostrom's point is that you have to actively believe something specific to reject the third option — either that civilizations reliably self-destruct before reaching that capability, or that essentially none of the ones that survive would ever want to run such simulations — and neither is obviously more plausible than the third.",
+      "layer2": "Which of the three propositions do you find yourself least willing to believe, and why — do you doubt civilizations survive that long, doubt they'd bother simulating history, or doubt the third conclusion follows even if the first two are false?",
+      "quiz": {
+        "question": "What is Bostrom's simulation argument actually claiming?",
+        "options": [
+          "That we are definitely living in a computer simulation",
+          "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one",
+          "That technology will never be advanced enough to simulate consciousness",
+          "That video games will eventually become indistinguishable from reality"
+        ],
+        "correctIndex": 1,
+        "explanation": "Bostrom doesn't definitively claim we are in a simulation. He mathematically argues that either human-like civilizations go extinct, they lose interest in simulations, or we are almost certainly simulated."
+      },
+      "related": ["R5", "R6", "X1", "R4"],
+      "furtherReading": [
+        {
+          "label": "Are You Living in a Computer Simulation? (full paper)",
+          "source": "simulation-argument.com",
+          "url": "https://simulation-argument.com/simulation.html",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R1-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Review of Bostrom's Simulation Argument",
+          "source": "Stanford",
+          "url": "https://web.stanford.edu/class/symbsys205/BostromReview.html",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R1-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self", "First-Principles Thinking"]
+    },
+    {
+      "id": "R2",
+      "clusterId": "R",
+      "title": "The Great Filter — Are We Almost Past It?",
+      "author": "Robin Hanson",
+      "year": 1998,
+      "medium": "Essay",
+      "category": "Open Questions",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Given that we see no evidence of any other intelligent civilization in a universe old and vast enough to have produced many, some 'Great Filter' — an improbability barrier somewhere between lifeless matter and galaxy-colonizing civilization — must exist, and the crucial open question is whether humanity has already passed it or still has it ahead.",
+      "layer0": "This essay is Hanson's contribution to the Fermi paradox: if the universe is so old and vast, where is everybody? His framing: think of the path from dead matter to a civilization expanding across the galaxy as a sequence of hard steps — the origin of life, the jump to complex cells, the emergence of intelligence, the emergence of technological civilization, civilization surviving its own technology, among others. Since we observe zero visible galaxy-spanning civilizations anywhere, at least one of these steps must be extraordinarily improbable, a filter that almost nothing gets through.",
+      "layer1": "The stakes of the essay come from a single question: is the Great Filter behind us or ahead of us? If the hardest step is something humanity has already cleared, such as the origin of life itself, which may be extraordinarily rare, that's good news — intelligent civilizations like ours are rare, but our own survival prospects going forward are relatively unconstrained by the filter. If the hardest step is still ahead, such as a near-universal tendency for advanced civilizations to destroy themselves through war, engineered pathogens, or runaway technology, that's very bad news, because it implies we're likely to hit the same wall everyone else apparently has.",
+      "layer2": "If you had to bet: is the Great Filter behind humanity, something rare we already survived, or ahead of us, something we haven't faced yet? What evidence would actually change your answer?",
+      "quiz": {
+        "question": "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
+        "options": [
+          "It doesn't matter either way for humanity's prospects",
+          "It only matters for funding decisions in astrobiology research",
+          "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
+          "The filter has already been definitively located by radio telescope surveys"
+        ],
+        "correctIndex": 2,
+        "explanation": "The Great Filter solves the Fermi Paradox by proposing an evolutionary step so hard that it wipes out almost all civilizations. If it's behind us, we survived the hardest part; if it's ahead of us, our doom is likely approaching."
+      },
+      "related": ["R1", "Z4", "R3", "R4"],
+      "furtherReading": [
+        {
+          "label": "The Great Filter — Are We Almost Past It? (original essay)",
+          "source": "George Mason University",
+          "url": "http://hanson.gmu.edu/greatfilter.html",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R2-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Great Filter",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Great_Filter",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R2-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self", "Risk & Asymmetric Bets"]
+    },
+    {
+      "id": "R3",
+      "clusterId": "R",
+      "title": "Determined: A Science of Life Without Free Will",
+      "author": "Robert Sapolsky",
+      "year": 2023,
+      "medium": "Book",
+      "category": "Open Questions",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Every human action is the end product of an unbroken chain of prior causes — genes, hormones, childhood environment, immediate context, culture — stretching back before birth, which means free will in the sense most people believe in, the ability to have decided otherwise with all else being equal, does not exist.",
+      "layer0": "Sapolsky, a neuroscientist, builds his case biologically rather than purely philosophically: he walks through the causal chain behind any single behavior, from what happened in your brain one second before the action, to hormones and sensory context in the preceding hours, to childhood and adolescent development in preceding years, to genes and prenatal environment before you were even born. His claim is that at no point in that chain is there a gap where an uncaused 'you,' separate from all these prior causes, steps in and freely decides; every link is explicable by what came before it.",
+      "layer1": "The book is largely a rebuttal of what he calls 'the last two inches' arguments — accounts that concede most behavior is shaped by biology and environment but still carve out a small remaining space, willpower, conscious deliberation, moral effort, as genuinely free. Sapolsky argues neuroscience keeps shrinking that space rather than preserving it: even willpower and self-control show up as measurable, resource-limited brain processes shaped by the same prior causes as everything else, not an exception to the causal chain.",
+      "layer2": "Pick a decision you're proud of resisting an impulse on. Trace it back: what in your sleep, stress levels, upbringing, or immediate environment that day made that self-control more or less available to you — and does that change how you judge yourself, or others, for similar moments?",
+      "quiz": {
+        "question": "What is Sapolsky's central argument against free will in Determined?",
+        "options": [
+          "That people should stop trying to make good decisions since nothing matters",
+          "That free will exists but only for a small percentage of highly disciplined people",
+          "That free will is a purely religious concept with no scientific relevance",
+          "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene"
+        ],
+        "correctIndex": 3,
+        "explanation": "Sapolsky argues that every decision is the inevitable result of prior causes—hormones, genes, childhood environment, evolutionary history. Because we control none of these prior causes, the idea of an uncaused 'free choice' is an illusion."
+      },
+      "related": ["J38", "O2", "X6", "R4"],
+      "furtherReading": [
+        {
+          "label": "Determined: A Science of Life Without Free Will",
+          "source": "Penguin Random House",
+          "url": "https://www.penguinrandomhouse.com/books/690231/determined-by-robert-m-sapolsky/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R3-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Determined: A Science of Life Without Free Will",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Determined:_A_Science_of_Life_Without_Free_Will",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R3-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "R4",
+      "clusterId": "R",
+      "title": "Galileo's Error",
+      "author": "Philip Goff",
+      "year": 2019,
+      "medium": "Book",
+      "category": "Open Questions",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Consciousness cannot be fully explained by physical science because physics, since Galileo, deliberately excluded qualitative experience from its domain to make nature mathematically tractable — so the fix isn't a better physical theory of consciousness, it's recognizing consciousness as a fundamental property of matter itself, present in some minimal form even at the level of basic particles.",
+      "layer0": "Goff's title refers to a specific historical decision: Galileo, in founding modern physics, split the world into quantitative properties — mass, motion, shape, measurable and mathematizable, the proper domain of science — and qualitative properties — color as experienced, taste, pain, treated as a separate, non-physical realm. Goff argues this founding split is why physical science, no matter how advanced, will never on its own terms explain subjective experience — it was designed from the start to describe everything except that.",
+      "layer1": "Rather than treating this as proof consciousness is supernatural, Goff's panpsychism proposes the opposite move: build a minimal form of experience into the definition of physical matter itself, rather than trying to derive experience from non-experiential particles later. On this view, fundamental particles have some unimaginably simple form of experience, and complex consciousness, like human minds, emerges from these combining in the right structure — avoiding both traditional dualism and standard materialism, which Goff argues both fail for related reasons.",
+      "layer2": "Goff's claim is that physics was built to leave subjective experience out by design, not by oversight. Does that change how much weight you put on 'science hasn't explained consciousness yet' as evidence about whether it ever will?",
+      "quiz": {
+        "question": "What historical decision does Goff's title 'Galileo's Error' refer to?",
+        "options": [
+          "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope",
+          "Galileo's incorrect claim that the Earth orbits the Sun",
+          "A mathematical error in Galileo's calculation of planetary motion",
+          "Galileo's rejection of Aristotelian philosophy"
+        ],
+        "correctIndex": 0,
+        "explanation": "To invent mathematical physics, Galileo deliberately excluded consciousness (colors, smells, feelings) from the scientific domain. Goff argues that trying to explain consciousness using a physics designed to exclude it is impossible."
+      },
+      "related": ["O15", "R3", "R1"],
+      "furtherReading": [
+        {
+          "label": "Galileo's Error",
+          "source": "Penguin Random House",
+          "url": "https://www.penguinrandomhouse.com/books/599229/galileos-error-by-philip-goff/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R4-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Galileo's Error (book review)",
+          "source": "Philosophy Now, Issue 135",
+          "url": "https://philosophynow.org/issues/135/Galileos_Error_by_Philip_Goff",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R4-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self"]
+    },
+    {
+      "id": "R5",
+      "clusterId": "R",
+      "title": "Large Number Coincidences and the Anthropic Principle in Cosmology",
+      "author": "Brandon Carter",
+      "year": 1974,
+      "medium": "Paper",
+      "category": "Open Questions",
+      "epistemicStatus": "Canonical",
+      "thesis": "Several of the universe's fundamental physical constants appear implausibly fine-tuned for the emergence of life — but this isn't necessarily evidence of design, because any universe where observers exist to notice the constants will, by definition, have constants compatible with observers existing.",
+      "layer0": "Carter's paper, presented in 1973 and published in 1974, formalized an observation physicists had noticed informally: numbers like the strength of gravity relative to electromagnetism, or the precise ratios governing stellar formation, sit in an extremely narrow range — if they were even slightly different, stars, chemistry, or stable planets, and therefore anyone around to measure them, likely couldn't exist. Carter's key move was pointing out a subtle selection effect: we should expect to find ourselves in a universe compatible with our own existence, no matter how statistically rare such a universe is among all possible ones, simply because we couldn't be observing it otherwise.",
+      "layer1": "Carter distinguished a 'weak' version — among possible times and places, we should expect to find ourselves in one compatible with observers existing, an observational selection effect, not a metaphysical claim — from a 'strong' version — the universe's constants must be such as to admit observers at some stage, a much bolder claim closer to teleology. The weak version is now widely accepted as basic statistical reasoning; the strong version remains genuinely contested, with critics arguing it risks becoming an unfalsifiable way to explain away any fine-tuning, and defenders arguing it's a legitimate response once you accept something like a multiverse of many universes with varying constants.",
+      "layer2": "Notice how often 'this outcome is surprisingly favorable to me' gets treated as evidence of intention, when it might just be a selection effect — you wouldn't be here to notice the unfavorable version. Where else in your own life might you be mistaking a selection effect for a special explanation?",
+      "quiz": {
+        "question": "What is the core insight of the (weak) anthropic principle?",
+        "options": [
+          "The universe was deliberately designed to support human life",
+          "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one",
+          "Physical constants are randomly generated and have no pattern",
+          "Only Earth-like planets can support any form of life"
+        ],
+        "correctIndex": 1,
+        "explanation": "The Anthropic Principle answers the 'fine-tuning' problem not with design, but with selection bias: if the universe's constants were incompatible with life, we wouldn't be here to observe them. We can only observe a universe that allows us to exist."
+      },
+      "related": ["R1", "R6", "R2"],
+      "furtherReading": [
+        {
+          "label": "Republication of: Large number coincidences and the anthropic principle in cosmology",
+          "source": "General Relativity and Gravitation (Springer)",
+          "url": "https://link.springer.com/article/10.1007/s10714-011-1258-7",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R5-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Fine-Tuning",
+          "source": "Stanford Encyclopedia of Philosophy",
+          "url": "https://plato.stanford.edu/entries/fine-tuning/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R5-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self", "First-Principles Thinking"]
+    },
+    {
+      "id": "R6",
+      "clusterId": "R",
+      "title": "Our Mathematical Universe",
+      "author": "Max Tegmark",
+      "year": 2014,
+      "medium": "Book",
+      "category": "Open Questions",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Physical reality is not merely described by mathematics — it is a mathematical structure, and this Mathematical Universe Hypothesis implies that every mathematically consistent structure exists physically somewhere, forming the most extreme of four nested levels of multiverse Tegmark proposes.",
+      "layer0": "Tegmark's starting observation is that physics has always used mathematics to describe reality, but usually treats the math and the reality it describes as two different things — the map versus the territory. His hypothesis collapses that distinction: if a theory of everything is ever found and it's purely mathematical with no ad hoc extra ingredients, that suggests reality just is that mathematical structure, not merely modeled by it — dissolving the older puzzle about the 'unreasonable effectiveness' of mathematics in physics by making it not a mystery at all: math works because reality is math.",
+      "layer1": "The book builds up four levels of multiverse, each stranger than the last: Level I, regions of space beyond our observable universe governed by the same physics, just too far away to see; Level II, regions with different physical constants, produced by cosmic inflation; Level III, the many-worlds interpretation of quantum mechanics, where every quantum measurement branches reality; and Level IV, the Mathematical Universe Hypothesis itself, where every self-consistent mathematical structure corresponds to a physically real universe, making our specific universe just one instance among an inconceivably large space of mathematically possible ones.",
+      "layer2": "Tegmark's Level IV claims mathematical existence and physical existence are the same thing. Do you find that clarifying, since it explains why math 'works' on reality, or does it feel like it explains too much, making the specific universe we're in unremarkable rather than special?",
+      "quiz": {
+        "question": "What does Tegmark's 'Mathematical Universe Hypothesis' claim?",
+        "options": [
+          "That mathematics is simply a useful human tool for describing an independently-existing physical reality",
+          "That the universe will eventually be fully described by a single equation",
+          "That physical reality is itself a mathematical structure, and every self-consistent mathematical structure exists physically",
+          "That mathematics and physics are unrelated fields that happen to overlap"
+        ],
+        "correctIndex": 2,
+        "explanation": "Tegmark argues that math doesn't just describe reality; it *is* reality. The physical universe is a mathematical structure, and every possible non-contradictory mathematical structure must therefore physically exist somewhere."
+      },
+      "related": ["R5", "R1", "X5", "Z1"],
+      "furtherReading": [
+        {
+          "label": "Is the Universe Made of Math? (excerpt)",
+          "source": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/is-the-universe-made-of-math-excerpt/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R6-0.md",
+            "retrieved": "2026-07-16"
+          }
+        },
+        {
+          "label": "Our Mathematical Universe",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Our_Mathematical_Universe",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R6-1.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["Meaning & Self", "First-Principles Thinking"]
+    },
+    {
+      "id": "R7",
+      "clusterId": "R",
+      "title": "The Kardashev Scale",
+      "author": "Nikolai Kardashev",
+      "year": 1964,
+      "medium": "Astrophysics",
+      "category": "Futurism",
+      "epistemicStatus": "Canonical",
+      "thesis": "A civilization's technological advancement can be measured purely by the amount of energy it is able to harness and utilize.",
+      "layer0": "If we find alien life, how will we know how advanced they are? Russian astrophysicist Nikolai Kardashev proposed a simple scale based on energy consumption: Type I (Planetary), Type II (Stellar), and Type III (Galactic).",
+      "layer1": "A Type I civilization can harness all the energy reaching its home planet from its parent star (we are currently at about Type 0.73). A Type II civilization can harness the entire energy output of its star, likely by building a Dyson Sphere around it. A Type III civilization commands the energy of its entire galaxy.",
+      "layer2": "The Kardashev scale forces us to think about deep time and the limits of physics. Going from Type 0 to Type I is considered the most dangerous filter for a civilization, because they have the technology to destroy themselves (nuclear weapons, climate change) but lack the planetary control to save themselves. If humanity survives the next few centuries, we may achieve Type I status.",
+      "quiz": {
+        "question": "According to the Kardashev scale, what is the defining feature of a Type II civilization?",
+        "options": [
+          "They have mastered faster-than-light travel.",
+          "They can harness 100% of the energy output of their parent star.",
+          "They have merged their biological brains with artificial intelligence.",
+          "They have colonized multiple galaxies in the local group."
+        ],
+        "correctIndex": 1,
+        "explanation": "The Kardashev scale is entirely based on energy extraction. Type II civilizations have built megastructures (like Dyson Spheres) to capture the total energy of a sun."
+      },
+      "related": ["I3", "R2", "R8"],
+      "furtherReading": [
+        {
+          "label": "The Kardashev Scale",
+          "source": "Big Think",
+          "url": "https://bigthink.com/hard-science/kardashev-scale/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R7-0.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["AI & the Future"]
+    },
+    {
+      "id": "R8",
+      "clusterId": "R",
+      "title": "Dark Forest Theory",
+      "author": "Liu Cixin",
+      "year": 2008,
+      "medium": "Science Fiction",
+      "category": "Futurism",
+      "epistemicStatus": "Contemporary",
+      "thesis": "The universe is full of life, but everyone is hiding in absolute silence because revealing your location guarantees your destruction.",
+      "layer0": "The Fermi Paradox asks: if the universe is so vast and old, where are all the aliens? The Dark Forest Theory provides a terrifying answer: they are out there, but they are staying perfectly quiet to survive.",
+      "layer1": "Imagine a dark forest at night. It is full of armed hunters hiding in the shadows. If a hunter hears a twig snap, they don't call out to say 'hello'—they shoot immediately, because in a dark forest, anyone you encounter is a potential threat to your own survival.",
+      "layer2": "In the universe, 'chains of suspicion' make communication impossible. You can never truly know if an alien species is peaceful or hostile. Furthermore, because of exponential technological growth, a 'primitive' species today could become a threat in a mere thousand years. Therefore, the only rational, game-theoretic move for an advanced civilization is to instantly annihilate any civilization that reveals its location. Humanity's current practice of broadcasting radio signals into space is equivalent to a child yelling in a dark forest.",
+      "quiz": {
+        "question": "According to Dark Forest Theory, why does a civilization instantly annihilate a newly discovered species?",
+        "options": [
+          "To harvest their planet's natural resources for energy.",
+          "Because of religious or ideological fanaticism.",
+          "Because they are bored and have nothing else to do.",
+          "Because the 'chain of suspicion' makes trust impossible, and letting them live risks your own eventual destruction."
+        ],
+        "correctIndex": 3,
+        "explanation": "Game theory dictates that since you can never be 100% sure the other species won't eventually kill you (especially given exponential technological growth), the only rational move to guarantee your own survival is a preemptive strike."
+      },
+      "related": ["I27", "L1", "R7"],
+      "furtherReading": [
+        {
+          "label": "Dark Forest Theory",
+          "source": "Big Think",
+          "url": "https://bigthink.com/surprising-science/the-dark-forest-theory-a-terrifying-explanation-of-why-we-havent-heard-from-aliens-yet/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/R8-0.md",
+            "retrieved": "2026-07-16"
+          }
+        }
+      ],
+      "tags": ["AI & the Future", "Incentives & Systems"]
+    }
+  ]
+}

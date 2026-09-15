@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Finance Theory">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 97.08 53.46 A 6 6 0 0 1 91.61 57.29" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 108.19 61.08 A 19.36 19.36 0 0 1 77.75 64.93" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.76"/>
+    <path d="M 104.85 81.15 A 32.71 32.71 0 0 0 99.29 19.52" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.52"/>
+    <path d="M 76.16 94.73 A 46.07 46.07 0 0 1 100.99 6.21" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.28"/>
+    <path d="M 73.41 107.9 A 59.43 59.43 0 1 1 121.92 0.24" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.04"/>
+    <path d="M -2 55.69 L 24.9 36.95 L 50.28 39.06 L 102 10.74" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="50.28" cy="39.06" r="2.52" fill="#b45309"/>
+</svg>

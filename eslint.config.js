@@ -36,5 +36,39 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-vars": "off",
     },
   },
+  {
+    // App code must not reach into the content source of truth or the test
+    // helper that reads it with node:fs — the bundled index + on-demand
+    // bodies (src/lib/bodies.ts) are the only sanctioned paths. See
+    // docs/CONTENT-LAYER.md.
+    files: ["src/**/*.{ts,tsx}"],
+    ignores: ["src/**/*.test.{ts,tsx}", "src/lib/testContent.ts"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          paths: [
+            {
+              name: "server-only",
+              message:
+                "TanStack Start does not use the Next.js `server-only` package. Rename the module to `*.server.ts` or mark it with `@tanstack/react-start/server-only`.",
+            },
+            {
+              name: "@/lib/testContent",
+              message:
+                "testContent reads content/ with node:fs and is test-only. Use the bundled index (@/data/nodes) or useNodeBody (@/lib/bodies).",
+            },
+          ],
+          patterns: [
+            {
+              group: ["**/content/clusters/*", "**/content/*.json", "**/public/content/**"],
+              message:
+                "Don't import content JSON into app code — it would bundle the bodies back in. Use @/data/nodes (index) or @/lib/bodies (on-demand bodies).",
+            },
+          ],
+        },
+      ],
+    },
+  },
   eslintPluginPrettier,
 );

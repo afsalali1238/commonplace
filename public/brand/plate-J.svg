@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Mental Models">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 12.05 12.53 A 6 6 0 0 1 11.73 5.52" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 3.45 8.56 A 13.3 13.3 0 0 1 15.66 -4.45" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.88"/>
+    <path d="M -3.84 8.21 A 20.6 20.6 0 0 1 17.32 -11.79" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.76"/>
+    <path d="M -10.43 2.48 A 27.9 27.9 0 0 1 32.91 -13.95" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.64"/>
+    <path d="M 3.95 -23.98 A 35.19 35.19 0 0 1 48.01 24.95" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.52"/>
+    <path d="M 2.89 -31.36 A 42.49 42.49 0 0 1 57.38 21.23" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.40"/>
+    <path d="M 42.67 -33.71 A 49.79 49.79 0 0 1 11.98 58.36" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.28"/>
+    <path d="M 63.44 -24.05 A 57.09 57.09 0 0 0 -34.62 33.71" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="1.16"/>
+    <path d="M 74.92 -18.81 A 64.39 64.39 0 0 1 -33.93 48.52" stroke="#1a1a17" stroke-opacity="0.220" stroke-width="1.04"/>
+    <path d="M 82.97 -18.67 A 71.69 71.69 0 0 1 -49.43 36.37" stroke="#1a1a17" stroke-opacity="0.195" stroke-width="0.92"/>
+    <path d="M 69.41 -2 L 86.34 30.41 L 52.45 53.08 L 75.41 62" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="86.34" cy="30.41" r="2.93" fill="#b45309"/>
+</svg>

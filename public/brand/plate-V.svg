@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Social Constructs">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 90.81 48.85 A 6 6 0 0 0 94.91 55.02" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 85.3 48.19 A 11.55 11.55 0 0 1 100.4 38.35" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.83"/>
+    <path d="M 82.21 40.41 A 17.09 17.09 0 0 1 113.15 44.38" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.66"/>
+    <path d="M 86.89 28.96 A 22.64 22.64 0 0 1 117.67 58.07" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.49"/>
+    <path d="M 94.47 21.23 A 28.19 28.19 0 0 0 87.14 75.81" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.31"/>
+    <path d="M 102.42 16.06 A 33.73 33.73 0 0 1 93.22 82.86" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.14"/>
+    <path d="M 131.75 31.42 A 39.28 39.28 0 1 0 61.98 67.51" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="0.97"/>
+    <path d="M -2 54.97 L 26.88 36.27 L 56.42 41.16 L 102 8.55" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="26.88" cy="36.27" r="2.23" fill="#b45309"/>
+</svg>

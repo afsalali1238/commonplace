@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Design &amp; Engineering">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 96.37 59.88 A 6 6 0 0 1 93.58 53.22" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 82.74 63.2 A 18.7 18.7 0 0 1 92.77 37.21" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.80"/>
+    <path d="M 70.23 43.1 A 31.39 31.39 0 0 1 128.74 43.55" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.60"/>
+    <path d="M 58.27 38.82 A 44.09 44.09 0 0 1 143.21 49.72" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.40"/>
+    <path d="M 53.47 21.32 A 56.78 56.78 0 0 1 154.97 66.36" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.20"/>
+    <path d="M 83.4 -12.91 A 69.48 69.48 0 1 1 94.82 124.03" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.00"/>
+    <path d="M -2 56.85 L 24.52 31.76 L 56.24 44.6 L 102 10.79" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="56.24" cy="44.6" r="2.55" fill="#b45309"/>
+</svg>

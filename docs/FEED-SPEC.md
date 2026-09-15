@@ -127,7 +127,7 @@ alone breeds junk; optimizing for "stopped to read deeper / saved it" keeps the 
 
 ## 10. Performance
 
-- Window the DOM: render current ± 2 cards only; recycle nodes. No images, so cards are text-cheap.
+- Window the DOM: render current ± 2 cards only; recycle nodes. No raster images — the only image on a card is the idea's generated inline-SVG glyph (`docs/VISUAL-SYSTEM.md`), so cards stay text-cheap.
 - Preload the next 2 cards' layers. Whole graph already in memory (see NODES-SPLIT-DECISION — still fine at 270).
 
 ## 11. Accessibility

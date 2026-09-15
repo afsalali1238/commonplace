@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import type { Node } from "@/data/nodes";
+import type { NodeIndex as Node } from "@/data/nodes";
 import { CLUSTER_BY_ID } from "@/data/nodes";
 import { MicroLabel } from "./MicroLabel";
 import { useStore } from "@/lib/store";

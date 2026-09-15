@@ -2,7 +2,8 @@
  * archive-sources.ts — offline source archiver (rebuilt)
  *
  * Snapshots each furtherReading URL to a local markdown file and records an
- * `archive` prop on the node so the app can serve it offline.
+ * `archive` prop on the node (in content/clusters/<id>.json — the source of
+ * truth; run `bun run build:content` afterwards) so the app can serve it offline.
  *
  * CANONICAL LOCATIONS (do not "simplify" these — they differ on purpose):
  *   - Disk write dir : public/content/sources/     (Vite serves public/ at URL root)
@@ -21,13 +22,19 @@
  *   bun run scripts/archive-sources.ts all        # everything
  *   bun run scripts/archive-sources.ts all --dry-run   # report, no fetch/write
  */
-import { ObjectLiteralExpression, Project, SyntaxKind } from "ts-morph";
 import { JSDOM } from "jsdom";
 import { Readability } from "@mozilla/readability";
 import fs from "fs/promises";
 import fsSync from "fs";
 import path from "path";
 import { createRequire } from "module";
+import {
+  readClusterFile,
+  readClusterOrder,
+  writeClusterFile,
+  type ClusterFile,
+  type FurtherReading,
+} from "./lib/content";
 const require = createRequire(import.meta.url);
 const pdfParse = require("pdf-parse");
 
@@ -160,33 +167,24 @@ ${a.content.trim()}
 `;
 }
 
-// ---- helpers to read prop string values ------------------------------------
-function propStr(obj: ObjectLiteralExpression, name: string): string | null {
-  const p = obj.getProperty(name) || obj.getProperty(`"${name}"`);
-  if (!p) return null;
-  const pa = p as unknown as {
-    getInitializerIfKind?: (k: SyntaxKind) => { getLiteralValue: () => string } | undefined;
-  };
-  const init =
-    pa.getInitializerIfKind?.(SyntaxKind.StringLiteral) ||
-    pa.getInitializerIfKind?.(SyntaxKind.NoSubstitutionTemplateLiteral);
-  return init ? init.getLiteralValue() : null;
-}
-
 async function run() {
   await fs.mkdir(SOURCES_DISK_DIR, { recursive: true });
   const failCounts = loadFailureCounts();
 
-  const project = new Project();
-  const sourceFile = project.addSourceFileAtPath(path.join(process.cwd(), "src/data/nodes.ts"));
-  const nodesDecl = sourceFile.getVariableDeclarationOrThrow("NODES");
-  const arr = nodesDecl.getInitializerIfKindOrThrow(SyntaxKind.ArrayLiteralExpression);
-  const nodes = arr
-    .getElements()
-    .filter((e) => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
+  // Source of truth is content/clusters/<id>.json; we mutate the parsed
+  // objects in place and write back only the files that changed, then the
+  // caller regenerates src/data/nodes.ts + public/content/bodies via
+  // `bun run build:content` (the add-content skill does this for you).
+  const clusterIds = readClusterOrder().filter(
+    (id) => clusterLimit === "all" || id === clusterLimit,
+  );
+  if (clusterIds.length === 0) throw new Error(`unknown cluster "${clusterLimit}"`);
+  const files: ClusterFile[] = clusterIds.map(readClusterFile);
+  const touched = new Set<ClusterFile>();
 
   type Job = {
-    frItem: ObjectLiteralExpression;
+    frItem: FurtherReading;
+    file: ClusterFile;
     key: string;
     id: string;
     idx: number;
@@ -200,77 +198,62 @@ async function run() {
   let skippedOk = 0;
   let cappedCount = 0;
 
-  for (const node of nodes) {
-    const id = propStr(node, "id");
-    const clusterId = propStr(node, "clusterId");
-    if (!id || !clusterId) continue;
-    if (clusterLimit !== "all" && clusterId !== clusterLimit) continue;
+  for (const file of files)
+    for (const node of file.nodes) {
+      const id = node.id;
+      const frItems = node.furtherReading ?? [];
 
-    const frProp = node.getProperty("furtherReading") || node.getProperty('"furtherReading"');
-    if (!frProp) continue;
-    const frArr = frProp.getFirstChildByKind(SyntaxKind.ArrayLiteralExpression);
-    if (!frArr) continue;
-    const frItems = frArr
-      .getElements()
-      .filter(
-        (e) => e.getKind() === SyntaxKind.ObjectLiteralExpression,
-      ) as ObjectLiteralExpression[];
+      for (let i = 0; i < frItems.length; i++) {
+        const frItem = frItems[i];
+        const key = `${id}-${i}`;
+        const diskFile = path.join(SOURCES_DISK_DIR, `${id}-${i}.md`);
+        const existingStatus: string | null = frItem.archive?.status ?? null;
 
-    for (let i = 0; i < frItems.length; i++) {
-      const frItem = frItems[i];
-      const key = `${id}-${i}`;
-      const diskFile = path.join(SOURCES_DISK_DIR, `${id}-${i}.md`);
-      const archiveProp = frItem.getProperty("archive") || frItem.getProperty('"archive"');
-      const existingStatus = archiveProp
-        ? propStr(archiveProp.getFirstChildByKind(SyntaxKind.ObjectLiteralExpression)!, "status")
-        : null;
-
-      // Idempotent: a valid archive whose file exists on disk needs nothing.
-      if (existingStatus && (existingStatus === "full" || existingStatus === "excerpt")) {
-        if (fsSync.existsSync(diskFile)) {
-          skippedOk++;
+        // Idempotent: a valid archive whose file exists on disk needs nothing.
+        if (existingStatus && (existingStatus === "full" || existingStatus === "excerpt")) {
+          if (fsSync.existsSync(diskFile)) {
+            skippedOk++;
+            continue;
+          }
+          // File referenced but missing — record why, don't silently drop.
+          await logFailure(
+            key,
+            frItem.url ?? "",
+            `archived file missing on disk (status=${existingStatus})`,
+          );
+          if (existingStatus === "excerpt") continue; // excerpts are hand-curated, never auto-refetched
+        }
+        if (existingStatus === "unavailable") {
+          // Already triaged as unavailable — leave it, idempotent.
           continue;
         }
-        // File referenced but missing — record why, don't silently drop.
-        await logFailure(
+
+        // Retry cap
+        if ((failCounts[key] ?? 0) >= MAX_RETRIES) {
+          cappedCount++;
+          console.warn(
+            `  ⤫ ${key}: retry cap (${MAX_RETRIES}) reached — skipping. See ${path.basename(FAILURE_LOG)}`,
+          );
+          continue;
+        }
+
+        const { url, source: sourceName, label } = frItem;
+        if (!url || !sourceName || !label) continue;
+
+        jobs.push({
+          frItem,
+          file,
           key,
-          propStr(frItem, "url") ?? "",
-          `archived file missing on disk (status=${existingStatus})`,
-        );
-        if (existingStatus === "excerpt") continue; // excerpts are hand-curated, never auto-refetched
+          id,
+          idx: i,
+          url,
+          label,
+          sourceName,
+          bucket: getBucket(url).bucket,
+          existingStatus,
+        });
       }
-      if (existingStatus === "unavailable") {
-        // Already triaged as unavailable — leave it, idempotent.
-        continue;
-      }
-
-      // Retry cap
-      if ((failCounts[key] ?? 0) >= MAX_RETRIES) {
-        cappedCount++;
-        console.warn(
-          `  ⤫ ${key}: retry cap (${MAX_RETRIES}) reached — skipping. See ${path.basename(FAILURE_LOG)}`,
-        );
-        continue;
-      }
-
-      const url = propStr(frItem, "url");
-      const sourceName = propStr(frItem, "source");
-      const label = propStr(frItem, "label");
-      if (!url || !sourceName || !label) continue;
-
-      jobs.push({
-        frItem,
-        key,
-        id,
-        idx: i,
-        url,
-        label,
-        sourceName,
-        bucket: getBucket(url).bucket,
-        existingStatus,
-      });
     }
-  }
 
   console.log(
     `Cluster=${clusterLimit} — ${jobs.length} to process, ${skippedOk} already archived, ${cappedCount} retry-capped.${DRY_RUN ? " [DRY RUN]" : ""}`,
@@ -303,9 +286,8 @@ async function run() {
           content = null;
         }
 
-        // Remove any stale archive prop (we logged the reason above if it existed).
-        const stale = j.frItem.getProperty("archive") || j.frItem.getProperty('"archive"');
-        stale?.remove();
+        // Any stale archive is replaced below (we logged the reason above if it existed).
+        touched.add(j.file);
 
         if (content && content.trim()) {
           const diskFile = path.join(SOURCES_DISK_DIR, `${j.id}-${j.idx}.md`);
@@ -321,24 +303,22 @@ async function run() {
             }),
             "utf-8",
           );
-          j.frItem.addPropertyAssignment({
-            name: "archive",
-            initializer: `{ status: "full", path: "${URL_PREFIX}/${j.id}-${j.idx}.md", retrieved: "${retrievedDate}" }`,
-          });
+          j.frItem.archive = {
+            status: "full",
+            path: `${URL_PREFIX}/${j.id}-${j.idx}.md`,
+            retrieved: retrievedDate,
+          };
         } else {
           if (j.bucket !== "unavailable")
             await logFailure(j.key, j.url, "fetch returned no content");
-          j.frItem.addPropertyAssignment({
-            name: "archive",
-            initializer: `{ status: "unavailable" }`,
-          });
+          j.frItem.archive = { status: "unavailable" };
         }
       }),
     );
   }
 
-  await sourceFile.save();
-  console.log("Done.");
+  for (const file of touched) await writeClusterFile(file);
+  console.log(`Done. Updated ${touched.size} cluster file(s). Now run: bun run build:content`);
 }
 
 run().catch((e) => {

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Big Hypotheses">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 91.4 49.81 A 6 6 0 0 1 89.81 56.84" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 97.59 45.85 A 13.31 13.31 0 0 1 89.53 65.08" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.85"/>
+    <path d="M 104.25 61.73 A 20.62 20.62 0 0 0 83.82 31.76" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.70"/>
+    <path d="M 101.33 75.57 A 27.93 27.93 0 0 1 58.34 47.95" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.55"/>
+    <path d="M 112.04 75.96 A 35.25 35.25 0 0 1 50.81 55.25" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.40"/>
+    <path d="M 99.48 92.62 A 42.56 42.56 0 0 1 51.17 27.71" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.25"/>
+    <path d="M 78.67 101.61 A 49.87 49.87 0 1 1 98.96 4.13" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.10"/>
+    <path d="M 43.89 91.03 A 57.18 57.18 0 1 1 138.68 30.19" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="0.95"/>
+    <path d="M -2 51.73 L 32.29 34.8 L 60.29 44.5 L 102 11.02" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="32.29" cy="34.8" r="2.56" fill="#b45309"/>
+</svg>

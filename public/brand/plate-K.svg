@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Compounding &amp; Time">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 68.83 17.69 A 6 6 0 0 1 68.34 26.21" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 77.6 25.9 A 13.88 13.88 0 0 0 68.7 8.52" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.87"/>
+    <path d="M 80.91 35.83 A 21.75 21.75 0 0 1 45.23 32.04" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.73"/>
+    <path d="M 82.16 45.41 A 29.63 29.63 0 0 1 36.02 30.32" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.60"/>
+    <path d="M 84.42 53.4 A 37.5 37.5 0 0 0 75.01 -14.25" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.47"/>
+    <path d="M 62.28 67.04 A 45.38 45.38 0 0 1 51.59 -21.83" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.33"/>
+    <path d="M 35.37 66.37 A 53.25 53.25 0 0 0 104.64 -13.13" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.20"/>
+    <path d="M 24.71 68.23 A 61.13 61.13 0 1 1 109.66 -19.35" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="1.07"/>
+    <path d="M -2.57 38.43 A 69 69 0 0 0 131.81 7.11" stroke="#1a1a17" stroke-opacity="0.220" stroke-width="0.93"/>
+    <path d="M -2 55.74 L 38.98 37.6 L 66.06 57.92 L 102 34.71" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="38.98" cy="37.6" r="2.39" fill="#b45309"/>
+</svg>

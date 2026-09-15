@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Physics &amp; Entropy">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 86.42 61.62 A 6 6 0 0 1 79.95 57.92" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 80.31 72.59 A 17.69 17.69 0 0 1 70.07 47.08" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.76"/>
+    <path d="M 67.29 78.73 A 29.38 29.38 0 0 1 74.29 28.54" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.52"/>
+    <path d="M 51.43 78.59 A 41.07 41.07 0 0 1 104.4 19.22" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.28"/>
+    <path d="M 36.69 35.71 A 52.76 52.76 0 1 1 132.87 78.96" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.04"/>
+    <path d="M -2 56.63 L 24.71 36.27 L 56.87 42.98 L 102 15.27" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="24.71" cy="36.27" r="2.68" fill="#b45309"/>
+</svg>

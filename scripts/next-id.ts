@@ -13,7 +13,7 @@
  * Prints the next id(s) on stdout (one per line) plus a summary on stderr, so it
  * can be consumed programmatically by the add-content flow.
  */
-import path from "path";
+import { readAllContent } from "./lib/content";
 
 async function main() {
   const prefix = process.argv[2];
@@ -24,8 +24,7 @@ async function main() {
     );
     process.exit(2);
   }
-  const mod = await import(path.join(process.cwd(), "src/data/nodes.ts"));
-  const NODES: { id: string }[] = mod.NODES;
+  const NODES: { id: string }[] = readAllContent().nodes;
 
   const re = new RegExp(`^${prefix}(\\d+)$`);
   const nums = NODES.map((n) => n.id.match(re))

@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage, type StateStorage } from "zustand/middleware";
 import { get, set, del } from "idb-keyval";
+import { resetFeedSession } from "./feedSession";
 
 const idbStorage: StateStorage = {
   getItem: async (name: string): Promise<string | null> => {
@@ -183,14 +184,24 @@ export const useStore = create<State & Actions>()(
         }
       },
       reset: () => set(initial),
-      setInterests: (tags) => set({ interests: tags }),
-      toggleInterest: (tag) =>
+      // Any change to interests invalidates the session's feed order (see
+      // lib/feedSession.ts) so the new topics take effect immediately.
+      setInterests: (tags) => {
+        resetFeedSession();
+        set({ interests: tags });
+      },
+      toggleInterest: (tag) => {
+        resetFeedSession();
         set((s) => ({
           interests: s.interests.includes(tag)
             ? s.interests.filter((t) => t !== tag)
             : [...s.interests, tag],
-        })),
-      completeOnboarding: (tags) => set({ interests: tags, onboardingComplete: true }),
+        }));
+      },
+      completeOnboarding: (tags) => {
+        resetFeedSession();
+        set({ interests: tags, onboardingComplete: true });
+      },
       skipOnboarding: () => set({ onboardingComplete: true }),
       redoOnboarding: () => set({ onboardingComplete: false }),
       setTtsRate: (rate) => set({ ttsRate: rate }),

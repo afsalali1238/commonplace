@@ -1,0 +1,342 @@
+{
+  "cluster": {
+    "id": "AF",
+    "title": "Network Theory",
+    "subtitle": "Metcalfe's law, contagion, and scale-free graphs — why connected systems behave the way they do",
+    "icon": "Share2"
+  },
+  "nodes": [
+    {
+      "id": "AF1",
+      "clusterId": "AF",
+      "title": "Metcalfe's Law",
+      "author": "Robert Metcalfe",
+      "year": 1980,
+      "medium": "Model",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "A network's value grows roughly with the square of its users, which is why the first users of a network are the hardest to get and the last are nearly free.",
+      "layer0": "Metcalfe sketched this on a slide in 1980, years before anyone called it a network effect: a network's value scales with the square of its connected users, not linearly.",
+      "layer1": "If a network has n users, possible connections grow as roughly n². Metcalfe used this to sell Ethernet: a network of 10 devices is worth far more than ten times one device, since value comes from connections, not nodes. George Gilder popularized the name in a 1993 Forbes piece, and it became the logic behind every platform's race to reach critical mass first — early users get a network nobody wants yet; late users get one everybody needs.",
+      "layer2": "What's the smallest number of connected users your product or idea needs before the network effect starts pulling new users in for you, instead of you pulling them in?",
+      "quiz": {
+        "question": "Why does Metcalfe's Law make a platform's early users disproportionately hard to acquire, and later users disproportionately easy?",
+        "options": [
+          "Early users pay lower prices due to promotional discounts",
+          "Network value grows with the square of connected users, so a small early network offers little value while a large late network offers enormous value",
+          "Early adopters are naturally more skeptical people",
+          "Company marketing budgets are always smaller at launch"
+        ],
+        "correctIndex": 1,
+        "explanation": "Because value scales roughly as n², a network of 10 people offers about 45 possible connections while one of 1,000 offers about 500,000 — the same product becomes exponentially more valuable to join purely from network size, independent of any product improvement."
+      },
+      "related": ["I2", "I10", "AF2"],
+      "furtherReading": [
+        {
+          "label": "Metcalfe's Law",
+          "source": "article",
+          "url": "https://en.wikipedia.org/wiki/Metcalfe's_law",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF1-0.md",
+            "retrieved": "2026-07-17"
+          }
+        },
+        {
+          "label": "Beyond Metcalfe's Law for Network Effects",
+          "source": "article",
+          "url": "https://a16z.com/beyond-metcalfes-law-for-network-effects/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF1-1.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects", "Tech Adoption & Disruption"]
+    },
+    {
+      "id": "AF2",
+      "clusterId": "AF",
+      "title": "Six Degrees of Separation (The Small-World Experiment)",
+      "author": "Stanley Milgram",
+      "year": 1967,
+      "medium": "Paper",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Any two strangers are connected by a surprisingly short chain of acquaintances, because social networks are far more efficiently wired than their size would suggest.",
+      "layer0": "Milgram's 1967 mail experiment asked strangers in Nebraska to route a folder to one specific Boston stockbroker using only people they knew personally. It usually took just a handful of hops.",
+      "layer1": "Milgram's participants forwarded a folder person-to-person, each passing it to whoever seemed 'closer' to the target, with no map of the network. Chains that completed averaged about 4.4 intermediaries — later popularized as 'six degrees,' though Milgram never used that phrase. Social networks aren't the sprawling, clustered webs they look like from inside — a few long-range ties collapse the distance between any two people.",
+      "layer2": "Who's one person in your network who probably connects you, in two or three hops, to someone genuinely useful that you currently assume is completely out of reach?",
+      "quiz": {
+        "question": "What made Milgram's small-world result surprising, given that participants had no map of the overall social network?",
+        "options": [
+          "That successful chains reached a specific stranger in only a handful of steps, implying social networks are collapsed by a few long-range connections rather than being purely local webs",
+          "That most chains never reached the target at all",
+          "That every completed chain used exactly six intermediaries",
+          "That the experiment proved social networks are completely random"
+        ],
+        "correctIndex": 0,
+        "explanation": "The short average chain length (about 4.4 steps) suggested that despite social networks looking locally clustered from any individual's viewpoint, a small number of well-placed long-range acquaintances make the whole network far smaller in practice than its size implies."
+      },
+      "related": ["AF1", "I2", "M5"],
+      "furtherReading": [
+        {
+          "label": "Small-world experiment",
+          "source": "article",
+          "url": "https://en.wikipedia.org/wiki/Small-world_experiment",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF2-0.md",
+            "retrieved": "2026-07-17"
+          }
+        },
+        {
+          "label": "Could it be a Big World After All? The 'Six Degrees of Separation' Myth",
+          "source": "article",
+          "url": "https://www.cs.princeton.edu/~chazelle/courses/BIB/big-world",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF2-1.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects"]
+    },
+    {
+      "id": "AF3",
+      "clusterId": "AF",
+      "title": "The Strength of Weak Ties",
+      "author": "Mark Granovetter",
+      "year": 1973,
+      "medium": "Paper",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Granovetter showed that infrequent, bridging acquaintances — weak ties — matter more for new information and job finds than close friends, because close friends overlap in what they already know.",
+      "layer0": "Granovetter's 1973 insight flipped intuition: your close friends are not your best source of new opportunities — your acquaintances are.",
+      "layer1": "Strong ties cluster — your close friends know each other and share the same information pool. Weak ties bridge clusters; they are the only edges that carry genuinely novel information across otherwise disconnected groups. In a 1973 job-search study, most people found jobs through acquaintances they saw occasionally, not through close confidants. Design implication: optimize for bridges, not just bond strength.",
+      "layer2": "Which 'weak tie' — someone you see twice a year, not daily — is a single bridge to an otherwise unreachable cluster, and when did you last activate it with a specific ask?",
+      "quiz": {
+        "question": "Why do weak ties disproportionately deliver novel information and job leads?",
+        "options": [
+          "They bridge otherwise disconnected clusters, carrying information that strong-tie cliques already share internally",
+          "Weak ties are inherently more intelligent and better informed than strong ties",
+          "People trust acquaintances more than close friends when sharing sensitive job information",
+          "Weak ties are more numerous, so they win by sheer count rather than by structural position"
+        ],
+        "correctIndex": 0,
+        "explanation": "Granovetter's mechanism is structural: strong ties are redundant within a cluster; only bridging weak ties import information the cluster doesn't already have."
+      },
+      "related": ["AF4", "AF2", "M1", "S7"],
+      "furtherReading": [
+        {
+          "label": "The Strength of Weak Ties (1973)",
+          "source": "Mark Granovetter / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Interpersonal_ties",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF3-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects", "Incentives & Systems"]
+    },
+    {
+      "id": "AF4",
+      "clusterId": "AF",
+      "title": "Power Laws & Scale-Free Networks",
+      "author": "Albert-László Barabási",
+      "year": 1999,
+      "medium": "Paper",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Barabási showed many real networks — the web, actor collaborations, protein interactions — are scale-free: a few hubs have vastly more links than average, following a power law produced by preferential attachment, not by bell-curve randomness.",
+      "layer0": "Barabási mapped the web in 1999 expecting a bell curve and found a power law instead: a handful of pages have millions of links, most have almost none.",
+      "layer1": "In a scale-free network, degree distribution follows P(k) ~ k^-γ; growth plus preferential attachment ('the rich get richer' — new nodes attach preferentially to already well-connected nodes) generates hubs. Consequences: scale-free networks are robust to random failure but fragile to targeted attack on hubs, and 'average node' is a misleading statistic — the median and the hub live in different worlds.",
+      "layer2": "Where are you using an 'average' to describe a power-law system — user engagement, revenue per customer — where the hub/median distinction would change the strategy?",
+      "quiz": {
+        "question": "What structural feature defines a scale-free network?",
+        "options": [
+          "Node degrees follow a power law with a few highly connected hubs and many poorly connected nodes, generated by growth plus preferential attachment",
+          "Every node has roughly the same number of connections, forming a uniform random network",
+          "Scale-free networks have no hubs and their degree distribution is a perfect bell curve",
+          "They are defined solely by having a large total number of nodes, regardless of connection pattern"
+        ],
+        "correctIndex": 0,
+        "explanation": "Scale-free means power-law degree distribution; Barabási's model explains it mechanically via incremental growth and bias toward attaching to already popular nodes."
+      },
+      "related": ["AF5", "AF1", "I10", "W3"],
+      "furtherReading": [
+        {
+          "label": "Emergence of Scaling in Random Networks — power laws & scale-free networks (Barabási & Albert, 1999)",
+          "source": "Barabási & Albert / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Power_law",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF4-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects", "Tech Adoption & Disruption"]
+    },
+    {
+      "id": "AF5",
+      "clusterId": "AF",
+      "title": "Dunbar's Number",
+      "author": "Robin Dunbar",
+      "year": 1992,
+      "medium": "Paper",
+      "category": "Anthropology",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Dunbar proposed humans can maintain roughly 150 stable social relationships, capped by neocortex size — beyond that, groups need hierarchy, rules, or substructure to stay coherent.",
+      "layer0": "Dunbar correlated primate neocortex size with group size and predicted human groups stabilize around 150 — the largest village that still runs on gossip instead of formal structure.",
+      "layer1": "The 150 is not magic but layered: ~5 intimate, ~15 close, ~50 friends, ~150 meaningful contacts, then acquaintances. Relationship maintenance scales with time and cognitive tracking; beyond the limit, informal reciprocity breaks and defection rises unless you add roles, rituals, or software. Military companies, Hutterite colonies, and effective Discord communities cluster near the same bands for the same reason.",
+      "layer2": "What community or team are you trying to run as a single flat 300-person gossip network that would function better as overlapping 30-50-person clusters with bridges?",
+      "quiz": {
+        "question": "What constrains Dunbar's number according to Dunbar's original argument?",
+        "options": [
+          "Neocortex size and the cognitive cost of tracking stable relationships, which caps the number of meaningful reciprocity-tracked ties",
+          "Geographic distance, since humans can only physically meet about 150 people in a lifetime",
+          "A legal limit imposed by early human tribal law that was later culturally transmitted",
+          "The number of hours in a day, which mathematically allows exactly 150 friendships"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dunbar's prediction is neuro-anatomical: maintaining a reciprocity-tracked relationship costs cortical capacity, so the stable network size is cognitively bounded."
+      },
+      "related": ["AF6", "AF3", "V1", "M2"],
+      "furtherReading": [
+        {
+          "label": "Neocortex size as a constraint on group size — Dunbar's number",
+          "source": "Robin Dunbar / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dunbar%27s_number",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF5-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Social Constructs", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "AF6",
+      "clusterId": "AF",
+      "title": "Reed's Law & Group-Forming Networks",
+      "author": "David P. Reed",
+      "year": 2001,
+      "medium": "Essay",
+      "category": "Network Theory",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Reed argued that tools that let users form groups — not just connect one-to-one or broadcast one-to-many — have value that scales as 2^n, vastly outpacing Metcalfe's n², because the number of possible subgroups explodes.",
+      "layer0": "Metcalfe counted connections. Reed counted groups. His 2001 addition: the number of possible subgroups in a network of n people is 2ⁿ, which is why group-forming tools — mailing lists, subreddits, Discord servers — can become explosive once they cross a threshold.",
+      "layer1": "Three laws stack: Sarnoff (value ~ n, broadcast), Metcalfe (value ~ n², pairwise connections), Reed (value ~ 2ⁿ, group formation). Reed's law explains why 'add DMs' rarely transforms a product but 'add user-creatable groups' can — groups generate distinct combinatorial value per subgroup, not per user. Catch: 2ⁿ overstates if groups have no distinct purpose; realized value tracks useful groups, not all possible subsets.",
+      "layer2": "Is your product stuck optimizing n² pairwise connections when the 10× lever would be enabling users to self-organize into high-value subgroups you haven't pre-defined?",
+      "quiz": {
+        "question": "When does Reed's Law most clearly outpace Metcalfe's Law in practice?",
+        "options": [
+          "When the tool lets users self-organize into many distinct, purpose-specific subgroups whose value is combinatorial, not just pairwise",
+          "When the network only supports one-to-one messaging and no group formation is allowed",
+          "When groups are forbidden from forming and value comes only from broadcast",
+          "Reed's law always overstates by exactly 2×, so it never meaningfully differs from Metcalfe's"
+        ],
+        "correctIndex": 0,
+        "explanation": "Reed's 2ⁿ applies to group-forming networks; its exponential only materializes when the platform enables many useful, distinct subgroups to emerge, not just pairwise links."
+      },
+      "related": ["AF7", "AF1", "AF4", "I10"],
+      "furtherReading": [
+        {
+          "label": "The Law of the Pack — Reed's law & group-forming networks (2001)",
+          "source": "David P. Reed / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reed%27s_law",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF6-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects", "Tech Adoption & Disruption"]
+    },
+    {
+      "id": "AF7",
+      "clusterId": "AF",
+      "title": "Preferential Attachment & the Matthew Effect",
+      "author": "Robert K. Merton / Derek de Solla Price",
+      "year": 1968,
+      "medium": "Concept",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Merton's Matthew Effect — 'to those who have, more will be given' — and its network formalization, preferential attachment, explain why early advantages compound into durable hubs: newcomers disproportionately link to already popular nodes.",
+      "layer0": "Merton noticed in 1968 that already famous scientists get disproportionate credit for joint work — the same result by a newcomer gets ignored. Price and Barabási later showed networks grow the same way.",
+      "layer1": "If each new node's chance of linking to an existing node is proportional to that node's current degree, early leads compound: a small early edge in links becomes a large eventual hub. This generates the same power law Barabási measured empirically and explains why 'just be first' can beat 'be best' when attachment is preferential and switching costs lock attachment in. Mitigation is structural: discovery that samples outside degree (editorial picks, random surfaces) breaks pure attachment.",
+      "layer2": "Which early-advantage flywheel in your product — default, ranking, or social proof — is preferential attachment running on autopilot, and what counter-discovery surface would dilute it?",
+      "quiz": {
+        "question": "What does preferential attachment predict about early advantages in a growing network?",
+        "options": [
+          "A small early lead in connections tends to compound, as newcomers attach disproportionately to already well-connected nodes",
+          "Early advantages quickly wash out because later nodes preferentially attach to the least-connected nodes",
+          "Network growth is entirely random and early position has no systematic effect on later degree",
+          "The Matthew effect only applies to sociological prestige and has no network mechanism"
+        ],
+        "correctIndex": 0,
+        "explanation": "Attachment proportional to existing degree is a rich-get-richer mechanism; early hubs accumulate advantage over time, producing the power-law degree distribution observed in many real networks."
+      },
+      "related": ["AF8", "AF4", "W4", "A10"],
+      "furtherReading": [
+        {
+          "label": "The Matthew Effect in Science (Merton, 1968)",
+          "source": "Robert K. Merton / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Matthew_effect",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF7-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Moats & Network Effects", "Compounding & Patience"]
+    },
+    {
+      "id": "AF8",
+      "clusterId": "AF",
+      "title": "Threshold Models & Cascades",
+      "author": "Mark Granovetter / Thomas Schelling",
+      "year": 1978,
+      "medium": "Model",
+      "category": "Network Theory",
+      "epistemicStatus": "Canonical",
+      "thesis": "Threshold models show identical groups can tip at very different points even with similar average preferences — because cascades depend on the distribution of thresholds, not just the mean, and a few low-threshold early actors determine whether contagion tips.",
+      "layer0": "Granovetter asked in 1978 why two crowds with the same average willingness to riot behave oppositely — one riots, one doesn't. The answer is not averages but thresholds: who needs one other person to join, who needs ten.",
+      "layer1": "Each person has a threshold — riot if at least k others riot. If low-threshold actors are present, their action pushes the next threshold holder over, triggering a chain. Schelling's segregation model shows the same: mild individual preferences tip into sharp collective segregation without anyone wanting segregation per se. Outcome is distribution-sensitive and path-dependent; seeding the first few actors matters more than persuading the average.",
+      "layer2": "What cascade are you trying to create by convincing the average when you should be hunting the 3–5 lowest-threshold actors and sequencing them first?",
+      "quiz": {
+        "question": "Why can two groups with the same average threshold behave oppositely in threshold cascade models?",
+        "options": [
+          "Because the full distribution of thresholds and the ordering of low-threshold early actors determines whether a chain reaction tips, not the mean",
+          "Because the mean is the only statistic that matters, so groups with the same mean must always tip identically",
+          "Because cascades only depend on group size and threshold distribution plays no role",
+          "Because threshold models predict every group will eventually cascade regardless of distribution"
+        ],
+        "correctIndex": 0,
+        "explanation": "Granovetter's insight is distributional: if a few low-threshold actors exist to start the chain, successive thresholds fall; without them, the same average never tips."
+      },
+      "related": ["AF3", "AF7", "M5", "I13"],
+      "furtherReading": [
+        {
+          "label": "Threshold Models of Collective Behavior (Granovetter 1978; Schelling 1971)",
+          "source": "Granovetter & Schelling / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Threshold_model",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AF8-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Incentives & Systems", "Moats & Network Effects"]
+    }
+  ]
+}

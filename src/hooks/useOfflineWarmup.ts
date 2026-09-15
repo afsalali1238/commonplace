@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useRouter } from "@tanstack/react-router";
 import { NODES } from "@/data/nodes";
-import { MAIN_TAB_PATHS } from "@/lib/mainRoutes";
+import { MAIN_TAB_PATHS, SECONDARY_PATHS } from "@/lib/mainRoutes";
+import { loadClusterBodies } from "@/lib/bodies";
 
 /**
  * Once the service worker is controlling the page, silently warm the
@@ -19,16 +20,16 @@ import { MAIN_TAB_PATHS } from "@/lib/mainRoutes";
  *    loaded, navigating to any other page is a client-side transition
  *    that doesn't need the network at all.
  *
- * Node content itself (all layers, quizzes, related links, sources) is
- * static data bundled into the JS, not fetched per-node, so there's
- * nothing to warm per node id: every `/node/$id` URL is served by the
- * same route chunk. Warming it once (with any valid id) is enough to
- * make every node page available offline. The archive reader
- * (`/read/$id`) is the one screen that *does* fetch per-item content (the
- * markdown source file itself), so its route chunk gets the same
- * one-time warm as the other tabs; the individual .md files are cached
- * lazily by the service worker's stale-while-revalidate rule the first
- * time each one is actually opened.
+ * Node content is in two halves. The index (title, thesis, layer0,
+ * related, tags for every node) is bundled into the JS, so every
+ * `/node/$id` URL is served by the same route chunk and warming it once
+ * (with any valid id) covers all of them. The bodies (layer1, layer2,
+ * quiz, further reading) are 38 per-cluster JSON files under
+ * /content/bodies/ — they're in the service worker's precache list (see
+ * scripts/inject-manifest.ts), and this hook also pulls them into the
+ * in-memory cache so the first node opened offline doesn't even need the
+ * SW round-trip. The archive reader (`/read/$id`) fetches per-item
+ * markdown, precached the same way; its route chunk gets the one-time warm.
  */
 export function useOfflineWarmup() {
   const router = useRouter();
@@ -74,14 +75,20 @@ export function useOfflineWarmup() {
       if (firstNodeId) {
         await router.preloadRoute({ to: "/node/$id", params: { id: firstNodeId } }).catch(() => {});
       }
-      const firstArchived = NODES.flatMap((n) => n.furtherReading)
-        .find((f) => f.archive?.status === "full" && f.archive.path)
-        ?.archive?.path?.replace(/^content\/sources\//, "")
-        .replace(/\.md$/, "");
-      if (firstArchived) {
+      // Any archived source id works to warm the reader's route chunk; the
+      // first node's first source is archived (validate-nodes.ts would flag
+      // an un-archived source in cluster A), and a 404 here is harmless.
+      if (firstNodeId) {
         await router
-          .preloadRoute({ to: "/read/$id", params: { id: firstArchived } })
+          .preloadRoute({ to: "/read/$id", params: { id: `${firstNodeId}-0` } })
           .catch(() => {});
+      }
+
+      // Bodies, one cluster at a time so a slow connection isn't saturated.
+      const clusterIds = [...new Set(NODES.map((n) => n.clusterId))];
+      for (const clusterId of clusterIds) {
+        if (cancelled) return;
+        await loadClusterBodies(clusterId).catch(() => {});
       }
     }
 

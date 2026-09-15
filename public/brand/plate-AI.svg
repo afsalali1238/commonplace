@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Governance &amp; Power">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 38.28 6.94 A 6 6 0 0 1 38.22 -1.63" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 24.91 12.25 A 20 20 0 0 0 55.5 17.79" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.76"/>
+    <path d="M 9.26 -4.74 A 34 34 0 0 1 69.45 -18.03" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.52"/>
+    <path d="M 20.6 -40.12 A 48.01 48.01 0 0 1 72.79 39.84" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.28"/>
+    <path d="M 21.05 -55.57 A 62.01 62.01 0 0 1 68.52 58.89" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.04"/>
+    <path d="M -2 51.24 L 35.02 30.31 L 64.47 54.7 L 102 23.25" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="64.47" cy="54.7" r="2.65" fill="#b45309"/>
+</svg>

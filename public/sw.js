@@ -1,5 +1,5 @@
-// Unknown service worker — makes the app installable and offline-capable.
-const VERSION = "unknown-v3";
+// Commonplace service worker — makes the app installable and offline-capable.
+const VERSION = "commonplace-v3";
 const APP_SHELL = "shell-" + VERSION;
 const RUNTIME = "runtime-" + VERSION;
 

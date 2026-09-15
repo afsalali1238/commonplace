@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commonplace">
+  <!-- Dark-mode twin of logo.svg (Marginalia mark, docs/BRAND.md concept 1).
+       The light mark uses near-black ink (#1a1a17) on a transparent ground,
+       which vanishes against dark browser tab/toolbars; this variant swaps
+       in the dark-theme ink token so the favicon stays visible when the OS
+       prefers dark mode. Linked from __root.tsx with
+       media="(prefers-color-scheme: dark)". -->
+  <g stroke="#f2ede4" stroke-width="14.8" stroke-linecap="round" fill="none">
+    <line x1="50" y1="24.6" x2="50" y2="75.4"/>
+    <line x1="27.9" y1="37.3" x2="72.1" y2="62.7"/>
+    <line x1="27.9" y1="62.7" x2="72.1" y2="37.3"/>
+  </g>
+  <line x1="50" y1="50" x2="72.1" y2="37.3" stroke="#d97706" stroke-width="14.8" stroke-linecap="round"/>
+</svg>

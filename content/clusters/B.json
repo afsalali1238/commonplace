@@ -1,0 +1,401 @@
+{
+  "cluster": {
+    "id": "B",
+    "title": "Company Origins",
+    "subtitle": "The actual pitch decks and memos that started famous companies",
+    "icon": "Building2"
+  },
+  "nodes": [
+    {
+      "id": "B1",
+      "clusterId": "B",
+      "title": "Fairchild Semiconductor Founding",
+      "author": "Arthur Rock / Eugene Kleiner",
+      "year": 1957,
+      "medium": "Letter",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "Eight scientists who walked out on Shockley could build a silicon-device company if anyone would back them; about 35 corporations were approached and every one passed.",
+      "layer0": "Eight engineers quit Shockley Semiconductor Laboratory in 1957 because its founder, Nobel laureate William Shockley, was abrasive and paranoid to the point of being nearly unmanageable. They wanted to start their own company but had no personal capital and no existing playbook for funding something like this — banks didn't lend to unproven engineers with no product, and there was no venture capital industry yet to call. Arthur Rock, then a young banker, spent weeks pitching roughly 35 existing corporations to back the group as a new subsidiary. All 35 passed. Fairchild Camera and Instrument finally agreed, fronting the capital in exchange for the right to buy the whole new company outright later if it succeeded.",
+      "layer1": "The mechanism Rock improvised — a corporate parent funds an independent new entity, gets an option to acquire it later rather than just buying stock upfront, and the founding engineers keep day-to-day control and equity in the meantime — is structurally the ancestor of the modern VC term sheet (investor capital in exchange for a claim on future value, founders retain operating control). Fairchild Camera and Instrument put in $1.38 million for the right to buy the whole company for $3 million within eight years, which it later exercised. That single deal proved something no one had proven before: that engineers with no assets except expertise and a grudge against a bad boss could be financed as a standalone company, not just hired as employees elsewhere.",
+      "layer2": "Think of a time you or someone you know left a job specifically because of a bad manager, not because the work itself was bad. What would have had to be true — in terms of money, trust, or structure — for that group of frustrated coworkers to start something of their own instead of just scattering to separate new jobs? What's the modern equivalent of what Arthur Rock provided?",
+      "quiz": {
+        "question": "What made the Fairchild deal structurally different from a normal stock purchase, and why did that matter?",
+        "options": [
+          "Fairchild Camera and Instrument got an option to buy the entire new company later, rather than just purchasing shares upfront — letting founders keep control while proving the business worked",
+          "The founders were required to repay the investment in cash within one year regardless of performance",
+          "The deal was funded entirely by a government small-business grant, not a private company",
+          "Shockley Semiconductor itself provided the funding as a severance package"
+        ],
+        "correctIndex": 0,
+        "explanation": "The Fairchild deal pioneered the use of equity options rather than a standard buyout, incentivizing the founders to build the company while giving the parent company a de-risked path to ownership."
+      },
+      "related": ["B2", "B3", "B4", "B5"],
+      "furtherReading": [
+        {
+          "type": "watch",
+          "label": "American Experience: Silicon Valley (PBS documentary)",
+          "source": "PBS, 2013",
+          "url": "https://www.pbs.org/wgbh/americanexperience/films/silicon/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B1-0.md",
+            "retrieved": "2026-07-14"
+          }
+        },
+        {
+          "type": "read",
+          "label": "How a deal with 8 'traitors' would help build Intel, Apple — and Silicon Valley",
+          "source": "NPR — The Indicator",
+          "url": "https://www.npr.org/transcripts/1160283155",
+          "archive": {
+            "status": "unavailable"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B2",
+      "clusterId": "B",
+      "title": "A Proposal to American Research and Development",
+      "author": "Ken Olsen / Harlan Anderson",
+      "year": 1957,
+      "medium": "Memo",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "A small team could sell profitable digital circuit modules first and interactive computers later, at a moment when investors were sure computers were a money-losing business.",
+      "layer0": "In 1957, two MIT Lincoln Laboratory engineers, Ken Olsen and Harlan Anderson, wanted to build smaller, cheaper computers to challenge IBM's expensive mainframes. IBM and other established players had already turned them down, and at the time 'the computer business' was widely seen by investors as a money-loser — only giant, well-capitalized companies could survive it. So instead of asking for money to build computers, they proposed building profitable digital circuit modules first, using that revenue to prove the team and the technology worked, and only later building full interactive computers. American Research and Development Corporation (ARD), one of the first venture firms in the US, funded them: $70,000 in equity for 70% of the new company, Digital Equipment Corporation, plus a further loan.",
+      "layer1": "The mechanism here is sequencing risk to match what investors could actually stomach. A direct pitch — 'give us money to build computers' — was, at the time, effectively unfundable, because the category itself had a bad reputation with capital allocators. By proposing a lower-risk first product (circuit modules, already known to be sellable and profitable) that would generate real revenue and de-risk the team's execution ability, Olsen and Anderson gave ARD a way to say yes to something that looked like a normal, provable business, while quietly building toward the bigger and riskier ambition. DEC's PDP series of minicomputers later undercut mainframe prices by an order of magnitude, and ARD's $70,000 stake was worth $355 million by 1971 — the return that made the entire ARD fund look successful, and helped convince other institutional money that venture capital as an asset class could work.",
+      "layer2": "Think of an ambitious goal you have that would be hard to get anyone to back directly because the category has a bad reputation or looks too risky on its face. What's the smaller, provable, revenue-generating version of that goal you could pitch first — one that builds credibility and capital toward the bigger ambition, the way circuit modules did for DEC's computers?",
+      "quiz": {
+        "question": "Why did Olsen and Anderson pitch selling circuit modules before pitching interactive computers?",
+        "options": [
+          "Circuit modules were more profitable long-term than computers would ever be",
+          "The computer business had a reputation as an investor money-loser at the time, so a smaller proven product de-risked the pitch and built credibility toward the bigger ambition",
+          "IBM required them to prove circuit expertise before entering the computer market",
+          "ARD's charter legally prohibited it from funding computer companies directly"
+        ],
+        "correctIndex": 1,
+        "explanation": "Selling smaller, proven components (circuit modules) first generated immediate cash flow and proved the team's competence, which was essential to overcome investor skepticism about the actual goal of building computers."
+      },
+      "related": ["B1", "B3", "B4", "B7"],
+      "furtherReading": [
+        {
+          "type": "read",
+          "label": "American Research and Development Corporation",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B2-0.md",
+            "retrieved": "2026-09-06"
+          }
+        },
+        {
+          "type": "read",
+          "label": "Ken Olsen — PDP-1 Restoration Project",
+          "source": "Computer History Museum",
+          "url": "https://www.computerhistory.org/pdp-1/ken-olsen/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B2-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B3",
+      "clusterId": "B",
+      "title": "YouTube Investment Memo",
+      "author": "Roelof Botha / Sequoia Capital",
+      "year": 2005,
+      "medium": "Memo",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "YouTube is capturing explosive user-generated video growth and will define online video.",
+      "layer0": "In 2005, YouTube was a tiny startup with almost no revenue model, uploading videos that mostly weren't theirs to license. Roelof Botha, a Sequoia partner, wrote an internal memo arguing the firm should invest anyway, because the sheer volume and growth rate of user-generated video uploads was a leading indicator that YouTube was becoming the default place people went to watch and share video online — a position worth being early to regardless of how monetization would eventually work. Sequoia invested $1 million, followed by a $4 million Series A. Google acquired YouTube about eighteen months later for $1.65 billion, returning roughly 57x to Sequoia.",
+      "layer1": "The mechanism is prioritizing a leading behavioral indicator (explosive, organic content-upload growth from ordinary users, not marketing-driven signups) over a missing business model. Botha's bet was that becoming the default consumer habit for a category — 'the place you go to watch a video' — creates a position so valuable that a monetization strategy can be figured out later, whereas waiting for a proven revenue model before investing would mean missing the window entirely, since by the time revenue is proven the position is already taken by someone else. This is the same logic later formalized in aggregation-style thinking: owning the user's default behavior first, monetizing the resulting leverage second.",
+      "layer2": "Think of a product or app you or people around you use constantly that still doesn't obviously make money for the company behind it. Using Botha's logic, what behavioral signal (not revenue) would tell you whether that company is building a durable, valuable position anyway — versus just burning cash with no real foothold?",
+      "quiz": {
+        "question": "What did Roelof Botha's YouTube investment memo prioritize as evidence the company was worth backing, despite having little revenue?",
+        "options": [
+          "A signed advertising contract with a major brand",
+          "A patent filing for YouTube's video compression technology",
+          "The explosive volume and growth rate of user-generated video uploads, as a leading indicator of becoming the default place for online video",
+          "Projected profitability within the first 12 months"
+        ],
+        "correctIndex": 2,
+        "explanation": "Sequoia looked past YouTube's lack of a clear revenue model, recognizing that its astonishing compounding growth in user-generated content and viewership signaled it would become the foundational platform for internet video."
+      },
+      "related": ["B1", "B2", "B4", "B7"],
+      "furtherReading": [
+        {
+          "type": "watch",
+          "label": "Sequoia's Roelof Botha on Decision Making, AI, and the Next Trillion Dollar Market",
+          "source": "YouTube",
+          "url": "https://www.youtube.com/watch?v=z8njhsYUNNk",
+          "archive": {
+            "status": "unavailable"
+          }
+        },
+        {
+          "type": "read",
+          "label": "The confidential YouTube Investment Memo by Sequoia you were never meant to see",
+          "source": "Alexander Jarvis",
+          "url": "https://www.alexanderjarvis.com/the-confidential-youtube-investment-memo-by-sequoia-you-were-never-meant-to-see/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B3-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B4",
+      "clusterId": "B",
+      "title": "Facebook (thefacebook) Media Kit / Early Pitch",
+      "author": "Facebook",
+      "year": 2004,
+      "medium": "Deck",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "A college social network with dense engagement and a captive, targetable young audience for advertisers.",
+      "layer0": "Shortly after thefacebook.com launched in 2004, cofounder Eduardo Saverin put together a media kit to pitch advertisers directly, arguing the site's value wasn't its size (it had roughly 70,000 users at the time) but its density: students were spending hours a day on it, checking it obsessively, and it gave advertisers a precisely targetable, captive young audience segmented by school. The deck leaned on real usage data — about 90 million pageviews a month within its first year — to make the case that attention, not raw headcount, was the sellable asset.",
+      "layer1": "The mechanism is substituting engagement depth for audience size as the metric that actually matters to an advertiser. A media buyer comparing two sites with different total user counts will pay more for the one where a narrower audience is more predictably, repeatedly, and voluntarily present — because ad exposure compounds with frequency of visits, not just headcount. thefacebook's pitch worked because campus-level social graphs made engagement almost involuntary (your friends were already there, so you kept coming back), which is a structural property, not a marketing achievement — and it's the same underlying logic that later justified massive valuations for platforms with modest user counts but very high engagement frequency.",
+      "layer2": "Pick two apps you use: one you open dozens of times a day out of habit, and one you use occasionally no matter how large its total user base is. If you were selling ad space, which would you argue is actually more valuable per user, and what evidence (beyond size) would you use to make that case to a skeptical buyer?",
+      "quiz": {
+        "question": "What was the core argument of Facebook's 2004 media kit pitch to advertisers?",
+        "options": [
+          "That Facebook had more total users than any competing site",
+          "That Facebook had already signed exclusive contracts with major brands",
+          "That the site would soon expand beyond colleges to the general public",
+          "That dense, repeated engagement from a narrow, targetable audience was more valuable to advertisers than a larger but less engaged audience"
+        ],
+        "correctIndex": 3,
+        "explanation": "Facebook successfully argued that an incredibly dense, highly engaged, and highly targeted user base (college students) was vastly more valuable to advertisers than the sprawling, low-engagement portals of Web 1.0."
+      },
+      "related": ["B1", "B2", "B3", "B8"],
+      "furtherReading": [
+        {
+          "type": "read",
+          "label": "This Was Facebook's First Media Pitch In 2004",
+          "source": "OfficeChai",
+          "url": "https://officechai.com/stories/facebook-advertising-pitch-deck/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B4-0.md",
+            "retrieved": "2026-07-14"
+          }
+        },
+        {
+          "type": "read",
+          "label": "The Pitch Deck Facebook Used to Raise $13.8B",
+          "source": "Failory",
+          "url": "https://www.failory.com/pitch-deck/facebook",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B4-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B5",
+      "clusterId": "B",
+      "title": "UberCab Pitch Deck",
+      "author": "Uber (Garrett Camp / Travis Kalanick)",
+      "year": 2008,
+      "medium": "Deck",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "On-demand black-car service summoned from a phone, pitched as 'NextGen car service.'",
+      "layer0": "After spending nearly $800 hiring a private driver in Paris on New Year's Eve, Travis Kalanick and Garrett Camp pitched 'UberCab' in 2008 as a members-only, invite-only black-car service you could summon from your phone — explicitly positioned as the 'NetJets of car services,' aimed at professionals in a handful of American cities, not as a mass-market taxi replacement. The deck's own financial projections were modest by today's standards: a best-case scenario of $1 billion in revenue, a more realistic target of reaching 5% of top US cities and $20 million in profit. It raised roughly $200,000.",
+      "layer1": "The mechanism worth noticing is how narrowly the earliest version of a category-defining idea is usually framed, and how much of that narrowness is about matching the pitch to what's provable with zero traction yet, not about the founders' actual ambition ceiling. Positioning as a premium, invite-only alternative to black-car services (a small, already-proven market) made the pitch legible and fundable, even though the deck itself briefly touched on ride-pooling concepts (UberPool) years before that ever launched — meaning the bigger idea existed in the founders' heads, but wasn't what got pitched first. This mirrors a broader pattern: ambitious ideas often get funded initially as a smaller, adjacent, already-validated market, with the larger vision earned incrementally as traction accumulates.",
+      "layer2": "If you had an ambitious idea today that felt too big or unproven to pitch directly, what smaller, already-validated adjacent market could you frame it as first — the way UberCab framed 'replace all car ownership and taxis everywhere' as merely 'a nicer black car service for professionals'?",
+      "quiz": {
+        "question": "How did Kalanick and Camp initially position UberCab in their 2008 pitch deck?",
+        "options": [
+          "As a premium, invite-only black-car service comparable to NetJets, aimed at professionals rather than the general public",
+          "As a direct, mass-market replacement for city taxi services",
+          "As a logistics platform for package delivery that would later add rides",
+          "As a public transit partnership with city governments"
+        ],
+        "correctIndex": 0,
+        "explanation": "Uber initially pitched itself as a niche, premium black-car service for professionals, which served as a profitable wedge to eventually expand into the mass-market ride-hailing giant it is today."
+      },
+      "related": ["B1", "B2", "B3", "B8"],
+      "furtherReading": [
+        {
+          "type": "read",
+          "label": "Uber IPO: Inside The 2008 Pitch That Birthed An $80 Billion Startup",
+          "source": "Forbes",
+          "url": "https://www.forbes.com/sites/bizcarson/2019/05/10/uber-ipo-original-2008-pitch-deck/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B5-0.md",
+            "retrieved": "2026-07-14"
+          }
+        },
+        {
+          "type": "read",
+          "label": "Take a look at Uber's first pitch deck from 2008",
+          "source": "Recode",
+          "url": "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B5-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B6",
+      "clusterId": "B",
+      "title": "Airbnb Series A Pitch Deck",
+      "author": "Airbnb (Brian Chesky et al.)",
+      "year": 2009,
+      "medium": "Deck",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "A web platform to book rooms with locals rather than hotels.",
+      "layer0": "By 2009, Airbnb's founders had already nearly run out of money and options, having bootstrapped through selling branded cereal boxes to survive. Their Series A deck laid out a simple structure — problem, solution, market size, early traction, team, and the ask — pitching a web platform where travelers could book rooms with local hosts instead of hotels. It secured $600,000 from Sequoia Capital and Y Ventures, arriving in the middle of the 2008-09 financial crisis, when investors were unusually risk-averse.",
+      "layer1": "The mechanism is that the deck's power came from demonstrating real early traction and disciplined execution under constraint, not from an exciting narrative alone. Raising money for an unproven, culturally odd idea (strangers renting out rooms in their homes to other strangers) during a financial crisis required evidence that the founders could execute with almost no resources — the cereal-box bootstrapping story wasn't a cute anecdote, it was proof of exactly the scrappiness investors needed to see to trust the team with capital when nothing else about the business looked obviously fundable. The now-famous problem/solution/market/traction/team/ask structure became a template precisely because it forces a founder to show evidence at each step rather than just asserting a vision.",
+      "layer2": "Think about a resource-constrained situation you handled by adapting quickly rather than giving up (not necessarily business-related). If you were pitching yourself for something today, what's the equivalent of Airbnb's cereal boxes — the piece of scrappy proof that would make someone trust you with something bigger, even if the anecdote itself seems unrelated to the ask?",
+      "quiz": {
+        "question": "Why did the bootstrapped 'cereal box' story matter to Airbnb's fundraising, beyond being a memorable anecdote?",
+        "options": [
+          "It generated enough direct revenue to fund the company without needing investors",
+          "It demonstrated the founders' resourcefulness and execution under extreme constraint, which mattered for trust during a financial crisis when the core idea itself looked unproven",
+          "It was a marketing campaign specifically designed to attract Sequoia's attention",
+          "It proved there was already strong demand for the room-booking platform itself"
+        ],
+        "correctIndex": 1,
+        "explanation": "The 'Obama O's' cereal boxes proved to investors that the founders possessed extreme grit, resourcefulness, and a 'cockroach' survival mentality during a severe economic downturn."
+      },
+      "related": ["B1", "B2", "B3", "B5"],
+      "furtherReading": [
+        {
+          "type": "watch",
+          "label": "Full interview with Airbnb CEO Brian Chesky",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/05/21/watch-cnbcs-full-interview-with-airbnb-ceo-brian-chesky.html",
+          "archive": {
+            "status": "unavailable"
+          }
+        },
+        {
+          "type": "read",
+          "label": "The Airbnb Deck",
+          "source": "Tremendous",
+          "url": "https://tremendous.blog/2024/03/20/the-airbnb-deck/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B6-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B7",
+      "clusterId": "B",
+      "title": "The Secret Tesla Motors Master Plan (just between you and me)",
+      "author": "Elon Musk",
+      "year": 2006,
+      "medium": "Essay",
+      "category": "Worldview",
+      "epistemicStatus": "Canonical",
+      "thesis": "Bootstrap an EV company from the top down: build an expensive low-volume sports car, use the proceeds to fund progressively cheaper, higher-volume models, and drive the transition to sustainable energy.",
+      "layer0": "Musk laid out a deliberately sequenced plan for Tesla: first build an expensive, low-volume sports car (the Roadster) for buyers willing to pay a premium, use the money and credibility from that to fund a medium-volume, lower-priced car (which became the Model S and Model X), and use that to eventually fund a high-volume, affordable car (the Model 3) — with the explicit end goal of accelerating the world's transition away from a 'mine-and-burn hydrocarbon economy' toward solar-electric energy, not just building cars for their own sake.",
+      "layer1": "The mechanism mirrors the same top-down bootstrapping logic seen in other 'enter at the high end, fund the way down' strategies: expensive early products aren't the actual goal, they're a financing and credibility mechanism for reaching the real goal (mass-market affordability) that couldn't be funded directly on day one, because the manufacturing scale, battery costs, and brand trust needed for a cheap EV didn't exist yet. Each stage's profits and technological learning (battery packs, manufacturing techniques) funded and de-risked the next, cheaper stage — a sequencing strategy, not merely a product roadmap.",
+      "layer2": "Think of an expensive, low-volume version of something you'd eventually want to make cheap and widely available (a service, a product, a skill you teach). What would the 'Roadster stage' look like — the premium version that funds and proves out the capability you'd need before you could responsibly go cheaper and bigger?",
+      "quiz": {
+        "question": "Why did Tesla's master plan start with an expensive, low-volume sports car instead of an affordable mass-market car?",
+        "options": [
+          "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper",
+          "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles",
+          "The expensive early car funded and proved out the technology, manufacturing capability, and credibility needed to eventually build cheaper, higher-volume cars",
+          "Battery technology only existed in a form suitable for sports cars in 2006"
+        ],
+        "correctIndex": 2,
+        "explanation": "Starting with an expensive luxury car allowed Tesla to fund R&D and build out manufacturing, effectively using wealthy early adopters to subsidize the development of affordable mass-market EVs."
+      },
+      "related": ["B1", "B2", "B3"],
+      "furtherReading": [
+        {
+          "type": "read",
+          "label": "In 2006, Elon Musk Had a 'Secret Plan' to Mainstream Electric Cars. It's Working",
+          "source": "Vice",
+          "url": "https://www.vice.com/en/article/elon-musks-secret-plan-for-electric-car-dominance-is-right-on-schedule/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B7-0.md",
+            "retrieved": "2026-07-14"
+          }
+        },
+        {
+          "type": "read",
+          "label": "This is how Elon Musk set out to achieve his Tesla master plan",
+          "source": "World Economic Forum",
+          "url": "https://www.weforum.org/stories/2016/04/this-is-how-elon-musk-set-out-to-achieve-his-tesla-master-plan/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B7-1.md",
+            "retrieved": "2026-07-14"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    },
+    {
+      "id": "B8",
+      "clusterId": "B",
+      "title": "LinkedIn Series B Pitch Deck (Greylock)",
+      "author": "Reid Hoffman",
+      "year": 2004,
+      "medium": "Deck",
+      "category": "Pitch Deck",
+      "epistemicStatus": "Canonical",
+      "thesis": "Pitch the investment thesis, not the product: LinkedIn raised a $10 million Series B in 2004 with no revenue by steering straight into investors' biggest objection and arguing by analogy that networks — eBay, PayPal, Google — beat directories.",
+      "layer0": "In the summer of 2004 LinkedIn had no revenue, no revenue-capable product, modest organic growth, and was routinely dismissed as 'Friendster for business' while Friendster and MySpace had millions of users. Reid Hoffman still raised a $10 million Series B from Greylock — and in 2013, on LinkedIn's tenth anniversary, he published the full deck with slide-by-slide commentary. Its first move is the tell: instead of showing the product, the deck goes straight to revenue — ads, listings, subscriptions — because the loudest question from investors still nursing dot-com wounds was whether a consumer internet company could make money at all.",
+      "layer1": "The structure is an argument, not a tour. Hoffman frames LinkedIn as 'professional people search 2.0' and argues that the 1.0 tools — yellow pages, résumé databases, directories — all fail from adverse selection: the people worth finding don't participate, and those who do misrepresent themselves. A network with identity and reputation fixes the incentive. Then he pitches by analogy: classifieds became valuable as eBay once a network was added; bank transfers became PayPal; AltaVista's keyword matching lost to Google's PageRank, itself a network signal. Each analogy monetizes around the network rather than charging for membership — you pay for the eBay transaction, not the reputation system. He also flags his own mistakes: listing three revenue streams reads as lack of focus (LinkedIn turned out to be the exception), and a customer-logo slide belongs in enterprise pitches, not consumer ones. Greylock's actual thesis was narrower than the vision — a great recruiting business with an option on more — and that is roughly what happened: recruiting, not networking, became the principal market, and subscriptions became the largest line faster than expected.",
+      "layer2": "Hoffman's rule is that the winning moment comes when the investor concludes the thesis on their own, so open and close with the three to eight bullets they must believe, and steer into the one to three objections that could kill the round while you still have their full attention. He also ran two firms in parallel, so a fast offer from the 'likely' investor forced a term sheet from the 'ideal' one the day after the pitch. If you had to write the six bullets an investor must believe about your project — and name the single objection you would address on slide two — what would they be?",
+      "quiz": {
+        "question": "Why did LinkedIn's 2004 Series B deck open with revenue models instead of the product?",
+        "options": [
+          "Because post-dot-com investors' loudest objection was whether a consumer internet company could make money, so the deck addressed it before anything else",
+          "Because LinkedIn was already generating meaningful subscription revenue in 2004, which made the product story unnecessary for the pitch",
+          "Because Greylock's partners had asked for a financials-only presentation and explicitly declined to see the product until after the term sheet",
+          "Because the product had not yet launched publicly in 2004, so financial projections were the only material the team could credibly present"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hoffman's advice is to steer into investors' biggest concern while you have their full attention; in 2004 that concern was revenue, so the deck covered ads, listings, and subscriptions before it explained the product."
+      },
+      "related": ["B4", "B6", "B3", "A8"],
+      "furtherReading": [
+        {
+          "type": "read",
+          "label": "LinkedIn's Series B Pitch to Greylock (Reid Hoffman, 2004)",
+          "source": "Reid Hoffman",
+          "url": "https://www.reidhoffman.org/linkedin-pitch-to-greylock/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/B8-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Startups & Founders", "Moats & Network Effects"]
+    }
+  ]
+}

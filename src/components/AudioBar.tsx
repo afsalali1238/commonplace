@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useStore } from "@/lib/store";
-import type { Node } from "@/data/nodes";
+import type { NodeIndex as Node } from "@/data/nodes";
 
 /**
  * Real narration via the browser's Web Speech API (SpeechSynthesis).
@@ -81,7 +81,7 @@ export function AudioBar({
       navigator.mediaSession.metadata = new MediaMetadata({
         title: node.title,
         artist: node.author,
-        album: "Unknown",
+        album: "Commonplace",
         artwork: [{ src: "/icon-512.png", sizes: "512x512", type: "image/png" }],
       });
 

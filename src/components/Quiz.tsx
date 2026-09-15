@@ -67,8 +67,8 @@ export function Quiz({
           >
             {correct ? "Correct — moved up a box" : "Not quite — resets to box 0"}
           </p>
-          {node.quiz.explanation && (
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
+          {quiz.explanation && (
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{quiz.explanation}</p>
           )}
         </div>
       )}

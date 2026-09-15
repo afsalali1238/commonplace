@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Company Origins">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 66.95 18.71 A 6 6 0 0 1 73.4 13.98" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 60.73 17.52 A 12.33 12.33 0 0 1 78.16 8.83" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.83"/>
+    <path d="M 60.48 5.94 A 18.67 18.67 0 0 0 63.88 36.34" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.66"/>
+    <path d="M 67.06 -4.38 A 25 25 0 0 1 92.92 34.82" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.49"/>
+    <path d="M 75.87 -11.24 A 31.34 31.34 0 0 1 76.38 51.09" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.31"/>
+    <path d="M 94.33 -10.98 A 37.67 37.67 0 0 1 58.64 54.85" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.14"/>
+    <path d="M 109.3 -4.65 A 44 44 0 1 1 32.2 36.87" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="0.97"/>
+    <path d="M -2 49.88 L 28.26 35.39 L 68.49 50.79 L 102 23.69" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="68.49" cy="50.79" r="2.43" fill="#b45309"/>
+</svg>

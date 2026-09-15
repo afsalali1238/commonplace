@@ -1,0 +1,368 @@
+{
+  "cluster": {
+    "id": "AH",
+    "title": "History & Civilizational Arcs",
+    "subtitle": "Big history, institutional decay, and revolutions — the long patterns civilizations repeat",
+    "icon": "Landmark"
+  },
+  "nodes": [
+    {
+      "id": "AH1",
+      "clusterId": "AH",
+      "title": "Asabiyyah: The Cyclical Rise and Fall of Civilizations",
+      "author": "Ibn Khaldun",
+      "year": 1377,
+      "medium": "Book",
+      "category": "Philosophy of History",
+      "epistemicStatus": "Canonical",
+      "thesis": "Dynasties rise on group solidarity forged by hardship and collapse within three to four generations as comfort dissolves the very bond that built them.",
+      "layer0": "Writing in 1377, Ibn Khaldun mapped a cycle every empire since has repeated: hardened outsiders unite, conquer the soft center, get soft themselves within a few generations, and get conquered by the next hardened outsiders.",
+      "layer1": "Ibn Khaldun called the bonding force asabiyyah — solidarity forged by shared hardship. He argued cohesion is strongest among people without luxury, which is exactly what lets them topple comfort-softened dynasties. But asabiyyah has a shelf life: in power, rulers urbanize and accumulate wealth, diluting the loyalty that got them there within three or four generations, leaving them open to the next hungrier group.",
+      "layer2": "Where in an organization or team you're part of has that founding solidarity already started eroding as success replaced the original shared hardship that built it?",
+      "quiz": {
+        "question": "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
+        "options": [
+          "Foreign invasion is the sole cause of decline in every case",
+          "Religious conversion always weakens ruling groups",
+          "Asabiyyah never actually erodes once established",
+          "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ibn Khaldun's cycle is specifically about comfort dissolving cohesion — the very success and luxury that power brings removes the shared hardship that forged group loyalty, opening the door for the next hungrier group."
+      },
+      "related": ["AH8", "AH2", "AH9", "AH5"],
+      "furtherReading": [
+        {
+          "label": "The Muqaddimah: An Introduction to History",
+          "source": "book",
+          "url": "https://archive.org/details/muqaddimahintrod0000ibnk",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH1-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "Incentives & Systems"]
+    },
+    {
+      "id": "AH2",
+      "clusterId": "AH",
+      "title": "The Decline and Fall of the Roman Empire",
+      "author": "Edward Gibbon",
+      "year": 1776,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "Rome didn't fall to a single blow — it decayed from internal causes over centuries, with external invasion delivering the final push, not the root cause.",
+      "layer0": "Gibbon spent 1776 to 1788 answering one question: how does the most powerful state in the world quietly stop being able to defend itself? His answer was internal decay long before any external enemy mattered.",
+      "layer1": "Gibbon's core argument: Rome's collapse wasn't primarily military defeat but long internal erosion — declining civic virtue, a mercenary army with no stake in the state, bloated administration, and an elite preserving status over governing. He also blamed Christianity for redirecting civic energy, now seen as overstated. The barbarian invasions didn't cause the fall — they collected a debt Rome's institutions had already built up.",
+      "layer2": "In an organization you're part of, what's the internal debt quietly accumulating — disengaged people, unaccountable process, misaligned incentives — that an external shock would just be the excuse for, not the real cause?",
+      "quiz": {
+        "question": "What was Gibbon's central argument about why Rome fell?",
+        "options": [
+          "Rome fell purely because barbarian armies were militarily superior",
+          "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline",
+          "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
+          "Rome fell because a single decisive battle destroyed its army beyond recovery"
+        ],
+        "correctIndex": 2,
+        "explanation": "Gibbon's framing put internal institutional and civic decay at the center of the story — external invasion was the mechanism of collapse, not its root cause, a distinction that shaped how historians analyze institutional decline ever since."
+      },
+      "related": ["AH1", "AH8", "AH9", "AH5"],
+      "furtherReading": [
+        {
+          "label": "The History of the Decline and Fall of the Roman Empire, Vol. 1",
+          "source": "book",
+          "url": "https://www.gutenberg.org/ebooks/731",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH2-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "Incentives & Systems"]
+    },
+    {
+      "id": "AH3",
+      "clusterId": "AH",
+      "title": "Guns, Germs, and Steel",
+      "author": "Jared Diamond",
+      "year": 1997,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "Which civilizations ended up conquering others was driven overwhelmingly by geographic and environmental accident — access to domesticable plants and animals, and an east-west continental axis that let farming spread easily — not by any difference in the people themselves.",
+      "layer0": "Diamond built an entire theory of world history around a question a New Guinean politician asked him: why did Europeans end up with so much 'cargo' and New Guineans so little? His answer had nothing to do with people and everything to do with geography.",
+      "layer1": "Diamond's argument rests on a few compounding geographic accidents. Eurasia had far more species of large mammals suitable for domestication (horses, cattle, pigs) than the Americas, Africa, or Australia, providing labor, transport, and military advantage. Eurasia's east-west continental axis meant crops and livestock domesticated in one region could spread across similar latitudes and climates relatively easily, while the Americas' and Africa's north-south axes meant agricultural innovations had to cross very different climate zones to spread, slowing diffusion drastically. Denser agricultural populations living close to domesticated animals also developed immunity to diseases (smallpox, measles) that then devastated populations without that exposure history on contact — 'germs' did more to enable conquest than European weaponry alone. Diamond's broader claim is that these environmental starting conditions, not any innate difference in ingenuity or ability between peoples, set civilizations on radically different long-run trajectories.",
+      "layer2": "When you look at large gaps in outcomes between groups, companies, or even people, how much do you attribute to ability versus starting conditions and accumulated compounding advantage that had nothing to do with talent?",
+      "quiz": {
+        "question": "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
+        "options": [
+          "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
+          "Innate differences in intelligence or ability between different peoples",
+          "Random chance events with no identifiable underlying pattern",
+          "Religious differences between civilizations"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diamond's central thesis explicitly rejects explanations based on innate differences between peoples, arguing instead that environmental starting conditions — domesticable species, continental geography, and the resulting disease exposure — compounded over thousands of years into vastly different technological and demographic trajectories."
+      },
+      "related": ["AH7", "AH9", "AH6", "AH5"],
+      "furtherReading": [
+        {
+          "label": "Guns, Germs, and Steel: The Fates of Human Societies",
+          "source": "W. W. Norton & Company",
+          "url": "https://www.wwnorton.com/books/9780393317558",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH3-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "First-Principles Thinking"]
+    },
+    {
+      "id": "AH4",
+      "clusterId": "AH",
+      "title": "The Rise and Fall of the Great Powers",
+      "author": "Paul Kennedy",
+      "year": 1987,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "Great powers decline for a consistent structural reason across five centuries of history — military commitments grow to exceed the economic base that funds them, a pattern Kennedy called 'imperial overstretch.'",
+      "layer0": "A Yale historian studied five centuries of great-power rises and falls — Habsburg Spain, the Dutch Republic, the British Empire — and found the same failure mode recurring: military ambition outrunning the economy that has to pay for it.",
+      "layer1": "Kennedy's central mechanism is 'imperial overstretch': as a great power's relative economic strength grows, it typically takes on expanding global military and strategic commitments, but those commitments tend to keep growing even after the underlying economic base that funds them starts to relatively decline (often because economic growth shifts to rising rival powers). The gap between commitments and resources gets bridged temporarily through debt, tax increases, or currency debasement, all of which further erode the long-term economic base, accelerating decline. Kennedy's history shows this pattern across very different eras and technologies — Habsburg Spain's silver-funded wars, Britain's post-WWII imperial commitments outlasting its industrial dominance — arguing the mechanism is structural, not specific to any one empire's particular mistakes, and applies to any power whose military ambitions outpace the economic growth that has to sustain them.",
+      "layer2": "In your own life or organization, where are your current commitments — obligations, projects, promises — sized for the resource base you had a few years ago, rather than the one you actually have now?",
+      "quiz": {
+        "question": "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
+        "options": [
+          "A power's military becomes too large to physically defend its own borders",
+          "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
+          "A power expands its territory too quickly for its population to fill",
+          "A power loses a single decisive military battle that it never recovers from"
+        ],
+        "correctIndex": 1,
+        "explanation": "Kennedy's argument is about a structural mismatch over time, not a single defeat — commitments that made sense when a power's economy was relatively strongest tend to persist and even grow after that relative economic advantage starts fading, creating a widening, self-reinforcing gap."
+      },
+      "related": ["AH1", "AH3", "D8"],
+      "furtherReading": [
+        {
+          "label": "The Rise and Fall of the Great Powers: Economic Change and Military Conflict from 1500 to 2000",
+          "source": "Random House",
+          "url": "https://www.penguinrandomhouse.com/books/165506/the-rise-and-fall-of-the-great-powers-by-paul-kennedy/",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH4-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles"]
+    },
+    {
+      "id": "AH5",
+      "clusterId": "AH",
+      "title": "Sapiens: The Cognitive Revolution",
+      "author": "Yuval Noah Harari",
+      "year": 2011,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "What let Homo sapiens outcompete every other human species and build large-scale civilization wasn't tool use or intelligence alone — it was the unique ability to believe in, and coordinate around, shared fictions like money, nations, and religions that don't physically exist.",
+      "layer0": "Harari's central claim in Sapiens is disarmingly simple: humans don't just cooperate, we cooperate flexibly in huge numbers with total strangers, and the only reason that's possible is that we collectively believe in things that aren't physically real.",
+      "layer1": "Harari argues chimpanzees can cooperate in groups of dozens through direct personal relationships, but no primate can coordinate thousands of strangers the way humans routinely do — at a company, a nation, a religion. His explanation is that roughly 70,000 years ago, a 'cognitive revolution' gave Homo sapiens the capacity for genuinely abstract, shared fiction: money has no inherent value beyond collective belief, a corporation is a legal fiction with no physical body, a nation is a story millions of strangers agree to act as if is real. This ability to construct and believe shared myths, Harari argues, is what let sapiens organize at scales other human species (Neanderthals, Homo erectus) couldn't match, and it's the same mechanism — not superior individual intelligence — that scaled from hunter-gatherer bands to global empires and modern corporations.",
+      "layer2": "Name one large-scale institution you participate in daily — money, your employer, a legal system — and notice that it works only because a huge number of strangers, including you, agree to treat a shared story as if it were physically real.",
+      "quiz": {
+        "question": "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
+        "options": [
+          "Sapiens had significantly larger brains and higher individual intelligence than all other human species",
+          "Sapiens were the only human species capable of using tools",
+          "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
+          "Sapiens had no need for cooperation because they were physically stronger than rival species"
+        ],
+        "correctIndex": 2,
+        "explanation": "Harari's core claim isn't about raw intelligence or physical capability — it's that shared, collectively-believed fictions (money, law, nationhood) let strangers trust and coordinate with each other at a scale that purely personal, chimp-style relationships never could reach."
+      },
+      "related": ["AH3", "I11", "V1"],
+      "furtherReading": [
+        {
+          "label": "Sapiens: A Brief History of Humankind",
+          "source": "Harper",
+          "url": "https://www.ynharari.com/book/sapiens/",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH5-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Social Constructs", "Macro & Cycles"]
+    },
+    {
+      "id": "AH6",
+      "clusterId": "AH",
+      "title": "The Silk Roads",
+      "author": "Peter Frankopan",
+      "year": 2015,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "World history looks fundamentally different when told from the perspective of Central Asia's trade networks instead of Western Europe — the region connecting East and West, not the Atlantic seaboard, was the actual center of global exchange, wealth, and power for most of recorded history.",
+      "layer0": "Frankopan argued that centuries of history education got the map wrong — the real center of the world for most of human history wasn't Rome, London, or Paris, it was the corridor of trade routes running through Central Asia and the Middle East.",
+      "layer1": "Frankopan traces how goods, religions, diseases, technologies, and ideas moved along overland and maritime routes connecting China, India, Persia, the Middle East, and Europe for over two thousand years, and argues these routes — not any single civilization — were the primary engine of world-historical change. Silk, spices, paper-making, gunpowder, and the Black Death all spread along these networks; major religions (Buddhism, Christianity, Islam) expanded largely by following the same trade corridors merchants used. Western Europe's later dominance, in Frankopan's telling, was a relatively late and temporary deviation from a much older pattern in which the connective tissue between East and West — not any single endpoint — held the real economic and strategic center of gravity, a pattern he argues is reasserting itself as global economic weight shifts back toward Asia.",
+      "layer2": "The 'center' of any system — an industry, a network, an organization — is often assumed to be wherever you personally are standing. Where might the actual center of gravity in something you're part of be somewhere you've never thought to look?",
+      "quiz": {
+        "question": "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
+        "options": [
+          "That Western Europe has always been the uncontested center of global trade and power",
+          "That trade routes had no significant influence on the spread of religion or technology",
+          "That the Silk Roads were only active for a brief period in the ancient world",
+          "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time"
+        ],
+        "correctIndex": 3,
+        "explanation": "Frankopan's argument repositions the connective trade network itself, rather than any single endpoint civilization like Rome or Britain, as the actual long-run center of world-historical exchange and power — with Western European dominance framed as a comparatively recent and possibly temporary deviation from that older pattern."
+      },
+      "related": ["AH3", "AH4"],
+      "furtherReading": [
+        {
+          "label": "The Silk Roads: A New History of the World",
+          "source": "Bloomsbury",
+          "url": "https://www.bloomsbury.com/uk/silk-roads-9781408839973/",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH6-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles"]
+    },
+    {
+      "id": "AH7",
+      "clusterId": "AH",
+      "title": "The Structure of Scientific Revolutions",
+      "author": "Thomas Kuhn",
+      "year": 1962,
+      "medium": "Book",
+      "category": "History of Science",
+      "epistemicStatus": "Canonical",
+      "thesis": "Science doesn't progress through smooth, cumulative accumulation of facts — it alternates between long periods of stable 'normal science' within an accepted paradigm and rare, disruptive 'paradigm shifts' where the entire framework for interpreting evidence is replaced.",
+      "layer0": "Kuhn's 1962 book introduced the phrase 'paradigm shift' to describe something historians of science had noticed but not fully named: scientific revolutions don't add new facts to old theories, they replace the entire lens the facts are viewed through.",
+      "layer1": "'Normal science,' in Kuhn's framework, is puzzle-solving within an accepted paradigm — a shared set of assumptions, methods, and exemplary solved problems that a scientific community treats as settled foundations, not open questions. Anomalies — observations that don't fit the paradigm — accumulate slowly and are usually explained away or set aside rather than treated as immediately fatal to the paradigm. A genuine crisis emerges only when anomalies accumulate past a threshold, and a paradigm shift happens when a new framework emerges that resolves the anomalies by reorganizing the field's basic assumptions, not just adding new facts to the old ones — the switch from Ptolemaic to Copernican astronomy, or Newtonian to Einsteinian physics, are Kuhn's central examples. Crucially, Kuhn argued paradigms are often incommensurable — practitioners on either side of a shift can partly talk past each other, because the shift changes what counts as a relevant fact or a good explanation in the first place, not just which specific claims are believed true.",
+      "layer2": "In your own field or belief system, what anomaly have you been quietly setting aside as an exception, rather than treating as a signal that your whole framework might need replacing rather than patching?",
+      "quiz": {
+        "question": "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
+        "options": [
+          "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
+          "A single new experiment that instantly convinces the entire scientific community",
+          "A government or funding body mandating that scientists adopt a new theory",
+          "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions"
+        ],
+        "correctIndex": 0,
+        "explanation": "Kuhn's model rejects the idea of smooth cumulative progress — paradigm shifts happen when unresolved anomalies build into a crisis, and the resolution isn't just new data added to the old theory, it's a new framework that changes what counts as a relevant fact or valid explanation in the first place."
+      },
+      "related": ["AH3", "O1"],
+      "furtherReading": [
+        {
+          "label": "The Structure of Scientific Revolutions",
+          "source": "University of Chicago Press",
+          "url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH7-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["First-Principles Thinking", "Macro & Cycles"]
+    },
+    {
+      "id": "AH8",
+      "clusterId": "AH",
+      "title": "Why Nations Fail",
+      "author": "Daron Acemoglu & James A. Robinson",
+      "year": 2012,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "Nations grow rich or stay poor mainly because of their political and economic institutions — whether they're 'inclusive' (broadly distributing power and property rights) or 'extractive' (concentrating both in a narrow elite) — not because of geography, culture, or the knowledge available to their leaders.",
+      "layer0": "Acemoglu and Robinson studied cities split by the same border — like Nogales, split between Arizona and Mexico, same geography and culture on both sides — and found wealth gaps that geography and culture couldn't explain. Institutions could.",
+      "layer1": "Inclusive institutions secure broad property rights, enforce contracts fairly, and allow political power to be contested and limited, which creates incentives for ordinary people to invest, innovate, and start businesses because they can keep the gains. Extractive institutions concentrate political power and economic rents in a narrow elite, who then have every incentive to block the kind of broad-based innovation and investment that might threaten their position — even when it would grow the overall economy — because 'creative destruction' also threatens their own extracted rents. The authors argue this explains persistent poverty better than geography (their border-city comparisons hold climate and terrain constant) or culture (similarly matched populations diverge sharply once split by different institutions), and that the specific historical junctures at which a nation's institutions get locked into an inclusive or extractive path — often centuries earlier via colonization choices — cast a very long shadow.",
+      "layer2": "In an organization you're part of, do the people with power actually benefit when new ideas succeed and displace the old way of doing things — or do they benefit more from things staying exactly as they are?",
+      "quiz": {
+        "question": "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
+        "options": [
+          "Because extractive institutions are always run by less intelligent leaders",
+          "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
+          "Because extractive institutions are found only in countries with poor geography",
+          "Because extractive institutions were outlawed by international treaties"
+        ],
+        "correctIndex": 1,
+        "explanation": "The authors' mechanism is about incentives, not intelligence or geography — an elite that captures disproportionate rents from the existing economic order has a rational, self-interested reason to resist the disruptive innovation that inclusive institutions instead reward and protect."
+      },
+      "related": ["AH3", "AH4", "M1"],
+      "furtherReading": [
+        {
+          "label": "Why Nations Fail: The Origins of Power, Prosperity, and Poverty",
+          "source": "Crown Business",
+          "url": "https://www.penguinrandomhouse.com/books/174768/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH8-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "Incentives & Systems"]
+    },
+    {
+      "id": "AH9",
+      "clusterId": "AH",
+      "title": "1177 B.C.: The Year Civilization Collapsed",
+      "author": "Eric H. Cline",
+      "year": 2014,
+      "medium": "Book",
+      "category": "History",
+      "epistemicStatus": "Canonical",
+      "thesis": "The Late Bronze Age's interconnected civilizations — Egypt, the Hittites, Mycenaean Greece, and others — collapsed within a few decades not from any single cause but from a cluster of simultaneous shocks (drought, earthquakes, invasion, trade collapse) hitting a system too interdependent to absorb them all at once.",
+      "layer0": "Around 1177 B.C., a wave of destruction swept through the Eastern Mediterranean's major civilizations almost simultaneously. Cline's argument: it wasn't one cause, like the mysterious 'Sea Peoples' invaders long blamed — it was a systemic collapse under compounding stress.",
+      "layer1": "The Late Bronze Age Mediterranean was a densely interconnected trade network — Egypt, the Hittite Empire, Mycenaean Greece, Cyprus, and others exchanged tin, copper, grain, and diplomatic correspondence in a system as globalized as anything before the modern era. Cline marshals archaeological and climate evidence for multiple, roughly simultaneous stresses around 1200–1150 B.C.: prolonged drought reducing agricultural surplus, a cluster of major earthquakes, internal rebellions, and disruptive migrations (including the 'Sea Peoples'). No single shock was necessarily fatal on its own — Bronze Age civilizations had weathered individual crises before — but Cline argues the system's very interconnectedness, which had been a source of shared prosperity, became a liability once several shocks hit simultaneously, since trade disruption in one node cascaded into famine, unrest, and state failure in others that depended on it. The result was a systems collapse rather than a single military defeat, and it took the Eastern Mediterranean centuries to recover comparable complexity.",
+      "layer2": "A tightly interconnected system — a supply chain, a friend group, an economy — is efficient exactly because of its interdependence. Where in your own life is a system's efficiency also quietly making it fragile to several small shocks arriving at once?",
+      "quiz": {
+        "question": "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
+        "options": [
+          "A single invasion by the 'Sea Peoples' that no civilization could have survived",
+          "A sudden, unexplained climate event with no connection to trade or political factors",
+          "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
+          "Deliberate, coordinated destruction ordered by Egyptian pharaohs"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cline's 'systems collapse' argument moves away from single-cause explanations (like blaming the Sea Peoples alone) toward a model where the Bronze Age Mediterranean's interconnected trade network amplified several simultaneous regional shocks into a civilization-wide collapse none of them would have caused individually."
+      },
+      "related": ["AH4", "AH6"],
+      "furtherReading": [
+        {
+          "label": "1177 B.C.: The Year Civilization Collapsed",
+          "source": "Princeton University Press",
+          "url": "https://press.princeton.edu/books/paperback/9780691208015/1177-bc",
+          "type": "book",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AH9-0.md",
+            "retrieved": "2026-07-18"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "Risk & Asymmetric Bets"]
+    }
+  ]
+}

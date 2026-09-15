@@ -1,4 +1,4 @@
-import { NODES, type Node } from "@/data/nodes";
+import { NODES, type NodeIndex as Node } from "@/data/nodes";
 import { readNextNodes } from "./store";
 
 function mulberry32(seed: number) {

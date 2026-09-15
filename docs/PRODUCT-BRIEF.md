@@ -44,9 +44,9 @@ Already defined in `capital-map/src/types.ts` — keep it, this is the backbone:
 
 ## 5. The core problem to fix: flatten-then-nest the navigation
 
-**Today:** six co-equal top-nav items — `Map · Review · Reading List · Glossary · Scratchpad · Progress`. Six equal choices = decision paralysis and the "scattered everywhere" feeling. None of them tells you _what to do next_.
+**Originally:** six co-equal top-nav items — `Map · Review · Reading List · Glossary · Scratchpad · Progress`. Six equal choices = decision paralysis and the "scattered everywhere" feeling. None of them tells you _what to do next_.
 
-**The fix:** there are really only **three jobs** a user comes here to do. Everything else is support, and support does not deserve top-level real estate.
+**The fix:** there are really only **three jobs** a user comes here to do — read, browse, retain. Everything else is support, and support does not deserve top-level real estate.
 
 ```
                     ┌─────────────────────────────────────┐
@@ -66,15 +66,18 @@ Already defined in `capital-map/src/types.ts` — keep it, this is the backbone:
                                                               scratchpad
 ```
 
-### Primary navigation = 3 destinations (+ node view)
+### Primary navigation = 4 destinations (+ node view)
+
+_Revised 2026-09-04. The original v1 bar was **Map · Review · You**. The Feed (see `FEED-SPEC.md`) replaced Map as the home surface, and its structured-browse job moved to Explore, so the bar is now four — per FEED-SPEC §7 option A. What did **not** change: Review is a primary destination with a due badge, and everything else lives one tap down. (An intermediate build shipped `Feed · Skim · Explore · You` with Review demoted into You — that contradicted this section and has been reverted; Skim is a browsing mode reached from Explore, not a tab.)_
 
 Mobile-first bottom nav (port `BottomNav` from big-ideas-app), because this is a pocket PWA:
 
-1. **Map** — home. Browse clusters, _Continue_ (resume last node), and _Due today_ surfaced at the top. This is the launchpad; it always answers "what do I do next?"
-2. **Review** — the retention loop. Just the nodes due for spaced repetition, with the count badge. One job.
-3. **You** — everything that was cluttering the nav: Progress/streak/stats, Reading List, Glossary, Scratchpad. These are _reference/self_ surfaces, not daily destinations — they belong one tap down, not in the primary bar.
+1. **Feed** — home. Today's reading, chosen from the topics you picked, one idea per screen with a door to go deeper. This is the launchpad; it always answers "what do I read next?"
+2. **Explore** — structured browse: topic collections, the full lattice index with progress, search, and **Skim** (the whole lattice one thesis at a time).
+3. **Review** — the retention loop. Just the nodes due for spaced repetition, **with the count badge on the tab**. One job. The badge is the daily trigger; without it the retain loop has no front door.
+4. **You** — everything that was cluttering the nav: Progress/streak/stats, Leitner box distribution, Saved, Glossary, Scratchpad, Backup. These are _reference/self_ surfaces, not daily destinations — they belong one tap down, not in the primary bar.
 
-**Node** is not a nav tab — it's the screen you land on _from_ the Map or Review. It's where 90% of the time is spent.
+**Node** is not a nav tab — it's the screen you land on _from_ the Feed, Explore, or Review. It's where 90% of the time is spent.
 
 ## 6. The two core loops (this is the whole product)
 
@@ -90,7 +93,7 @@ Everything else (glossary, scratchpad, stats, reading list) exists to _serve_ th
 2. **The node is the hero.** One clean reading column, layers revealed progressively (don't dump L0/L1/L2 at once — gate them so the user commits before the mechanism unlocks).
 3. **Retention beats reach.** A visible streak + due badge matters more than a bigger catalog. Depth over breadth.
 4. **Cross-links are loud, not buried.** Related ideas are a designed section mid/late in the node, styled as the payoff — not grey footer links.
-5. **One visual system.** Kill the two-codebase split: one type scale, one color system (Epistemoph's `paper/ink/accent` tokens), one component library. Consistency _is_ the redesign.
+5. **One visual system.** Kill the two-codebase split: one type scale, one color system (Epistemoph's `paper/ink/accent` tokens), one component library. Consistency _is_ the redesign. _Extended 2026-09-04:_ imagery and motion are part of that one system — artwork is generated from the spiral/thread/dot of the mark, in the tokens, per topic and per idea (`docs/VISUAL-SYSTEM.md`); no illustrations that live outside it.
 6. **Offline is invisible.** Starred nodes cache silently; no download-manager UI in v1.
 
 ## 8. What to merge, what to drop
@@ -107,4 +110,4 @@ You currently have three names (Big Ideas, Epistemoph, novibe). Pick one before 
 
 ### The redesign, in one breath
 
-Merge three prototypes into one Epistemoph shell → collapse six flat tabs into **Map · Review · You** with the **Node** as the hero screen → make _Continue_ and _Due today_ the first thing you see → treat cross-links and spaced repetition as the product, and everything else as support.
+Merge three prototypes into one Epistemoph shell → collapse six flat tabs into **Feed · Explore · Review · You** with the **Node** as the hero screen → make today's reading and the _due_ count the first things you see → treat cross-links and spaced repetition as the product, and everything else as support.

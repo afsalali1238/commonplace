@@ -12,7 +12,7 @@
  *   bun run scripts/audit-content.ts dupes title        # duplicate values of a field
  *   bun run scripts/audit-content.ts hooks               # flag weak layer0 cold-opens (for the feed)
  */
-import path from "path";
+import { readAllContent } from "./lib/content";
 
 type Node = Record<string, unknown> & {
   id: string;
@@ -30,10 +30,10 @@ function table(rows: [string, string | number][], head: [string, string]) {
 
 async function main() {
   const [cmd, arg] = [process.argv[2] ?? "summary", process.argv[3]];
-  const mod = await import(path.join(process.cwd(), "src/data/nodes.ts"));
-  const NODES: Node[] = mod.NODES;
-  const CLUSTERS: { id: string; title: string }[] = mod.CLUSTERS;
-  const TAGS: readonly string[] = mod.TAGS;
+  const content = readAllContent();
+  const NODES: Node[] = content.nodes;
+  const CLUSTERS: { id: string; title: string }[] = content.clusters;
+  const TAGS: readonly string[] = content.tags;
 
   switch (cmd) {
     case "summary": {

@@ -11,10 +11,14 @@ import {
   List,
   Share2,
 } from "lucide-react";
-import { CLUSTERS, type Node, NODES } from "@/data/nodes";
+import { CLUSTERS, type NodeIndex as Node, NODES } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
+import { BrandMark } from "@/components/BrandMark";
+import { IdeaGlyph } from "@/components/Artwork";
+import { FeedSkeleton } from "@/components/Skeleton";
 import { buildFeed, type FeedSource } from "@/lib/feed";
+import { getFeedSeed, getSessionVisited } from "@/lib/feedSession";
 import { useStore, dueCount, readNextNodes } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
@@ -38,7 +42,7 @@ import { CSS } from "@dnd-kit/utilities";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Unknown — A latticework of powerful ideas" },
+      { title: "Commonplace — A latticework of powerful ideas" },
       {
         name: "description",
         content: "A feed of the world's most powerful ideas, tuned to what you care about.",
@@ -275,7 +279,7 @@ function FeedScreen() {
       }
       setActiveIndex(clamped);
     },
-    [feedResult.items, visibleCount],
+    [feedResult, visibleCount],
   );
 
   const handleContainerKeyDown = useCallback(
@@ -284,6 +288,7 @@ function FeedScreen() {
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA" || (e.target as HTMLElement)?.isContentEditable)
         return;
+      if (!feedItems) return;
       if (e.key === "ArrowDown" || (e.key === "j" && !e.metaKey && !e.ctrlKey)) {
         e.preventDefault();
         scrollToIndex(activeIndex + 1);
@@ -301,18 +306,18 @@ function FeedScreen() {
         scrollToIndex(0);
       } else if (e.key === "End") {
         e.preventDefault();
-        scrollToIndex(feedResult.items.length - 1);
+        scrollToIndex(feedItems.length - 1);
       } else if (e.key === " " || e.key === "Spacebar") {
         // Space = expand/collapse is handled per-card; prevent page scroll hijack in feed
       }
     },
-    [activeIndex, scrollToIndex, feedResult.items.length],
+    [activeIndex, scrollToIndex, feedItems],
   );
 
   // Sync activeIndex with scroll position (scroll-snap section tracking)
   useEffect(() => {
     const root = containerRef.current;
-    if (!root || feedResult.needsTopics) return;
+    if (!root || !feedItems || feedNeedsTopics) return;
     let ticking = false;
     const onScroll = () => {
       if (ticking) return;
@@ -338,15 +343,15 @@ function FeedScreen() {
     };
     root.addEventListener("scroll", onScroll, { passive: true });
     return () => root.removeEventListener("scroll", onScroll);
-  }, [feedResult.needsTopics, visibleCount]);
+  }, [feedItems, feedNeedsTopics, visibleCount]);
 
   useEffect(() => {
     if (hydrated && !onboardingComplete) navigate({ to: "/onboarding" });
   }, [hydrated, onboardingComplete, navigate]);
 
-  // Gate on hydration: persisted store (interests, visited) loads async and feed order is seeded
-  if (!hydrated) return <div className="px-5 pt-8" />;
-  if (!onboardingComplete) return <div className="px-5 pt-8" />;
+  // Gate on hydration: the persisted store (interests, visited) loads async and
+  // the feed order is seeded, so rendering before hydration would mismatch SSR.
+  if (!hydrated || !feedResult || !onboardingComplete) return <FeedSkeleton />;
 
   const readNextItems = readNextNodes(readNext, NODES);
   const visibleItems = feedResult.items.slice(0, visibleCount);
@@ -356,8 +361,8 @@ function FeedScreen() {
     <div className="flex flex-col h-[100dvh]">
       <header className="shrink-0 flex items-center justify-between px-5 py-2.5 relative z-30 bg-paper">
         <div className="flex items-center gap-2">
-          <img src="/logo.svg" alt="" className="h-6 w-6 spiral-spin" />
-          <span className="font-serif text-lg tracking-tight text-ink">Unknown</span>
+          <BrandMark className="h-6 w-6 mark-spin" />
+          <span className="font-serif text-lg tracking-tight text-ink">Commonplace</span>
         </div>
         <div className="flex items-center gap-3">
           {!feedResult.needsTopics && total > 0 && (
@@ -484,10 +489,16 @@ function FeedCard({
       aria-setsize={total}
       aria-labelledby={`feed-card-title-${node.id}`}
       tabIndex={-1}
-      className="flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6 outline-none focus-visible:ring-1 focus-visible:ring-accent motion-reduce:snap-none"
+      className={cn(
+        "flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6 outline-none focus-visible:ring-1 focus-visible:ring-accent motion-reduce:snap-none",
+        first && "rise",
+      )}
     >
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex flex-wrap items-center gap-2">
+          {/* The idea's mark: a small piece of lattice unique to this node,
+              the same one it carries on its page, in Skim and in Review. */}
+          <IdeaGlyph nodeId={node.id} animate={first} className="h-6 w-6 shrink-0" />
           <MicroLabel>
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
             <span className="hidden sm:inline">
@@ -614,6 +625,19 @@ function RailButton({
   onClick: (e: React.MouseEvent) => void;
   children: ReactNode;
 }) {
+  // One beat when the control turns on — the acknowledgement that a tap
+  // registered, since nothing else on the card changes for Save/Got it.
+  const [beat, setBeat] = useState(false);
+  const wasActive = useRef(active);
+  useEffect(() => {
+    if (active && !wasActive.current) {
+      setBeat(true);
+      const t = setTimeout(() => setBeat(false), 450);
+      wasActive.current = active;
+      return () => clearTimeout(t);
+    }
+    wasActive.current = active;
+  }, [active]);
   return (
     <button
       onClick={(e) => {
@@ -629,7 +653,8 @@ function RailButton({
     >
       <div
         className={cn(
-          "grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-colors",
+          "grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-[background-color,border-color,color] duration-[var(--duration-fast)] active:scale-95",
+          beat && "pulse-beat",
           active
             ? "border-ink bg-ink text-paper"
             : "border-line bg-transparent text-ink-soft group-hover:border-ink group-hover:text-ink",

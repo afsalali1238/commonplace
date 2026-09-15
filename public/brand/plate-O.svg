@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Philosophy &amp; the Self">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 102.02 49.33 A 6 6 0 0 0 94.14 46.96" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 113.65 43.71 A 18.91 18.91 0 0 1 96.33 71.23" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.76"/>
+    <path d="M 128.03 58.55 A 31.82 31.82 0 0 1 75.93 76.34" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.52"/>
+    <path d="M 126.78 85.54 A 44.73 44.73 0 0 0 92.69 7.79" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.28"/>
+    <path d="M 140.27 90.2 A 57.64 57.64 0 1 1 66.42 3.36" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.04"/>
+    <path d="M -2 53.8 L 31.29 37.86 L 60.37 42.49 L 102 10.19" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="60.37" cy="42.49" r="2.52" fill="#b45309"/>
+</svg>

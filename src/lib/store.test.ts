@@ -22,11 +22,7 @@ describe("store.ts pure functions", () => {
       const twoDaysAgo = new Date(today);
       twoDaysAgo.setDate(today.getDate() - 2);
 
-      const days = [
-        today.toISOString().slice(0, 10),
-        yesterday.toISOString().slice(0, 10),
-        twoDaysAgo.toISOString().slice(0, 10),
-      ];
+      const days = [localDay(today), localDay(yesterday), localDay(twoDaysAgo)];
 
       expect(currentStreak(days)).toBe(3);
     });
@@ -38,7 +34,7 @@ describe("store.ts pure functions", () => {
       const twoDaysAgo = new Date(today);
       twoDaysAgo.setDate(today.getDate() - 2);
 
-      const days = [yesterday.toISOString().slice(0, 10), twoDaysAgo.toISOString().slice(0, 10)];
+      const days = [localDay(yesterday), localDay(twoDaysAgo)];
 
       expect(currentStreak(days)).toBe(2);
     });
@@ -48,7 +44,7 @@ describe("store.ts pure functions", () => {
       const threeDaysAgo = new Date(today);
       threeDaysAgo.setDate(today.getDate() - 3);
 
-      const days = [today.toISOString().slice(0, 10), threeDaysAgo.toISOString().slice(0, 10)];
+      const days = [localDay(today), localDay(threeDaysAgo)];
 
       // Streak should only be 1 (today), because yesterday is missing.
       expect(currentStreak(days)).toBe(1);
@@ -74,17 +70,69 @@ describe("store.ts pure functions", () => {
     });
   });
 
-  describe("readNext queue selectors", () => {
-    it("isQueued works", () => {
-      expect(isQueued(["A1", "B2"], "A1")).toBe(true);
-      expect(isQueued(["A1", "B2"], "C3")).toBe(false);
+  describe("submitQuiz (store action)", () => {
+    it("moves up a box on correct (cap 5) and down two boxes on wrong (floor 0)", () => {
+      useStore.getState().reset();
+      for (let i = 0; i < 7; i++) useStore.getState().submitQuiz("B1", true);
+      expect(useStore.getState().review.B1.box).toBe(5);
+      useStore.getState().submitQuiz("B1", false);
+      expect(useStore.getState().review.B1.box).toBe(3);
+      useStore.getState().submitQuiz("B1", false);
+      expect(useStore.getState().review.B1.box).toBe(1);
+      useStore.getState().submitQuiz("B1", false);
+      expect(useStore.getState().review.B1.box).toBe(0);
+      expect(useStore.getState().review.B1.lastResult).toBe("incorrect");
+    });
+  });
+
+  describe("visitNode read log", () => {
+    it("dedupes and moves re-visited ids to the end", () => {
+      useStore.getState().reset();
+      useStore.getState().visitNode("A1");
+      useStore.getState().visitNode("B2");
+      useStore.getState().visitNode("A1");
+      expect(useStore.getState().readLog).toEqual(["B2", "A1"]);
     });
 
-    it("readNextNodes returns ordered nodes and skips missing ones", () => {
-      const mockNodes = [{ id: "n1" }, { id: "n2" }, { id: "n3" }];
-      const queue = ["n3", "n1", "n99"]; // n99 is missing
-      const result = readNextNodes(queue, mockNodes);
-      expect(result).toEqual([{ id: "n3" }, { id: "n1" }]);
+    it("caps history at 200 entries", () => {
+      useStore.getState().reset();
+      for (let i = 0; i < 205; i++) useStore.getState().visitNode(`n${i}`);
+      const log = useStore.getState().readLog;
+      expect(log).toHaveLength(200);
+      expect(log[log.length - 1]).toBe("n204");
+      expect(log[0]).toBe("n5");
+    });
+  });
+
+  describe("submitQuiz Leitner math", () => {
+    it("clamps box at 0 on repeated incorrect answers", () => {
+      useStore.getState().reset();
+      useStore.getState().submitQuiz("A1", false); // 0 -> -2 clamped to 0
+      useStore.getState().submitQuiz("A1", false);
+      expect(useStore.getState().review.A1?.box).toBe(0);
+    });
+
+    it("clamps box at 5 on repeated correct answers", () => {
+      useStore.getState().reset();
+      for (let i = 0; i < 8; i++) useStore.getState().submitQuiz("A1", true);
+      expect(useStore.getState().review.A1?.box).toBe(5);
+    });
+
+    it("incorrect moves back two boxes", () => {
+      useStore.getState().reset();
+      for (let i = 0; i < 4; i++) useStore.getState().submitQuiz("A1", true); // box 4
+      useStore.getState().submitQuiz("A1", false);
+      expect(useStore.getState().review.A1?.box).toBe(2);
+      expect(useStore.getState().review.A1?.lastResult).toBe("incorrect");
+    });
+  });
+
+  describe("reorderReadNext", () => {
+    it("moves an item between positions", () => {
+      useStore.getState().reset();
+      ["A1", "B2", "C3"].forEach((id) => useStore.getState().addReadNext(id));
+      useStore.getState().reorderReadNext(0, 2);
+      expect(useStore.getState().readNext).toEqual(["B2", "C3", "A1"]);
     });
   });
 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Neuroscience &amp; Biology">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 89.53 50.25 A 6 6 0 0 1 89.81 41.86" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 76.57 54 A 19.05 19.05 0 0 1 98.8 27.78" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.70"/>
+    <path d="M 63.1 37.38 A 32.09 32.09 0 0 1 125.56 40.67" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.40"/>
+    <path d="M 55.43 22.67 A 45.14 45.14 0 0 1 138.46 53.7" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.10"/>
+    <path d="M -2 50.53 L 25.94 33.41 L 52.16 42.39 L 102 16.58" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="52.16" cy="42.39" r="2.44" fill="#b45309"/>
+</svg>

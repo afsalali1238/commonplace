@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Macro &amp; Investing">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 67.36 32.73 A 6 6 0 0 1 62.34 26.22" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 67.1 39.01 A 12.26 12.26 0 0 1 56.96 22.17" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.87"/>
+    <path d="M 57.12 41.55 A 18.51 18.51 0 0 1 59.4 10.59" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.73"/>
+    <path d="M 49.71 43.17 A 24.77 24.77 0 0 1 71.46 2.24" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.60"/>
+    <path d="M 37.29 27.17 A 31.02 31.02 0 0 1 89.4 4.06" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.47"/>
+    <path d="M 39.05 3.71 A 37.28 37.28 0 0 1 105.56 28.18" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.33"/>
+    <path d="M 28.36 9.52 A 43.53 43.53 0 0 1 111.8 24.93" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.20"/>
+    <path d="M 61.24 -22.48 A 49.79 49.79 0 0 0 67.85 76.6" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="1.07"/>
+    <path d="M 85.28 -26.6 A 56.04 56.04 0 1 1 31.53 69.09" stroke="#1a1a17" stroke-opacity="0.220" stroke-width="0.93"/>
+    <path d="M -2 48.96 L 39.55 28.5 L 58.8 50.09 L 102 18.13" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="58.8" cy="50.09" r="2.95" fill="#b45309"/>
+</svg>

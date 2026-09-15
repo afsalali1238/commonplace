@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Decision-Making">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 34.17 1.1 A 6 6 0 0 1 31.92 9.32" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 40.14 6.33 A 11.39 11.39 0 0 1 26.09 15.12" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.88"/>
+    <path d="M 42.36 14.21 A 16.78 16.78 0 0 1 13.82 11.32" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.76"/>
+    <path d="M 44.62 19.8 A 22.17 22.17 0 0 0 32.45 -17.8" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.64"/>
+    <path d="M 34.01 31.19 A 27.56 27.56 0 0 1 5.41 -10.19" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.52"/>
+    <path d="M 16.26 34.5 A 32.95 32.95 0 0 1 24.52 -28.55" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.40"/>
+    <path d="M 7.77 36.04 A 38.34 38.34 0 0 1 33.35 -33.99" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.28"/>
+    <path d="M 1.61 38.21 A 43.73 43.73 0 0 1 41.24 -37.87" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="1.16"/>
+    <path d="M -16.74 22.08 A 49.12 49.12 0 1 1 75.65 -11.18" stroke="#1a1a17" stroke-opacity="0.220" stroke-width="1.04"/>
+    <path d="M -16.77 -25.55 A 54.51 54.51 0 1 1 65.61 44.46" stroke="#1a1a17" stroke-opacity="0.195" stroke-width="0.92"/>
+    <path d="M 64.89 -2 L 79.11 23.84 L 50.95 53.58 L 70.89 62" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="50.95" cy="53.58" r="2.62" fill="#b45309"/>
+</svg>

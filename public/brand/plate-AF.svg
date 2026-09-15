@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Network Theory">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 29.03 -0.34 A 6 6 0 0 1 35.02 5.22" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 37.4 -13.7 A 21.09 21.09 0 0 1 47.48 15.9" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.70"/>
+    <path d="M 56.4 -18.01 A 36.18 36.18 0 0 1 18.83 40.37" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.40"/>
+    <path d="M 79.92 -0.64 A 51.27 51.27 0 1 1 -22.21 4.37" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.10"/>
+    <path d="M 81.02 -2 L 90.17 28.95 L 63.54 52.22 L 87.02 62" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="63.54" cy="52.22" r="2.89" fill="#b45309"/>
+</svg>

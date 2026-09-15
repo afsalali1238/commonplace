@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Dan Koe">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 52.15 0.95 A 6 6 0 0 1 59.81 3.81" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 52.07 -5.7 A 12.42 12.42 0 0 1 66.71 4.59" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.83"/>
+    <path d="M 53.83 -12.34 A 18.84 18.84 0 0 1 71.59 14.29" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.66"/>
+    <path d="M 72.16 -11.51 A 25.26 25.26 0 0 1 61.03 30.87" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.49"/>
+    <path d="M 83.82 -5.35 A 31.68 31.68 0 0 1 41.06 35.21" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.31"/>
+    <path d="M 91.83 -0.82 A 38.1 38.1 0 0 1 19.42 21.49" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.14"/>
+    <path d="M 97.27 18.66 A 44.52 44.52 0 0 0 13.76 -11.6" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="0.97"/>
+    <path d="M -2 52.22 L 30.25 37.89 L 69.93 55.52 L 102 30.7" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="69.93" cy="55.52" r="2.55" fill="#b45309"/>
+</svg>

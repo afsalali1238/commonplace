@@ -8,24 +8,42 @@ export type Node = {
   category: string;
   thesis: string;
   layer0?: string;
+  related: string[];
+  tags: string[];
+  epistemicStatus?: EpistemicStatus;
+};
+
+export type Quiz = {
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation?: string;
+};
+
+export type FurtherReading = {
+  label: string;
+  source: string;
+  url: string;
+  type?: string;
+  archive?: {
+    status: "full" | "excerpt" | "unavailable";
+    path?: string;
+    retrieved?: string;
+  };
+};
+
+/** The on-demand part of a node. */
+export type NodeBody = {
   layer1?: string;
   layer2?: string;
-  quiz: { question: string; options: string[]; correctIndex: number; explanation?: string };
-  related: string[];
-  furtherReading: {
-    label: string;
-    source: string;
-    url: string;
-    type?: string;
-    archive?: {
-      status: "full" | "excerpt" | "unavailable";
-      path?: string;
-      retrieved?: string;
-    };
-  }[];
-  tags: string[];
-  epistemicStatus?: "Canonical" | "Contemporary" | "Speculative";
+  quiz: Quiz;
+  furtherReading: FurtherReading[];
 };
+
+/** A node with its body loaded — what the node page and the quiz work with. */
+export type Node = NodeIndex & NodeBody;
+
+export type Cluster = { id: string; title: string; subtitle: string; icon: string };
 
 export const TAGS = [
   "Startups & Founders",
@@ -51,8 +69,6 @@ export const TAGS = [
   "Social Constructs",
 ] as const;
 export type Tag = (typeof TAGS)[number];
-
-export type Cluster = { id: string; title: string; subtitle: string; icon: string };
 
 export const CLUSTERS: Cluster[] = [
   {

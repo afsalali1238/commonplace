@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Crypto">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 60.62 23.03 A 6 6 0 0 1 57.49 16.06" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 44.58 23.88 A 19.71 19.71 0 0 1 59.32 -1.66" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.80"/>
+    <path d="M 32.79 31.33 A 33.42 33.42 0 0 1 67.53 -15.5" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.60"/>
+    <path d="M 20.62 -2.35 A 47.12 47.12 0 0 1 107.81 2.24" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.40"/>
+    <path d="M 23.98 -28.78 A 60.83 60.83 0 0 1 106.66 60.29" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.20"/>
+    <path d="M 10.21 -34.69 A 74.54 74.54 0 0 1 117.98 68.29" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.00"/>
+    <path d="M -2 56.18 L 32.02 39.83 L 60.29 55.58 L 102 28.5" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="60.29" cy="55.58" r="2.30" fill="#b45309"/>
+</svg>

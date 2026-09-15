@@ -1,0 +1,587 @@
+{
+  "cluster": {
+    "id": "D",
+    "title": "Macro & Investing",
+    "subtitle": "Cycles, debt, and reading the economy like a value investor",
+    "icon": "LineChart"
+  },
+  "nodes": [
+    {
+      "id": "D1",
+      "clusterId": "D",
+      "title": "Buy American. I Am.",
+      "author": "Warren Buffett",
+      "year": 2008,
+      "medium": "Op-Ed",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Amid GFC panic, US stocks are cheap; be greedy when others are fearful.",
+      "layer0": "At the darkest depths of the 2008 financial crisis, Warren Buffett published a New York Times op-ed declaring he was buying American stocks with his personal money. He reminded the world that 'be fearful when others are greedy, and be greedy when others are fearful.'",
+      "layer1": "Buffett's thesis relied on the distinction between the real economy and the stock market. While the short-term economic outlook was terrible, the long-term productive capacity of American businesses remained intact. Market panics create a liquidity crisis where investors are forced to sell assets regardless of their intrinsic value. By stepping in when liquidity was lowest and fear was highest, Buffett bought productive assets at historically depressed multiples.",
+      "layer2": "Do not wait for the news to turn positive before investing. The stock market is a forward-looking mechanism; by the time the economic skies clear and the news is good, the bargains will already be gone.",
+      "quiz": {
+        "question": "What was Warren Buffett's core argument for buying stocks in 2008?",
+        "options": [
+          "The stock market bottoms long before the real economy recovers",
+          "The government was guaranteed to bail out every failing company",
+          "He had inside information on the Federal Reserve's interest rate cuts",
+          "By predicting the exact month each bank would fail"
+        ],
+        "correctIndex": 0,
+        "explanation": "Buffett correctly noted that markets anticipate the future, meaning stocks will price in the recovery and skyrocket long before the actual economic data shows improvement."
+      },
+      "related": ["D3", "D4", "D10", "D12"],
+      "furtherReading": [
+        {
+          "label": "How Buffett's \"Buy American\" call aged",
+          "source": "Forbes",
+          "url": "https://www.forbes.com/sites/greatspeculations/2010/07/01/warren-buffetts-buy-american-report-card/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D1-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D2",
+      "clusterId": "D",
+      "title": "The Superinvestors of Graham-and-Doddsville",
+      "author": "Warren Buffett",
+      "year": 1984,
+      "medium": "Essay",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "The concentrated success of value investors from a shared intellectual 'village' refutes efficient markets.",
+      "layer0": "In a famous 1984 speech, Warren Buffett debunked the Efficient Market Hypothesis (EMH). He showed that a group of successful investors who all beat the market didn't do it by pure luck; they all shared the same value investing framework taught by Benjamin Graham.",
+      "layer1": "The Efficient Market Hypothesis claims that since stock prices reflect all available information, beating the market is purely a matter of statistical luck, akin to a national coin-flipping contest. Buffett argued that if all the 'lucky' coin flippers came from the same small intellectual village (Graham-and-Doddsville) and used the same specific methodology (buying businesses for less than their intrinsic value), the market could not be perfectly efficient.",
+      "layer2": "If you want to achieve exceptional results, look for anomalies that academic theories write off as outliers. A concentration of success in a specific methodology is proof of edge, not variance.",
+      "quiz": {
+        "question": "How did Buffett refute the idea that successful investing is just statistical luck?",
+        "options": [
+          "By proving mathematically that stock prices move in predictable sine waves",
+          "By showing that a large group of market-beating investors all used the exact same 'value' philosophy",
+          "By demonstrating that high-IQ investors always beat low-IQ investors",
+          "By avoiding all technology companies entirely"
+        ],
+        "correctIndex": 1,
+        "explanation": "Buffett pointed out that it wasn't just random people beating the market; an overwhelming cluster of 'winners' all shared Benjamin Graham's philosophy of buying undervalued assets."
+      },
+      "related": ["D7", "D1", "D10", "D12"],
+      "furtherReading": [
+        {
+          "label": "Columbia's retrospective on \"Superinvestors\"",
+          "source": "Columbia Business School",
+          "url": "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D2-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D3",
+      "clusterId": "D",
+      "title": "Reinvesting When Terrified",
+      "author": "Jeremy Grantham",
+      "year": 2009,
+      "medium": "Memo",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
+      "layer0": "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
+      "layer1": "During a market panic, forced selling creates a cascading effect where asset prices decouple entirely from fundamentals. Debt instruments were trading at prices that implied an apocalyptic default rate. Marks realized that even if the economy went into a severe depression, the liquidation value of the underlying assets would still yield a massive return on the distressed debt. The margin of safety was so wide that being wrong about the macro economy wouldn't ruin the trade.",
+      "layer2": "When evaluating a distressed investment, don't ask if the environment will get worse. Ask if the current price already assumes the worst possible scenario. If it does, you must buy.",
+      "quiz": {
+        "question": "Why did Howard Marks aggressively buy distressed debt in 2008?",
+        "options": [
+          "Because he knew the Federal Reserve would print money",
+          "Because debt instruments are legally risk-free",
+          "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
+          "By timing trades to the exact day the Fed changed rates"
+        ],
+        "correctIndex": 2,
+        "explanation": "Marks realized the market was pricing in the absolute worst-case scenario. Even if the economy remained terrible, the rock-bottom prices guaranteed a strong return on liquidation value."
+      },
+      "related": ["D2", "D4", "D10", "D12"],
+      "furtherReading": [
+        {
+          "label": "Related Klarman essay: The Forgotten Lessons of 2008",
+          "source": "Farnam Street",
+          "url": "https://fs.blog/the-forgotten-lessons-of-2008/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D3-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D4",
+      "clusterId": "D",
+      "title": "Waiting for the Last Dance",
+      "author": "Jeremy Grantham",
+      "year": 2021,
+      "medium": "Memo",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "US equities are in a full-blown epic bubble that will end badly, comparable to 1929 and 2000.",
+      "layer0": "In 2021, legendary investor Jeremy Grantham warned that the US stock market was in a massive, multi-asset 'superbubble' driven by zero interest rates and speculative mania. He correctly predicted the painful popping of this bubble in 2022.",
+      "layer1": "Grantham identified the classic hallmarks of a late-stage bubble: extreme overvaluation, explosive price increases in the final months, and a speculative frenzy in low-quality assets (SPACs, meme stocks, crypto). These bubbles occur when nearly perfect economic conditions are extrapolated to infinity. When the underlying regime changes (in this case, rising inflation forcing central banks to hike rates), the discount rate rises, and the illusion of infinite growth shatters.",
+      "layer2": "When you see retail investors bragging about massive gains in fundamentally worthless assets, you are in the final phase of a bubble. Do not try to time the exact top; reduce your risk and survive.",
+      "quiz": {
+        "question": "According to Grantham, what psychological indicator signals the final stage of a superbubble?",
+        "options": [
+          "A speculative frenzy and extreme overconfidence in low-quality, highly risky assets",
+          "High corporate tax rates",
+          "A sudden drop in the price of gold",
+          "By only purchasing bonds issued by the U.S. Treasury"
+        ],
+        "correctIndex": 0,
+        "explanation": "Grantham points to the 'crazy behavior' phase—like meme stocks and speculative manias—as the definitive psychological marker that a bubble is about to burst."
+      },
+      "related": ["D1", "D2", "D3", "C11"],
+      "furtherReading": [
+        {
+          "label": "Secondary write-up on Grantham's memo",
+          "source": "Marcellus",
+          "url": "https://marcellus.in/story/waiting-for-the-last-dance/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D4-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D5",
+      "clusterId": "D",
+      "title": "The Race to the Bottom",
+      "author": "Howard Marks",
+      "year": 2007,
+      "medium": "Memo",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
+      "layer0": "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
+      "layer1": "When capital is plentiful and yields are low, investors desperately chase returns. Borrowers take advantage of this by demanding 'covenant-lite' loans, stripping away the legal protections that allow lenders to intervene if the business struggles. This creates a dangerous asymmetric risk profile: the lenders accept a permanently capped upside (the low interest rate) while taking on essentially equity-like downside risk if the company defaults.",
+      "layer2": "Never lower your standards just because everyone else is lowering theirs. In competitive markets, the winner of a bidding war is often the 'loser' who accepted the worst terms.",
+      "quiz": {
+        "question": "What is a 'covenant-lite' loan?",
+        "options": [
+          "A loan issued exclusively to governments",
+          "A loan that strips away traditional financial protections and monitoring requirements for the lender",
+          "A loan with an interest rate below inflation",
+          "By demanding the CEO personally guarantee every investment"
+        ],
+        "correctIndex": 1,
+        "explanation": "Covenant-lite loans remove the safety tripwires (covenants) that normally allow lenders to take action if a borrower's financial health deteriorates, massively increasing the lender's risk."
+      },
+      "related": ["D1", "D2", "D3", "C11"],
+      "furtherReading": [
+        {
+          "label": "Line-by-line breakdown of Marks's \"Race to the Bottom\" memo",
+          "source": "StreetFins",
+          "url": "https://streetfins.com/howard-marks-memo-breakdown-the-race-to-the-bottom/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D5-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D6",
+      "clusterId": "D",
+      "title": "Sea Change",
+      "author": "Howard Marks",
+      "year": 2022,
+      "medium": "Memo",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "A generational shift from falling to elevated rates ends the 40-year tailwind; credit and value are the new winners.",
+      "layer0": "In 2022, Howard Marks declared a fundamental 'Sea Change' in global finance. He argued that the 40-year era of declining interest rates (1980-2020) was over, and the new era of higher rates would require entirely different investment strategies.",
+      "layer1": "For four decades, steadily declining interest rates acted as a massive tailwind, artificially boosting asset prices and making debt incredibly cheap. This penalized savers and rewarded leveraged risk-takers. Marks argued that inflation and structural economic shifts mean interest rates will remain structurally higher. In this new regime, 'financial engineering' and relying on multiple expansion will fail; investors will actually have to generate cash flow to survive.",
+      "layer2": "Do not assume the strategies that worked over the last decade will work in the next. When the macroeconomic cost of capital changes, the entire physics of the business world changes with it.",
+      "quiz": {
+        "question": "What was the primary driver of the 'Sea Change' Howard Marks identified in 2022?",
+        "options": [
+          "The invention of cryptocurrency",
+          "The transition from physical to digital retail",
+          "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
+          "By selling all holdings whenever a stock fell 10%"
+        ],
+        "correctIndex": 2,
+        "explanation": "Marks argued that the 40-year tailwind of constantly falling interest rates had ended, fundamentally changing how assets are valued and how risk is priced."
+      },
+      "related": ["D1", "D2", "D3", "D13"],
+      "furtherReading": [
+        {
+          "label": "Breakdown of Marks' \"The Race to the Bottom\"",
+          "source": "StreetFins",
+          "url": "https://streetfins.com/howard-marks-memo-breakdown-the-race-to-the-bottom/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D6-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D7",
+      "clusterId": "D",
+      "title": "Principles for Navigating Big Debt Crises",
+      "author": "Ray Dalio",
+      "year": 2018,
+      "medium": "Book",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Debt crises follow a repeating, mechanical template of leveraging and deleveraging that can be navigated.",
+      "layer0": "Ray Dalio studied 100 years of financial history to identify the archetypal pattern of a debt crisis. He showed how credit cycles inevitably expand into bubbles, pop, and force painful but necessary deleveragings.",
+      "layer1": "A debt cycle begins when credit grows faster than the income needed to service it, driving up asset prices. When the debt burden becomes unsustainable, the bubble pops, leading to a depression. Dalio outlines four levers policymakers use to achieve a 'Beautiful Deleveraging': cutting spending (austerity), restructuring debt (defaults), redistributing wealth (taxes), and printing money (monetization). The key is balancing deflationary forces with inflationary money printing to smooth the pain.",
+      "layer2": "Credit is not just money; it is purchasing power pulled from the future. If you take on debt, you are guaranteeing that you will have less purchasing power in the future to pay it back.",
+      "quiz": {
+        "question": "What is a 'Beautiful Deleveraging' in Dalio's framework?",
+        "options": [
+          "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
+          "When all debt is completely forgiven by the government",
+          "When a country adopts the gold standard to prevent inflation",
+          "By using only debt financing with no equity partners"
+        ],
+        "correctIndex": 0,
+        "explanation": "A Beautiful Deleveraging occurs when central banks print exactly enough money to offset the deflationary pain of defaults and austerity, shrinking the debt-to-income ratio smoothly."
+      },
+      "related": ["D1", "D2", "D3", "D13"],
+      "furtherReading": [
+        {
+          "label": "Analysis of Dalio's Big Debt Crises template",
+          "source": "CMG Wealth",
+          "url": "https://www.cmgwealth.com/ri/on-my-radar-ray-dalios-template-for-understanding-big-debt-crises/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D7-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D8",
+      "clusterId": "D",
+      "title": "The Changing World Order",
+      "author": "Ray Dalio",
+      "year": 2020,
+      "medium": "Essay",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Long-term debt, currency, and empire cycles explain the relative decline of the US and rise of China.",
+      "layer0": "Ray Dalio's framework on the rise and fall of empires. He argues that global superpowers follow a predictable 250-year cycle driven by education, technological innovation, economic dominance, and eventually, financial ruin and conflict.",
+      "layer1": "The cycle begins with strong leadership building a highly educated workforce, leading to technological innovation and global trade dominance. This wealth allows the empire to establish its currency as the global reserve. However, success breeds decadence. The empire takes on massive debt, expands its military too far, and experiences severe wealth inequality. Eventually, the central bank prints money to cover the debt, debasing the currency and leading to internal conflict and vulnerability to rising rival powers.",
+      "layer2": "Geopolitics and macroeconomics are heavily cyclical. Do not assume the current global hegemon will retain its status forever; position your assets to survive a transition of global power.",
+      "quiz": {
+        "question": "According to Dalio's cycle, what is the ultimate financial catalyst for an empire's decline?",
+        "options": [
+          "A lack of natural resources",
+          "Massive wealth inequality combined with printing money to monetize unsustainable debts",
+          "An over-reliance on agricultural exports",
+          "By buying only companies headquartered in the same city"
+        ],
+        "correctIndex": 1,
+        "explanation": "Dalio notes that late-stage empires inevitably take on too much debt and resort to printing money to pay for it, which destroys the value of their currency and sparks internal conflict."
+      },
+      "related": ["D1", "D2", "D3", "D13"],
+      "furtherReading": [
+        {
+          "label": "Summary of Dalio's Changing World Order",
+          "source": "The Investor's Podcast",
+          "url": "https://www.theinvestorspodcast.com/articles/changing-world-order/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D8-0.md",
+            "retrieved": "2026-07-17"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D9",
+      "clusterId": "D",
+      "title": "The Fraying of the US Global Currency Reserve System",
+      "author": "Lyn Alden",
+      "year": 2020,
+      "medium": "Essay",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
+      "layer0": "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
+      "layer1": "For decades, global trade relied on the 'Petrodollar' system: nations needed dollars to buy energy, forcing them to hold US Treasury bonds. Gromen argues this system is fraying as rival nations (like China and Russia) settle energy trades in their own currencies or gold. Because the US government has outsourced its manufacturing base and accumulated massive debt, it relies on inflating the money supply to fund its deficits, which incentivizes foreign nations to dump US Treasuries.",
+      "layer2": "If the global reserve currency system transitions to a multi-polar framework, hard assets like gold, energy infrastructure, and pristine real estate will dramatically outperform paper fiat currencies.",
+      "quiz": {
+        "question": "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
+        "options": [
+          "The US produces too much oil domestically",
+          "The Federal Reserve is not allowed to buy foreign currencies",
+          "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
+          "By assuming government spending would always decline"
+        ],
+        "correctIndex": 2,
+        "explanation": "The massive US debt load means high interest rates cause interest expense to explode, forcing the government to print even more money to pay the interest, creating a vicious cycle of currency debasement."
+      },
+      "related": ["D1", "D2", "D3"],
+      "furtherReading": [
+        {
+          "label": "The Changing World Order — dollar hegemony and reserve-currency cycles (Dalio)",
+          "source": "House overview / Bridgewater",
+          "url": "https://www.cnbc.com/2025/09/19/ray-dalio-says-gold-non-fiat-currencies-will-be-stronger-stores-of-value-as-us-debt-mounts.html",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D9-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D10",
+      "clusterId": "D",
+      "title": "Bretton Woods III",
+      "author": "Zoltan Pozsar",
+      "year": 2022,
+      "medium": "Memo",
+      "category": "Macro Memo",
+      "epistemicStatus": "Canonical",
+      "thesis": "Weaponized reserves after Russia's invasion usher in a new monetary order backed by commodities, not fiat.",
+      "layer0": "In 2022, Credit Suisse strategist Zoltan Pozsar coined 'Bretton Woods III', arguing that the global monetary system is shifting from inside money (fiat currency backed by sovereign debt) to outside money (currencies backed by hard commodities).",
+      "layer1": "Following the freezing of Russia's FX reserves, Pozsar noted that sovereign reserves held in Western fiat currencies are actually just liabilities on Western balance sheets—meaning they can be confiscated. This realization forces commodity-producing nations (like Russia and China) to demand payment in hard assets (gold, energy) rather than US Treasuries. This fractures the global supply chain, structurally increasing inflation in the West as they are forced to reshore manufacturing and pay for raw materials with tangible value.",
+      "layer2": "When the underlying plumbing of global trade changes, the value of paper assets relative to real assets flips. In a 'Bretton Woods III' world, you want to own the commodities, the infrastructure that moves them, and the industrial base that refines them, rather than government bonds.",
+      "quiz": {
+        "question": "What specific event catalyzed the shift to 'Bretton Woods III' according to Pozsar?",
+        "options": [
+          "The freezing of Russia's foreign exchange reserves by the West in 2022",
+          "The invention of Bitcoin in 2009",
+          "The collapse of the Lehman Brothers in 2008",
+          "By insisting on payment only in physical commodities"
+        ],
+        "correctIndex": 0,
+        "explanation": "The unprecedented confiscation of Russia's sovereign FX reserves proved to the world that fiat reserves are not 'risk-free' if a foreign government can simply turn them off."
+      },
+      "related": ["D1", "D2", "D3"],
+      "furtherReading": [
+        {
+          "label": "Bretton Woods III (Zoltan Pozsar, 2022)",
+          "source": "House overview (Pozsar)",
+          "url": "https://thedeepdive.ca/commodities-and-the-new-world-order-what-you-need-to-know-from-zoltan-pozsars-bretton-woods-iii/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D10-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D11",
+      "clusterId": "D",
+      "title": "RIP Good Times",
+      "author": "Sequoia Capital",
+      "year": 2008,
+      "medium": "Deck",
+      "category": "VC Doctrine",
+      "epistemicStatus": "Canonical",
+      "thesis": "The 2008 crash is structural, not cyclical; cut burn, extend runway, get to cash-flow positive.",
+      "layer0": "In 2008, Sequoia Capital summoned its founders for a brutal presentation titled 'RIP Good Times'. They warned that the financial crisis would completely choke off venture funding, and startups needed to immediately slash cash burn to survive.",
+      "layer1": "The presentation highlighted how macroeconomic shocks cascade down to early-stage startups. When public markets crash, limited partners (LPs) stop giving money to venture capitalists. VCs, in turn, stop funding startups. Sequoia demanded its founders get to 'default alive'—meaning they needed to reach profitability using only the cash they currently had in the bank, because assuming they could raise another round in the next 18 months was suicidal.",
+      "layer2": "Cash is oxygen. When the macroeconomic environment shifts, your assumptions about fundraising must change instantly. Survival is the ultimate competitive advantage; the startups that survive the winter get to monopolize the market when spring arrives.",
+      "quiz": {
+        "question": "What did Sequoia mean by telling founders they must become 'default alive'?",
+        "options": [
+          "They must immediately IPO to raise cash",
+          "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
+          "They must pivot to healthcare software",
+          "By refusing to invest during any month with a market decline"
+        ],
+        "correctIndex": 1,
+        "explanation": "Being 'default alive' means that if your current trajectory continues (and you never raise another dollar), you will reach profitability before running out of cash."
+      },
+      "related": ["D1", "D2", "D3"],
+      "furtherReading": [
+        {
+          "label": "RIP Good Times (Sequoia Capital, 2008)",
+          "source": "Sequoia Capital",
+          "url": "https://www.sequoiacap.com/article/rip-good-times-pt1/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D11-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D12",
+      "clusterId": "D",
+      "title": "Adapting to Endure",
+      "author": "Sequoia Capital",
+      "year": 2022,
+      "medium": "Deck",
+      "category": "VC Doctrine",
+      "epistemicStatus": "Canonical",
+      "thesis": "The era of free capital is over; founders must pivot to profitability as rates rise and multiples compress.",
+      "layer0": "In 2022, as tech stocks crashed and interest rates spiked, Sequoia released a sequel to RIP Good Times called 'Adapting to Endure'. The core message: the era of 'growth at all costs' fueled by zero interest rates was over, and free cash flow was king again.",
+      "layer1": "The presentation dissected the shift in valuation multiples. During the ZIRP (Zero Interest Rate Policy) era, investors valued companies on forward revenue multiples, allowing startups to burn massive amounts of cash to acquire users. As rates rose, the cost of capital increased, and the market violently rotated back to valuing companies based on actual earnings and free cash flow margins. Startups were told to immediately cut unproven projects and focus on high-ROI core businesses.",
+      "layer2": "The market's scorecard changes based on the cost of capital. You must align your business model with what the current market values—if the market is rewarding cash flow, burning capital to chase top-line revenue will destroy your valuation.",
+      "quiz": {
+        "question": "What fundamental shift in investor behavior did 'Adapting to Endure' highlight?",
+        "options": [
+          "A shift from investing in software to investing in crypto",
+          "A shift from public markets to private equity",
+          "A shift from valuing 'growth at all costs' to valuing free cash flow and profitability",
+          "By purchasing only companies with no competition whatsoever"
+        ],
+        "correctIndex": 2,
+        "explanation": "As interest rates rose, money was no longer free. Investors stopped subsidizing massive losses for future growth and demanded companies prove they could generate real cash today."
+      },
+      "related": ["D1", "D2", "D3"],
+      "furtherReading": [
+        {
+          "label": "Adapting to Endure (Sequoia Capital, 2022)",
+          "source": "Sequoia Capital",
+          "url": "https://fortune.com/2022/05/25/sequoia-capital-slide-dek-warning-to-founders-downturn/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D12-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Macro & Cycles"]
+    },
+    {
+      "id": "D13",
+      "clusterId": "D",
+      "title": "20 Golden Rules from Peter Lynch",
+      "author": "Peter Lynch",
+      "year": 1989,
+      "medium": "Book excerpt",
+      "category": "Investing",
+      "epistemicStatus": "Canonical",
+      "thesis": "Amateur investors have structural advantages over Wall Street professionals — the freedom to hold five stocks instead of five hundred, to ignore quarterly performance pressure, and to research industries they actually understand — and Lynch's rules are mostly about not squandering that edge.",
+      "layer0": "Your investor's edge isn't something you get from Wall Street experts. It's something you already have — as long as you don't throw it away chasing what the herd is doing.",
+      "layer1": "Several rules cluster around one insight: professional money managers are structurally disadvantaged by career risk and herd behavior, which the amateur investor doesn't share. Others are about company-level discipline — never invest in a company without understanding its finances, avoid hot stocks in hot industries (great companies in unglamorous, cold industries are consistently better performers), and study more companies rather than fewer, since 'if you study 10 companies, you'll find one for which the story is better than expected. If you study 50, you'll find five.' Lynch also stresses time horizon: 'time is on your side when you own shares of superior companies' and volatility itself ('a stock market decline is as routine as a January blizzard in Colorado') should be treated as opportunity, not crisis.",
+      "layer2": "The rule that cuts hardest against instinct is rule six: there is no correlation between a company's operational success and its stock's success over a few years, but a 100% correlation over the long term. Most investing mistakes come from confusing short-term stock price with long-term business performance. Which of your own holdings are you judging on the wrong time horizon right now?",
+      "quiz": {
+        "question": "According to Lynch, what is the relationship between a company's operational success and its stock price success?",
+        "options": [
+          "Over a few years there's essentially no correlation, but over the long term the correlation approaches 100%.",
+          "There is a perfect correlation at every timescale, including day to day.",
+          "Stock price success always precedes operational success.",
+          "The two are entirely unrelated at any timescale."
+        ],
+        "correctIndex": 0,
+        "explanation": "This is one of Lynch's most quoted rules: short-term stock price movement is noisy and often disconnected from the underlying business, but over a long enough horizon, the company's actual performance is what determines the stock's outcome."
+      },
+      "related": ["D1", "D2"],
+      "furtherReading": [
+        {
+          "label": "20 Golden Rules from Peter Lynch",
+          "source": "One Up on Wall Street (excerpt)",
+          "url": "https://x.com/QCompounding/status/1909637977279508601",
+          "type": "article",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D13-0.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Markets & Narrative", "Compounding & Patience"]
+    },
+    {
+      "id": "D14",
+      "clusterId": "D",
+      "title": "The Memory Supercycle: When Demand Outruns What Physics Can Build",
+      "author": "SK hynix (Chey Tae-won); TSMC; ASML",
+      "year": 2026,
+      "medium": "Framework",
+      "category": "Macro & Investing",
+      "epistemicStatus": "Contemporary",
+      "thesis": "AI demand for compute and memory is compounding faster than physical fabrication capacity can be built, because building a new chip fab takes five-plus years no matter how much capital is thrown at it — creating a structural, multi-year supply gap that no amount of urgent spending can close early.",
+      "layer0": "SK hynix's chairman says customers want 4x-5x more memory supply, but even doubling wafer capacity will take until 2030. TSMC and ASML both raised 2026 capital spending guidance mid-year and are still telling investors the demand-supply gap is 'really big' and unquantifiable.",
+      "layer1": "The mechanism is a lead-time mismatch, not a willingness-to-invest problem. SK hynix's chairman put a new ('greenfield') memory fab's build time at more than five years — meaning capacity ordered today lands near the tail end of the shortage window he's forecasting through 2030, not before it. TSMC's CEO said the same about advanced logic nodes: 'Building the capacity and then ramping it up now takes five to seven years. There are no shortcuts.' ASML, the sole supplier of the EUV lithography machines both companies depend on, is 'investigating' a further 30% capacity expansion for 2028 specifically because customer order signals are strong enough to justify it — but its own CFO wouldn't commit to a number, since matching supply to a demand curve that's still rising is inherently a moving target. Within memory specifically, the gap compounds further: high-bandwidth memory (HBM) consumes far more wafers per bit than ordinary DRAM and carries higher margins, so new capacity keeps tilting toward HBM — which starves standard DRAM supply even as chipmakers add wafers overall, explaining why DRAM contract prices reportedly rose roughly 63% quarter-over-quarter even as capacity investment accelerated.",
+      "layer2": "J.P. Morgan frames the same dynamic from the financing side, describing AI infrastructure build-out as a $1.5 trillion, decade-long undertaking on the scale of prior 'generational' infrastructure waves like highways and railroads — the point being that this isn't a shortage that gets fixed by writing a bigger check next quarter; the physical build time is the binding constraint, not the capital. When you're facing a demand surge in your own work, is the bottleneck actually money — or is it something with a fixed lead time that more money can't compress, and are you budgeting your patience accordingly?",
+      "quiz": {
+        "question": "According to SK hynix's chairman and TSMC's CEO, why can't the AI-driven chip and memory shortage be resolved quickly even with aggressive capital spending?",
+        "options": [
+          "Because chipmakers are refusing to raise capital expenditure despite strong demand signals.",
+          "Because building and ramping a new fab has a fixed lead time of roughly five to seven years regardless of how much capital is deployed, so today's spending increases can't produce supply before the early 2030s.",
+          "Because AI demand for chips is actually expected to decline within the next year.",
+          "Because export controls make it illegal to build new fabs anywhere outside of Taiwan."
+        ],
+        "correctIndex": 1,
+        "explanation": "Both SK hynix's Chey Tae-won and TSMC's C.C. Wei independently cite the same structural constraint: a new fab's multi-year build-and-ramp timeline is fixed by physics and engineering complexity, not by capital availability — which is why both companies are raising 2026 spending while still forecasting shortages persisting through 2030."
+      },
+      "related": ["D11", "K1"],
+      "furtherReading": [
+        {
+          "label": "Thread on the memory supercycle",
+          "source": "Zephyr (@zephyr_z9) on X, corroborated by Bloomberg via Tom's Hardware",
+          "url": "https://x.com/zephyr_z9/status/2076652343307964879",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D14-0.md",
+            "retrieved": "2026-07-19"
+          }
+        },
+        {
+          "label": "TSMC (TSM) Q2 2026 Earnings Call Transcript",
+          "source": "Benzinga",
+          "url": "https://www.benzinga.com/news/26/07/60504620/taiwan-semiconductor-reports-q2-2026-results-full-earnings-call-transcript",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D14-1.md",
+            "retrieved": "2026-07-19"
+          }
+        },
+        {
+          "label": "ASML Holding Q2 2026 Earnings Call Transcript",
+          "source": "Benzinga",
+          "url": "https://www.benzinga.com/news/26/07/60488275/asml-holding-q2-2026-earnings-call-complete-transcript",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D14-2.md",
+            "retrieved": "2026-07-19"
+          }
+        },
+        {
+          "label": "Powering the AI Revolution",
+          "source": "J.P. Morgan Insights",
+          "url": "https://www.jpmorgan.com/insights/technology/artificial-intelligence/powering-the-ai-revolution",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/D14-3.md",
+            "retrieved": "2026-07-19"
+          }
+        }
+      ],
+      "tags": ["Macro & Cycles", "Compounding & Patience"]
+    }
+  ]
+}

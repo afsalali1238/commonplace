@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
+import { Bone } from "@/components/Skeleton";
 
 const readSearchSchema = z.object({
   label: z.string().optional(),
@@ -12,7 +13,7 @@ const readSearchSchema = z.object({
 export const Route = createFileRoute("/read/$id")({
   validateSearch: readSearchSchema,
   head: () => ({
-    meta: [{ title: "Archived reading — Unknown" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Archived reading — Commonplace" }, { name: "robots", content: "noindex" }],
   }),
   component: ReadScreen,
 });
@@ -137,9 +138,9 @@ function ReadScreen() {
       <div className="mt-8">
         {status === "loading" && (
           <div className="space-y-3" aria-hidden="true">
-            <div className="h-4 w-full animate-pulse bg-line/40" />
-            <div className="h-4 w-11/12 animate-pulse bg-line/40" />
-            <div className="h-4 w-4/5 animate-pulse bg-line/40" />
+            <Bone className="h-4 w-full" />
+            <Bone className="h-4 w-11/12" />
+            <Bone className="h-4 w-4/5" />
           </div>
         )}
 

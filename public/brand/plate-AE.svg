@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Storytelling &amp; Myth">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 20.57 3.7 A 6 6 0 0 1 27.85 2.32" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 15.87 1.23 A 11.24 11.24 0 0 1 33.95 0.73" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.85"/>
+    <path d="M 23.08 -8.71 A 16.48 16.48 0 0 1 41.57 7.43" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.70"/>
+    <path d="M 24.6 -14.05 A 21.71 21.71 0 0 1 39.31 24.06" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.55"/>
+    <path d="M 32.22 -18.34 A 26.95 26.95 0 0 1 40.84 29.52" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.40"/>
+    <path d="M 51.04 -11.4 A 32.19 32.19 0 0 1 15.7 38.44" stroke="#1a1a17" stroke-opacity="0.295" stroke-width="1.25"/>
+    <path d="M 60.81 -3.53 A 37.43 37.43 0 1 1 -12.09 11.94" stroke="#1a1a17" stroke-opacity="0.270" stroke-width="1.10"/>
+    <path d="M 66.85 16.41 A 42.67 42.67 0 1 0 -16.72 16.19" stroke="#1a1a17" stroke-opacity="0.245" stroke-width="0.95"/>
+    <path d="M 64.81 -2 L 81.74 31.66 L 50.3 44.54 L 70.81 62" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="81.74" cy="31.66" r="2.47" fill="#b45309"/>
+</svg>

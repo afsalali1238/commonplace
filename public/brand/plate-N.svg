@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Craft &amp; Focus">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 40.87 7.5 A 6 6 0 0 1 38.59 1.38" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 26.97 9.29 A 18.69 18.69 0 0 1 39.42 -15.32" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.76"/>
+    <path d="M 17.36 -13.14 A 31.37 31.37 0 0 1 73.18 -9.92" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.52"/>
+    <path d="M 20.22 -34.12 A 44.06 44.06 0 0 1 86.95 14.3" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.28"/>
+    <path d="M 28.1 -51.65 A 56.74 56.74 0 1 1 43.54 59.41" stroke="#1a1a17" stroke-opacity="0.320" stroke-width="1.04"/>
+    <path d="M -2 53.7 L 39.83 32.07 L 62.35 53.2 L 102 23.6" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="62.35" cy="53.2" r="2.90" fill="#b45309"/>
+</svg>

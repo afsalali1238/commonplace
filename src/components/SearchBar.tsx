@@ -4,9 +4,14 @@ import { NODES } from "@/data/nodes";
 import { MicroLabel } from "./MicroLabel";
 import MiniSearch from "minisearch";
 
-// Lazy, non-blocking index build — defers the ~400-node MiniSearch
+// Lazy, non-blocking index build — defers the ~450-node MiniSearch
 // construction until after first paint (or first focus), so the feed's
-// initial interaction isn't janked by ~50KB of text indexing work.
+// initial interaction isn't janked by text indexing work.
+//
+// Indexes the bundled index only. layer1/layer2 live in the on-demand body
+// files (lib/bodies.ts) and aren't searched — title + thesis + layer0 is
+// what a query is realistically matching anyway; the deeper layers mostly
+// re-use those terms. Revisit if search misses show up in feedback.
 let sharedIndex: MiniSearch | null = null;
 let indexing: Promise<MiniSearch> | null = null;
 
@@ -16,7 +21,7 @@ function getSearchIndex(): Promise<MiniSearch> {
   indexing = new Promise((resolve) => {
     const build = () => {
       const ms = new MiniSearch({
-        fields: ["title", "author", "thesis", "layer0", "layer1", "layer2"],
+        fields: ["title", "author", "thesis", "layer0"],
         storeFields: ["id", "title", "author", "year"],
         searchOptions: { boost: { title: 2, author: 1.5 } },
       });

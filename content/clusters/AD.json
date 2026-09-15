@@ -1,0 +1,344 @@
+{
+  "cluster": {
+    "id": "AD",
+    "title": "Neuroscience & Biology",
+    "subtitle": "Neuroplasticity, the default mode network, and the hardware the mind runs on",
+    "icon": "Brain"
+  },
+  "nodes": [
+    {
+      "id": "AD1",
+      "clusterId": "AD",
+      "title": "Hebbian Theory: Neurons That Fire Together, Wire Together",
+      "author": "Donald Hebb",
+      "year": 1949,
+      "medium": "Book",
+      "category": "Neuroscience",
+      "epistemicStatus": "Canonical",
+      "thesis": "Learning is physical — repeated co-activation between neurons strengthens the connection between them, which is how experience becomes structure.",
+      "layer0": "Hebb's 1949 rule is the closest thing neuroscience has to a founding law: neurons that fire together, wire together. Every habit, skill, and memory is this rule running on repeat.",
+      "layer1": "Hebb proposed that when one neuron repeatedly helps fire another, the connection between them physically strengthens, becoming more efficient next time. This synaptic plasticity is now the accepted basis for how memory and learning are encoded at the cellular level, decades before brain imaging could confirm it. It also explains why repetition builds skill, and why breaking a habit means weakening a wired pathway, not just willing it away.",
+      "layer2": "What pathway have you unconsciously wired together through repetition — a reaction, a scroll habit, a way of arguing — that you're now trying to consciously rewire?",
+      "quiz": {
+        "question": "According to Hebbian theory, what physically changes in the brain when learning occurs?",
+        "options": [
+          "New neurons are created every time something is learned",
+          "The brain's total size increases with each new memory",
+          "Neurons that fire together are chemically destroyed and replaced",
+          "The synaptic connection between two neurons strengthens when one repeatedly helps activate the other"
+        ],
+        "correctIndex": 3,
+        "explanation": "Hebb's postulate is about connection strength, not neuron count — repeated co-activation is what physically encodes a memory or skill."
+      },
+      "related": ["AD4", "U8", "N7"],
+      "furtherReading": [
+        {
+          "label": "Hebbian Theory",
+          "source": "article",
+          "url": "https://en.wikipedia.org/wiki/Hebbian_theory",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD1-0.md",
+            "retrieved": "2026-07-17"
+          }
+        },
+        {
+          "label": "Donald Olding Hebb",
+          "source": "article",
+          "url": "https://can-acn.org/donald-olding-hebb/",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD1-1.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Craft & Deep Work", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "AD2",
+      "clusterId": "AD",
+      "title": "The Default Mode Network",
+      "author": "Marcus Raichle",
+      "year": 2001,
+      "medium": "Paper",
+      "category": "Neuroscience",
+      "epistemicStatus": "Contemporary",
+      "thesis": "The brain doesn't go idle at rest — a specific network becomes more active the moment you stop focusing on a task, and it burns a disproportionate share of the brain's total energy doing it.",
+      "layer0": "Raichle kept seeing the same brain regions go quiet exactly when a task started, scan after scan. In 2001 he named what they were doing instead: the brain's default mode.",
+      "layer1": "Brain imaging kept showing regions — medial prefrontal, posterior cingulate, lateral parietal cortex — that quiet down during external tasks, then reactivate when attention turns inward: mind-wandering, remembering, imagining the future. Raichle's 2001 paper named this baseline activity the 'default mode,' overturning the assumption that rest meant low brain activity — the network burns roughly 20% of the brain's energy doing 'nothing.'",
+      "layer2": "When was the last genuinely unstructured, unstimulated stretch of time you gave your mind — no podcast, no scroll — and what did it produce that focused work couldn't?",
+      "quiz": {
+        "question": "What did Raichle's 2001 discovery of the default mode network overturn?",
+        "options": [
+          "The theory that different brain regions are specialized for different functions",
+          "The theory that memories are stored primarily in the hippocampus",
+          "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
+          "The belief that neurons communicate via electrical signals"
+        ],
+        "correctIndex": 2,
+        "explanation": "Brain scans had long treated the 'resting' state as a low-activity baseline; Raichle showed a specific network actually increases activity during rest, consuming a large share of the brain's energy budget on internally-directed thought."
+      },
+      "related": ["AD1", "N7", "O2"],
+      "furtherReading": [
+        {
+          "label": "Default mode network",
+          "source": "article",
+          "url": "https://en.wikipedia.org/wiki/Default_mode_network",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD2-0.md",
+            "retrieved": "2026-07-17"
+          }
+        },
+        {
+          "label": "A default mode of brain function (2001, PNAS)",
+          "source": "paper",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD2-1.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Craft & Deep Work", "Meaning & Self"]
+    },
+    {
+      "id": "AD3",
+      "clusterId": "AD",
+      "title": "Active Parents Raise Active Children",
+      "author": "Lynn L. Moore et al.",
+      "year": 1991,
+      "medium": "Journal article",
+      "category": "Health & Behavior",
+      "epistemicStatus": "Canonical",
+      "thesis": "A child's physical activity level correlates far more strongly with an active mother than with an active father — and children of two active parents are nearly six times more likely to be active than children of two inactive parents.",
+      "layer0": "Researchers strapped accelerometers onto 100 four-to-seven-year-olds and both of their parents for a full year. The pattern that fell out was not subtle.",
+      "layer1": "Published in the Journal of Pediatrics from the Framingham Children's Study, the study found children of active mothers were about twice as likely to be active themselves; children of active fathers, only modestly more so. When both parents were active, children were 5.8 times more likely to be active than children of two inactive parents. The authors point to several possible mechanisms: parents as role models the child imitates, shared family activity time, and active parents actively enrolling their kids in physical pursuits.",
+      "layer2": "This is a correlational study, not a controlled experiment — the '5.8 times more likely' finding doesn't prove that watching Mom exercise is the causal lever, since genetics and shared environment are tangled together with modeling. But the asymmetry between mother and father effect sizes is itself a data point worth sitting with: what does it suggest about who children are actually watching?",
+      "quiz": {
+        "question": "In the Framingham Children's Study, which parent's activity level correlated most strongly with a young child's own physical activity?",
+        "options": [
+          "The father's activity level, more than the mother's.",
+          "Neither parent's activity showed any correlation.",
+          "The mother's activity level, more than the father's.",
+          "Only the activity of same-sex parent and child correlated."
+        ],
+        "correctIndex": 2,
+        "explanation": "The study found children of active mothers were roughly twice as likely to be active, a notably stronger effect than the correlation found with active fathers."
+      },
+      "related": ["AD1", "AD2", "AD4"],
+      "furtherReading": [
+        {
+          "label": "Influence of parents' physical activity levels on activity levels of young children",
+          "source": "Journal of Pediatrics, 118(2):215-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1993953/",
+          "type": "paper",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD3-0.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Health & Body"]
+    },
+    {
+      "id": "AD4",
+      "clusterId": "AD",
+      "title": "Neuroplasticity: The Brain That Changes Itself",
+      "author": "Norman Doidge",
+      "year": 2007,
+      "medium": "Book",
+      "category": "Neuroscience",
+      "epistemicStatus": "Canonical",
+      "thesis": "The brain physically rewires itself in response to repeated thought and behavior throughout adulthood, not just childhood — meaning habits, skills, and even chronic thought patterns are more changeable at a neural level than 'fixed personality' framing suggests.",
+      "layer0": "Your brain isn't the fixed hardware it feels like. It's closer to software that rewrites its own wiring based on what you repeatedly do and think.",
+      "layer1": "Neuroplasticity describes the brain's capacity to form new neural connections and reorganize existing ones throughout life, not only during a childhood 'critical period' as older models assumed. Repeated practice strengthens specific neural pathways (the popularized shorthand is 'neurons that fire together wire together'), which is the mechanistic basis for skill acquisition, habit formation, and — the thread's more provocative claim — the ability to consciously reshape ingrained thought patterns rather than accept them as permanent traits.",
+      "layer2": "The caution worth adding: popular neuroplasticity content often overstates how fast or how completely adult rewiring happens compared to what the research actually shows. Real change is possible but typically requires sustained, deliberate repetition over a much longer horizon than most threads imply. What's a thought pattern you've been treating as fixed that might actually just be well-worn?",
+      "quiz": {
+        "question": "What does neuroplasticity fundamentally challenge about older models of brain development?",
+        "options": [
+          "That the brain has no capacity to change at all, at any age.",
+          "That only physical injury can alter brain structure.",
+          "That memory and learning are unrelated to brain structure.",
+          "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood."
+        ],
+        "correctIndex": 3,
+        "explanation": "The core update neuroplasticity research made to older neuroscience was demonstrating that meaningful neural reorganization continues well into adulthood, not just during early developmental windows."
+      },
+      "related": ["AD1", "AD3"],
+      "furtherReading": [
+        {
+          "label": "The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science",
+          "source": "Norman Doidge (Penguin Random House)",
+          "url": "https://www.penguinrandomhouse.com/books/54295/the-brain-that-changes-itself-by-norman-doidge-md/",
+          "type": "article",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD4-0.md",
+            "retrieved": "2026-07-20"
+          }
+        }
+      ],
+      "tags": ["Health & Body", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "AD5",
+      "clusterId": "AD",
+      "title": "Circadian Rhythm & Sleep Homeostasis",
+      "author": "Nathaniel Kleitman / Satchin Panda",
+      "year": 1939,
+      "medium": "Book",
+      "category": "Neuroscience",
+      "epistemicStatus": "Canonical",
+      "thesis": "Two processes govern sleep — a 24-hour circadian clock that schedules alertness, and a homeostatic pressure that builds with time awake — and violating either by irregular light, meals, or bedtime impairs cognition the next day more than most people realize.",
+      "layer0": "Kleitman showed in the 1930s that body temperature, alertness, and sleep are not random — they follow a clock. Panda showed in the 2010s that when you eat and when you see light shifts that clock as strongly as when you sleep.",
+      "layer1": "The suprachiasmatic nucleus runs a roughly 24-hour oscillator entrained by light and feeding; adenosine and other sleep-pressure signals accumulate with waking hours. Light at night, erratic meals, and social jet lag desynchronize the two — you can be 'in bed 8 hours' but out of phase, getting fragmented sleep and blunted morning alertness. Consolidating sleep, light, and meal windows is the highest-leverage lever for deep work capacity the next day.",
+      "layer2": "Is your 'bad sleeper' story actually a circadian story — same bedtime window, same dark, same first-light and first-meal timing for the next seven days?",
+      "quiz": {
+        "question": "Which two processes interact to govern the timing and quality of sleep?",
+        "options": [
+          "A 24-hour circadian clock entrained by light and meal timing, plus a homeostatic sleep pressure that accumulates with time awake",
+          "Only the total number of hours spent in bed, regardless of circadian timing or light exposure",
+          "A purely psychological expectation about sleep that has no underlying biological clock",
+          "REM sleep alone determines sleep quality, with circadian rhythm playing no measurable role"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sleep is gated by both the SCN-driven circadian oscillator and accumulating homeostatic pressure; misalignment of either fragments sleep and degrades next-day cognition even if time in bed looks adequate."
+      },
+      "related": ["AD6", "AD2", "AD1", "N8"],
+      "furtherReading": [
+        {
+          "label": "Circadian rhythm",
+          "source": "National Institute of General Medical Sciences",
+          "url": "https://nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD5-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Health & Body", "Craft & Deep Work"]
+    },
+    {
+      "id": "AD6",
+      "clusterId": "AD",
+      "title": "Fight-or-Flight & the Amygdala Hijack",
+      "author": "Walter Cannon / Joseph LeDoux",
+      "year": 1915,
+      "medium": "Model",
+      "category": "Neuroscience",
+      "epistemicStatus": "Canonical",
+      "thesis": "Cannon's fight-or-flight describes the body's rapid mobilization under threat, and LeDoux showed the amygdala can route a fear signal before conscious cortex catches up — so you react before you have a reasoned perception of what you're reacting to.",
+      "layer0": "Cannon named fight-or-flight in 1915. Seven decades later LeDoux traced why you flinch at a stick that looks like a snake — the amygdala fires before visual cortex finishes identifying the object.",
+      "layer1": "The amygdala's 'low road' — thalamus → amygdala — is a fast, coarse threat detector that triggers adrenaline, cortisol, and sympathetic arousal within milliseconds, while the 'high road' through cortex is slower and more accurate. In modern contexts — a sharp Slack message, a dip in metrics — the same circuitry fires on social threat, mobilizing a body built for predators. Regulation is not suppression but reappraisal after the initial surge: name, breathe, re-evaluate once cortex comes online 6–8 seconds later.",
+      "layer2": "What cue this week triggered a full-body mobilization for a social threat that needed only a sentence-level response — and what 10-second protocol would have let cortex catch up?",
+      "quiz": {
+        "question": "What does the amygdala's 'low road' explain about threat responses?",
+        "options": [
+          "A fast, coarse fear signal can trigger bodily mobilization before conscious visual cortex has fully identified the stimulus",
+          "Fear responses only occur after conscious, deliberative reasoning about the threat has completed",
+          "The amygdala inhibits all bodily arousal during threat, promoting calm analysis",
+          "Fight-or-flight only activates during physical predator threats, never during social or work stressors"
+        ],
+        "correctIndex": 0,
+        "explanation": "LeDoux's dual-path model shows a rapid subcortical route drives physiological mobilization ahead of accurate cortical identification, explaining pre-conscious flinches and stress reactions to social cues."
+      },
+      "related": ["AD7", "AD1", "U6", "AD5"],
+      "furtherReading": [
+        {
+          "label": "The Emotional Brain (1996) — fear circuit & amygdala",
+          "source": "Joseph LeDoux / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Amygdala",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD6-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Health & Body", "Cognitive Biases & Models"]
+    },
+    {
+      "id": "AD7",
+      "clusterId": "AD",
+      "title": "Mirror Neurons & Embodied Simulation",
+      "author": "Giacomo Rizzolatti",
+      "year": 1996,
+      "medium": "Paper",
+      "category": "Neuroscience",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Rizzolatti's team found neurons that fire both when a macaque grasps and when it watches another grasp — suggesting understanding others is not abstract inference alone but embodied simulation of their actions and intentions.",
+      "layer0": "In Parma in 1996, electrodes in a monkey's premotor cortex spiked when the monkey grabbed a peanut — and, unprompted, when a researcher grabbed a peanut in front of it.",
+      "layer1": "Mirror neurons (and the broader mirroring system in humans — inferior frontal, parietal, STS) activate overlapping circuitry for executed and observed actions, and likely for felt vs. observed disgust and pain. The system doesn't 'read minds' directly; it reuses your own motor and affective maps to simulate what the other's state would feel like from inside. It grounds empathy, imitation learning, and why live demonstration beats written instruction for motor skills.",
+      "layer2": "When you struggle to understand someone's resistance, have you actually simulated their action context — same constraints, same tools, same time pressure — or only argued against their conclusion?",
+      "quiz": {
+        "question": "What is the core interpretation of mirror neuron findings?",
+        "options": [
+          "Understanding others partly reuses your own motor and affective circuitry to simulate their actions and states, rather than relying solely on abstract inference",
+          "Mirror neurons allow perfect mind-reading of another person's exact thoughts with no simulation required",
+          "Humans lack a mirror system and must consciously reason about others without any embodied simulation",
+          "Mirror neurons fire only during actual movement and are silent during observation of others"
+        ],
+        "correctIndex": 0,
+        "explanation": "The mirroring system overlaps execution and observation, supporting embodied simulation as a fast, non-inferential route to understanding actions and emotions, complementing slower explicit reasoning."
+      },
+      "related": ["AD8", "AD1", "O7", "U7"],
+      "furtherReading": [
+        {
+          "label": "The Mirror-Neuron System (Rizzolatti & Craighero, 2004)",
+          "source": "Rizzolatti & Craighero / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mirror_neuron",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD7-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Health & Body", "Meaning & Self"]
+    },
+    {
+      "id": "AD8",
+      "clusterId": "AD",
+      "title": "Epigenetics: Experience Writes on the Genome",
+      "author": "Conrad Waddington / Michael Meaney",
+      "year": 1942,
+      "medium": "Field",
+      "category": "Biology",
+      "epistemicStatus": "Contemporary",
+      "thesis": "Epigenetics shows experience can leave chemical marks on DNA that change gene expression without changing the code — and some marks, via careful animal models, appear responsive to stress, nutrition, and care.",
+      "layer0": "Waddington coined 'epigenetics' in 1942 for how the same genome produces different outcomes by context. Meaney showed in the 2000s that rat pups licked more by mothers grew different stress responses because of a chemical mark, not a different gene.",
+      "layer1": "Methyl groups and histone modifications act like annotations on the genome — turning volume up or down on existing genes. In rodents, variation in maternal care methylates the glucocorticoid receptor promoter, shifting HPA-axis calibration for life; diet and toxins do similar in specific windows. In humans, evidence is largely correlational and modest-effect — popular coverage overclaims 'trauma is inherited' — but the mechanistic principle stands: environment biases which parts of the inherited system get expressed.",
+      "layer2": "Which 'fixed trait' story — temperament, stress reactivity, willpower — might be better framed as an expression setting that has been tuned by sustained earlier context?",
+      "quiz": {
+        "question": "What does epigenetics demonstrate about gene-environment interaction?",
+        "options": [
+          "Environmental context can produce chemical annotations on DNA that alter gene expression without changing the underlying genetic code",
+          "Experience rewrites the DNA base sequence itself, creating entirely new genes within a single lifetime",
+          "Genes determine outcomes independently of any environmental influence or chemical marking",
+          "Epigenetic marks have been proven to transmit specific learned memories unchanged across many human generations"
+        ],
+        "correctIndex": 0,
+        "explanation": "Epigenetics is about regulation — methylation and histone marks change how much a gene is expressed given the same code, with some animal models showing experience-dependent marks, while human transgenerational claims remain weakly evidenced."
+      },
+      "related": ["AD7", "AB2", "AD3", "AB6"],
+      "furtherReading": [
+        {
+          "label": "Epigenetics",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Epigenetics",
+          "archive": {
+            "status": "full",
+            "path": "content/sources/AD8-0.md",
+            "retrieved": "2026-09-06"
+          }
+        }
+      ],
+      "tags": ["Health & Body", "Cognitive Biases & Models"]
+    }
+  ]
+}

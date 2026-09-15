@@ -18,6 +18,11 @@ Everything the Reels handoff already designed (full-bleed thesis card, swipe to 
 
 ## 2. Minimal nav: four tabs, not five
 
+> **Superseded (2026-09-04):** the bar shipped as **Feed · Explore · Review · You** (PRODUCT-BRIEF §5,
+> FEED-SPEC §7 option A). This section's variant dropped Review from the bar, which removed the
+> retention loop's only daily trigger; Skim is instead reached from Explore. Everything else in
+> this document (naming, tone, "Continue reading" cue, Queue vs Save) stands.
+
 The product brief's own principle (§5) is that six flat tabs caused decision paralysis, and it correctly cut to three. Adding Feed and then a fifth tab for the glimpse mode undoes that discipline. Cutting back:
 
 **Feed · Skim · Review · You**

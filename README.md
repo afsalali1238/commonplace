@@ -1,6 +1,6 @@
-# Unknown
+# Commonplace
 
-A latticework of powerful ideas. Unknown is an interactive, audio-narrated, and cross-linked knowledge exploration platform designed to help users learn in layers and retain concepts using spaced repetition.
+A latticework of powerful ideas. Commonplace is an interactive, audio-narrated, and cross-linked knowledge exploration platform designed to help users learn in layers and retain concepts using spaced repetition.
 
 ## Tech Stack
 
@@ -16,13 +16,17 @@ This project is built using a modern React stack:
 
 ### Prerequisites
 
-Make sure you have [Bun](https://bun.sh/) installed, as it is used for dependency management and fast execution.
+Node 22+ is all CI needs (`package-lock.json` is the canonical lockfile).
+[Bun](https://bun.sh/) remains supported for fast local development — its
+`bun.lock` is a local artifact and is gitignored.
 
 ### Installation
 
 Install the dependencies:
 
 ```bash
+npm ci        # canonical (what CI runs)
+# or, for local dev with Bun:
 bun install
 ```
 

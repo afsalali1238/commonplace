@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="600" height="600" role="img" aria-label="Game Theory &amp; Strategy">
+  <rect width="100" height="100" fill="#faf8f3"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M 72.87 29.97 A 6 6 0 0 1 64.74 30.18" stroke="#1a1a17" stroke-opacity="0.420" stroke-width="2.00"/>
+    <path d="M 71.03 43.43 A 17.91 17.91 0 0 1 50.78 26.06" stroke="#1a1a17" stroke-opacity="0.395" stroke-width="1.70"/>
+    <path d="M 68.71 55.49 A 29.82 29.82 0 0 1 44.57 8.14" stroke="#1a1a17" stroke-opacity="0.370" stroke-width="1.40"/>
+    <path d="M 49.08 62.51 A 41.73 41.73 0 0 1 86 -12.3" stroke="#1a1a17" stroke-opacity="0.345" stroke-width="1.10"/>
+    <path d="M -2 51.32 L 39.81 33.57 L 58.73 53.24 L 102 29.32" stroke="#1a1a17" stroke-opacity="0.5" stroke-width="0.70"/>
+  </g>
+  <circle cx="39.81" cy="33.57" r="2.93" fill="#b45309"/>
+</svg>
