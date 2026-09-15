@@ -21,6 +21,10 @@
  *   bun run scripts/archive-sources.ts A          # one cluster
  *   bun run scripts/archive-sources.ts all        # everything
  *   bun run scripts/archive-sources.ts all --dry-run   # report, no fetch/write
+ *   bun run scripts/archive-sources.ts all --retry-unavailable
+ *       # also re-queue entries currently triaged "unavailable" (e.g. after
+ *       # demote-missing-archives.ts): media/paywall URLs bucket straight
+ *       # back to unavailable, fetchable ones get a fresh archive attempt.
  */
 import { JSDOM } from "jsdom";
 import { Readability } from "@mozilla/readability";
@@ -45,6 +49,7 @@ const FAILURE_LOG = path.join(process.cwd(), "archive-failures.log");
 const MAX_RETRIES = 3;
 
 const DRY_RUN = process.argv.includes("--dry-run");
+const RETRY_UNAVAILABLE = process.argv.includes("--retry-unavailable");
 const clusterLimit = process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : "all";
 
 // Assert every write stays inside the canonical dir. Called before any writeFile.
@@ -223,8 +228,10 @@ async function run() {
           );
           if (existingStatus === "excerpt") continue; // excerpts are hand-curated, never auto-refetched
         }
-        if (existingStatus === "unavailable") {
-          // Already triaged as unavailable — leave it, idempotent.
+        if (existingStatus === "unavailable" && !RETRY_UNAVAILABLE) {
+          // Already triaged as unavailable — leave it, idempotent. Pass
+          // --retry-unavailable to re-queue these (recovery path after
+          // demote-missing-archives.ts).
           continue;
         }
 

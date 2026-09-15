@@ -155,9 +155,7 @@
           "source": "Robert Axelrod / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Tit_for_tat",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AJ4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -194,9 +192,7 @@
           "source": "Michael Spence / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Signalling_(economics)",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AJ5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -233,9 +229,7 @@
           "source": "Thomas Schelling / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Brinkmanship",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AJ6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -272,9 +266,7 @@
           "source": "William Vickrey / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Vickrey_auction",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AJ7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -311,9 +303,7 @@
           "source": "von Neumann & Morgenstern / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Theory_of_Games_and_Economic_Behavior",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AJ8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

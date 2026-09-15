@@ -7,7 +7,7 @@ import {
   type NodeBody,
   type FurtherReading,
 } from "@/data/nodes";
-import { useNodeBody } from "@/lib/bodies";
+import { useNodeBody, withBody } from "@/lib/bodies";
 import { Bone } from "@/components/Skeleton";
 import { MicroLabel } from "@/components/MicroLabel";
 import { IdeaGlyph } from "@/components/Artwork";
@@ -452,7 +452,16 @@ function NodeScreen() {
         )}
 
         <RecallReveal text={node.thesis} />
-        <Quiz node={index} />
+        {/* The quiz lives in the body half of the node (post-split), so it
+            only renders once the cluster bodies have landed — same
+            BodyPending pattern as the layers above. */}
+        {body ? (
+          <Quiz node={withBody(index, body)} />
+        ) : (
+          <div className="mt-10 border-t border-line pt-8">
+            <BodyPending state={bodyState} lines={3} />
+          </div>
+        )}
 
         <section className="mt-14">
           <MicroLabel>Further reading</MicroLabel>

@@ -135,9 +135,7 @@
           "source": "Donald Norman / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -174,9 +172,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Dieter_Rams",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -213,9 +209,7 @@
           "source": "Christensen, Hall, Dillon & Duncan / HBR",
           "url": "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -252,9 +246,7 @@
           "source": "Melvin Conway / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Conway%27s_law",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -291,9 +283,7 @@
           "source": "John Gall",
           "url": "https://en.wikipedia.org/wiki/Systemantics",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -330,9 +320,7 @@
           "source": "Raymond Loewy",
           "url": "https://en.wikipedia.org/wiki/Raymond_Loewy#MAYA_principle",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

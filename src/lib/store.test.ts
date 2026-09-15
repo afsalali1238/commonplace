@@ -1,5 +1,11 @@
+// @vitest-environment jsdom
 import { describe, it, expect } from "vitest";
+// In-memory indexedDB for jsdom — the store's persist middleware targets
+// idb-keyval whenever `window` exists, and jsdom ships no indexedDB.
+// (Same pairing as Quiz.a11y.test.tsx.)
+import "fake-indexeddb/auto";
 import {
+  useStore,
   currentStreak,
   dueCount,
   dueIds,
@@ -8,6 +14,17 @@ import {
   readNextNodes,
   type ReviewEntry,
 } from "./store";
+
+/**
+ * Day key in exactly the shape store.ts's todayKey() produces — an ISO date
+ * slice — so the streak fixtures and currentStreak() always agree on what
+ * "today" is regardless of the test runner's timezone. Using a hand-rolled
+ * local-time formatter here would disagree with the store's UTC slice for a
+ * couple of hours either side of midnight outside UTC.
+ */
+function localDay(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
 
 describe("store.ts pure functions", () => {
   describe("currentStreak", () => {
@@ -71,17 +88,19 @@ describe("store.ts pure functions", () => {
   });
 
   describe("submitQuiz (store action)", () => {
-    it("moves up a box on correct (cap 5) and down two boxes on wrong (floor 0)", () => {
+    it("moves up a box on correct (cap 5) and resets to box 0 on wrong", () => {
+      // Spec: docs/QA-TEST-WORKFLOW.md — "Answer incorrect at any box: box
+      // resets to 0, due ≈ now" and LOVABLE-PROMPT.md — "correct moves it up
+      // a box, incorrect resets it".
       useStore.getState().reset();
       for (let i = 0; i < 7; i++) useStore.getState().submitQuiz("B1", true);
       expect(useStore.getState().review.B1.box).toBe(5);
       useStore.getState().submitQuiz("B1", false);
-      expect(useStore.getState().review.B1.box).toBe(3);
-      useStore.getState().submitQuiz("B1", false);
-      expect(useStore.getState().review.B1.box).toBe(1);
-      useStore.getState().submitQuiz("B1", false);
       expect(useStore.getState().review.B1.box).toBe(0);
       expect(useStore.getState().review.B1.lastResult).toBe("incorrect");
+      // Box 0 has a 0-day interval, so a wrong answer is immediately due
+      // again ("comes right back to the front", per the Review hint).
+      expect(useStore.getState().review.B1.due).toBeLessThanOrEqual(Date.now());
     });
   });
 
@@ -118,11 +137,11 @@ describe("store.ts pure functions", () => {
       expect(useStore.getState().review.A1?.box).toBe(5);
     });
 
-    it("incorrect moves back two boxes", () => {
+    it("incorrect resets to box 0 from any box", () => {
       useStore.getState().reset();
       for (let i = 0; i < 4; i++) useStore.getState().submitQuiz("A1", true); // box 4
       useStore.getState().submitQuiz("A1", false);
-      expect(useStore.getState().review.A1?.box).toBe(2);
+      expect(useStore.getState().review.A1?.box).toBe(0);
       expect(useStore.getState().review.A1?.lastResult).toBe("incorrect");
     });
   });

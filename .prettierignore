@@ -7,6 +7,10 @@ package-lock.json
 bun.lock
 routeTree.gen.ts
 public/content/sources
+# Generated data (scripts/build-content.ts) — written compact on purpose and
+# freshness-checked byte-for-byte; repo-wide prettier --write must not expand
+# them or the CI freshness gate fails after every format.
+public/content/bodies
 public/sitemap.xml
 public/robots.txt
 docs/TOPICS-INDEX.md

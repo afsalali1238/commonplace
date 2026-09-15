@@ -16,21 +16,21 @@ metadata gap.
 
 ## 1. Scorecard
 
-| # | Aspect | Score | Headline |
-|---|--------|-------|----------|
-| 1 | Architecture & stack | 9/10 | SSR TanStack Start + Vercel, per-cluster chunks, thoughtful error middleware |
-| 2 | Code quality | 9/10 | Deterministic PRNGs, zod-validated import/export, explanatory comments everywhere |
-| 3 | Type-safety & lint | 9/10 | `tsc --noEmit` clean, `eslint .` clean, prettier enforced |
-| 4 | Testing | 5.5/10 | 17 unit tests over store+feed only; zero component/route/E2E coverage |
-| 5 | CI/CD | 8/10* | Seven real gates; *was failing main on a date-stamp bug — fixed this turn |
-| 6 | PWA / offline | 9/10 | Content-hashed SW versioning, 557 sources precached, warm-up hook |
-| 7 | SEO | 8/10 | 1,054-URL sitemap, per-route meta; og:image added this turn; no canonical/JSON-LD |
-| 8 | Brand / favicon / icons | 9/10 | Full chain verified binary-level; dark-mode favicon + OG card added this turn |
-| 9 | Accessibility | 8/10 | Skip-link, radiogroup quiz, aria-live, documented contrast in both themes; no automated axe pass |
-| 10 | Performance | 6.5/10 | 407.6 KB gz `nodes` chunk eagerly preloaded on `/`; render-blocking Google Fonts |
-| 11 | Content & data integrity | 9/10 | 451 nodes, 0 validator errors, 557 archives on disk; known quiz-length tell |
-| 12 | Documentation | 9/10 | Tech debt with trigger conditions, brand book, data-flow docs |
-| 13 | Security posture | 8/10 | No secrets, URL-scheme allowlist on `/read`, validated imports; no CSP headers |
+| #   | Aspect                   | Score  | Headline                                                                                         |
+| --- | ------------------------ | ------ | ------------------------------------------------------------------------------------------------ |
+| 1   | Architecture & stack     | 9/10   | SSR TanStack Start + Vercel, per-cluster chunks, thoughtful error middleware                     |
+| 2   | Code quality             | 9/10   | Deterministic PRNGs, zod-validated import/export, explanatory comments everywhere                |
+| 3   | Type-safety & lint       | 9/10   | `tsc --noEmit` clean, `eslint .` clean, prettier enforced                                        |
+| 4   | Testing                  | 5.5/10 | 17 unit tests over store+feed only; zero component/route/E2E coverage                            |
+| 5   | CI/CD                    | 8/10*  | Seven real gates; *was failing main on a date-stamp bug — fixed this turn                        |
+| 6   | PWA / offline            | 9/10   | Content-hashed SW versioning, 557 sources precached, warm-up hook                                |
+| 7   | SEO                      | 8/10   | 1,054-URL sitemap, per-route meta; og:image added this turn; no canonical/JSON-LD                |
+| 8   | Brand / favicon / icons  | 9/10   | Full chain verified binary-level; dark-mode favicon + OG card added this turn                    |
+| 9   | Accessibility            | 8/10   | Skip-link, radiogroup quiz, aria-live, documented contrast in both themes; no automated axe pass |
+| 10  | Performance              | 6.5/10 | 407.6 KB gz `nodes` chunk eagerly preloaded on `/`; render-blocking Google Fonts                 |
+| 11  | Content & data integrity | 9/10   | 451 nodes, 0 validator errors, 557 archives on disk; known quiz-length tell                      |
+| 12  | Documentation            | 9/10   | Tech debt with trigger conditions, brand book, data-flow docs                                    |
+| 13  | Security posture         | 8/10   | No secrets, URL-scheme allowlist on `/read`, validated imports; no CSP headers                   |
 
 ---
 
@@ -49,7 +49,7 @@ and a `noopStorage` for SSR/vitest (the comment explains the old
 
 ## 3. Code quality — 9/10
 
-Consistent voice: comments explain *why* (feed PRNG stability, Leitner box
+Consistent voice: comments explain _why_ (feed PRNG stability, Leitner box
 math, streak day-touching, SW `add` vs `addAll`). Quiz options are shuffled with
 a per-node seeded mulberry32 so order is stable across hydration but not
 memorizable. `importJSON` validates through zod before touching state. Feed
@@ -74,7 +74,7 @@ real, layered gate. **Defect found:** the freshness step regenerates
 `git diff --exit-code` against the committed file — so the gate fails on every
 day after the commit date. Verified twice: locally (regeneration produced a
 1-line date diff against HEAD) and on GitHub (run **34812646581**, latest on
-`main`, status *failure*, sole failed step "Check TOPICS-INDEX freshness" while
+`main`, status _failure_, sole failed step "Check TOPICS-INDEX freshness" while
 all quality gates passed). **Fixed this turn** (§10): date removed from the
 generated header; regeneration is now idempotent (identical md5 across runs),
 so once committed the gate compares content only.
@@ -98,26 +98,27 @@ any visit lacks webfonts), manifest `screenshots` still deferred (BRAND P9.1).
 ## 7. SEO — 8/10
 
 `robots.txt` + generated `sitemap.xml` with **1,054 URLs** (static + 451 nodes
-+ archive readers). SSR emits per-route `<title>` and description (node pages
-use the thesis — verified for A1: "Do Things That Don't Scale — Commonplace").
-**Gap found in served HTML:** `twitter:card=summary_large_image` with **no
-image at all** (0 `og:image` matches on `/`). **Fixed this turn** with a
-deterministically generated 1200×630 `public/og.png` (§10) + og/twitter image
-tags. Still open: no `og:url`/canonical per route, no JSON-LD, and the origin
-is the `commonplace.app` placeholder — BRAND D2 says the domain is unregistered;
-register before launch or shares/robots point at a dead host.
+
+- archive readers). SSR emits per-route `<title>` and description (node pages
+  use the thesis — verified for A1: "Do Things That Don't Scale — Commonplace").
+  **Gap found in served HTML:** `twitter:card=summary_large_image` with **no
+  image at all** (0 `og:image` matches on `/`). **Fixed this turn** with a
+  deterministically generated 1200×630 `public/og.png` (§10) + og/twitter image
+  tags. Still open: no `og:url`/canonical per route, no JSON-LD, and the origin
+  is the `commonplace.app` placeholder — BRAND D2 says the domain is unregistered;
+  register before launch or shares/robots point at a dead host.
 
 ## 8. Brand / favicon / icons — 9/10 (after fixes)
 
 Binary-level audit of every shipped icon:
 
-| Asset | Finding |
-|---|---|
-| `favicon.ico` | Valid ICO, 3 entries (16/32/48 @32bpp, BMP payloads) |
-| `logo.svg` | Marginalia mark, transparent ground, near-black ink — invisible on dark browser chrome |
-| `apple-touch-icon.png` | 180×180 RGBA but 0% transparent px — correct |
-| `icon-192/512.png` | Exact declared dims, opaque paper ground |
-| `icon-maskable-512.png` | 512×512, glyph margins 21–24% — clears the 80% safe zone |
+| Asset                   | Finding                                                                                |
+| ----------------------- | -------------------------------------------------------------------------------------- |
+| `favicon.ico`           | Valid ICO, 3 entries (16/32/48 @32bpp, BMP payloads)                                   |
+| `logo.svg`              | Marginalia mark, transparent ground, near-black ink — invisible on dark browser chrome |
+| `apple-touch-icon.png`  | 180×180 RGBA but 0% transparent px — correct                                           |
+| `icon-192/512.png`      | Exact declared dims, opaque paper ground                                               |
+| `icon-maskable-512.png` | 512×512, glyph margins 21–24% — clears the 80% safe zone                               |
 
 Fixes applied this turn (§10): light/dark SVG favicon pair via
 `prefers-color-scheme` media links (dark twin uses the dark-theme ink token

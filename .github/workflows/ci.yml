@@ -65,4 +65,3 @@ jobs:
             echo "::error::${maxf} is ${max} KB gzipped, over the ${LIMIT_KB} KB limit. Did the node bodies end up in the bundle? See docs/CONTENT-LAYER.md."
             exit 1
           fi
-

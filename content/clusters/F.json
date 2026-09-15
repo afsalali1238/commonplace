@@ -292,9 +292,7 @@
           "source": "Vint Cerf & Bob Kahn / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Internet_protocol_suite",
           "archive": {
-            "status": "full",
-            "path": "content/sources/F6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -331,9 +329,7 @@
           "source": "Dennis Ritchie & Ken Thompson / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Unix",
           "archive": {
-            "status": "full",
-            "path": "content/sources/F7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -370,9 +366,7 @@
           "source": "Gordon Moore / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
           "archive": {
-            "status": "full",
-            "path": "content/sources/F8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

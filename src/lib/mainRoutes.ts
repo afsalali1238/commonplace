@@ -22,14 +22,21 @@ export const MAIN_TABS = [
     match: (p: string) => p === "/" || p.startsWith("/node"),
   },
   {
-    to: "/skim" as const,
-    label: "Skim",
-    match: (p: string) => p.startsWith("/skim") || p.startsWith("/map"),
-  },
-  {
     to: "/explore" as const,
     label: "Explore",
-    match: (p: string) => p.startsWith("/explore"),
+    // Skim and Map are reached from Explore ("Skim this topic") rather than
+    // being tabs themselves, so they highlight Explore in the bar. Skim
+    // stays offline-warm via SECONDARY_PATHS below.
+    match: (p: string) => p.startsWith("/explore") || p.startsWith("/skim") || p.startsWith("/map"),
+  },
+  {
+    to: "/review" as const,
+    label: "Review",
+    match: (p: string) => p.startsWith("/review"),
+    // The due-count badge — the retention loop's daily trigger. BottomNav
+    // is the only consumer of this marker; keep it Review-only (asserted by
+    // mainRoutes.test.ts).
+    badge: "due",
   },
   {
     to: "/you" as const,

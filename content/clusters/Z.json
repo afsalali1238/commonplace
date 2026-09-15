@@ -37,9 +37,7 @@
           "source": "House overview (physics survey)",
           "url": "https://www.youtube.com/watch?v=PXixKGcctms",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z1-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -76,9 +74,7 @@
           "source": "House overview (unparticle physics)",
           "url": "https://www.youtube.com/shorts/tycPtqNX_KE",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z2-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -115,9 +111,7 @@
           "source": "House overview (cosmology survey)",
           "url": "https://www.youtube.com/shorts/teKKUYZC94s",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -154,9 +148,7 @@
           "source": "House overview (astronomy survey)",
           "url": "https://www.youtube.com/watch?v=H6QTc-ifxbU",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -193,9 +185,7 @@
           "source": "I. J. Good / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Technological_singularity",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -232,9 +222,7 @@
           "source": "David Liu lab / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Prime_editing",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -280,9 +268,7 @@
           "source": "Demis Hassabis / Google DeepMind",
           "url": "https://deepmind.google/blog/alphafold-reveals-the-structure-of-the-protein-universe/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -319,9 +305,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Fusion_ignition",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Z8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         },
         {

@@ -135,9 +135,7 @@
           "source": "Mark Granovetter / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Interpersonal_ties",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -174,9 +172,7 @@
           "source": "Barabási & Albert / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Power_law",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -213,9 +209,7 @@
           "source": "Robin Dunbar / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Dunbar%27s_number",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -252,9 +246,7 @@
           "source": "David P. Reed / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Reed%27s_law",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -291,9 +283,7 @@
           "source": "Robert K. Merton / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Matthew_effect",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -330,9 +320,7 @@
           "source": "Granovetter & Schelling / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Threshold_model",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AF8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

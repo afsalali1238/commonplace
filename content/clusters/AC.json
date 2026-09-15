@@ -123,9 +123,7 @@
           "source": "Stanford Encyclopedia of Philosophy (B. Jack Copeland)",
           "url": "https://plato.stanford.edu/entries/turing-machine/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -162,9 +160,7 @@
           "source": "Stanford Encyclopedia of Philosophy",
           "url": "https://plato.stanford.edu/entries/russell-paradox/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -201,9 +197,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -240,9 +234,7 @@
           "source": "Benoît Mandelbrot",
           "url": "https://en.wikipedia.org/wiki/The_Fractal_Geometry_of_Nature",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -279,9 +271,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Monty_Hall_problem",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -318,9 +308,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AC8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
