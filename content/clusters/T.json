@@ -139,10 +139,10 @@
       "quiz": {
         "question": "What is the primary flaw of traditional, folder-based note-taking according to the networked thought model?",
         "options": [
-          "Folders take up too much hard drive space.",
+          "Folder hierarchies occupy excessive local storage capacity and impose severe overhead on system memory during file backup.",
           "Folders force a single, rigid hierarchy, whereas human thoughts are associative and often belong in multiple contexts.",
-          "Folders cannot be searched as quickly as a database.",
-          "Folders are too easy to accidentally delete."
+          "Nested folder architectures cannot be indexed or retrieved by modern relational desktop databases as quickly as raw text.",
+          "Nested directory trees make individual files highly susceptible to accidental irreversible deletion by operating systems."
         ],
         "correctIndex": 1,
         "explanation": "Ideas rarely fit perfectly into a single category. By forcing a note into a single folder, you artificially sever its connection to all the other contexts it might be relevant to."

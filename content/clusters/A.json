@@ -384,10 +384,10 @@
       "quiz": {
         "question": "Why is customer churn especially dangerous in a SaaS/subscription business, more than in a one-time-purchase business?",
         "options": [
-          "Because churned customers always leave negative reviews",
-          "Because SaaS companies can't legally re-acquire a churned customer",
+          "Because departing subscribers invariably publish damaging public reviews that permanently depress conversion rates across digital acquisition channels",
+          "Because industry consumer protection laws prohibit recurring subscription software vendors from ever re-marketing to previously cancelled user accounts",
           "Because revenue arrives gradually over time, so if a customer leaves before you've earned back what it cost to acquire them, that cost is never recovered",
-          "Because churn only affects gross margin, not net revenue"
+          "Because elevated churn metrics immediately inflate operational cost of goods sold without impacting topline gross revenue projections in future quarters"
         ],
         "correctIndex": 2,
         "explanation": "In a subscription model, acquisition costs are paid upfront while revenue trickles in over time. High churn means customers leave before they even become profitable, fundamentally breaking the business model."
@@ -505,9 +505,9 @@
         "question": "According to Ben Thompson's Aggregation Theory, why did the internet shift power from suppliers to platforms that don't even own the supply?",
         "options": [
           "Because distribution became nearly free online, so the scarce resource shifted to user attention/relationship, which aggregators capture and then dictate terms to suppliers",
-          "Because platforms have better legal teams than suppliers",
-          "Because governments began regulating physical distribution channels more heavily",
-          "Because suppliers voluntarily gave up control to reduce their own costs"
+          "Because digital tech platforms employ massive litigation departments that systematically outmaneuver fragmented traditional suppliers in intellectual property disputes",
+          "Because antitrust regulators established strict federal oversight over physical supply chains while leaving digital platform monopolies completely unrestricted",
+          "Because upstream suppliers deliberately ceded customer relationships and pricing power in order to lower their own retail distribution and customer support overhead"
         ],
         "correctIndex": 0,
         "explanation": "Aggregators don't own the supply; they own the user relationship. By providing superior discovery and UX at zero marginal cost, they commoditize suppliers who are forced to play by their rules."
@@ -684,9 +684,9 @@
       "quiz": {
         "question": "What structural advantage does a 'solo capitalist' typically have over a traditional multi-partner VC firm when competing for a deal?",
         "options": [
-          "They can legally invest more total capital per fund",
-          "They are exempt from securities regulations that apply to larger firms",
-          "They only invest in later-stage, lower-risk companies",
+          "They are legally authorized to deploy far larger amounts of aggregate institutional capital per individual early-stage seed round than venture syndicates",
+          "They enjoy blanket statutory exemptions from federal securities disclosure requirements that strictly constrain traditional venture capital partnerships",
+          "They concentrate their allocations exclusively in late-stage, de-risked enterprises that exhibit established cash-flow profitability and clear public exits",
           "They can decide and commit quickly since there's no partner committee to convince, and founders get a direct relationship with the actual decision-maker"
         ],
         "correctIndex": 3,
@@ -781,10 +781,10 @@
       "quiz": {
         "question": "In Blue Ocean Strategy, what is the purpose of the 'Four Actions Framework' (Eliminate-Reduce-Raise-Create)?",
         "options": [
-          "To benchmark a company's product features against the market leader and catch up",
+          "To systematically benchmark every existing product specification against the market incumbent and close operational parity gaps through intensive incremental engineering",
           "To reconstruct the industry's value curve by dropping unnecessary costs, lifting key buyer values, and adding entirely new factors — making the competitive frame irrelevant",
-          "To set pricing strategy in a commoditised market",
-          "To rank employees by performance and eliminate the bottom tier"
+          "To determine optimal dynamic discounting algorithms in commoditized consumer markets where competing suppliers engage in destructive, zero-sum price reductions",
+          "To conduct annual employee performance audits and methodically terminate the bottom decile of underperforming personnel across all operating business divisions"
         ],
         "correctIndex": 1,
         "explanation": "The framework forces you to question every industry assumption: what can be eliminated (cost driver nobody needs), reduced, raised, and created (new demand nobody has offered). The result is a value curve that doesn't resemble any competitor — so comparison shopping becomes meaningless."

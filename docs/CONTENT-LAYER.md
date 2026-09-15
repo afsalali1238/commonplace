@@ -91,8 +91,8 @@ Things that will bite:
 
 ## Numbers (2026-09-15)
 
-- 451 nodes / 38 clusters. Source JSON 1.4 MB pretty-printed.
-- Index `src/data/nodes.ts`: 415 KB raw / 128 KB gz (was 1.18 MB / 351 KB for the full file).
-- Bodies: 865 KB raw / 290 KB gz total; one file per cluster, precached by the SW.
+- 451 nodes / 38 clusters. Source JSON 1.45 MB pretty-printed.
+- Index `src/data/nodes.ts`: 416 KB raw / 128 KB gz (was 1.18 MB / 351 KB for the full file).
+- Bodies: 897 KB raw / 298 KB gz total; one file per cluster, precached by the SW.
 - Client JS: 322 KB gz total; largest chunk 128 KB gz (the `nodes` index). CI hard limit:
   260 KB on the largest chunk.

@@ -248,7 +248,14 @@ export function AudioBar({
           )}
         </button>
         <div className="flex-1">
-          <div className="relative h-[2px] w-full bg-line">
+          <div
+            role="progressbar"
+            aria-label="Narration progress"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={Math.round(pct)}
+            className="relative h-[2px] w-full bg-line"
+          >
             <div
               className="absolute inset-y-0 left-0 bg-accent transition-[width] duration-200"
               style={{ width: `${pct}%` }}

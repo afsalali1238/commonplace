@@ -204,12 +204,7 @@
       "layer2": "What's a genre or topic you'd read for pure pleasure, with zero guilt about whether it's 'serious' enough? When did you last actually let yourself start there instead of picking up something you felt you 'should' read?",
       "quiz": {
         "question": "How much time does Naval credit himself with spending reading daily, as central to his self-education?",
-        "options": [
-          "1-2 hours",
-          "10-15 minutes",
-          "4-5 hours",
-          "6-8 hours"
-        ],
+        "options": ["1-2 hours", "10-15 minutes", "4-5 hours", "6-8 hours"],
         "correctIndex": 0,
         "explanation": "Naval attributes his success to a massive volume of daily reading, prioritizing genuine curiosity and the habit of reading over forcing himself through 'important' but boring books."
       },

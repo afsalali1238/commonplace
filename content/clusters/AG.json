@@ -71,10 +71,10 @@
       "quiz": {
         "question": "What did Gibson mean by an 'affordance'?",
         "options": [
-          "A visible label or instruction that explains how to use an object correctly",
+          "A conspicuous textual label or instructional icon affixed to an industrial product to explain its correct operational sequence to an unfamiliar user",
           "A possibility for action that an object or environment directly offers a specific perceiver, perceived without first analyzing its neutral physical properties",
-          "The market price a customer is willing to afford for a product",
-          "A product feature that has been explicitly documented in a manual"
+          "The maximum monetary valuation or retail purchase price that a target consumer demographic is economically capable of affording in a competitive market",
+          "A formal functional capability or software feature that has been comprehensively documented and verified within a manufacturer's technical user manual"
         ],
         "correctIndex": 1,
         "explanation": "Gibson's claim was perceptual, not just design-related — we directly perceive what an environment lets us do (sit, climb, grasp) rather than deducing it from separately analyzed physical properties, which is why hiding an affordance forces conscious problem-solving."

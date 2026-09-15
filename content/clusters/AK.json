@@ -22,10 +22,10 @@
       "quiz": {
         "question": "What did McLuhan mean by 'the medium is the message'?",
         "options": [
-          "Content doesn't matter at all, only the delivery format",
-          "Each medium's specific content is what determines its social impact, not its form",
+          "The programmatic content broadcast across a network is entirely trivial, and audiences attend exclusively to the mechanical physical casing of the receiver",
+          "The semantic information transmitted through a channel is the sole factor determining historical cultural transformation, while delivery mechanisms remain neutral",
           "A communication technology's form reshapes perception, attention, and society on its own, independent of and often more powerfully than the specific content it carries",
-          "New media always improve upon the media they replace"
+          "Every emerging electronic medium represents an objective moral improvement over the obsolete historical communication technologies that it gradually replaces"
         ],
         "correctIndex": 2,
         "explanation": "McLuhan's point was about structural effects, not content quality — a medium like television or the light bulb changes how people live and think through its mere existence and form, regardless of which particular programs or messages pass through it."

@@ -22,10 +22,10 @@
       "quiz": {
         "question": "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
         "options": [
-          "Every player is achieving their absolute best possible outcome",
+          "Every participant in the interaction has successfully coordinated to secure the highest possible joint payoff available within the game structure",
           "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
-          "All players have identical payoffs",
-          "The game has ended and no further moves are possible"
+          "All participants possess identical resources and simultaneously adopt symmetric strategies that produce perfectly equal individual payoffs",
+          "The competitive interactions have permanently stopped because every player has exhausted all available valid moves and strategic choices"
         ],
         "correctIndex": 1,
         "explanation": "Stability in game theory means no unilateral improvement is possible — it says nothing about collective optimality, which is exactly why equilibria like the prisoner's dilemma can trap everyone in a worse outcome that no one can escape alone."
@@ -100,10 +100,10 @@
       "quiz": {
         "question": "What does a 'strategic-form' (normal-form) game formally represent?",
         "options": [
-          "A game where players take turns and can see all prior moves.",
+          "A sequential scenario in which participants take alternating turns and maintain full visibility of every prior strategic decision made.",
           "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
-          "A game with only one possible outcome regardless of player choices.",
-          "A cooperative negotiation where players share all payoffs equally."
+          "A strictly deterministic contest in which environmental constraints dictate a single inevitable outcome regardless of player choices.",
+          "A binding cooperative negotiation in which participants collectively pool their resources to guarantee equal individual disbursements."
         ],
         "correctIndex": 1,
         "explanation": "Strategic-form games are the foundational representation in non-cooperative game theory: simultaneous choice, interdependent payoffs, no assumed communication or binding agreements between players."

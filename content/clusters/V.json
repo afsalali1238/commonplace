@@ -69,10 +69,10 @@
       "quiz": {
         "question": "What is Graeber's central challenge to the standard economic story of money's origin?",
         "options": [
-          "Money was invented by ancient governments to collect taxes more efficiently",
+          "Historical records show that commodity money was originally invented by centralized ancient monarchies purely to standardize and collect agricultural tax obligations",
           "There is little historical evidence that money arose to fix the inefficiencies of barter; societies instead used credit and debt-tracking systems long before coined money existed",
-          "Barter was actually more efficient than money and should be reinstated",
-          "Money has always had intrinsic value independent of social trust"
+          "Barter economies were mathematically and practically superior to monetary trade, but were suppressed by religious hierarchies protecting temple storage monopolies",
+          "Precious metals and coinage always possessed objective, intrinsic utility that enabled diverse cultures to trade without needing established social relationships"
         ],
         "correctIndex": 1,
         "explanation": "The myth of barter assumes money was invented to facilitate trade. Graeber shows that early human economies ran on complex social credit systems, and coined money only emerged later, primarily to fund standing armies."
@@ -108,10 +108,10 @@
       "quiz": {
         "question": "What does Anderson identify as the key technology enabling nations to be 'imagined communities'?",
         "options": [
-          "Military conquest and forced unification",
-          "Religious institutions imposing a single shared belief system",
+          "Direct military conquest and state violence that forcibly integrated previously regional populations into centralized administrative hierarchies",
+          "Monolithic transnational religious institutions that systematically codified and imposed a single universal theological dogma across borders",
           "Print capitalism — newspapers and novels in shared vernacular languages that let large populations synchronize a sense of belonging to one community",
-          "The invention of passports and border controls"
+          "The introduction of modern bureaucratic border checkpoints, national passports, and mandatory identification registries for all citizens"
         ],
         "correctIndex": 2,
         "explanation": "A nation is an 'imagined community' because you will never meet most of your fellow citizens. Mass-produced media (newspapers) allowed millions of people to consume the same information simultaneously, forging a shared national identity."
@@ -304,10 +304,10 @@
       "quiz": {
         "question": "What does Vincent argue is often the hidden function of imposing standardized measurement systems?",
         "options": [
-          "They are purely neutral scientific tools with no political dimension",
-          "They were only ever developed for scientific research purposes",
+          "They operate as purely neutral technological conveniences created exclusively to resolve scientific disputes and advance theoretical physics",
+          "They reflect ancient geometric archetypes discovered during antiquity that have remained fundamentally invariant across human civilizations",
           "They function as tools of political power and control, making populations and labor legible, taxable, and comparable to whoever sets the standard",
-          "They have remained unchanged since ancient Egypt"
+          "They serve primarily to protect local merchant autonomy against state administrative encroachment by codifying customary regional units of trade"
         ],
         "correctIndex": 2,
         "explanation": "Standardizing measurements (like the metric system) wasn't just about scientific progress; it allowed central governments to easily survey, tax, and control local populations that previously used complex, localized systems of measurement."
@@ -351,9 +351,9 @@
       "quiz": {
         "question": "According to Coontz, what was marriage's primary function for most of human history, before the nineteenth century?",
         "options": [
-          "A personal, romantic partnership chosen freely by both individuals",
-          "A purely religious ceremony with no economic function",
-          "An arrangement that has remained essentially unchanged throughout history",
+          "A voluntary emotional union entered into freely by two sovereign individuals on the basis of romantic attraction and mutual personal fulfillment",
+          "A solemn theological sacrament governed exclusively by ecclesiastical law, completely separated from property inheritance or commercial interests",
+          "A strictly biological survival arrangement designed solely to ensure the physical protection and nutritional provisioning of dependent infants",
           "A strategic alliance between families to secure economic, political, or social advantage, with romantic love treated as secondary or even distrusted"
         ],
         "correctIndex": 3,
@@ -440,9 +440,9 @@
         "question": "Why does the concept of 'Meritocracy' actually increase our psychological suffering?",
         "options": [
           "Because it implies that if you are unsuccessful, it is entirely your own fault, turning poverty into a source of deep personal shame.",
-          "Because meritocracies inevitably collapse into aristocracies.",
-          "Because meritocracies force everyone to work 80-hour weeks.",
-          "Because it makes the wealthy feel guilty about their success."
+          "Because competitive merit-based evaluation reliably causes institutional breakdown and inevitably reverts into hereditary aristocracy.",
+          "Because intense performance pressure systematically compels workers across all socioeconomic tiers to endure relentless 80-hour workweeks.",
+          "Because visible material achievement paradoxically saddens the wealthy by making them feel acute unearned guilt toward disadvantaged peers."
         ],
         "correctIndex": 0,
         "explanation": "If you believe success is 100% based on merit, then you must logically believe that failure is 100% based on a lack of merit. This makes financial struggles intensely humiliating."

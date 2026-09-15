@@ -123,9 +123,9 @@
         "question": "Why does Ethereum require paying 'gas' fees for every computation, unlike Bitcoin's simpler transaction model?",
         "options": [
           "Because Ethereum allows unrestricted, Turing-complete computation, and gas fees (scaling with computational complexity) prevent infinite loops or spam from freezing the shared network",
-          "To generate charitable donations for the Ethereum Foundation",
-          "To convert Ether into Bitcoin automatically during each transaction",
-          "Because Ethereum has no consensus mechanism and needs fees to select validators randomly"
+          "To continuously subsidize the operational research budget of the non-profit Ethereum Foundation while funding external developer grant programs across the network",
+          "To systematically convert native Ether tokens into Bitcoin collateral reserves across decentralized liquidity pools during every smart contract execution",
+          "Because the network lacks a deterministic consensus mechanism and requires variable micro-fees to randomly assign validation rights among participating nodes"
         ],
         "correctIndex": 0,
         "explanation": "To prevent malicious actors from running infinite loops on a global, decentralized computer, Ethereum requires users to pay 'gas'—a fee proportional to the computational complexity of their code."
@@ -273,9 +273,9 @@
       "quiz": {
         "question": "What problem does Solana's Proof of History primarily solve?",
         "options": [
-          "It encrypts transaction contents so no one can see them",
-          "It eliminates the need for any validators on the network",
-          "It converts all transactions into a single batched transaction per day",
+          "It encrypts transaction contents with specialized zero-knowledge cryptography so external network observers cannot inspect account balances",
+          "It eliminates the need for independent network validators by delegating all consensus decisions to an automated, centralized hardware authority",
+          "It batches all global transactions into a single daily cryptographic settlement block, drastically reducing real-time computational demands",
           "It creates a verifiable, decentralized way to prove the order and timing of events, cutting the communication overhead nodes would otherwise need to agree on ordering"
         ],
         "correctIndex": 3,

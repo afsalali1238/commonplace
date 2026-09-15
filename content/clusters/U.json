@@ -179,9 +179,9 @@
         "question": "According to Kruger and Dunning, why do low performers in a domain tend to overestimate their own competence?",
         "options": [
           "Because the same skills needed to perform well are also needed to accurately judge good performance, so incompetence removes the ability to recognize itself",
-          "Because they are more narcissistic than skilled performers on average",
-          "Because they receive more positive feedback than skilled performers",
-          "Because testing methods are inherently biased in favor of low performers"
+          "Because individuals with lower baseline performance consistently score significantly higher on clinical measures of pathological narcissistic personality",
+          "Because institutional evaluation environments systematically provide more flattering, unearned positive encouragement to novices than to seasoned experts",
+          "Because standardized cognitive assessment instruments contain inherent design flaws that artificially inflate the performance scores of unskilled cohorts"
         ],
         "correctIndex": 0,
         "explanation": "The Dunning-Kruger effect explains why terrible singers audition for talent shows with extreme confidence: they lack the very musical expertise required to realize how bad their singing actually is."
@@ -451,10 +451,10 @@
       "quiz": {
         "question": "Why did Hyperbolic Discounting evolve in human psychology?",
         "options": [
-          "Because early humans were incredibly long-term planners.",
+          "Because ancestral hominids possessed extraordinary foresight that incentivized multi-generational resource conservation.",
           "Because early humans lived in highly unstable, dangerous environments where delaying gratification usually meant dying.",
-          "As a byproduct of the development of complex language.",
-          "To help humans build long-term agricultural settlements."
+          "As an accidental cognitive byproduct stemming directly from the neurological emergence of complex grammatical language.",
+          "To encourage ancient nomadic bands to establish settled agricultural civilizations based on long-term crop cultivation."
         ],
         "correctIndex": 1,
         "explanation": "In an environment where you might get eaten by a predator at any moment, the brain correctly evolved to prioritize immediate, guaranteed rewards over future, uncertain ones."

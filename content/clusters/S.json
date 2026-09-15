@@ -22,9 +22,9 @@
       "quiz": {
         "question": "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
         "options": [
-          "People simply don't try hard enough or lack willpower",
-          "Most people set goals that are objectively unrealistic",
-          "Behavior change requires professional therapy to succeed",
+          "Individuals lack the raw intrinsic willpower and moral discipline needed to sustain repetitive physical discomfort",
+          "Most aspiring practitioners set ambitious outcome targets that contradict realistic biological constraints",
+          "Sustainable transformation is psychologically impossible without structured external supervision and therapy",
           "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline"
         ],
         "correctIndex": 3,
@@ -383,10 +383,10 @@
       "quiz": {
         "question": "How does Koe distinguish an 'essay' from an 'article'?",
         "options": [
-          "Essays are shorter and less researched than articles",
-          "Articles are for beginners, essays are for experts",
+          "Articles are written quickly for casual general audiences, whereas essays require extensive historical citations and formal academic peer review",
+          "Articles present objective quantitative data without personal bias, while essays are purely artistic self-expression with no concern for factual claims",
           "Articles package existing knowledge and start with the conclusion; essays are an act of thinking that discovers and can change the author's own beliefs",
-          "There is no real distinction, it's just a stylistic preference"
+          "Articles focus on current breaking events and short-term trends, while essays explore timeless theoretical concepts from classical philosophical traditions"
         ],
         "correctIndex": 2,
         "explanation": "The defining trait of an essay is that it's an argument being worked out in real time, not knowledge being repackaged — which is also why Koe argues AI, lacking a situated point of view, cannot write a genuine one."
@@ -422,9 +422,9 @@
       "quiz": {
         "question": "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
         "options": [
-          "Nothing",
-          "It only helps children, not adults",
-          "It is primarily useful for improving physical fitness",
+          "It resets physical stamina and metabolic energy, functioning as a physiological restorative similar to deep non-REM sleep",
+          "It forces cognitive inhibition to weaken temporarily, allowing impulsive subconscious desires to guide daily habit formation",
+          "It serves purely as a disciplinary endurance test designed to cultivate stoic willpower and emotional numbness over time",
           "It activates the brain's Default Mode Network, which is associated with insight, self-reflection, and creative connection-making"
         ],
         "correctIndex": 3,
@@ -500,10 +500,10 @@
       "quiz": {
         "question": "What does Koe mean by distinguishing 'knowing' from 'understanding'?",
         "options": [
-          "Knowing is for children, understanding is for adults",
+          "Knowing refers to basic empirical knowledge gathered during childhood, while understanding is an advanced capability developed in late adulthood",
           "Knowing means memorizing facts (horizontal, expertise); understanding means how sophisticated your whole way of thinking is (vertical, wisdom)",
-          "They are functionally the same thing described two ways",
-          "Knowing only applies to science, understanding only applies to art"
+          "Knowing represents theoretical comprehension within academic disciplines, whereas understanding denotes purely practical manual dexterity",
+          "Knowing is an individual cognitive asset stored in biological memory, whereas understanding is a collective cultural phenomenon shared socially"
         ],
         "correctIndex": 1,
         "explanation": "The 'smart but dumb' phenomenon Koe describes — highly credentialed people who still make obviously bad life decisions — happens when someone is horizontally advanced (they know a lot) but vertically stuck (they can't think outside their domain's assumptions)."

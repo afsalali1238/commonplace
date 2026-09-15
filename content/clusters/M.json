@@ -101,9 +101,9 @@
         "question": "Why do publicly traded companies use stock-based executive compensation?",
         "options": [
           "To align the agent's incentives with the principal's long-term outcome.",
-          "To reduce taxes only.",
-          "Because it's cheap.",
-          "Because regulators require it."
+          "To minimize corporate payroll tax liabilities under federal tax law.",
+          "To conserve operational cash reserves during high-growth cycles.",
+          "To satisfy mandatory regulatory governance quotas for executive pay."
         ],
         "correctIndex": 0,
         "explanation": "The principal (owner) and the agent (manager) have misaligned incentives. Agents will naturally optimize for their own career or comfort unless compensated in a way that directly ties their success to the principal's success."
@@ -255,9 +255,9 @@
         "question": "In Will Manidis's garden metaphor, what is the central difference between the French (Versailles) and English (Capability Brown) approaches to building a new system?",
         "options": [
           "The French approach imposes a pre-planned geometry on the land and flattens what's already there; the English approach studies existing contours first and works with them.",
-          "The French approach is cheaper to maintain long-term than the English approach.",
-          "The English approach requires more gardeners to maintain than the French approach.",
-          "There is no meaningful difference"
+          "The French approach emphasizes decentralized local experimentation and low operating overhead, whereas the English approach demands centralized capital-intensive planning.",
+          "The French approach relies entirely on automated industrial machinery to maintain order, whereas the English approach depends exclusively on extensive manual human labor.",
+          "The French approach assumes biological systems are inherently fragile and static, whereas the English approach treats all natural flora as infinitely adaptable and resilient."
         ],
         "correctIndex": 0,
         "explanation": "Manidis uses Versailles's imposed, paper-first geometry as an analogy for how new technology typically flattens existing systems, versus Capability Brown's method of working with a landscape's existing 'great capabilities.'"
@@ -294,9 +294,9 @@
       "quiz": {
         "question": "What is the central mechanism behind Pankaj's argument that adding new friends can be a net negative?",
         "options": [
-          "New friends are statistically more likely to betray you than old ones.",
-          "New friendships are illegal to track using personal data systems.",
-          "He argues no one should ever make new friends under any circumstances.",
+          "Recent social acquaintances carry a statistically greater likelihood of interpersonal betrayal and emotional instability than long-term peers.",
+          "Maintaining extensive contact databases breaches platform terms of service and compromises personal cryptographic security protocols.",
+          "Adult individuals possess zero psychological capacity to establish meaningful trust or authentic vulnerability after completing adolescence.",
           "Relationship capacity is treated as fixed, so time invested in a new friendship is time necessarily displaced from deepening an existing one."
         ],
         "correctIndex": 3,

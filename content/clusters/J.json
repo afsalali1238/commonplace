@@ -221,9 +221,9 @@
       "quiz": {
         "question": "What are the four steps of the Feynman Technique, in order?",
         "options": [
-          "Read, memorize, recite, forget",
-          "Watch a lecture, take notes, highlight, re-read",
-          "Guess, check, revise, repeat",
+          "Read the assigned source chapter, memorize key definitions, recite bullet points, and store notes",
+          "Attend a recorded university lecture, take verbatim notes, highlight key formulas, and re-read",
+          "Formulate an initial intuitive guess, check empirical references, revise equations, and repeat",
           "Select a concept and map your knowledge; teach it to a 12-year-old; review and refine; test and archive"
         ],
         "correctIndex": 3,
@@ -269,9 +269,9 @@
         "question": "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
         "options": [
           "Untrained staff with no knowledge of how to evacuate people or fight the fire",
-          "The wooden escalators alone",
-          "A bomb planted by an unknown attacker",
-          "A faulty electrical system"
+          "Structural deterioration and mechanical friction within wooden escalators",
+          "An incendiary explosive device detonated covertly by an unknown saboteur",
+          "A catastrophic short circuit in the station's primary electrical wiring"
         ],
         "correctIndex": 0,
         "explanation": "The dropped match was merely the trigger; the disaster's true root cause was systemic organizational failure and a total lack of safety training, which guaranteed a disaster would happen eventually."
@@ -407,9 +407,9 @@
       "quiz": {
         "question": "In Simon Ramo's distinction, what percentage of points are won (not lost) in professional tennis, versus amateur tennis?",
         "options": [
-          "50% in both",
-          "Points are lost equally often at both levels",
-          "It's the reverse",
+          "Roughly 50% of total points are won by aggressive offensive winners at both the amateur and pro levels",
+          "Unforced defensive errors dictate nearly 80% of match outcomes across both amateur and tour circuits",
+          "Professional players lose 80% of points on unforced errors, whereas amateur players win 80% cleanly",
           "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis"
         ],
         "correctIndex": 3,
@@ -500,12 +500,7 @@
       "layer2": "Think of a relationship where you and someone else got stuck in a tit-for-tat cycle of small retaliations. What would it have taken for one of you to 'forgive' first and reset the pattern toward cooperation?",
       "quiz": {
         "question": "Who is credited with codifying 'tit for tat' as a formal game-theory strategy?",
-        "options": [
-          "John Nash",
-          "Anatol Rapoport",
-          "John von Neumann",
-          "Robert Axelrod"
-        ],
+        "options": ["John Nash", "Anatol Rapoport", "John von Neumann", "Robert Axelrod"],
         "correctIndex": 1,
         "explanation": "Rapoport formalized 'tit for tat'—cooperate on the first move, then replicate your opponent's previous move—proving that a simple, forgiving, but retaliatory strategy is mathematically optimal."
       },
@@ -689,10 +684,10 @@
       "quiz": {
         "question": "What distinguishes a 'fat-tailed' distribution (like wealth or market crashes) from a normal bell-curve distribution (like human height)?",
         "options": [
-          "Fat-tailed distributions have no meaningful average at all",
+          "Fat-tailed distributions lack any meaningful mathematical average or baseline value, rendering empirical sampling useless across all domains",
           "Fat-tailed distributions have no natural cap on extreme outliers, making rare extreme events far more likely than bell-curve intuition suggests",
-          "Fat-tailed distributions only apply to biological measurements",
-          "There is no real difference between the two"
+          "Fat-tailed distributions occur strictly within organic biology and describe physical variations such as animal weight and plant canopy spread",
+          "Fat-tailed distributions and normal Gaussian bell curves produce mathematically indistinguishable predictions across everyday risk assessments"
         ],
         "correctIndex": 1,
         "explanation": "Fat-tailed distributions (like finance or pandemics) behave entirely differently than normal distributions; a single outlier event can account for the vast majority of the total impact."
@@ -924,10 +919,10 @@
       "quiz": {
         "question": "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
         "options": [
-          "They were caught about half the time, exactly as they expected",
-          "They were caught almost every time, far more than expected",
+          "They anticipated detection roughly half the time and were caught in exactly half of all recorded trials, matching their baseline expectations",
+          "They expected to deceive observers completely but were unmasked in nearly ninety percent of interactions by experienced behavioral evaluators",
           "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance",
-          "They were never caught at all"
+          "They believed they would be identified immediately by investigators, yet not a single participant's falsehood was ever detected by the panel"
         ],
         "correctIndex": 2,
         "explanation": "We feel our internal emotions so intensely that we falsely assume they are obvious to everyone else. In reality, other people are barely paying attention."
@@ -1251,10 +1246,10 @@
       "quiz": {
         "question": "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
         "options": [
-          "That every child must receive the exact same amount of physical items to be treated fairly",
+          "That parents must enforce rigid, mathematical equality by distributing the exact same quantity of material possessions and financial gifts to every sibling",
           "That two different things (like different kinds of attention to different children) can be unequal in form but equal in value, just as different values of x and y can equally satisfy x+y=5",
-          "That parenting requires no math at all",
-          "That siblings should always be treated identically in every situation"
+          "That household developmental dynamics operate without predictable structure and cannot be illuminated through analytical models or cognitive frameworks",
+          "That children of different ages must receive identical disciplinary interventions and behavioral rules to guarantee a completely equitable family culture"
         ],
         "correctIndex": 1,
         "explanation": "Fairness doesn't mean giving identical treatment. Algebraic equivalence reminds us that children have different needs, and providing different inputs can result in an equal output of love and support."
@@ -1582,9 +1577,9 @@
         "question": "What distinct problem does the Leitner System solve, separate from the Feynman Technique?",
         "options": [
           "It schedules review intervals based on how reliably you recall material, concentrating limited study time on what you're actually failing rather than what you already know.",
-          "It tests whether you actually understand a concept's underlying structure.",
-          "It replaces the need to ever review material more than once.",
-          "It is only useful for language learning, not other subjects."
+          "It challenges the learner to deconstruct and explain complex conceptual foundations using simple analogies suitable for teaching an inquisitive novice child.",
+          "It guarantees permanent, effortless biological retention after a single exposure by encoding information into sensory memory through rhythmic motor writing.",
+          "It applies exclusively to memorizing foreign vocabulary flashcards and provides zero measurable cognitive utility when mastering structural academic concepts."
         ],
         "correctIndex": 0,
         "explanation": "Feynman targets comprehension (do you understand it); Leitner targets retention over time (will you still remember it), using spaced, frequency-adjusted review to allocate effort efficiently."

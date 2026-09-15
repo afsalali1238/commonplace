@@ -22,10 +22,10 @@
       "quiz": {
         "question": "Why doesn't the Black-Scholes formula require knowing an investor's risk tolerance or the stock's expected future return?",
         "options": [
-          "Because options are always priced at a fixed government-set rate",
-          "Because the formula only applies to options that are guaranteed to expire worthless",
+          "Because modern financial options trade on public exchanges at statutory fixed prices strictly regulated and enforced by federal securities and exchange commissions",
+          "Because the mathematical derivation assumes all traded option contracts are guaranteed to expire completely out of the money and worthless on their final settlement date",
           "Because it prices the option via a riskless hedge whose return must equal the risk-free rate regardless of investor preferences — only volatility, not expected return, matters",
-          "Because Black and Scholes assumed all investors are risk-neutral by law"
+          "Because Fischer Black and Myron Scholes posited an idealized theoretical world where every individual investor is legally presumed to behave with complete risk neutrality"
         ],
         "correctIndex": 2,
         "explanation": "The Black-Scholes model eliminated the need to guess market direction or investor risk tolerance by demonstrating that an option can be perfectly priced using a riskless hedging strategy based on the underlying asset's volatility."

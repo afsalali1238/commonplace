@@ -101,9 +101,9 @@
         "question": "Which is the best example of path dependence?",
         "options": [
           "Choosing a programming language early in a codebase and being unable to reasonably switch a decade later.",
-          "A random daily choice with no lasting effect.",
-          "Picking what to eat for lunch.",
-          "Choosing a movie on a Friday night."
+          "Making a spontaneous, inconsequential lifestyle choice that carries no lasting structural repercussions.",
+          "Selecting an unfamiliar dining venue for lunch during a routine weekday afternoon with colleagues.",
+          "Deciding which recreational film to watch at home on a quiet weekend evening after work."
         ],
         "correctIndex": 0,
         "explanation": "Path dependence means that history matters. Early decisions in a complex system (like a codebase or an economy) lock in constraints that make switching paths nearly impossible later on."
@@ -139,10 +139,10 @@
       "quiz": {
         "question": "Why is optionality often undervalued?",
         "options": [
-          "Because options are usually free.",
+          "Because non-binding strategic options carry zero initial creation costs in commercial markets.",
           "Because people prefer certainty and pay too little for the right to act later in a volatile world.",
-          "Because options only pay off if exercised.",
-          "Because optionality doesn't exist in real life."
+          "Because flexible options provide tangible economic utility only when formally exercised at expiration.",
+          "Because true strategic flexibility cannot exist within competitive, rule-bound modern market environments."
         ],
         "correctIndex": 1,
         "explanation": "Optionality is the right, but not the obligation, to take an action. In an unpredictable world, keeping your options open is incredibly valuable, even if it carries a short-term cost."

@@ -4,12 +4,18 @@ This document tracks actionable technical debt that was intentionally deferred. 
 
 ## 1. Accessibility Audit
 
-**Current State:** A manual accessibility spot-check was performed (e.g., adding `aria-expanded` and `aria-controls` to the explore.tsx cluster toggles, and ensuring `aria-label`s on icon buttons).
+**Current State:** Automated accessibility testing with `axe-core` is integrated into
+the CI test suite:
 
-**Deferred Work:** A rigorous, automated accessibility pass (measuring contrast ratios, validating keyboard navigation focus trapping, and performing a full screen-reader walkthrough) has not yet been executed.
+- `src/components/Quiz.a11y.test.tsx`: validates unanswered and answered (revealed) quiz states.
+- `src/components/components.a11y.test.tsx`: validates `LayerReveal` (collapsed and revealed), `RecallReveal` (hidden and revealed), `FirstTimeHint`, `InstallAppButton`, `AudioBar`, and `SearchBar`.
+- Semantic ARIA attributes wired across interactive controls: `role="progressbar"` with value bounds on `AudioBar`, `aria-label="Main Navigation"` on `BottomNav`, `aria-haspopup="listbox"` on `SearchBar`, `aria-expanded` and `aria-controls` on disclosure panels (`LayerReveal`, `RecallReveal`), and `aria-pressed` on toggle buttons (`node.$id.tsx`, `you.tsx`).
+- Color contrast verified in `src/styles.css` for both light and dark modes (ink/paper 14.9:1, ink-soft/paper 6.2:1, accent/paper 5.5:1, line/paper 3.3:1 — all exceeding WCAG 2.1 AA 4.5:1 text and 3:1 non-text criteria).
+
+**Deferred Work:** A full manual screen-reader walkthrough (VoiceOver/NVDA) on real mobile/desktop devices before final public launch.
 
 **Trigger Condition / "Done" Definition:**
-Run a proper accessibility audit before a full public launch. Use automated tools (like axe-core) to guarantee compliance.
+Complete the manual screen-reader walkthrough prior to the public product launch. Automated axe-core gates run on every commit.
 
 ## 2. Split Data Bundle (`nodes.ts`) — RESOLVED (2026-09-15)
 
