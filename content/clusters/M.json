@@ -139,10 +139,10 @@
       "quiz": {
         "question": "A city pays residents per pound of trash collected. What's the likely cobra outcome?",
         "options": [
-          "Trash collection immediately drops.",
+          "Total municipal trash collection volumes immediately plummet to zero.",
           "People bring in trash from neighboring cities to collect payment.",
-          "Streets become permanently clean.",
-          "Nothing changes."
+          "Public streets become immaculately clean and remain so permanently.",
+          "Citizen habits and overall waste disposal volumes show no shift at all."
         ],
         "correctIndex": 1,
         "explanation": "The Cobra Effect occurs when a well-intentioned incentive actually rewards the behavior it was trying to eliminate, causing the problem to actively multiply."

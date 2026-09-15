@@ -23,9 +23,9 @@
         "question": "According to Thompson, what replaced task-oriented time during industrialization?",
         "options": [
           "Clock-based, uniform time discipline, deliberately imposed by factory owners to synchronize and control labor",
-          "A more accurate scientific measurement of natural rhythms",
-          "A voluntary agreement among workers to standardize schedules",
-          "Religious observance replacing secular work schedules"
+          "A more rigorous, mathematically precise measurement of solar chronobiology and agricultural seasonality",
+          "A spontaneous, democratic consensus negotiated among labor guilds to harmonize municipal production hours",
+          "Rigid liturgical prayer intervals established by ecclesiastical bodies to regulate commercial marketplaces"
         ],
         "correctIndex": 0,
         "explanation": "Before the Industrial Revolution, people worked based on the task (e.g., harvest time). Factories required synchronized labor, so owners imposed rigid, clock-based time discipline, permanently altering how humans perceive time."
@@ -157,9 +157,9 @@
       "quiz": {
         "question": "What is Montagu's central argument about race?",
         "options": [
-          "Racial categories accurately reflect deep, fixed biological and genetic differences between groups",
-          "Human genetic variation does not exist at all",
-          "Racial categories should be replaced with categories based purely on geography",
+          "Traditional racial taxonomies delineate immutable, empirically grounded genetic divergences among discrete continental human lineages",
+          "Human populations exhibit virtually zero measurable phenotypic or nucleotide variation across the historical global gene pool",
+          "Anthropological classifications should organize human populations strictly according to continental river basins and physical topography",
           "Race, as popularly understood, does not map onto actual human genetic variation; racial categories are social and historical constructions built mainly from visible traits like skin color"
         ],
         "correctIndex": 3,

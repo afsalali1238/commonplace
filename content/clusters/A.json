@@ -23,9 +23,9 @@
         "question": "According to Paul Graham, what is the biggest mistake founders make regarding early customer acquisition?",
         "options": [
           "Assuming users will naturally discover the product, rather than manually recruiting them one by one",
-          "Spending too much money on television advertising",
-          "Hiring salespeople too early",
-          "Assuming venture funding alone guarantees a large user base"
+          "Overspending available startup capital on broad, untargeted broadcast media and billboard promotions",
+          "Hiring enterprise sales teams and regional account executives before validating core product demand",
+          "Believing that closing an institutional venture financing round automatically attracts active users"
         ],
         "correctIndex": 0,
         "explanation": "Graham emphasizes that initial growth is never organic; founders must physically go out and recruit their first users manually, even if that process can't scale to a million users."
@@ -144,10 +144,10 @@
       "quiz": {
         "question": "According to Paul Graham, why do the best startup ideas often sound bad at first?",
         "options": [
-          "Because founders deliberately disguise good ideas to avoid competition",
-          "Because investors intentionally reject good ideas to keep valuations low",
+          "Because founders deliberately disguise promising product concepts under confusing names to deter established copycats",
+          "Because early-stage venture capital partnerships deliberately undervalue breakthrough pitches to negotiate cheaper equity",
           "Because the market for them doesn't obviously exist yet — they're noticed early, before demand is visible to everyone",
-          "Because bad-sounding ideas get more attention in pitch meetings"
+          "Because counterintuitive and unappealing ideas reliably capture more press coverage and viral buzz in initial tech forums"
         ],
         "correctIndex": 2,
         "explanation": "The best ideas are often those that solve a genuine problem but look unappealing or too niche to others; if they looked obviously good, a large company would already be doing them."

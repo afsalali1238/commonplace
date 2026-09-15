@@ -61,9 +61,9 @@
       "quiz": {
         "question": "According to PG, the fastest way to develop taste is to:",
         "options": [
-          "Consume the most popular work.",
-          "Rely on your instincts without training.",
-          "Take a class.",
+          "Immerse yourself indiscriminately in commercially trending viral publications.",
+          "Rely exclusively on uncalibrated initial impulses without external reference.",
+          "Complete an introductory academic curriculum in comparative fine art theory.",
           "Consume the best work in your field and reverse-engineer why it works."
         ],
         "correctIndex": 3,
@@ -139,10 +139,10 @@
       "quiz": {
         "question": "Why does 'strong opinions, weakly held' beat hedging?",
         "options": [
-          "Strong opinions are more impressive to others.",
+          "Articulating dogmatic viewpoints projects greater executive charisma and dominates team discussions.",
           "Strong opinions make sharp predictions that reality can falsify — vague opinions drift and never update.",
-          "Weakly held means you don't have to change your mind.",
-          "It's mostly a rhetorical device."
+          "Holding views weakly provides a convenient rhetorical justification for never having to commit to action.",
+          "It functions merely as an entertaining conversational ploy to disarm debate opponents in public forums."
         ],
         "correctIndex": 1,
         "explanation": "Holding strong opinions forces you to articulate clear hypotheses. Holding them weakly ensures you abandon them the moment contrary evidence proves you wrong, accelerating the learning process."
@@ -295,10 +295,10 @@
       "quiz": {
         "question": "According to the Wheel of Focus framework, why does fixing only one lever (like willpower) usually fail to produce lasting concentration?",
         "options": [
-          "Because willpower is a myth and doesn't exist as a psychological resource.",
-          "Because concentration is purely genetic and can't be trained.",
+          "Because human discipline is an imaginary social construct that exercises no biological influence on performance.",
+          "Because cognitive endurance is strictly hardwired in the genome and resists any environmental conditioning.",
           "Because focus is the joint output of mindset, energy, environment, and technique, and neglecting the other three undermines the one you fixed.",
-          "Because productivity apps are inherently distracting."
+          "Because modern digital software applications are inherently weaponized to fracture user attention spans."
         ],
         "correctIndex": 2,
         "explanation": "The framework treats focus as multi-causal: a strong technique layer (like Pomodoro) still fails if energy (sleep, hydration) or environment (clutter, notifications) are working against it."

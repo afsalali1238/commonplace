@@ -22,9 +22,9 @@
       "quiz": {
         "question": "What was radical about Shannon's approach to defining 'information'?",
         "options": [
-          "He defined information based on how emotionally important a message was to the receiver",
-          "He argued information could only be transmitted without any noise at all",
-          "He proved that analog signals are always more reliable than digital ones",
+          "He evaluated the importance of information according to the subjective psychological and emotional impact it created for listeners",
+          "He asserted that reliable communication could only take place through noiseless, perfectly insulated physical transmission media",
+          "He developed proofs indicating that continuous analog signals were fundamentally more resistant to channel distortion than digital pulses",
           "He measured information purely by how surprising/unpredictable it was (its entropy), deliberately ignoring the actual meaning or content of the message"
         ],
         "correctIndex": 3,
@@ -175,10 +175,10 @@
       "quiz": {
         "question": "How did Microsoft respond to the threat it identified from Netscape in the Internet Tidal Wave memo?",
         "options": [
-          "It acquired Netscape outright to eliminate the competitor",
-          "It exited the software business entirely to focus on internet infrastructure",
+          "Microsoft negotiated an outright corporate acquisition of Netscape Communications to absorb its browser engineering team and assets",
+          "Microsoft announced an immediate exit from commercial application software to focus corporate resources solely on core network plumbing",
           "It bundled a free web browser (Internet Explorer) into Windows, using its OS monopoly to undercut Netscape's paid browser business model",
-          "It lobbied Congress to ban competing browsers"
+          "Microsoft relied primarily on antitrust lobbying in Washington to prohibit rival standalone software vendors from selling internet tools"
         ],
         "correctIndex": 2,
         "explanation": "Recognizing that the internet would commoditize the operating system, Microsoft rapidly pivoted to integrate Internet Explorer directly into Windows to neutralize Netscape and protect its core monopoly."
@@ -352,9 +352,9 @@
         "question": "Why did Moore's 1965 observation become a coordination device, not just a forecast?",
         "options": [
           "Because the whole stack — fabs, tools, and software — invested against the doubling line, making the expectation self-fulfilling until physical limits intervene",
-          "It was a physical law like gravity that held regardless of investment, planning, or coordination",
-          "Moore's law predicted linear growth and was therefore easy to extrapolate without surprise",
-          "The law only described memory capacity and had no broader implications for compute cost or strategy"
+          "Because it operated as an unyielding physical law of nature comparable to thermodynamics, holding true regardless of industry capital commitments",
+          "Because Gordon Moore had accurately predicted purely linear microchip progress that was straightforward for corporate planners to schedule",
+          "Because the formulation described only volatile magnetic memory density, having virtually no technological bearing on logic microprocessors"
         ],
         "correctIndex": 0,
         "explanation": "Moore's line was a roadmap the industry synchronized around; shared expectation drove aligned R&D, which kept the exponential going far longer than any natural law alone would."

@@ -22,10 +22,10 @@
       "quiz": {
         "question": "What mechanism did Darwin propose for how complex adaptations arise without any designer or plan?",
         "options": [
-          "Organisms consciously choose which traits to develop and pass on",
+          "Individual organisms intentionally determine which anatomical mutations to synthesize and pass on to their biological progeny",
           "Random heritable variation gets filtered by differential survival and reproduction, so advantageous traits accumulate over many generations",
-          "Species inherit traits their parents acquired during their own lifetime",
-          "A predetermined genetic blueprint unfolds over time"
+          "Species inherit morphological characteristics their parents acquired through physical conditioning over their adult lifespans",
+          "An immutable, predetermined developmental master plan unfolds deterministically across successive geological eras"
         ],
         "correctIndex": 1,
         "explanation": "The 'design without a designer' insight is the core of natural selection: variation plus heredity plus differential survival is sufficient — no foresight, intention, or blueprint required."
@@ -264,10 +264,10 @@
       "quiz": {
         "question": "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
         "options": [
-          "Mitochondria are visually identical to the rest of the cell under a microscope",
+          "Mitochondria display identical internal cytology and protein arrangements to eukaryotic nuclei under electron microscopes",
           "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
-          "Mitochondria can survive and reproduce completely outside of any cell",
-          "There is no genetic evidence; the theory rests entirely on structural resemblance"
+          "Isolated mitochondria can readily replicate and complete their metabolic life cycle outside cellular cytoplasm indefinitely",
+          "There is no empirical molecular support; the hypothesis rests entirely on speculative structural parallels in biology"
         ],
         "correctIndex": 1,
         "explanation": "The presence of separate, bacterial-like DNA inside mitochondria (and chloroplasts) is the strongest evidence for endosymbiotic theory — it's very difficult to explain that separate genome any other way than as a remnant of a once-independent organism."
@@ -344,9 +344,9 @@
       "quiz": {
         "question": "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
         "options": [
-          "Older species in the fossil record were consistently found to be far less likely to go extinct than newly evolved ones",
-          "All species in the fossil record went extinct at exactly the same rate, regardless of their size, type, or geological era",
-          "Extinction rates were found to be entirely random in time and unrelated to any measurable biological factor whatsoever",
+          "Older taxa documented in the paleontological record demonstrated an exponentially decreasing risk of extinction over evolutionary epochs, indicating that survival odds improve the longer a lineage endures",
+          "All observed species across fossil strata succumbed to terminal extinction cascades at identical statistical rates regardless of clade, ecological niche, body mass, or environmental volatility",
+          "Extinction frequencies followed an entirely stochastic temporal distribution uncorrelated with any environmental or ecological competition, driven exclusively by periodic celestial impact catastrophes",
           "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too"
         ],
         "correctIndex": 3,

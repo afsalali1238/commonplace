@@ -249,9 +249,9 @@
       "quiz": {
         "question": "What does Hoffman's peer-reviewed 'Fitness-Beats-Truth' theorem show?",
         "options": [
-          "That accurate perception of reality always outcompetes fitness-tuned perception",
-          "That human perception is more accurate than that of any other species",
-          "That consciousness cannot be studied mathematically",
+          "That veridical sensory perception of objective reality consistently outcompetes evolutionarily heuristic perceptions",
+          "That human perceptual apparatuses reconstruct objective external reality with greater fidelity than other organisms",
+          "That the subjective phenomenology of consciousness lies permanently outside the domain of formal mathematical models",
           "That organisms tuned to perceive fitness-relevant information systematically outcompete organisms tuned to perceive reality accurately"
         ],
         "correctIndex": 3,
@@ -297,9 +297,9 @@
         "question": "What does Sartre mean by 'existence precedes essence'?",
         "options": [
           "A human being exists first, with no predetermined nature, and defines their essence only through the choices they make",
-          "Humans are born with a fixed purpose that they gradually discover",
-          "Essence and existence are identical concepts in his philosophy",
-          "Human nature is entirely determined by God's design"
+          "Human consciousness is crafted with a teleological destiny that individuals uncover through introspective contemplation",
+          "Existence and ontological essence are indistinguishable terms within phenomenological existentialist inquiry",
+          "Human nature is fully determined prior to birth by cosmic moral laws and transcendent divine design"
         ],
         "correctIndex": 0,
         "explanation": "Sartre argued there is no God or human nature to dictate what we are. We are thrown into existence as blank slates, and we are terrifyingly, absolutely responsible for defining ourselves through action."
@@ -737,10 +737,10 @@
       "quiz": {
         "question": "What does Mill's utilitarianism use to judge whether an action is right or wrong?",
         "options": [
-          "The intentions behind the action, regardless of outcome",
+          "The virtuous moral intentions and internal motives animating the agent, regardless of final consequences",
           "Whether it produces the greatest net happiness for the greatest number of people affected",
-          "Whether it follows a fixed set of moral rules",
-          "Whether it is legal in the jurisdiction where it occurs"
+          "Whether the conduct conforms strictly to an immutable catalogue of deontological moral commandments",
+          "Whether the behavioral choice adheres to statutory civil laws established in the prevailing jurisdiction"
         ],
         "correctIndex": 1,
         "explanation": "Mill's ethical framework bypasses divine rules and focuses purely on consequences: an action is morally right only if it maximizes the total aggregate well-being and minimizes total suffering."
@@ -885,9 +885,9 @@
         "question": "What is Locke's central claim about the mind at birth?",
         "options": [
           "It is a blank slate with no innate ideas; all knowledge derives from sensory experience and reflection on it",
-          "It contains innate knowledge of God, logic, and morality",
-          "It is pre-programmed with mathematical truths",
-          "It cannot acquire any reliable knowledge at all"
+          "It is endowed by divine creation with innate mathematical, moral, and theological principles from conception",
+          "It contains pre-programmed geometric intuitions that unfold autonomously regardless of physical sensations",
+          "It lacks any structural capacity to synthesize coherent or empirically verified perceptions about nature"
         ],
         "correctIndex": 0,
         "explanation": "Locke argued against the prevailing idea of 'innate concepts' (like God or morality), insisting the mind is a tabula rasa (blank slate) that only acquires knowledge through sensory experience."
@@ -1031,9 +1031,9 @@
       "quiz": {
         "question": "According to Hobbes, why do rational individuals agree to submit to a sovereign authority?",
         "options": [
-          "Because the sovereign is chosen by God and deserves obedience",
-          "Because a sovereign guarantees equal wealth distribution",
-          "Because Hobbes believed democracy was the only legitimate form of government",
+          "Because the sovereign monarch is anointed through divine providence and commands unconditional moral subservience",
+          "Because an unconstrained central executive guarantees egalitarian economic reallocation across all social strata",
+          "Because Thomas Hobbes maintained that direct parliamentary democracy represented the sole legitimate constitution",
           "Because life without a common power to enforce order collapses into a war of all against all, and any stable authority is better than that chaos"
         ],
         "correctIndex": 3,
@@ -1166,9 +1166,9 @@
       "quiz": {
         "question": "According to Winnicott, why is a 'perfect' parent actually harmful to a developing child?",
         "options": [
-          "Because perfection is impossible, so the parent will eventually suffer burnout.",
-          "Because it makes the child too independent too quickly.",
-          "Because the child will realize the parent is faking their perfection.",
+          "Because infallible maternal performance induces psychological exhaustion and clinical depression in the caretaker.",
+          "Because excessive responsiveness precipitates precocious emotional autonomy before basic attachment bonds stabilize.",
+          "Because developing infants readily detect contrived parental behaviors and become deeply suspicious of insincerity.",
           "Because the child will never experience the necessary, tolerable frustrations required to develop resilience and self-soothing."
         ],
         "correctIndex": 3,
@@ -1205,10 +1205,10 @@
       "quiz": {
         "question": "How does a 'Classicist' view a long-term relationship differently than a 'Romantic'?",
         "options": [
-          "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest.",
+          "A Classicist seeks a flawless predetermined soulmate, while a Romantic pragmatically accommodates whoever is available.",
           "A Classicist believes love is a choice built on compromise and realistic expectations, while a Romantic believes it must be based on constant, passionate feeling.",
-          "A Classicist relies entirely on horoscopes to choose a partner.",
-          "A Classicist avoids relationships entirely to focus on their career."
+          "A Classicist depends strictly on cosmological personality archetypes to determine long-term domestic compatibility.",
+          "A Classicist eschews romantic partnerships entirely to protect individual intellectual and economic self-sufficiency."
         ],
         "correctIndex": 1,
         "explanation": "Romanticism demands perfection and constant passion, leading to inevitable disappointment. Classicism expects flaws and friction, making it far more resilient."
@@ -1244,9 +1244,9 @@
       "quiz": {
         "question": "What is the metaphorical lesson of Schopenhauer's Porcupine Dilemma?",
         "options": [
-          "Humans should remain entirely isolated to avoid getting hurt.",
-          "We must completely dull our 'quills' (flaws) before we are worthy of love.",
-          "The coldness of the universe makes all human relationships ultimately meaningless.",
+          "Human beings should embrace complete emotional isolation to guarantee immunity from psychological trauma.",
+          "Partners must entirely extinguish their personal eccentricities before attempting to construct an enduring union.",
+          "The existential indifference of the physical universe renders all interpersonal affection inherently futile.",
           "Intimacy is a delicate balance of finding the right psychological distance to share warmth without inflicting too much pain on each other."
         ],
         "correctIndex": 3,
@@ -1284,9 +1284,9 @@
         "question": "Why does Rilke advise against frantically searching for the answers to life's biggest dilemmas?",
         "options": [
           "Because even if someone gave you the answer, you lack the lived experience required to actually understand and embody it.",
-          "Because the answers to life's questions do not actually exist.",
-          "Because asking questions is a sign of philosophical weakness.",
-          "Because the universe is inherently chaotic and randomly assigns fates."
+          "Because definitive resolutions to profound metaphysical perplexities do not exist within the fabric of human reason.",
+          "Because formulating existential inquiries signals emotional frailty and an inability to adapt to external reality.",
+          "Because the cosmos is an indifferent, stochastic expanse that assigns human destinies without rhyme or reason."
         ],
         "correctIndex": 0,
         "explanation": "Existential truths cannot be memorized like math formulas. They must be earned through the slow accumulation of life experience."

@@ -61,10 +61,10 @@
       "quiz": {
         "question": "Why can a positive result on an accurate test for a rare disease still mean you probably don't have it?",
         "options": [
-          "Because a 99% accurate test becomes completely worthless whenever a disease is rare",
+          "Because clinical diagnostic assays exhibiting 99% laboratory sensitivity become statistically useless when a condition is rare",
           "Because when a condition is rare enough, false positives from the healthy majority can outnumber true positives from the small number who are actually sick",
-          "Because probability theory doesn't meaningfully apply to individual medical diagnoses",
-          "Because test accuracy always decreases mechanically as a condition becomes rarer"
+          "Because mathematical probability and formal Bayesian calculus cannot be applied to individual diagnostic patient evaluations",
+          "Because diagnostic sensitivity and specificity curves degrade mechanically whenever a pathogen's prevalence declines in a region"
         ],
         "correctIndex": 1,
         "explanation": "This is Bayes' theorem in action: a low prior probability of having a rare disease means even a highly accurate test generates more false positives from the large healthy population than true positives from the small sick one, so the posterior stays lower than intuition suggests."
@@ -257,9 +257,9 @@
         "question": "Why does switching win 2/3 of the time in the Monty Hall problem?",
         "options": [
           "The host's non-random action of opening a losing door transfers the 2/3 probability mass of the two unchosen doors onto the single remaining unchosen door",
-          "The host is trying to trick you, so the opposite of what he offers must be the better choice",
-          "After one door is opened, the remaining two doors become symmetric, so each must be 50/50",
-          "Switching only helps if the prize was randomly placed after you made your initial choice"
+          "The gameshow host is actively trying to mislead the contestant, implying that inverting your preliminary intuition must be optimal",
+          "Once an unselected door is opened to reveal a goat, the two closed doors become structurally symmetrical, yielding an exact 50/50 split",
+          "Switching strategies only improves mathematical expectations if the vehicle was relocated behind closed doors after your selection"
         ],
         "correctIndex": 0,
         "explanation": "Your initial pick is 1/3 to be right; the host's forced reveal does not redistribute that equally — it concentrates the original 2/3 chance of 'prize was elsewhere' onto the one door he leaves closed."

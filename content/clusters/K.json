@@ -22,10 +22,10 @@
       "quiz": {
         "question": "Why do most people underestimate compounding?",
         "options": [
-          "The math is genuinely wrong for long horizons.",
-          "It only works for money.",
+          "Long-horizon mathematical projections inherently overestimate geometric gains.",
+          "Geometric accumulation functions exclusively within liquid financial assets.",
           "The early years look linear and boring, so people quit before the curve bends.",
-          "Compounding is a myth."
+          "Exponential compounding is an ungrounded theoretical myth in modern economies."
         ],
         "correctIndex": 2,
         "explanation": "Compounding is deceptive because the massive gains happen at the very end of the curve. People quit early because they judge linear progress instead of exponential potential."
@@ -217,9 +217,9 @@
       "quiz": {
         "question": "Why do most people quit new habits early, according to the Plateau of Latent Potential?",
         "options": [
-          "They set goals that are physically impossible to achieve.",
-          "They run out of willpower because they didn't rely on systems.",
-          "They fail to establish an identity-based goal.",
+          "They establish ambitious personal milestones that remain mathematically and physically impossible for human beings to realize.",
+          "They deplete their daily reservoir of discipline because they never constructed supporting environmental and behavioral systems.",
+          "They neglect to ground their daily habits within a coherent, deeply felt identity-based narrative about who they are becoming.",
           "They expect linear progress and get discouraged in the 'Valley of Disappointment' when the exponential curve starts flat."
         ],
         "correctIndex": 3,

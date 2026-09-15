@@ -61,10 +61,10 @@
       "quiz": {
         "question": "What was Gibbon's central argument about why Rome fell?",
         "options": [
-          "Rome fell purely because barbarian armies were militarily superior",
-          "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline",
+          "The empire collapsed exclusively because foreign barbarian confederations developed insurmountable tactical military supremacy",
+          "Imperial monetary debasement precipitated a catastrophic commercial barter crisis that severed urban markets from rural hinterlands",
           "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
-          "Rome fell because a single decisive battle destroyed its army beyond recovery"
+          "The empire dissolved rapidly because a single catastrophic tactical engagement eradicated the Western legionary forces beyond recovery"
         ],
         "correctIndex": 2,
         "explanation": "Gibbon's framing put internal institutional and civic decay at the center of the story — external invasion was the mechanism of collapse, not its root cause, a distinction that shaped how historians analyze institutional decline ever since."
@@ -220,9 +220,9 @@
       "quiz": {
         "question": "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
         "options": [
-          "That Western Europe has always been the uncontested center of global trade and power, exactly as the standard histories claim",
-          "That trade routes had no significant influence on the spread of religion, technology, or political organization anywhere at all",
-          "That the Silk Roads were only active for a brief period in the ancient world before maritime routes fully replaced them",
+          "That Western European empires have functioned as the undisputed geopolitical epicenter of commercial trade throughout recorded history",
+          "That transcontinental overland trade routes played a negligible role in propagating scientific innovation, religious thought, or statecraft",
+          "That Eurasian caravan corridors functioned for only a brief classical epoch before being completely abandoned for deep-sea routes",
           "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time"
         ],
         "correctIndex": 3,
@@ -340,10 +340,10 @@
       "quiz": {
         "question": "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
         "options": [
-          "A single invasion by the 'Sea Peoples', a force so overwhelmingly powerful that no existing civilization could have survived it",
-          "A sudden and entirely unexplained climate event with no connection whatsoever to trade networks or political factors",
+          "An unstoppable tactical onslaught led by mysterious nomadic seafarers who systematically dismantled fortified coastal city defenses across the eastern Mediterranean through unmatched naval superiority",
+          "An abrupt seismic catastrophe that fractured agricultural irrigation canals across Greece and Anatolia without interacting with broader commercial trade networks or domestic political institutions",
           "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
-          "Deliberate and carefully coordinated destruction ordered by Egyptian pharaohs to reset the entire political order of the Mediterranean"
+          "A coordinated imperial military campaign engineered by Egyptian Pharaohs seeking to extinguish rival Levantine maritime kingdoms and establish direct administrative hegemony over Aegean trade routes"
         ],
         "correctIndex": 2,
         "explanation": "Cline's 'systems collapse' argument moves away from single-cause explanations (like blaming the Sea Peoples alone) toward a model where the Bronze Age Mediterranean's interconnected trade network amplified several simultaneous regional shocks into a civilization-wide collapse none of them would have caused individually."

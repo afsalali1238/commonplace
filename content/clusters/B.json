@@ -23,9 +23,9 @@
         "question": "What made the Fairchild deal structurally different from a normal stock purchase, and why did that matter?",
         "options": [
           "Fairchild Camera and Instrument got an option to buy the entire new company later, rather than just purchasing shares upfront — letting founders keep control while proving the business worked",
-          "The founders were required to repay the investment in cash within one year regardless of performance",
-          "The deal was funded entirely by a government small-business grant, not a private company",
-          "Shockley Semiconductor itself provided the funding as a severance package"
+          "The founders agreed to an unconditional personal debt guarantee requiring full cash repayment of the seed capital within twelve months regardless of commercial milestones",
+          "The transaction was financed as a non-dilutive federal defense research award rather than an equity transaction involving private corporate sponsors",
+          "Shockley Semiconductor directly underwrote the new venture by granting perpetual royalty-free licenses and equity as part of a negotiated executive severance settlement"
         ],
         "correctIndex": 0,
         "explanation": "The Fairchild deal pioneered the use of equity options rather than a standard buyout, incentivizing the founders to build the company while giving the parent company a de-risked path to ownership."
@@ -169,9 +169,9 @@
       "quiz": {
         "question": "What was the core argument of Facebook's 2004 media kit pitch to advertisers?",
         "options": [
-          "That Facebook had more total users than any competing site",
-          "That Facebook had already signed exclusive contracts with major brands",
-          "That the site would soon expand beyond colleges to the general public",
+          "That Facebook already had more total registered accounts across all demographics than any existing online portal",
+          "That Facebook had secured legally binding exclusive marketing partnerships with top consumer brands",
+          "That the platform would immediately expand beyond universities to compete for the broad general public",
           "That dense, repeated engagement from a narrow, targetable audience was more valuable to advertisers than a larger but less engaged audience"
         ],
         "correctIndex": 3,
@@ -221,9 +221,9 @@
         "question": "How did Kalanick and Camp initially position UberCab in their 2008 pitch deck?",
         "options": [
           "As a premium, invite-only black-car service comparable to NetJets, aimed at professionals rather than the general public",
-          "As a direct, mass-market replacement for city taxi services",
-          "As a logistics platform for package delivery that would later add rides",
-          "As a public transit partnership with city governments"
+          "As a low-cost, decentralized peer-to-peer ridesharing network designed to immediately undercut municipal medallion taxis",
+          "As an enterprise courier and last-mile freight optimization platform that intended to experiment with passenger transport later",
+          "As a municipal public transit contractor seeking subsidized route-planning partnerships with local metropolitan transit authorities"
         ],
         "correctIndex": 0,
         "explanation": "Uber initially pitched itself as a niche, premium black-car service for professionals, which served as a profitable wedge to eventually expand into the mass-market ride-hailing giant it is today."
@@ -320,10 +320,10 @@
       "quiz": {
         "question": "Why did Tesla's master plan start with an expensive, low-volume sports car instead of an affordable mass-market car?",
         "options": [
-          "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper",
-          "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles",
+          "Musk intended to position Tesla strictly as a luxury boutique automaker, with no commercial ambition to produce mass-market passenger vehicles",
+          "Automotive trade and safety regulations during that era prohibited new entrants from manufacturing vehicles priced below luxury thresholds",
           "The expensive early car funded and proved out the technology, manufacturing capability, and credibility needed to eventually build cheaper, higher-volume cars",
-          "Battery technology only existed in a form suitable for sports cars in 2006"
+          "Automotive-grade lithium battery packs could physically only be integrated into low-profile sports car chassis given thermal dissipation limits"
         ],
         "correctIndex": 2,
         "explanation": "Starting with an expensive luxury car allowed Tesla to fund R&D and build out manufacturing, effectively using wealthy early adopters to subsidize the development of affordable mass-market EVs."

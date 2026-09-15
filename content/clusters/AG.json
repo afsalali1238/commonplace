@@ -22,10 +22,10 @@
       "quiz": {
         "question": "What point was Sullivan actually making with 'form follows function' in his 1896 essay?",
         "options": [
-          "Buildings should have no decoration whatsoever",
-          "Function is less important than visual appeal",
+          "Architectural constructions must rigorously exclude decorative elements, surface relief, and artisanal craftsmanship entirely",
+          "Utilitarian functional capacity should be deliberately subordinated to dramatic ornamental styling and public grandeur",
           "A structure's shape should be determined by its purpose, the way natural forms are shaped by what they need to do, not by inherited decorative convention",
-          "Ornament should be added only after a building's structural design is finished"
+          "Ornamentation should be appended as an external facade layer only after core structural engineering plans have been finalized"
         ],
         "correctIndex": 2,
         "explanation": "Sullivan's argument was about causality, not minimalism — shape should follow purpose the way a hawk's wing follows flight, rather than defaulting to ornamental tradition disconnected from what the structure actually does."
@@ -195,9 +195,9 @@
         "question": "Why does Christensen argue segmentation by job outperforms segmentation by persona?",
         "options": [
           "A job captures the causal struggling moment and desired progress that actually pulls a product into use, while personas describe attributes that predict attitudes but not behavior",
-          "Jobs are simply another word for personas and the two approaches are identical in predictive power",
-          "Personas are illegal to collect under modern privacy regulations, so jobs are the only permissible alternative",
-          "Jobs focus exclusively on functional utility and ignore emotional or social dimensions of the hire"
+          "Job-to-be-done framing represents a direct semantic rebranding of demographic consumer personas with identical operational utility",
+          "Collecting demographic persona data violates international data privacy frameworks, leaving operational job descriptions as the only legal option",
+          "Jobs theory concentrates exclusively on mechanical functional specs while discarding the emotional and social drivers of purchasing"
         ],
         "correctIndex": 0,
         "explanation": "Jobs theory is causal — it identifies the pushing situation and desired progress that causes a hire — whereas attribute-based personas correlate loosely with preferences but not with the moment of switch."

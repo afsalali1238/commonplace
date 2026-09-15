@@ -163,10 +163,10 @@
       "quiz": {
         "question": "What did large-scale, independent replications of Dweck's most-cited studies find?",
         "options": [
-          "They found an even stronger effect than her original studies",
+          "They demonstrated an effect size substantially larger than that originally reported in the benchmark interventions",
           "Little or no support for growth-mindset interventions meaningfully improving school attainment at scale",
-          "That fixed mindsets are actually superior for achievement",
-          "The replications were never attempted"
+          "Evidence indicating that deterministic trait beliefs foster superior educational perseverance and academic outcomes",
+          "Methodological disputes prevented independent academic institutions from attempting rigorous replication trials"
         ],
         "correctIndex": 1,
         "explanation": "Despite dominating education policy for a decade, rigorous independent replication studies showed that briefly teaching students about the 'growth mindset' had almost zero impact on actual academic performance."
@@ -380,10 +380,10 @@
       "quiz": {
         "question": "Why does 'cognitive ease' function as a persuasion lever, according to this framework?",
         "options": [
-          "Because audiences are too unintelligent to follow complex arguments.",
+          "Because average readers lack the technical sophistication required to comprehend nuanced philosophical propositions.",
           "Because a message that is simple and easy to process tends to be judged as more true, independent of its actual logical strength.",
-          "Because cognitive ease only matters in written communication, not speech.",
-          "Because it replaces the need for any supporting evidence."
+          "Because cognitive fluency operates exclusively within printed typography while failing to influence spoken rhetoric.",
+          "Because syntactic clarity eliminates the evidentiary requirement to provide empirical data or logical deductions."
         ],
         "correctIndex": 1,
         "explanation": "This is a documented persuasion effect — processing fluency increases perceived truth — which is why the framework treats plain, well-structured language as a tactical choice, not just a stylistic one."
@@ -421,9 +421,9 @@
         "question": "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
         "options": [
           "That compulsive optimization can itself become a way of avoiding actually living, making it a trap rather than a solution.",
-          "That all self-help advice is scientifically unfounded.",
-          "That self-help books should never be read more than once.",
-          "That only professional coaches should give self-improvement advice."
+          "That empirical productivity recommendations published in commercial manuals lack clinical peer-reviewed foundations.",
+          "That self-improvement volumes should only ever be consulted once to prevent psychological dependence on advice.",
+          "That non-accredited writers should be legally prohibited from distributing actionable personal development guides."
         ],
         "correctIndex": 0,
         "explanation": "Ferriss's point, coming after 20+ years of building a career on optimization, is that the pursuit itself can become the avoidance — the 'cure' substituting for genuinely being present in your life."
@@ -501,9 +501,9 @@
         "question": "What is the central premise behind treating small talk as a learnable skill rather than a fixed trait?",
         "options": [
           "That conversational ease breaks down into specific, copyable behaviors (initiating first, using names, asking open questions) that anyone can practice.",
-          "That charismatic people are born, not made, and the skill can't actually be taught.",
-          "That small talk should always be avoided in favor of deep conversation.",
-          "That only professional networkers benefit from these techniques."
+          "That social magnetism is an unalterable genetic endowment that cannot be acquired or refined through deliberate behavioral rehearsal.",
+          "That informal small talk is inherently manipulative and should be replaced by immediate confrontation regarding profound philosophical values.",
+          "That interpersonal charisma tactics offer practical utility solely to corporate lobbyists, politicians, and executive business developers."
         ],
         "correctIndex": 0,
         "explanation": "Fine's framing treats what looks like natural charisma as a decomposable skill set — specific, practiceable behaviors rather than an innate personality trait."
@@ -587,10 +587,10 @@
       "quiz": {
         "question": "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
         "options": [
-          "System 2 deliberately overriding System 1's correct intuitions.",
-          "A simple lack of intelligence or education in the person making the judgment.",
+          "System 2 deliberately suppressing and overriding System 1's accurate, evolutionary fine-tuned intuitive assessments.",
+          "An ordinary shortfall in formal academic instruction or baseline abstract cognitive capacity in the decision maker.",
           "Substitution — System 1 quietly answers an easier question than the hard one actually being asked, and System 2 accepts it without checking.",
-          "Random noise in memory recall with no identifiable underlying pattern."
+          "Stochastic neurochemical static within cortical memory retrieval pathways that exhibits no recurring directional bias."
         ],
         "correctIndex": 2,
         "explanation": "The substitution mechanism is Kahneman's central explanation for bias: a hard question gets silently swapped for an easier, related one, and the lazy System 2 rubber-stamps the substitute answer as if it addressed the original question."

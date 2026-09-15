@@ -137,10 +137,10 @@
       "quiz": {
         "question": "A coworker leaves you out of a meeting invite. Hanlon's Razor prompts you to first suspect:",
         "options": [
-          "They're trying to sabotage you.",
+          "They are actively coordinating to undermine or isolate your position.",
           "They forgot or didn't realize you needed to be included.",
-          "They dislike you personally.",
-          "They're a bad person."
+          "They harbor an unstated personal resentment or grudge against you.",
+          "They possess a deeply toxic character that seeks to hurt others."
         ],
         "correctIndex": 1,
         "explanation": "Hanlon's Razor is a mental model for emotional regulation. By assuming incompetence or oversight rather than malice, you avoid unnecessary conflict and maintain clearer judgment."
@@ -455,9 +455,9 @@
         "question": "Who coined the phrase 'all models are wrong, but some are useful,' cited as the origin of this piece's title?",
         "options": [
           "George Box, in a 1976 paper",
-          "Charlie Munger",
-          "Nassim Taleb",
-          "Alfred Korzybski"
+          "Charlie Munger, in his talks",
+          "Nassim Taleb, in Fooled by R.",
+          "Alfred Korzybski, in Science"
         ],
         "correctIndex": 0,
         "explanation": "Because reality is infinitely complex, a model must simplify it to be understandable. The goal isn't perfect accuracy, but extracting a simplified structure that helps you make better decisions."
@@ -543,10 +543,10 @@
       "quiz": {
         "question": "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
         "options": [
-          "Making the prison sentences longer",
-          "Allowing the prisoners to communicate just once",
+          "Substantially extending the severity of prison sentences imposed on convicted conspirators",
+          "Permitting the participants a single brief window of verbal coordination before questioning begins",
           "Repeating (iterating) the game an unknown or effectively infinite number of times",
-          "Removing the police from the scenario entirely"
+          "Eliminating prosecutorial plea agreements and criminal statutes from the judicial encounter"
         ],
         "correctIndex": 2,
         "explanation": "In a one-off game, rational players defect to protect themselves. But when the game is repeated indefinitely, the long-term rewards of cooperation outweigh the short-term payoff of betrayal."
@@ -590,9 +590,9 @@
       "quiz": {
         "question": "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
         "options": [
-          "Simply gathering more raw data about the situation",
-          "Immediately acting on the first available option",
-          "Waiting for a superior officer's direct order",
+          "Gathering larger volumes of sensor telemetry and factual battlefield data without interpreting context",
+          "Committing immediately and decisively to whichever tactical course of action presents itself first",
+          "Suspending all tactical movement until receiving explicit hierarchical authorization from commanders",
           "Stripping away cultural, genetic, and cognitive biases to see the situation as it truly is"
         ],
         "correctIndex": 3,
@@ -826,9 +826,9 @@
         "question": "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
         "options": [
           "Reinforce the areas showing little to no damage on returning planes, since hits there likely caused planes to never return at all",
-          "Reinforce wherever returning planes showed the most bullet damage",
-          "Add armor evenly across the entire aircraft",
-          "Focus only on the cockpit, regardless of damage patterns"
+          "Reinforce the fuselage sections and wing surfaces that sustained the highest concentration of bullet impacts on surviving bombers",
+          "Distribute additional titanium armor plating uniformly across every square foot of the airframe regardless of impact locations",
+          "Concentrate all structural reinforcements strictly around the cockpit and navigator stations while leaving engine bays unchanged"
         ],
         "correctIndex": 0,
         "explanation": "Wald realized the military was looking only at the 'winners' (the planes that survived). The damage on returning planes showed where a plane could be hit and still survive; the unharmed areas were where the fatal hits occurred."
@@ -1456,9 +1456,9 @@
       "quiz": {
         "question": "According to the 'Levels of Abstraction' heuristic, why is constantly zooming between the big picture and granular detail important when learning a new complex system?",
         "options": [
-          "Because granular detail is always more important than the big picture.",
-          "Because it's the fastest way to memorize technical vocabulary.",
-          "Because experts only ever think at the detail level.",
+          "Because fine-grained operational mechanics always provide more actionable utility than high-level conceptual architectures.",
+          "Because rapid context switching represents the most efficient cognitive strategy for memorizing esoteric technical nomenclature.",
+          "Because seasoned domain specialists restrict their mental models exclusively to granular, component-level implementations.",
           "Because staying at only one layer — all overview or all detail — produces an incomplete or distorted understanding."
         ],
         "correctIndex": 3,
@@ -1496,10 +1496,10 @@
       "quiz": {
         "question": "According to the framework built from this reading list, who does AI actually threaten most?",
         "options": [
-          "People who refuse to use any AI tools.",
-          "People who read too many books.",
+          "Professionals who actively refuse to experiment with modern algorithmic tooling.",
+          "Knowledge workers who dedicate too much time to reading foundational philosophy.",
           "People who have outsourced their thinking to algorithms without realizing it.",
-          "Only professional researchers and scientists."
+          "Academic researchers and laboratory scientists who publish peer-reviewed papers."
         ],
         "correctIndex": 2,
         "explanation": "The article's conclusion is explicit: 'AI does not threaten people who think critically. It threatens people who have outsourced their thinking without realizing it.'"

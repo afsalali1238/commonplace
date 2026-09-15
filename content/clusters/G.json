@@ -23,9 +23,9 @@
         "question": "According to Karpathy, what makes up the 'source code' of a Software 2.0 system?",
         "options": [
           "The neural network's architecture and the dataset used to train it — since the actual logic is encoded as learned numerical weights, not hand-written instructions",
-          "A traditional programming language file that a human wrote and can read line by line",
-          "A configuration file specifying business rules",
-          "A compiled binary with no human-inspectable components at all"
+          "A monolithic codebase written in traditional procedural languages that human software engineers manually edit, compile, and maintain line by line",
+          "A declarative rule engine that executes human-authored logical conditions and deterministic business constraints against structured input parameters",
+          "A proprietary binary executable whose underlying control flow was hand-optimized in assembly to eliminate the need for training data"
         ],
         "correctIndex": 0,
         "explanation": "Software 2.0 shifts programming from humans writing explicit rules to neural networks learning probabilistic weights from data, fundamentally changing how we 'code' complex logic."
@@ -429,9 +429,9 @@
         "question": "What training approach did DeepSeek-R1 rely on primarily to teach the model to reason, rather than mainly using human-labeled reasoning examples?",
         "options": [
           "Reinforcement learning with rule-based rewards (correct answers, consistent language) building on a small amount of stabilizing 'cold-start' data",
-          "Pure memorization of textbook solutions to math problems",
-          "Manual rule-writing by human logicians for every reasoning step",
-          "Training exclusively on translated versions of OpenAI's own model outputs"
+          "Pure memorization and pattern replication derived from massive synthetic repositories of textbook math solutions",
+          "Exhaustive manual rule curation written by formal logicians to constrain and verify every inference step",
+          "Supervised fine-tuning conducted on multi-turn translated transcripts of proprietary frontier model outputs"
         ],
         "correctIndex": 0,
         "explanation": "DeepSeek-R1 showed that you can induce complex reasoning in a model not by painstakingly labeling human thought processes, but by using reinforcement learning to heavily reward correct outcomes."

@@ -100,10 +100,10 @@
       "quiz": {
         "question": "Why did Howard Marks aggressively buy distressed debt in 2008?",
         "options": [
-          "Because he knew the Federal Reserve would print money",
-          "Because debt instruments are legally risk-free",
+          "Because he confirmed that the Federal Reserve would soon inject unprecedented liquidity into the banking system",
+          "Because corporate debt instruments issued by distressed companies are legally guaranteed against capital loss",
           "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
-          "By timing trades to the exact day the Fed changed rates"
+          "Because he relied on algorithmic quantitative systems that timed trades precisely to scheduled rate cuts"
         ],
         "correctIndex": 2,
         "explanation": "Marks realized the market was pricing in the absolute worst-case scenario. Even if the economy remained terrible, the rock-bottom prices guaranteed a strong return on liquidation value."
@@ -178,10 +178,10 @@
       "quiz": {
         "question": "What is a 'covenant-lite' loan?",
         "options": [
-          "A loan issued exclusively to governments",
+          "A specialized credit facility made available exclusively to sovereign governments during currency stabilization interventions",
           "A loan that strips away traditional financial protections and monitoring requirements for the lender",
-          "A loan with an interest rate below inflation",
-          "By demanding the CEO personally guarantee every investment"
+          "A fixed-rate commercial debt instrument whose coupon yield is contractually pegged below the prevailing core inflation rate",
+          "A corporate credit structure requiring the executive management team to personally collateralize all syndicated debt obligations"
         ],
         "correctIndex": 1,
         "explanation": "Covenant-lite loans remove the safety tripwires (covenants) that normally allow lenders to take action if a borrower's financial health deteriorates, massively increasing the lender's risk."
@@ -334,10 +334,10 @@
       "quiz": {
         "question": "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
         "options": [
-          "The US produces too much oil domestically",
-          "The Federal Reserve is not allowed to buy foreign currencies",
+          "The domestic energy sector produces an excessive volume of oil, depressing bilateral terms of trade with global partners",
+          "Statutory restrictions strictly prohibit the Federal Reserve and Treasury from holding or intervening in foreign exchange",
           "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
-          "By assuming government spending would always decline"
+          "Congressional budget rules enforce mandatory spending freezes whenever currency depreciation exceeds inflation targets"
         ],
         "correctIndex": 2,
         "explanation": "The massive US debt load means high interest rates cause interest expense to explode, forcing the government to print even more money to pay the interest, creating a vicious cycle of currency debasement."
@@ -408,10 +408,10 @@
       "quiz": {
         "question": "What did Sequoia mean by telling founders they must become 'default alive'?",
         "options": [
-          "They must immediately IPO to raise cash",
+          "They must immediately initiate a public offering or private auction to raise emergency balance-sheet capital from investors",
           "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
-          "They must pivot to healthcare software",
-          "By refusing to invest during any month with a market decline"
+          "They must abandon their current product portfolio entirely and pivot into enterprise software contracts with defense agencies",
+          "They must freeze all commercial sales operations during any quarter characterized by broad macroeconomic contraction"
         ],
         "correctIndex": 1,
         "explanation": "Being 'default alive' means that if your current trajectory continues (and you never raise another dollar), you will reach profitability before running out of cash."

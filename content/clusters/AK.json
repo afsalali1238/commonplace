@@ -61,10 +61,10 @@
       "quiz": {
         "question": "What is the final stage of Baudrillard's four stages of the image, which he calls pure simulation?",
         "options": [
-          "An image that faithfully and accurately reflects an underlying reality",
+          "An aesthetic representation that transparently and faithfully reproduces the objective material conditions of physical reality",
           "A sign that no longer refers to any reality at all, and instead only references other signs, forming a self-contained 'hyperreality'",
-          "An image that deliberately masks the fact that no underlying reality exists",
-          "An image that is created to deceive with a known false version of the truth"
+          "A visual deception constructed to conceal the uncomfortable realization that an underlying foundational reality does not exist",
+          "A deliberately falsified ideological depiction engineered to mislead observers about an authentic historical truth"
         ],
         "correctIndex": 1,
         "explanation": "Baudrillard's most radical claim is the final stage — not that images lie about reality, but that they stop referring to reality altogether, circulating as free-floating signs that construct a hyperreality more emotionally 'real' than the world they nominally represent."
