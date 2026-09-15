@@ -322,10 +322,10 @@
       "quiz": {
         "question": "What is Bill Gurley's central warning about using TAM (Total Addressable Market) to judge a startup?",
         "options": [
-          "TAM figures are always fabricated by founders to look good",
+          "TAM figures are almost always inflated by founders to flatter the pitch, so a skeptical investor should discount every TAM number substantially before underwriting the deal",
           "A large TAM number alone says little; the market's underlying structure (frequency, consolidation tendency, supply/demand cost) determines whether it can produce a durable, valuable winner",
-          "TAM should be measured in number of users, not dollars",
-          "Only regulated markets have accurate TAM estimates"
+          "TAM should be counted in active users rather than dollars, since dollar figures systematically overstate how much of the market a startup can realistically reach",
+          "Only heavily regulated industries have meaningfully measurable TAMs, so startups competing in open, unconstrained markets should refuse to use the metric at all"
         ],
         "correctIndex": 1,
         "explanation": "A large TAM is a vanity metric if the market's structure (like low frequency of use or high acquisition costs) prevents the emergence of a highly profitable, dominant platform."

@@ -57,6 +57,12 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error("Vercel Node Adapter Error:", error);
     res.statusCode = 500;
-    res.end("Internal Server Error: " + error.message);
+    // Never echo error details to clients in production (message can leak
+    // stack frames, paths, or SQL). Full details stay in server logs.
+    res.end(
+      process.env.NODE_ENV === "production"
+        ? "Internal Server Error"
+        : `Internal Server Error: ${error.message}`,
+    );
   }
 }

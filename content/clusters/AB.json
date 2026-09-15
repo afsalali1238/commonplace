@@ -108,10 +108,10 @@
       "quiz": {
         "question": "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
         "options": [
-          "Because individual organisms never actually reproduce",
+          "Because individual organisms never actually reproduce on their own, so nothing about their bodies, habits, or life strategies can be passed on to the future generations of the species at all",
           "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
-          "Because Dawkins proved individual organisms have no influence on their own survival",
-          "Because genes are conscious and make deliberate strategic choices"
+          "Because Dawkins proved that individual organisms have no real influence on their own survival or reproduction, and that only blind genetic replication, not individual effort, determines which traits persist",
+          "Because genes are conscious units that make deliberate, strategic choices about which organisms to replicate, actively negotiating with the bodies they inhabit to maximize their own long-run fitness"
         ],
         "correctIndex": 1,
         "explanation": "The gene's-eye view resolves apparent evolutionary paradoxes — like self-sacrifice for relatives — by tracking what persists across generations (copies of genes) rather than what happens to any one individual body, which is temporary regardless of its genes' long-run success."
@@ -227,9 +227,9 @@
         "question": "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
         "options": [
           "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
-          "That evolution happens at all",
-          "That natural selection is the mechanism driving evolutionary change",
-          "That species can go extinct"
+          "That evolution is driven by anything other than random, purposeless mutation occurring at a steady, constant rate, with no room for the rapid bursts of change visible in the fossil record",
+          "That natural selection is a flawed or incomplete mechanism for driving evolutionary change, and that some other, still-unidentified force must account for most of the patterns in the fossil record",
+          "That species can go extinct as a discrete event, which they argued must always be so gradual that the disappearance of any given species would be imperceptible in the geological record"
         ],
         "correctIndex": 0,
         "explanation": "Punctuated equilibrium didn't dispute that evolution happens through natural selection — it disputed the assumed pace and pattern, arguing that most visible change is concentrated in relatively rapid speciation events rather than spread evenly across a species' whole existence."

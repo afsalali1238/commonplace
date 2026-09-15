@@ -220,7 +220,13 @@ function FeedScreen() {
   const visited = useStore((s) => s.visited);
   const readNext = useStore((s) => s.readNext);
 
-  const [seed] = useState(() => (Date.now() & 0xffffffff) >>> 0 || 1);
+  // Session-stable feed identity (see lib/feedSession.ts): the seed and the
+  // visited snapshot live in sessionStorage, so a Feed → node → Back
+  // round-trip restores the same order and the same card, while a new tab or
+  // PWA session feels fresh. A per-mount Date.now() seed used to reshuffle
+  // the feed under the restored scroll position on every back-swipe.
+  const [seed] = useState(getFeedSeed);
+  const [sessionVisited] = useState(() => getSessionVisited(visited));
   const [queueOpen, setQueueOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(FEED_PAGE_SIZE);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -232,8 +238,8 @@ function FeedScreen() {
       ...Object.keys(bookmarks).filter((k) => bookmarks[k]),
       ...Object.keys(gotIt).filter((k) => gotIt[k]),
     ];
-    return buildFeed({ interests, likedIds, visited, seed, readNext });
-  }, [seed, interests, visited, bookmarks, gotIt, readNext]);
+    return buildFeed({ interests, likedIds, visited: sessionVisited, seed, readNext });
+  }, [seed, interests, sessionVisited, bookmarks, gotIt, readNext]);
 
   const interestsKey = interests.join(",");
   // Reset visible window when feed identity changes (interest change)

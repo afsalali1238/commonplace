@@ -74,9 +74,9 @@
         "question": "Why did Berners-Lee's hypertext system deliberately avoid having a central index of all links?",
         "options": [
           "A central index would have required someone's permission or registration for every link, creating a bottleneck; without one, the system could scale without a single point of failure, at the cost of links sometimes breaking",
-          "CERN's computers weren't powerful enough to maintain a central index",
-          "Central indexes were against CERN's official research policy",
-          "It was a temporary limitation later fixed by search engines"
+          "CERN's computers simply weren't powerful enough to maintain a central index of millions of linked documents, so the decentralized design was a pragmatic response to hardware limits",
+          "Central indexes were explicitly against CERN's official research policy at the time, which forbade any single mechanism that could centralize control over the scholarly data of member institutions",
+          "It was a temporary limitation of the earliest prototype, later fixed in practice once search engines became good enough to index the entire web on demand for every individual user"
         ],
         "correctIndex": 0,
         "explanation": "By removing the requirement for a central registry and allowing broken links, Berners-Lee ensured the World Wide Web could scale infinitely without a centralized bottleneck."
@@ -124,10 +124,10 @@
       "quiz": {
         "question": "Why is PageRank harder to manipulate than simple keyword-frequency ranking?",
         "options": [
-          "Because it requires payment to Google to be indexed at all",
+          "Because it requires payment to Google to be indexed at all, so only sites that can afford the listing fee ever realistically compete for the top positions in the ranking",
           "Because a page's rank depends on being linked to by other already-trusted pages, not just on what words appear on the page itself — which is much harder to fake than stuffing keywords",
-          "Because PageRank only considers pages written in English",
-          "Because it ranks pages randomly to prevent gaming the system"
+          "Because PageRank only considers pages written in English, so the link-voting system is structurally biased against the large non-English portion of the entire web",
+          "Because it deliberately ranks pages at random to prevent gaming of the system, which makes keyword-stuffing and link-farming attacks pointless by pure construction"
         ],
         "correctIndex": 1,
         "explanation": "PageRank solved the problem of web spam by using the web's link structure as a massive voting system; a link from a highly trusted page passed more weight than a link from a trivial one."

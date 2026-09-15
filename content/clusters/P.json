@@ -250,10 +250,10 @@
       "quiz": {
         "question": "What game-theoretic distinction does Naval use to explain why long-term games reward honesty?",
         "options": [
-          "Zero-sum versus positive-sum games",
+          "Zero-sum versus positive-sum games, since Naval argues that long-term value is only created in markets that expand the total pie",
           "Single-round interactions reward defection, while repeated, long-horizon interactions reward honesty and reciprocity",
-          "Games of skill versus games of chance",
-          "Cooperative versus competitive sports"
+          "Games of skill versus games of chance, since in skill games reputation compounds and in chance games it never matters, no matter how long you play",
+          "Cooperative versus competitive sports, since honesty only pays in team settings where teammates interact repeatedly and can punish defection"
         ],
         "correctIndex": 1,
         "explanation": "In a one-off transaction, it pays to cheat. But in a long-term game where reputation compounds, honesty and reliability become the most profitable strategies."

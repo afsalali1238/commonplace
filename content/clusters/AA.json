@@ -268,10 +268,10 @@
       "quiz": {
         "question": "Why is the uncertainty principle considered a fundamental feature of reality rather than a limitation of measurement technology?",
         "options": [
-          "Because scientists haven't yet built instruments precise enough to overcome it",
-          "Because it only applies to objects larger than atoms",
+          "Because today's measurement instruments are not yet precise enough to overcome it, and physicists expect that better detectors and longer observation times will eventually reduce the uncertainty to negligible levels",
+          "Because the effect only becomes visible for objects far larger than atoms, where the limits of classical physics under careful laboratory examination were first documented by the early quantum experiments",
           "Because the uncertainty is a mathematical consequence of how quantum systems are structured — position and momentum genuinely cannot both have precise, definite values at the same time, regardless of how good the measuring instrument is",
-          "Because it was later disproven by more advanced physics"
+          "Because later, more advanced physics showed the uncertainty to be an artifact of early measuring instruments, restoring exact simultaneous values of position and momentum in the refined theory"
         ],
         "correctIndex": 2,
         "explanation": "Unlike classical measurement error, which could in principle be reduced with better instruments, the uncertainty principle describes a genuine limit built into the mathematics of quantum mechanics — the properties themselves aren't simultaneously well-defined, not just poorly measured."

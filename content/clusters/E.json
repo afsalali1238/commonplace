@@ -111,10 +111,10 @@
       "quiz": {
         "question": "What is the primary blind spot of EBITDA as a performance metric?",
         "options": [
-          "It excludes revenue entirely from the calculation.",
+          "It excludes revenue entirely from the calculation, which is why analysts treat it as a pure measure of operating profitability rather than of top-line health",
           "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
-          "It cannot be calculated for private companies.",
-          "It only applies to companies with no debt."
+          "It cannot be calculated for private companies, which is why the metric is effectively limited to publicly traded firms with audited financial statements",
+          "It only applies to companies with no debt on their balance sheet, making it useless for the leveraged businesses where cash flow analysis matters most"
         ],
         "correctIndex": 1,
         "explanation": "EBITDA deliberately strips out financing, tax, and depreciation effects to enable comparison, but that same stripping means it ignores real cash outflows like capital expenditure and working capital changes."
@@ -151,10 +151,10 @@
       "quiz": {
         "question": "Why can a company be profitable on paper but still fail from a cash problem?",
         "options": [
-          "Because profit and cash are always identical figures.",
+          "Because profit and cash are always identical figures in a well-run company, so a cash crisis can never actually follow a profitable reporting period",
           "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
-          "Because revenue always equals cash by definition.",
-          "Because cash flow is irrelevant to business survival."
+          "Because revenue always equals cash by definition in accrual accounting, so the two can only diverge when a company is deliberately manipulating its own books",
+          "Because cash flow is fundamentally irrelevant to business survival, and companies fail from low profits long before they ever run out of actual liquid cash"
         ],
         "correctIndex": 1,
         "explanation": "Profit reflects accounting performance over a period; cash reflects actual liquidity at a moment in time. A company can report a profit while still running out of cash if receivables are delayed or obligations come due faster than collections."
@@ -191,10 +191,10 @@
       "quiz": {
         "question": "Why would a pre-revenue startup typically be valued using the Berkus method rather than a DCF?",
         "options": [
-          "Because DCF is illegal to use on startups.",
-          "Because the Berkus method always produces a higher valuation.",
+          "Because DCF is effectively illegal to use on early-stage startups under most securities regulations, forcing founders to rely on qualitative scoring methods like Berkus instead",
+          "Because the Berkus method always produces a materially higher valuation than a DCF would, which is the only real reason that founders and investors prefer it in early rounds",
           "Because DCF requires projecting future cash flows, which is mostly unfounded assumption-stacking without a revenue history to anchor it, while Berkus scores qualitative risk factors instead.",
-          "Because startups don't have any assets to value."
+          "Because startups by definition don't have any meaningful tangible assets to value, so any method that starts from the balance sheet is automatically the wrong tool for them"
         ],
         "correctIndex": 2,
         "explanation": "DCF's reliability depends on having a reasonable basis for projecting future cash flows — something a pre-revenue company lacks, which is why lifecycle-appropriate methods like Berkus substitute qualitative risk scoring instead."

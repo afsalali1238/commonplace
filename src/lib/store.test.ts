@@ -4,16 +4,7 @@ import { describe, it, expect } from "vitest";
 // idb-keyval whenever `window` exists, and jsdom ships no indexedDB.
 // (Same pairing as Quiz.a11y.test.tsx.)
 import "fake-indexeddb/auto";
-import {
-  useStore,
-  currentStreak,
-  dueCount,
-  dueIds,
-  stateSchema,
-  isQueued,
-  readNextNodes,
-  type ReviewEntry,
-} from "./store";
+import { useStore, currentStreak, dueCount, dueIds, stateSchema, type ReviewEntry } from "./store";
 
 /**
  * Day key in exactly the shape store.ts's todayKey() produces — an ISO date
