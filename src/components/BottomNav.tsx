@@ -15,6 +15,7 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Main Navigation"
+      data-vt="nav"
       className="fixed bottom-0 inset-x-0 z-40 border-t border-line bg-paper/95 backdrop-blur"
     >
       <div className="mx-auto flex max-w-2xl">

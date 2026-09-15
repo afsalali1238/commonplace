@@ -11,20 +11,15 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - name: Install (bun preferred, npm fallback)
-        run: |
-          if [ -f bun.lock ]; then
-            bun install || npm install --legacy-peer-deps
-          else
-            npm install --legacy-peer-deps
-          fi
+      # package-lock.json is the committed, CI-canonical lockfile; bun.lock
+      # is gitignored (local-dev only). `npm ci` is reproducible; the old
+      # bun.lock-first branch never ran in CI because the file isn't there.
+      - name: Install
+        run: npm ci
       - name: Validate nodes (incl. generated-content freshness)
         run: npx tsx scripts/validate-nodes.ts
       - name: Lint
