@@ -22,6 +22,7 @@ B,Company Origins,B4,Facebook (thefacebook) Media Kit / Early Pitch,Facebook,200
 B,Company Origins,B5,UberCab Pitch Deck,Uber (Garrett Camp / Travis Kalanick),2008,Pitch Deck
 B,Company Origins,B6,Airbnb Series A Pitch Deck,Airbnb (Brian Chesky et al.),2009,Pitch Deck
 B,Company Origins,B7,The Secret Tesla Motors Master Plan (just between you and me),Elon Musk,2006,Worldview
+B,Company Origins,B8,LinkedIn Series B Pitch Deck (Greylock),Reid Hoffman,2004,Pitch Deck
 C,Fraud & Short Cases,C1,Enron Short Thesis,Jim Chanos / Kynikos,2001,Short / Activist
 C,Fraud & Short Cases,C2,The World's Largest Hedge Fund Is a Fraud,Harry Markopolos,2005,Short / Activist
 C,Fraud & Short Cases,C3,Fooling Some of the People All of the Time (Allied Capital Short),David Einhorn / Greenlight,2002,Short / Activist
@@ -52,11 +53,17 @@ E,Finance Theory,E2,Twenty Finance Terms Everyone Confuses,Wealth (thecapitalist
 E,Finance Theory,E3,"EBITDA, Decomposed",Abir Haddoud,2026,Financial Analysis
 E,Finance Theory,E4,"Revenue, Profit, and Cash Are Not the Same Number","Nathan Liao, CMA",2026,Financial Literacy
 E,Finance Theory,E5,How to Select a Valuation Method,BojanFin.com,2026,Valuation
+E,Finance Theory,E6,The Capital Asset Pricing Model (CAPM),William Sharpe,1964,Finance Theory
+E,Finance Theory,E7,The Efficient Market Hypothesis,Eugene Fama,1970,Finance Theory
+E,Finance Theory,E8,The Kelly Criterion & Position Sizing,John L. Kelly / Edward Thorp,1956,Finance Theory
 F,Foundational Tech,F1,A Mathematical Theory of Communication,Claude Shannon,1948,Technical Paper
 F,Foundational Tech,F2,Information Management: A Proposal,Tim Berners-Lee,1989,Technical Paper
 F,Foundational Tech,F3,The Anatomy of a Large-Scale Hypertextual Web Search Engine,"Sergey Brin, Lawrence Page",1998,Technical Paper
 F,Foundational Tech,F4,The Internet Tidal Wave,Bill Gates,1995,Worldview
 F,Foundational Tech,F5,Increasing Returns and the New World of Business,W. Brian Arthur,1996,Worldview
+F,Foundational Tech,F6,TCP/IP & the End-to-End Principle,Vint Cerf & Bob Kahn,1974,Foundational Tech
+F,Foundational Tech,F7,The Unix Philosophy,"Ken Thompson, Dennis Ritchie & Doug McIlroy",1978,Foundational Tech
+F,Foundational Tech,F8,Moore's Law & the Exponential,Gordon Moore,1965,Foundational Tech
 G,AI / ML Papers,G1,Software 2.0,Andrej Karpathy,2017,AI Essay
 G,AI / ML Papers,G2,Efficient Estimation of Word Representations (word2vec),Mikolov et al. (Google),2013,Technical Paper
 G,AI / ML Papers,G3,ImageNet Classification with Deep Convolutional Neural Networks (AlexNet),"Krizhevsky, Sutskever, Hinton",2012,Technical Paper
@@ -146,6 +153,8 @@ K,Compounding & Time,K3,Path Dependence,Paul David,1985,Time
 K,Compounding & Time,K4,Optionality,Nassim Taleb,2012,Time
 K,Compounding & Time,K5,The Tail End,Tim Urban,2015,Life & Time
 K,Compounding & Time,K6,The Plateau of Latent Potential,James Clear,2018,Habits
+K,Compounding & Time,K7,The Ergodicity Problem,Ole Peters,2019,Time
+K,Compounding & Time,K8,Pace Layering,Stewart Brand,1999,Time
 L,Decision-Making,L1,Expected Value,Blaise Pascal,1654,Decisions
 L,Decision-Making,L2,Pre-Mortem,Gary Klein,2007,Decisions
 L,Decision-Making,L3,Base Rates,Daniel Kahneman,2011,Decisions
@@ -187,7 +196,7 @@ N,Craft & Focus,N14,Put the Pressure on Yourself,Thomas Edison (quoted); compile
 O,Philosophy & the Self,O1,The Myth of Sisyphus,Albert Camus,1942,Philosophy of Meaning
 O,Philosophy & the Self,O2,The Ego Tunnel,Thomas Metzinger,2009,Philosophy of Mind
 O,Philosophy & the Self,O3,Descartes' Error & How Emotions Are Made,Antonio Damasio & Lisa Feldman Barrett,1994,Neuroscience
-O,Philosophy & the Self,O4,The Selfish Gene,Richard Dawkins,1976,Evolutionary Biology
+O,Philosophy & the Self,O4,The Selfish Gene (and Memes),Richard Dawkins,1976,Evolutionary Biology
 O,Philosophy & the Self,O5,Man's Search for Meaning,Viktor Frankl,1946,Philosophy of Meaning
 O,Philosophy & the Self,O6,The Case Against Reality,Donald Hoffman,2019,Philosophy of Mind
 O,Philosophy & the Self,O7,Existentialism Is a Humanism,Jean-Paul Sartre,1946,Philosophy of Meaning
@@ -223,6 +232,7 @@ P,The Almanack of Naval Ravikant,P4,Happiness Is a Choice / Peace Is Happiness a
 P,The Almanack of Naval Ravikant,P5,Read What You Love Until You Love to Read,Naval Ravikant,2016,Learning
 P,The Almanack of Naval Ravikant,P6,Play Long-Term Games with Long-Term People,Naval Ravikant,2018,Relationships & Compounding
 P,The Almanack of Naval Ravikant,P7,Naval's Life Formulas,Naval Ravikant,2008,Personal Philosophy
+P,The Almanack of Naval Ravikant,P8,Escape Competition Through Authenticity,Naval Ravikant,2019,Wealth Creation
 Q,Practical Wisdom,Q1,How to Win Friends and Influence People,Dale Carnegie,1936,Social Skills
 Q,Practical Wisdom,Q2,The 48 Laws of Power,Robert Greene,1998,Power & Strategy
 Q,Practical Wisdom,Q3,Sapiens: A Brief History of Humankind,Yuval Noah Harari,2011,Big History
@@ -270,6 +280,9 @@ T,Modern Creator Essayists,T2,The 4 Types of Luck,Sahil Bloom,2023,Frameworks
 T,Modern Creator Essayists,T3,Interstitial Journaling,Anne-Laure Le Cunff,2020,Mindful Productivity
 T,Modern Creator Essayists,T4,Networked Note-Taking,Anne-Laure Le Cunff,2020,Productivity
 T,Modern Creator Essayists,T5,35 Things I Know At 35 I Wish I Knew At 25,Sahil Bloom,2026,Self-Development
+T,Modern Creator Essayists,T6,"Imitate, Then Innovate",David Perell,2022,Craft & Creativity
+T,Modern Creator Essayists,T7,The 5 Types of Wealth,Sahil Bloom,2025,Frameworks
+T,Modern Creator Essayists,T8,"Make a PACT, Not a SMART Goal",Anne-Laure Le Cunff,2019,Mindful Productivity
 U,Cognitive Biases,U1,Confirmation Bias: A Ubiquitous Phenomenon in Many Guises,Raymond Nickerson,1998,Cognitive Bias
 U,Cognitive Biases,U2,Judgment under Uncertainty: Heuristics and Biases (Anchoring),Amos Tversky & Daniel Kahneman,1974,Cognitive Bias
 U,Cognitive Biases,U3,Judgment under Uncertainty: Heuristics and Biases (Availability),Amos Tversky & Daniel Kahneman,1974,Cognitive Bias
@@ -300,12 +313,16 @@ W,Buffett & Munger Mental Models,W3,"Great, Good, and Gruesome Businesses",Warre
 W,Buffett & Munger Mental Models,W4,The Institutional Imperative,Warren Buffett,1989,Systems
 W,Buffett & Munger Mental Models,W5,The Ovarian Lottery,Warren Buffett,1998,Philosophy
 W,Buffett & Munger Mental Models,W6,Sit-on-Your-Ass Investing,Charlie Munger,2005,Investing
+W,Buffett & Munger Mental Models,W7,Waiting for the Fat Pitch,Warren Buffett,1997,Investing
+W,Buffett & Munger Mental Models,W8,Owner Earnings,Warren Buffett,1986,Valuation
 X,The Architecture of Reality and Society,X1,The Strata of Perceptual Reality,Aperture,2024,Philosophy / Metaphysics
 X,The Architecture of Reality and Society,X2,Metacognition and the Hierarchy of Thought,Aperture,2024,Psychology
 X,The Architecture of Reality and Society,X3,The Architecture of Axiomatic Beliefs,Aperture,2024,Philosophy / Sociology
 X,The Architecture of Reality and Society,X4,Algorithmic Determinism and Judicial Opacity,Aperture,2024,Society / Technology
 X,The Architecture of Reality and Society,X5,Quantum Immortality and Subjective Survival,Aperture,2024,Quantum Physics / Philosophy
 X,The Architecture of Reality and Society,X6,The Block Universe and the Illusion of the Present,Aperture,2024,Physics / Philosophy
+X,The Architecture of Reality and Society,X7,Panopticism: Power That Watches Without Being Seen,Michel Foucault,1975,Philosophy / Sociology
+X,The Architecture of Reality and Society,X8,Preference Falsification,Timur Kuran,1995,Society / Politics
 Y,"Paradoxes, Perception, and Unseen Realities",Y1,The Ontology of Identity and the Ship of Theseus,SleepWise,2023,Philosophy / Paradox
 Y,"Paradoxes, Perception, and Unseen Realities",Y2,Entropic Inevitability and the Arrow of Time,SleepWise,2023,Physics
 Y,"Paradoxes, Perception, and Unseen Realities",Y3,The Hard Problem and the Illusion of Objective Reality,SleepWise,2023,Neuroscience / Philosophy
@@ -313,12 +330,15 @@ Y,"Paradoxes, Perception, and Unseen Realities",Y4,Lexical Voids and Untranslata
 Y,"Paradoxes, Perception, and Unseen Realities",Y5,Axiomatic Ruptures: The Banach-Tarski Paradox,SleepWise,2024,Mathematics / Physics
 Y,"Paradoxes, Perception, and Unseen Realities",Y6,The Asymmetry of Cosmic Justice,SleepWise,2023,Psychology / Sociology
 Y,"Paradoxes, Perception, and Unseen Realities",Y7,Predictive Processing,Andy Clark,2013,Cognition
+Y,"Paradoxes, Perception, and Unseen Realities",Y8,Inattentional Blindness: The Invisible Gorilla,Daniel Simons & Christopher Chabris,1999,Psychology / Perception
 Z,Frontiers of Cosmological & Technological Evolution,Z1,Spacetime as an Emergent Property,Science Time,2024,Quantum Physics / Cosmology
 Z,Frontiers of Cosmological & Technological Evolution,Z2,Scale-Invariant Unparticles and Cosmic Expansion,Science Time,2024,Astrophysics
 Z,Frontiers of Cosmological & Technological Evolution,Z3,Cosmological Cannibalism and Baby Universes,Science Time,2024,Cosmology / Multiverse
 Z,Frontiers of Cosmological & Technological Evolution,Z4,Atmospheric Anomalies and Technosignatures on TRAPPIST-1e,Science Time,2024,Astrobiology
 Z,Frontiers of Cosmological & Technological Evolution,Z5,The Intelligence Explosion and ASI Alignment,Science Time,2023,Computer Science / Futurism
 Z,Frontiers of Cosmological & Technological Evolution,Z6,Prime Editing and the Reprogrammable Human Genome,Science Time,2019,Biotechnology
+Z,Frontiers of Cosmological & Technological Evolution,Z7,AlphaFold and the End of the Protein Folding Problem,John Jumper et al. (DeepMind),2021,Biotechnology / AI
+Z,Frontiers of Cosmological & Technological Evolution,Z8,Fusion Ignition at the National Ignition Facility,Lawrence Livermore National Laboratory,2022,Energy / Plasma Physics
 AA,Physics & Entropy,AA1,Entropy and the Second Law of Thermodynamics,Rudolf Clausius,1865,Physics
 AA,Physics & Entropy,AA2,Special Relativity,Albert Einstein,1905,Physics
 AA,Physics & Entropy,AA3,Hubble's Law and the Expanding Universe,Edwin Hubble,1929,Physics
@@ -339,17 +359,44 @@ AB,Evolution & Life,AB8,The Molecular Structure of DNA,James Watson & Francis Cr
 AB,Evolution & Life,AB9,The Red Queen Hypothesis,Leigh Van Valen,1973,Evolutionary Biology
 AC,Logic & Mathematics,AC1,Gödel's Incompleteness Theorems,Kurt Gödel,1931,Mathematical Logic
 AC,Logic & Mathematics,AC2,Bayes' Theorem,Thomas Bayes (published by Richard Price),1763,Probability Theory
+AC,Logic & Mathematics,AC3,Turing Machines & the Halting Problem,Alan Turing,1936,Computation
+AC,Logic & Mathematics,AC4,Russell's Paradox & the Foundations Crisis,Bertrand Russell,1901,Mathematical Logic
+AC,Logic & Mathematics,AC5,The Law of Large Numbers,Jacob Bernoulli / Andrey Kolmogorov,1713,Probability Theory
+AC,Logic & Mathematics,AC6,Fractals & Self-Similarity,Benoît Mandelbrot,1975,Geometry
+AC,Logic & Mathematics,AC7,The Monty Hall Problem & Conditional Probability,Steve Selvin / Marilyn vos Savant,1975,Probability Theory
+AC,Logic & Mathematics,AC8,P vs NP & Computational Complexity,Stephen Cook / Leonid Levin,1971,Computation
 AD,Neuroscience & Biology,AD1,"Hebbian Theory: Neurons That Fire Together, Wire Together",Donald Hebb,1949,Neuroscience
 AD,Neuroscience & Biology,AD2,The Default Mode Network,Marcus Raichle,2001,Neuroscience
 AD,Neuroscience & Biology,AD3,Active Parents Raise Active Children,Lynn L. Moore et al.,1991,Health & Behavior
 AD,Neuroscience & Biology,AD4,Neuroplasticity: The Brain That Changes Itself,Norman Doidge,2007,Neuroscience
+AD,Neuroscience & Biology,AD5,Circadian Rhythm & Sleep Homeostasis,Nathaniel Kleitman / Satchin Panda,1939,Neuroscience
+AD,Neuroscience & Biology,AD6,Fight-or-Flight & the Amygdala Hijack,Walter Cannon / Joseph LeDoux,1915,Neuroscience
+AD,Neuroscience & Biology,AD7,Mirror Neurons & Embodied Simulation,Giacomo Rizzolatti,1996,Neuroscience
+AD,Neuroscience & Biology,AD8,Epigenetics: Experience Writes on the Genome,Conrad Waddington / Michael Meaney,1942,Biology
 AE,Storytelling & Myth,AE1,The Hero's Journey (Monomyth),Joseph Campbell,1949,Comparative Mythology
 AE,Storytelling & Myth,AE2,Mimetic Desire,René Girard,1961,Literary Theory / Anthropology
 AE,Storytelling & Myth,AE3,How to Be a Great Storyteller,"Lisa Christen, Forbes Coaches Council",2026,Storytelling
+AE,Storytelling & Myth,AE4,The Narrative Fallacy,Nassim Nicholas Taleb,2007,Critical Thinking
+AE,Storytelling & Myth,AE5,Pixar's 22 Rules of Storytelling,Emma Coats,2011,Storytelling
+AE,Storytelling & Myth,AE6,Kishōtenketsu: The Four-Act Without Conflict,Japanese & Chinese narrative tradition,735,Storytelling
+AE,Storytelling & Myth,AE7,The Storytelling Animal,Jonathan Gottschall,2012,Psychology
+AE,Storytelling & Myth,AE8,The Seven Basic Plots,Christopher Booker,2004,Comparative Literature
 AF,Network Theory,AF1,Metcalfe's Law,Robert Metcalfe,1980,Network Theory
 AF,Network Theory,AF2,Six Degrees of Separation (The Small-World Experiment),Stanley Milgram,1967,Network Theory
+AF,Network Theory,AF3,The Strength of Weak Ties,Mark Granovetter,1973,Network Theory
+AF,Network Theory,AF4,Power Laws & Scale-Free Networks,Albert-László Barabási,1999,Network Theory
+AF,Network Theory,AF5,Dunbar's Number,Robin Dunbar,1992,Anthropology
+AF,Network Theory,AF6,Reed's Law & Group-Forming Networks,David P. Reed,2001,Network Theory
+AF,Network Theory,AF7,Preferential Attachment & the Matthew Effect,Robert K. Merton / Derek de Solla Price,1968,Network Theory
+AF,Network Theory,AF8,Threshold Models & Cascades,Mark Granovetter / Thomas Schelling,1978,Network Theory
 AG,Design & Engineering,AG1,Form Follows Function,Louis Sullivan,1896,Design Philosophy
 AG,Design & Engineering,AG2,Affordances,James J. Gibson,1966,Perceptual Psychology / Design
+AG,Design & Engineering,AG3,The Design of Everyday Things & Signifiers,Don Norman,1988,Design Philosophy
+AG,Design & Engineering,AG4,Dieter Rams' 10 Principles of Good Design,Dieter Rams,1976,Design Philosophy
+AG,Design & Engineering,AG5,Jobs-to-Be-Done,Clayton Christensen / Bob Moesta,2007,Product Theory
+AG,Design & Engineering,AG6,Conway's Law,Melvin Conway,1967,Systems / Organization
+AG,Design & Engineering,AG7,Gall's Law,John Gall,1975,Systems
+AG,Design & Engineering,AG8,MAYA: Most Advanced Yet Acceptable,Raymond Loewy,1951,Design Philosophy
 AH,History & Civilizational Arcs,AH1,Asabiyyah: The Cyclical Rise and Fall of Civilizations,Ibn Khaldun,1377,Philosophy of History
 AH,History & Civilizational Arcs,AH2,The Decline and Fall of the Roman Empire,Edward Gibbon,1776,History
 AH,History & Civilizational Arcs,AH3,"Guns, Germs, and Steel",Jared Diamond,1997,History
@@ -361,11 +408,28 @@ AH,History & Civilizational Arcs,AH8,Why Nations Fail,Daron Acemoglu & James A. 
 AH,History & Civilizational Arcs,AH9,1177 B.C.: The Year Civilization Collapsed,Eric H. Cline,2014,History
 AI,Governance & Power,AI1,The Prince: Power as It Actually Works,Niccolò Machiavelli,1513,Political Theory
 AI,Governance & Power,AI2,Regulatory Capture,George Stigler,1971,Political Economy
+AI,Governance & Power,AI3,Leviathan & the Social Contract,Thomas Hobbes,1651,Political Theory
+AI,Governance & Power,AI4,The Dictator's Handbook & Selectorate Theory,Bruce Bueno de Mesquita & Alastair Smith,2011,Political Economy
+AI,Governance & Power,AI5,Checks and Balances & the Separation of Powers,Montesquieu / The Federalists,1748,Governance
+AI,Governance & Power,AI6,The Iron Law of Oligarchy,Robert Michels,1911,Sociology
+AI,Governance & Power,AI7,Soft Power vs Hard Power,Joseph Nye,1990,International Relations
+AI,Governance & Power,AI8,The Overton Window,Joseph P. Overton,1998,Policy Theory
 AJ,Game Theory & Strategy,AJ1,Nash Equilibrium,John Nash,1950,Game Theory
 AJ,Game Theory & Strategy,AJ2,The Prisoner's Dilemma,Merrill Flood and Melvin Dresher,1950,Game Theory
 AJ,Game Theory & Strategy,AJ3,Game Theory (Bonanno),Giacomo Bonanno,2015,Game Theory
+AJ,Game Theory & Strategy,AJ4,Repeated Games & Axelrod's Tournaments,Robert Axelrod,1984,Game Theory
+AJ,Game Theory & Strategy,AJ5,Signaling & Costly Signaling Theory,Amotz Zahavi / Michael Spence,1973,Game Theory
+AJ,Game Theory & Strategy,AJ6,Chicken & Brinkmanship,Bertrand Russell / Thomas Schelling,1959,Game Theory
+AJ,Game Theory & Strategy,AJ7,Mechanism Design & Auctions,Leonid Hurwicz / William Vickrey,1960,Economics
+AJ,Game Theory & Strategy,AJ8,Zero-Sum vs Positive-Sum Games,John von Neumann / Oskar Morgenstern,1944,Game Theory
 AK,Media Theory & Information,AK1,The Medium Is the Message,Marshall McLuhan,1964,Media Theory
 AK,Media Theory & Information,AK2,Simulacra and Simulation (Hyperreality),Jean Baudrillard,1981,Media Theory
+AK,Media Theory & Information,AK3,Manufacturing Consent,Noam Chomsky & Edward Herman,1988,Media Theory
+AK,Media Theory & Information,AK4,Amusing Ourselves to Death,Neil Postman,1985,Media Theory
+AK,Media Theory & Information,AK5,The Attention Merchants,Tim Wu,2016,Media Economics
+AK,Media Theory & Information,AK6,The Filter Bubble,Eli Pariser,2011,Media Theory
+AK,Media Theory & Information,AK7,Agenda-Setting Theory,Maxwell McCombs & Donald Shaw,1972,Media Effects
+AK,Media Theory & Information,AK8,The Shallows: How the Internet Changes the Brain,Nicholas Carr,2010,Media Effects
 AL,Negotiation & Persuasion,AL1,Getting to Yes,Roger Fisher & William Ury,1981,Negotiation
 AL,Negotiation & Persuasion,AL2,Never Split the Difference,Chris Voss,2016,Negotiation
 AL,Negotiation & Persuasion,AL3,Influence: The Psychology of Persuasion,Robert Cialdini,1984,Persuasion

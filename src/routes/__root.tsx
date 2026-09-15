@@ -15,11 +15,6 @@ import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 import { useThemeSync } from "@/hooks/useThemeSync";
 
-/** Canonical origin for absolute URLs in meta tags. Override per deploy with
- *  VITE_SITE_URL (e.g. a preview URL); defaults to production. */
-const SITE_URL =
-  (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ??
-  "https://unknown-ighb.vercel.app";
 
 function NotFoundComponent() {
   return (
