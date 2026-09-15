@@ -11,13 +11,31 @@ This document tracks actionable technical debt that was intentionally deferred. 
 **Trigger Condition / "Done" Definition:**
 Run a proper accessibility audit before a full public launch. Use automated tools (like axe-core) to guarantee compliance.
 
-## 2. Split Data Bundle (`nodes.ts`)
+## 2. Split Data Bundle (`nodes.ts`) — RESOLVED (2026-09-15)
 
-**Current State:** The entire knowledge graph (currently **387 nodes** as of 2026-09-04, 406 archived sources) is bundled from `src/data/nodes.ts`. Source file is ~1.18 MB raw. Built bundle: client `index` chunk was **1,373 KB raw / 445 KB gzipped** before mitigation — **exceeding the 400 KB gzipped trigger**. A Vite `manualChunks` split now isolates `nodes.ts` into its own `nodes-*.js` chunk (see `vite.config.ts`), which reduces the main entry chunk and makes the split explicit for caching. Full per-cluster lazy-loading (per `docs/NODES-SPLIT-DECISION.md`) is still deferred but the trigger condition is now **MET** — this partial split is a stopgap.
+The per-cluster index/body split described in `docs/NODES-SPLIT-DECISION.md` is fully
+implemented: `src/data/nodes.ts` carries only index fields (451 nodes, 128 KB gz), and
+layer1/layer2/quiz/furtherReading live in `public/content/bodies/<cluster>.json`, fetched
+lazily on first node open and precached by the service worker (`docs/CONTENT-LAYER.md`).
+The CI bundle-size cap (260 KB largest chunk) enforces it. No action remaining.
 
-**Deferred Work:** The monolithic `nodes.ts` needs to be split into per-cluster JSON files, enabling lazy-loading of a cluster's nodes only when its section is opened in Explore or a node within it is visited.
+## 3. Missing Archive Snapshots (161 sources demoted to "unavailable")
+
+**Current State:** The repo re-import (rename + squash) lost 161 of the archived source
+files under `public/content/sources/`. Rather than ship broken links,
+`scripts/demote-missing-archives.ts` (committed 2026-09-15) marked those
+`furtherReading[].archive` entries `"unavailable"` in `content/`. The app still shows the
+source's live URL; only the offline snapshot is absent.
 
 **Trigger Condition / "Done" Definition:**
-Implement this chunk splitting once node count reaches **350** OR `src/data/nodes.ts` exceeds **400KB gzipped** in the built bundle (decided 2026-07-16 — see docs/NODES-SPLIT-DECISION.md). **Status 2026-09-04: TRIGGERED** — 387 nodes, ~445 KB gzipped before mitigation; isolated chunk now applied. Next step is per-cluster dynamic `import()` + Service Worker dynamic precache re-architecture.
+Re-archive on a machine with general web access (the build sandbox only allows
+registry/API hosts):
 
-**Mitigation applied 2026-09-04:** `vite.config.ts` `build.rollupOptions.output.manualChunks.nodes = ["./src/data/nodes.ts"]` to extract the graph into a separate cacheable chunk. Run `npm run build` and verify `dist/client/assets/nodes-*.js` exists and SW precache includes it.
+```bash
+npx tsx scripts/archive-sources.ts all --retry-unavailable   # refetches the 161; media/paywalls stay "unavailable"
+npx tsx scripts/build:content                                # regenerate bodies + manifest
+npx tsx scripts/validate-nodes.ts                            # expect 0 errors, 0 missing files
+```
+
+Review `archive-failures.log` afterwards — paywalled/media landing back as
+"unavailable" is expected; anything else should be investigated.

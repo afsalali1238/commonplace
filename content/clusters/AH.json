@@ -22,9 +22,9 @@
       "quiz": {
         "question": "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
         "options": [
-          "Foreign invasion is the sole cause of decline in every case",
-          "Religious conversion always weakens ruling groups",
-          "Asabiyyah never actually erodes once established",
+          "Foreign invasion is the sole cause of decline in every single historical case that Ibn Khaldun documents in the Muqaddimah",
+          "Religious conversion always weakens ruling groups over time, which Ibn Khaldun identifies as the universal pattern",
+          "Asabiyyah never actually erodes once it is firmly established, so dynasties only end when outside enemies finally arrive",
           "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place"
         ],
         "correctIndex": 3,
@@ -220,9 +220,9 @@
       "quiz": {
         "question": "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
         "options": [
-          "That Western Europe has always been the uncontested center of global trade and power",
-          "That trade routes had no significant influence on the spread of religion or technology",
-          "That the Silk Roads were only active for a brief period in the ancient world",
+          "That Western Europe has always been the uncontested center of global trade and power, exactly as the standard histories claim",
+          "That trade routes had no significant influence on the spread of religion, technology, or political organization anywhere at all",
+          "That the Silk Roads were only active for a brief period in the ancient world before maritime routes fully replaced them",
           "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time"
         ],
         "correctIndex": 3,
@@ -340,10 +340,10 @@
       "quiz": {
         "question": "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
         "options": [
-          "A single invasion by the 'Sea Peoples' that no civilization could have survived",
-          "A sudden, unexplained climate event with no connection to trade or political factors",
+          "A single invasion by the 'Sea Peoples', a force so overwhelmingly powerful that no existing civilization could have survived it",
+          "A sudden and entirely unexplained climate event with no connection whatsoever to trade networks or political factors",
           "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
-          "Deliberate, coordinated destruction ordered by Egyptian pharaohs"
+          "Deliberate and carefully coordinated destruction ordered by Egyptian pharaohs to reset the entire political order of the Mediterranean"
         ],
         "correctIndex": 2,
         "explanation": "Cline's 'systems collapse' argument moves away from single-cause explanations (like blaming the Sea Peoples alone) toward a model where the Bronze Age Mediterranean's interconnected trade network amplified several simultaneous regional shocks into a civilization-wide collapse none of them would have caused individually."

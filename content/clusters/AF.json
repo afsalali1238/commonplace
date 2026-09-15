@@ -22,10 +22,10 @@
       "quiz": {
         "question": "Why does Metcalfe's Law make a platform's early users disproportionately hard to acquire, and later users disproportionately easy?",
         "options": [
-          "Early users pay lower prices due to promotional discounts",
+          "Early users pay lower prices due to promotional discounts, which makes the first network surprisingly cheap to assemble",
           "Network value grows with the square of connected users, so a small early network offers little value while a large late network offers enormous value",
-          "Early adopters are naturally more skeptical people",
-          "Company marketing budgets are always smaller at launch"
+          "Early adopters are naturally more skeptical people, so the very first users arrive without any network value at all",
+          "Company marketing budgets are always much smaller at launch, which is why early network growth is structurally harder"
         ],
         "correctIndex": 1,
         "explanation": "Because value scales roughly as n², a network of 10 people offers about 45 possible connections while one of 1,000 offers about 500,000 — the same product becomes exponentially more valuable to join purely from network size, independent of any product improvement."
@@ -72,9 +72,9 @@
         "question": "What made Milgram's small-world result surprising, given that participants had no map of the overall social network?",
         "options": [
           "That successful chains reached a specific stranger in only a handful of steps, implying social networks are collapsed by a few long-range connections rather than being purely local webs",
-          "That most chains never reached the target at all",
-          "That every completed chain used exactly six intermediaries",
-          "That the experiment proved social networks are completely random"
+          "That most chains never reached the target at all, which the authors took as strong evidence the social network was broken",
+          "That every single completed chain used exactly six intermediaries, with not one deviation across the entire experimental sample",
+          "That the experiment definitively proved social networks are completely random in structure and carry no organization at all"
         ],
         "correctIndex": 0,
         "explanation": "The short average chain length (about 4.4 steps) suggested that despite social networks looking locally clustered from any individual's viewpoint, a small number of well-placed long-range acquaintances make the whole network far smaller in practice than its size implies."

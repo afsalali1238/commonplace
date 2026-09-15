@@ -179,9 +179,9 @@
         "question": "What does Bloom mean by 'life will test you with the same challenge until you learn the lesson'?",
         "options": [
           "That recurring problems (the same fight in every relationship, the same burnout in every job) tend to persist until the underlying personal pattern causing them is actually addressed.",
-          "That bad luck is randomly distributed and unrelated to personal patterns.",
-          "That life gets easier automatically after age 30.",
-          "That every challenge is unique and never repeats."
+          "That bad luck is randomly distributed across people and is completely unrelated to any of their personal patterns or habits",
+          "That life automatically gets easier for everyone once they pass the age of thirty, without any meaningful effort on their part",
+          "That every challenge a person faces is entirely unique and never repeats itself in any recognizable or predictable form"
         ],
         "correctIndex": 0,
         "explanation": "This lesson frames recurring struggles as diagnostic rather than random — the same category of problem showing up across different contexts (relationships, jobs, pursuits) is treated as a signal that the internal pattern, not the external circumstance, is the actual variable to fix."

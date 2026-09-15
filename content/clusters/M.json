@@ -22,10 +22,10 @@
       "quiz": {
         "question": "A support team is measured only on 'tickets closed per day.' What's the classic Goodhart failure?",
         "options": [
-          "Tickets take too long to close.",
-          "Agents refuse to work.",
+          "Tickets simply take too long to close, so the metric is impossible to hit no matter what the team does",
+          "The agents refuse to work at all once they realize the metric is being tracked by management",
           "Agents close tickets quickly without solving problems, hurting customers but hitting the number.",
-          "The number becomes hard to measure."
+          "The number itself becomes so hard to measure that the team quietly abandons the metric within a month"
         ],
         "correctIndex": 2,
         "explanation": "When a measure becomes a target, people will optimize for the metric at the expense of the actual goal, ultimately destroying the system the metric was designed to improve."
@@ -61,9 +61,9 @@
       "quiz": {
         "question": "A new engineer wants to delete a mysterious cron job no one documents. Chesterton's Fence says:",
         "options": [
-          "Delete it",
-          "Rewrite it in a new language.",
-          "Ignore it forever.",
+          "Delete it immediately, since undocumented jobs are almost always accidental and safe to remove",
+          "Rewrite it in a new language first, then delete the original in the same change to reduce risk",
+          "Ignore it forever and document the decision to leave it alone in the team's shared wiki",
           "Find out why it exists first; the surprising cost of removal is often invisible."
         ],
         "correctIndex": 3,

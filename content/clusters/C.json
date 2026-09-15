@@ -25,7 +25,7 @@
           "LIFO inventory accounting",
           "Mark-to-market accounting",
           "Double-declining balance depreciation",
-          "Weighted-average inventory valuation across subsidiaries"
+          "Perpetual inventory accounting"
         ],
         "correctIndex": 1,
         "explanation": "Mark-to-market accounting let Enron estimate the total future value of a long-term energy contract and claim that entire amount as profit on the day the deal was signed, completely detaching reported earnings from actual cash collected."
@@ -142,7 +142,7 @@
           "Tech stocks",
           "Commercial real estate and CDOs",
           "Emerging market currencies",
-          "By assuming all rated securities would be downgraded together on the same day"
+          "Municipal bonds and auto loans"
         ],
         "correctIndex": 1,
         "explanation": "Einhorn exposed that Lehman was refusing to write down its massive portfolio of toxic commercial real estate loans and Collateralized Debt Obligations (CDOs) despite the market crashing around them."

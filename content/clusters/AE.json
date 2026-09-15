@@ -120,10 +120,10 @@
       "quiz": {
         "question": "According to this framework, why does storytelling tend to be more persuasive than presenting raw data alone?",
         "options": [
-          "Because data is always factually incorrect.",
-          "Because storytelling requires no supporting evidence at all.",
+          "Because raw data is always factually incorrect, while stories are by definition accurate and complete representations of reality",
+          "Because storytelling requires no supporting evidence whatsoever, which makes it by far the most efficient form of communication",
           "Because stories create emotional stakes through character and conflict, and people tend to act on emotional stakes more reliably than on abstract numbers.",
-          "Because audiences cannot process numerical information."
+          "Because audiences are fundamentally unable to process numerical information of any kind, no matter how it is presented"
         ],
         "correctIndex": 2,
         "explanation": "The structural elements (character, conflict, arc) work together to create emotional investment, which is what drives action and memory more reliably than statistics presented without narrative framing."

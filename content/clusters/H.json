@@ -73,9 +73,9 @@
       "quiz": {
         "question": "According to Boyapati's framework, why is it backwards to judge Bitcoin as a failure for not yet being widely used to buy everyday goods?",
         "options": [
-          "Because Bitcoin was never intended to be used as money at all",
-          "Because government regulation legally prohibits using Bitcoin for purchases",
-          "Because Bitcoin's supply is unlimited, unlike gold",
+          "Because Bitcoin was never actually intended to be used as everyday money at all, only as a speculative store of value for wealthy traders",
+          "Because government regulation legally prohibits using Bitcoin for everyday purchases in every single jurisdiction where it is otherwise legal to hold",
+          "Because Bitcoin's supply is technically unlimited, unlike gold, so its scarcity story is fundamentally the wrong framework to apply",
           "Because becoming a widely-used medium of exchange historically requires first becoming a trusted store of value — Bitcoin was still in that earlier stage, and skipping ahead isn't how monetization has historically worked"
         ],
         "correctIndex": 3,
@@ -173,10 +173,10 @@
       "quiz": {
         "question": "Why does Joel Monegro argue that value in crypto accrues to the protocol layer rather than the application layer, unlike the internet?",
         "options": [
-          "Because crypto applications are illegal in most jurisdictions",
+          "Because crypto applications are effectively illegal in most jurisdictions, so the economic value has no choice but to accrue to the legal protocol layer",
           "Because blockchain data is shared and open rather than proprietary, weakening individual applications' moats, while the base protocol token captures value as the whole ecosystem built on it grows",
-          "Because protocols require government licensing fees that applications don't",
-          "Because applications on blockchains cannot generate any revenue at all"
+          "Because protocols require expensive government licensing fees that applications are completely exempt from, which structurally redirects all value downward",
+          "Because applications built on blockchains cannot generate any revenue at all, so all economic value necessarily pools at the protocol layer"
         ],
         "correctIndex": 1,
         "explanation": "In Web2, value accumulated at the application layer (Facebook, Google). In Web3, open data means the application layer is thin, and the vast majority of the value accumulates to the underlying base protocols (like Ethereum or Bitcoin)."
@@ -224,10 +224,10 @@
       "quiz": {
         "question": "How does Uniswap determine the price of a trade, given that there's no order book matching buyers and sellers?",
         "options": [
-          "A central Uniswap server sets prices manually based on other exchanges",
-          "Prices are fixed permanently when the pool is created and never change",
+          "A central Uniswap server manually sets prices based on the aggregated quotes from other major exchanges before each block is sealed on-chain",
+          "Prices are fixed permanently when the liquidity pool is created, and they never change no matter what trades occur afterwards",
           "A smart contract holds a pool of two tokens and enforces that their product stays constant (x*y=k); trading against the pool shifts the ratio, and price is derived automatically from that formula",
-          "Every trade requires a human liquidity provider to personally approve the price"
+          "Every single trade requires a human liquidity provider to personally approve the specific price before the transaction can be executed on-chain"
         ],
         "correctIndex": 2,
         "explanation": "Instead of matching buyers and sellers, an AMM allows users to trade directly against a liquidity pool governed by a constant product formula, dynamically adjusting prices based on supply and demand."
@@ -325,9 +325,9 @@
         "question": "According to Chris Dixon, why do centralized platforms tend to become adversarial toward the developers and users who helped them grow?",
         "options": [
           "Because once a platform dominates its market, its incentives shift from courting an ecosystem to extracting value from it, and there's no structural mechanism stopping that shift the way there is with decentralized protocols",
-          "Because governments force platforms to extract more value once they reach a certain size",
-          "Because developers always eventually violate platform terms of service",
-          "Because centralized platforms run out of technical capacity as they grow"
+          "Because governments force platforms to extract more value from developers once the platform reaches a certain size threshold",
+          "Because developers always eventually violate the platform's terms of service, which gives the platform a standing legal pretext to extract more value",
+          "Because centralized platforms invariably run out of technical capacity as they grow, and value extraction is how they afford to keep running"
         ],
         "correctIndex": 0,
         "explanation": "Centralized platforms initially attract users and developers, but eventually hit a growth ceiling. At that point, they invariably extract value from the ecosystem, destroying the developers who built on them."

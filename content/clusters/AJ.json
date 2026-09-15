@@ -62,9 +62,9 @@
         "question": "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
         "options": [
           "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
-          "Because the two suspects can freely communicate and coordinate before deciding",
-          "Because each player assumes the other will automatically choose to cooperate",
-          "Because the payoffs are identical no matter what either player chooses"
+          "Because the two suspects can freely communicate and fully coordinate their strategy together before either of them makes a decision",
+          "Because each player automatically assumes the other will cooperate, which paradoxically makes betrayal the only logical move",
+          "Because the payoffs are identical no matter what either player chooses, so the final decision is purely a coin flip"
         ],
         "correctIndex": 0,
         "explanation": "The trap is structural: no matter what the other player does, betraying yields a better individual outcome than cooperating, so purely rational self-interest pushes both players toward mutual betrayal — a worse combined outcome than if they'd both cooperated."

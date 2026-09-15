@@ -460,9 +460,9 @@
       "quiz": {
         "question": "What common failure connects most of the dismissive active-listening responses in this framework?",
         "options": [
-          "They are all too long and detailed.",
-          "They only fail when used with strangers, not friends.",
-          "They are grammatically incorrect.",
+          "They are all far too long and too detailed for a typical listener to follow in the middle of a fast, unscripted conversation",
+          "They only fail when used with complete strangers, and work perfectly fine when the speaker is talking to close friends",
+          "They are all grammatically incorrect in subtle ways that quietly undermine the speaker's credibility with the listener",
           "They assert the listener's own judgment or authority over the speaker's experience instead of leaving control of the conversation with the speaker."
         ],
         "correctIndex": 3,

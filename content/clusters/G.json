@@ -73,10 +73,10 @@
       "quiz": {
         "question": "How does word2vec end up capturing semantic relationships between words, if it's only trained to predict nearby words?",
         "options": [
-          "It's explicitly given a dictionary of word meanings during training",
+          "It is explicitly given a full dictionary of word meanings during training, which it then interpolates into its internal vector space at startup",
           "The prediction task forces the network to build an internal vector representation where words used in similar contexts land near each other, and consistent relationships emerge as consistent directions in that space",
-          "It memorizes definitions from an online encyclopedia",
-          "Human annotators manually label the relationships between every pair of words"
+          "It memorizes definitions scraped from an online encyclopedia at startup, and simply looks up those entries when predicting nearby words",
+          "Human annotators manually label the semantic relationships between every pair of words in the corpus by hand before any of the training begins"
         ],
         "correctIndex": 1,
         "explanation": "Word2vec demonstrated that training a simple neural network to predict surrounding words naturally organizes them into a high-dimensional space where distance directly correlates to semantic meaning."
@@ -173,9 +173,9 @@
       "quiz": {
         "question": "What problem did ResNet's 'skip connections' specifically solve?",
         "options": [
-          "They reduced the total number of parameters needed to store the model",
-          "They eliminated the need for labeled training data entirely",
-          "They allowed the network to run without GPUs",
+          "They reduced the total number of parameters needed to store the model, making the network dramatically cheaper to train and to deploy in production",
+          "They eliminated the need for labeled training data entirely, allowing the network to learn purely from large batches of completely unlabeled images",
+          "They allowed the network to run on consumer hardware without GPUs, since the skips remove most of the compute cost",
           "They let the training signal (gradient) bypass layers when needed, solving the vanishing gradient problem that made very deep networks degrade in accuracy rather than improve"
         ],
         "correctIndex": 3,
@@ -377,9 +377,9 @@
       "quiz": {
         "question": "What did the Chinchilla paper prove was wrong with prior industry practice in training large language models?",
         "options": [
-          "Models were being trained on too much data relative to their size",
-          "Neural networks could not be trained using GPUs at all",
-          "Training data needed to be exclusively in English to be effective",
+          "Models were being trained on far too much data relative to their parameter count, wasting enormous amounts of compute on data the model could never actually use",
+          "Neural networks could not be trained on GPUs at all, and the entire industry was unknowingly running for years on slow emulated CPU performance",
+          "Training data needed to be exclusively in English to be effective, which is why multilingual corpora were considered a waste of storage",
           "Models were being built too large relative to how much training data they were given — a smaller model trained on proportionally more data outperformed a much larger, undertrained one"
         ],
         "correctIndex": 3,
@@ -479,10 +479,10 @@
       "quiz": {
         "question": "According to Rich Sutton's 'Bitter Lesson,' why do general, compute-heavy methods tend to eventually beat human-engineered domain expertise in AI?",
         "options": [
-          "Because human experts are always wrong about their own domains",
+          "Because human experts are always wrong about their own domains, so any hand-engineered knowledge is guaranteed to degrade performance over time",
           "Because hand-engineered knowledge imposes a hard ceiling on performance, while general methods (search and learning) can keep improving indefinitely as computation gets cheaper over time",
-          "Because compute-heavy methods require no data at all",
-          "Because domain experts refuse to collaborate with AI researchers"
+          "Because compute-heavy methods require no training data at all, which removes the single most fragile and expensive dependency in the entire system",
+          "Because domain experts categorically refuse to collaborate with AI researchers, so general methods are the only available option"
         ],
         "correctIndex": 1,
         "explanation": "Human intuition and hand-crafted rules in AI always eventually lose to general methods (like deep learning and search) that can scale infinitely with Moore's Law."

@@ -89,10 +89,10 @@ Things that will bite:
   `src/lib/testContent.ts`, which reads `content/` with `node:fs`. Never import it from app
   code.
 
-## Numbers (2026-09-04)
+## Numbers (2026-09-15)
 
-- 387 nodes / 38 clusters. Source JSON 1.3 MB pretty-printed.
-- Index `src/data/nodes.ts`: 357 KB raw / 110 KB gz (was 1.18 MB / 351 KB for the full file).
-- Bodies: 727 KB raw / 243 KB gz total; per cluster 1.3–21 KB gz, median 6 KB.
-- Client JS: 284 KB gz total (was 447); largest chunk 206 KB gz (was 442). CI hard limit: 260 KB
-  on the largest chunk.
+- 451 nodes / 38 clusters. Source JSON 1.4 MB pretty-printed.
+- Index `src/data/nodes.ts`: 415 KB raw / 128 KB gz (was 1.18 MB / 351 KB for the full file).
+- Bodies: 865 KB raw / 290 KB gz total; one file per cluster, precached by the SW.
+- Client JS: 322 KB gz total; largest chunk 128 KB gz (the `nodes` index). CI hard limit:
+  260 KB on the largest chunk.
