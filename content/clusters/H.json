@@ -375,10 +375,10 @@
       "quiz": {
         "question": "What specific advantage did Palihapitiya claim SPACs had over traditional IPOs?",
         "options": [
-          "SPACs are legally required to have lower fees than IPOs",
+          "SPACs are legally required by securities regulators to have lower fees than traditional IPOs, which is why sponsors and companies structure their public deals that way",
           "SPACs let companies share forward-looking financial projections (restricted in traditional IPOs) and bypass the underwriter-controlled roadshow, giving retail investors earlier and more direct access",
-          "SPACs guarantee a higher stock price than a traditional IPO",
-          "SPACs eliminate the need for any regulatory disclosure at all"
+          "SPACs guarantee a higher opening stock price than a traditional IPO would produce, which is the single biggest reason that companies choose the blank-check route to market",
+          "SPACs eliminate the need for any regulatory disclosure at all, so sponsors can price and market the company to investors without publicly filing a single document with the SEC"
         ],
         "correctIndex": 1,
         "explanation": "SPACs bypass the traditional IPO roadshow and allow companies to market themselves using future financial projections, which supporters argue democratizes early-stage investment for retail investors."

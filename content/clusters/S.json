@@ -462,9 +462,9 @@
         "question": "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
         "options": [
           "They are siloed to one domain of life, so someone can be highly developed in one quadrant (like business) while badly underdeveloped in others (like relationships or body)",
-          "They are all completely wrong and should be discarded",
-          "They were all created before the internet existed",
-          "They require too much reading to understand"
+          "They are all completely wrong and should be discarded entirely, since every existing self-development model has been thoroughly refuted by modern science",
+          "They were all created before the internet existed, which means none of them could possibly account for how information and identity work today",
+          "They require too much reading to understand, which is why almost nobody actually completes any of them or sees real results from the effort"
         ],
         "correctIndex": 0,
         "explanation": "Human 3.0's whole premise is that real development requires progress across Mind, Body, Spirit, and Vocation together, since neglecting any one quadrant eventually undermines the others."
@@ -539,10 +539,10 @@
       "quiz": {
         "question": "What is Koe's 'Swap Test' for whether AI can replace a piece of creative work?",
         "options": [
-          "Whether the work took more than 10 hours to make",
-          "Whether the work uses any AI tools at all in its production",
+          "Whether the work took more than ten hours to make, since AI is assumed to be capable of replicating any creative output that took less than a full day of human labor",
+          "Whether the work uses any AI tools at all in its production, since a pure human process is the only thing the test treats as a genuine barrier to replacement",
           "Whether swapping the creator for someone (or something) else would leave the work just as valuable — if yes, AI can replace it; if the work only works because of who made it, that's the human edge",
-          "Whether the work has already gone viral"
+          "Whether the work has already gone viral, since once a piece has proven its audience, the test assumes that entire audience will happily follow whatever the AI produces next"
         ],
         "correctIndex": 2,
         "explanation": "The Swap Test locates the real human moat in situated perspective and evolving taste rather than raw output — AI can copy style, but not a trajectory that is still unfolding."
@@ -734,9 +734,9 @@
       "quiz": {
         "question": "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
         "options": [
-          "That AI has made human effort obsolete",
-          "That knowledge itself has become worthless",
-          "That formal education is now completely unnecessary",
+          "That AI has made human effort obsolete, since the explosion of accessible knowledge means the only rational response is to stop trying and defer to the machine",
+          "That knowledge itself has become worthless, since value now flows entirely from having the right tools rather than from understanding anything deeply",
+          "That formal education is now completely unnecessary, since every course, lecture, and textbook has been absorbed into the same always-available knowledge pool",
           "That access to knowledge was never the real bottleneck — most people still do nothing meaningful with nearly unlimited access, which means the missing ingredient was always agency"
         ],
         "correctIndex": 3,

@@ -59,9 +59,9 @@
       "quiz": {
         "question": "A CEO cuts prices to gain market share. First-order effect: sales rise. What's the classic missed second-order effect?",
         "options": [
-          "The CEO gets a bonus.",
-          "The stock price always rises.",
-          "Nothing meaningful",
+          "The CEO collects a sales bonus for the new revenue target, and the board celebrates the quarter",
+          "The stock price always rises when prices are cut, since the market reads it as a sign of confidence",
+          "Nothing meaningful happens to the rest of the market; the lower price gets absorbed into business as usual",
           "Competitors match, margins fall for everyone, and customers now expect the lower price."
         ],
         "correctIndex": 3,
@@ -1019,9 +1019,9 @@
         "question": "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
         "options": [
           "Imagining what he would observe if he could travel alongside a beam of light",
-          "Schrödinger's cat",
-          "The trolley problem",
-          "Laplace's demon"
+          "The cat-in-a-box experiment he used to criticize the Copenhagen interpretation",
+          "The trolley problem, the ethics puzzle about diverting a runaway train",
+          "Laplace's demon, the thought experiment about an all-knowing intellect"
         ],
         "correctIndex": 0,
         "explanation": "By visualizing himself riding alongside a light beam, Einstein exposed paradoxes in classical physics that couldn't be resolved without completely reimagining space and time."
@@ -1343,9 +1343,9 @@
       "quiz": {
         "question": "What is the 'grammar-book effect,' as described by David Graeber and cited in this piece?",
         "options": [
-          "The tendency for grammar books to become bestsellers",
-          "A method for teaching children to read faster",
-          "The idea that all languages eventually merge into one",
+          "The tendency for well-written grammar books to become bestsellers, which the authors argue seriously distorts what people think prescriptive rules are for about language",
+          "A method for teaching children to read faster by freezing the most common sentence patterns of the day into a fixed set of drills that must be thoroughly memorized in school",
+          "The idea that all human languages will eventually merge into a single universal tongue, a homogenizing process that the grammar books of each era are said to accelerate",
           "Once a description of how people currently speak is written down and taught in schools, people start treating it as a fixed prescription for how they must speak, even as the living language keeps evolving"
         ],
         "correctIndex": 3,
@@ -1622,9 +1622,9 @@
         "question": "Which quadrant of the Johari Window can only be reduced through other people's feedback, not through self-reflection alone?",
         "options": [
           "The Blind quadrant — traits others can see about you that you can't see yourself.",
-          "The Open quadrant.",
-          "The Hidden quadrant.",
-          "The Unknown quadrant."
+          "The Open quadrant — information you and others both already have",
+          "The Hidden quadrant — what you keep to yourself until you choose to disclose it",
+          "The Unknown quadrant — what no one has discovered yet, reachable only through new experience"
         ],
         "correctIndex": 0,
         "explanation": "The Blind quadrant is defined specifically as information others have access to that you don't — by definition, only external feedback can shrink it, unlike the Hidden quadrant which you can choose to disclose yourself."

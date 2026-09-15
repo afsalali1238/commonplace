@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { MicroLabel } from "./MicroLabel";
 import { cn } from "@/lib/utils";
 
@@ -6,12 +6,21 @@ export function LayerReveal({
   label,
   children,
   onReveal,
+  revealSignal = 0,
 }: {
   label: string;
   children: ReactNode;
   onReveal?: () => void;
+  /** External open trigger — bumping it (e.g. when audio narration reaches
+   * this layer) forces the panel open so the spoken text is never hidden
+   * behind a collapsed panel. 0 (default) = fully self-managed. */
+  revealSignal?: number;
 }) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (revealSignal > 0) setOpen(true);
+  }, [revealSignal]);
 
   return (
     <div className="w-full">

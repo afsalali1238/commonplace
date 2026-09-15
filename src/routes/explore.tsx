@@ -4,7 +4,7 @@ import { CLUSTERS, NODES_BY_CLUSTER, type NodeIndex as Node } from "@/data/nodes
 import { SearchBar } from "@/components/SearchBar";
 import { MicroLabel } from "@/components/MicroLabel";
 import { LatticeIndex } from "@/components/LatticeIndex";
-import { TopicPlate, IdeaGlyph } from "@/components/Artwork";
+import { TopicPlate } from "@/components/Artwork";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";

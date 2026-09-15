@@ -218,10 +218,10 @@
       "quiz": {
         "question": "What is the core insight of the (weak) anthropic principle?",
         "options": [
-          "The universe was deliberately designed to support human life",
+          "The universe was deliberately designed by an intelligent agent to support human life, which is the only explanation for the fine-tuned constants we observe",
           "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one",
-          "Physical constants are randomly generated and have no pattern",
-          "Only Earth-like planets can support any form of life"
+          "Physical constants are randomly generated and have no underlying pattern at all, which is precisely why we happen to exist in a life-permitting corner of it",
+          "Only Earth-like planets can support any form of life, so our existence here proves that Earth-like conditions are the universal norm across the entire galaxy"
         ],
         "correctIndex": 1,
         "explanation": "The Anthropic Principle answers the 'fine-tuning' problem not with design, but with selection bias: if the universe's constants were incompatible with life, we wouldn't be here to observe them. We can only observe a universe that allows us to exist."

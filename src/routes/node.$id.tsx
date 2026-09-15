@@ -318,7 +318,9 @@ function NodeScreen() {
   const removeReadNext = useStore((s) => s.removeReadNext);
 
   const [showL1, setShowL1] = useState(false);
-  const [showL2, setShowL2] = useState(false);
+  // Bumped when audio narration reaches layer 2 (LayerReveal's revealSignal)
+  // so the panel auto-opens just before the layer is read aloud.
+  const [l2RevealCount, bumpL2Reveal] = useState(0);
   const [showAllConnections, setShowAllConnections] = useState(false);
 
   useEffect(() => {
@@ -437,7 +439,7 @@ function NodeScreen() {
         </LayerReveal>
 
         {showL1 && (
-          <LayerReveal label="How to apply it" onReveal={() => setShowL2(true)}>
+          <LayerReveal label="How to apply it" revealSignal={l2RevealCount}>
             <section>
               <MicroLabel>How to apply it</MicroLabel>
               <div className="mt-3">
@@ -576,7 +578,7 @@ function NodeScreen() {
           setShowL1(true);
           dismissHint("hint-layers");
         }}
-        onReachLayer2={() => setShowL2(true)}
+        onReachLayer2={() => bumpL2Reveal((n) => n + 1)}
       />
     </>
   );

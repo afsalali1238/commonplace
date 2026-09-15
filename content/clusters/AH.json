@@ -101,9 +101,9 @@
         "question": "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
         "options": [
           "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
-          "Innate differences in intelligence or ability between different peoples",
-          "Random chance events with no identifiable underlying pattern",
-          "Religious differences between civilizations"
+          "Innate, heritable differences in intelligence and ambition between different peoples, which the book argues are the single best predictor of which civilizations come to dominate others over centuries",
+          "Purely random chance events with no identifiable underlying pattern, so that which civilization ultimately dominates is essentially a coin flip decided over a few pivotal and unique centuries of history",
+          "Deep differences in religious belief and moral teaching between civilizations, which the book argues are the real engine behind who builds lasting empires and who ultimately gets absorbed into them"
         ],
         "correctIndex": 0,
         "explanation": "Diamond's central thesis explicitly rejects explanations based on innate differences between peoples, arguing instead that environmental starting conditions — domesticable species, continental geography, and the resulting disease exposure — compounded over thousands of years into vastly different technological and demographic trajectories."
@@ -140,10 +140,10 @@
       "quiz": {
         "question": "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
         "options": [
-          "A power's military becomes too large to physically defend its own borders",
+          "A power's military becomes so large and expensive that it can no longer physically defend its own borders, leaving the homeland itself exposed to a simple conventional invasion force",
           "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
-          "A power expands its territory too quickly for its population to fill",
-          "A power loses a single decisive military battle that it never recovers from"
+          "A power expands its territory too quickly for its population to fill the new lands, and the resulting overextension of settlers eventually collapses the state's administrative capacity",
+          "A power loses a single decisive military battle — a lost Waterloo — and that one catastrophic defeat, never truly recovered from, sets the clock on its decline as a great power"
         ],
         "correctIndex": 1,
         "explanation": "Kennedy's argument is about a structural mismatch over time, not a single defeat — commitments that made sense when a power's economy was relatively strongest tend to persist and even grow after that relative economic advantage starts fading, creating a widening, self-reinforcing gap."
@@ -300,10 +300,10 @@
       "quiz": {
         "question": "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
         "options": [
-          "Because extractive institutions are always run by less intelligent leaders",
+          "Because the leaders who build extractive institutions are consistently less intelligent and less capable than the leaders who build inclusive ones, regardless of the institutional system in place",
           "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
-          "Because extractive institutions are found only in countries with poor geography",
-          "Because extractive institutions were outlawed by international treaties"
+          "Because extractive institutions are found only in countries with genuinely poor geography, and no reform, leadership change, or policy could ever overcome those underlying geographic constraints",
+          "Because extractive institutions were effectively outlawed by a series of international treaties, and their persistence today is simply a lag in countries that have not yet ratified all of them"
         ],
         "correctIndex": 1,
         "explanation": "The authors' mechanism is about incentives, not intelligence or geography — an elite that captures disproportionate rents from the existing economic order has a rational, self-interested reason to resist the disruptive innovation that inclusive institutions instead reward and protect."

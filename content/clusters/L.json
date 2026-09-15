@@ -56,9 +56,9 @@
       "quiz": {
         "question": "Why does a pre-mortem surface more failure modes than a normal risk review?",
         "options": [
-          "It uses better software.",
-          "It replaces judgment with data.",
-          "It happens after the project ends.",
+          "It uses better software for tracking risks, so the output is automatically more complete than anything a human team could produce",
+          "It replaces human judgment with hard data, so failure modes are found by calculation rather than by anyone's possibly biased opinion",
+          "It happens after the project ends, when the real failure can be studied directly and no one has any incentive to soften the findings",
           "Imagining the failure has already occurred lets people describe causes without seeming disloyal or negative."
         ],
         "correctIndex": 3,
@@ -96,9 +96,9 @@
         "question": "A founder says 'our startup will succeed because our team is unusually talented.' What is the base-rates critique?",
         "options": [
           "Most founders think their team is unusually talented, and most startups still fail. Start with the outside view and adjust modestly.",
-          "Talent doesn't matter.",
-          "You should ignore team quality entirely.",
-          "The founder is definitely wrong."
+          "Talent doesn't matter at all in early-stage companies, which is why the base rates of startup failure are identical across founder quality tiers",
+          "You should ignore team quality entirely, since the base rates show that startup outcomes are determined by sector and timing, never by the people",
+          "The founder is definitely wrong about everything, since any founder claiming to be special is by definition confusing luck with genuine skill"
         ],
         "correctIndex": 0,
         "explanation": "Base rates force you to ignore your unique narrative and look at the statistical average. No matter how special you think your situation is, the historical average is always the safest starting point."
@@ -539,9 +539,9 @@
       "quiz": {
         "question": "According to this framework, what is the actual cause of most people's underperformance, as distinct from simply 'not working hard enough'?",
         "options": [
-          "A lack of raw effort or hours worked.",
-          "Not having access to enough productivity tools.",
-          "Setting too few goals.",
+          "A lack of raw effort or hours worked, since the data shows that underperformers simply log fewer hours than the people who reach their goals",
+          "Not having access to enough productivity tools, since the modern tooling gap between well-funded and underfunded teams explains most outcome gaps",
+          "Setting too few goals, since most people underperform simply because they never write down more than two or three objectives for the year",
           "Spending time on low-impact tasks instead of deliberately identifying and prioritizing the roughly 20% of actions that drive most of the results."
         ],
         "correctIndex": 3,

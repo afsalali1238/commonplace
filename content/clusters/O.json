@@ -982,10 +982,10 @@
       "quiz": {
         "question": "What is Hume's central problem with our belief in cause and effect?",
         "options": [
-          "Cause and effect don't exist at all",
-          "Causation only applies to physical objects, not human behavior",
+          "Cause and effect don't exist at all, and Hume's point is that the entire notion of causation is a category error that should be abandoned by science entirely",
+          "Causation only applies to physical objects, not to human behavior, which is why Hume thought moral and political reasoning needed a different foundation",
           "We never directly observe causation itself, only the constant conjunction of two events, and our belief in causal connection can't be justified by pure reason or past experience alone",
-          "Scientists have proven causation is always an illusion"
+          "Scientists have definitively proven that causation is always an illusion, so Hume's skepticism was simply confirmed by the physics of the following centuries"
         ],
         "correctIndex": 2,
         "explanation": "Hume pointed out that we never actually see 'cause'—we only see one event follow another. We assume causation out of psychological habit, not rational proof."
@@ -1441,10 +1441,10 @@
       "quiz": {
         "question": "In the Empty Boat parable, what specifically causes the man's anger to disappear once he sees the second boat is empty?",
         "options": [
-          "He realizes his own boat wasn't actually damaged.",
+          "He realizes his own boat wasn't actually damaged, which turns out to be the entire source of his anger all along, and he calms down immediately",
           "He realizes there is no intentional actor behind the collision — the harm was identical, but the absence of perceived intent removes the target for his anger.",
-          "He decides to no longer care about his boat at all.",
-          "The empty boat apologizes to him."
+          "He decides to no longer care about his boat at all, accepting it as part of the natural cycle of wear, repair, and replacement on the river",
+          "The empty boat, personified, apologizes to him for the collision, and he forgives it on the spot, his anger dissolving into amusement"
         ],
         "correctIndex": 1,
         "explanation": "The parable isolates intention as the actual variable driving anger — the physical event (a collision) stays constant, but removing a perceived intentional agent behind it removes the anger almost entirely."

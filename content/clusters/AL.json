@@ -302,10 +302,10 @@
       "quiz": {
         "question": "According to Crucial Conversations, what typically triggers people to shift into 'silence' or 'violence' during a high-stakes conversation?",
         "options": [
-          "A lack of vocabulary to express their opinion",
+          "A simple lack of vocabulary or technical language to express their opinion precisely, which forces them to withdraw from the conversation or lash out in frustration",
           "A feeling that psychological safety has broken down — that mutual purpose or mutual respect is at risk — which distorts communication into withholding or attacking regardless of the topic itself",
-          "Disagreeing with the other person is inherently violent",
-          "Running out of time to finish the conversation"
+          "The simple fact of disagreeing with the other person, which the book argues is inherently violent and predictably de-escalates into either prolonged silence or open verbal aggression",
+          "Running out of time to finish the conversation before a deadline, which the book identifies as the single most common trigger for shutdowns and outbursts"
         ],
         "correctIndex": 1,
         "explanation": "The book's core finding is that content isn't usually what derails hard conversations — safety is. Once someone senses the conversation threatens the relationship or their standing, they default to silence or aggression regardless of how reasonable the actual disagreement is."
@@ -382,9 +382,9 @@
       "quiz": {
         "question": "Why does Rosenberg's method separate 'observation' from 'evaluation' as a first step?",
         "options": [
-          "Because evaluations are always factually incorrect",
-          "Because the law requires neutral language in formal disputes",
-          "Because observations are easier to remember than feelings",
+          "Because evaluations are always factually incorrect, while pure observations are always provable, making the separation a question of basic epistemic rigor",
+          "Because the law in most jurisdictions requires neutral, non-judgmental language in formal disputes, and the method simply borrows that legal standard for everyday talk",
+          "Because raw observations are simply easier to remember and verify later than feelings or judgments, which makes them the more practical unit for any serious conversation",
           "Because stating a judgment ('you're inconsiderate') rather than a neutral fact ('you were 20 minutes late') triggers defensiveness and shuts down the actual need underneath the complaint"
         ],
         "correctIndex": 3,
@@ -462,10 +462,10 @@
       "quiz": {
         "question": "What is the key difference between Lax and Sebenius's '3-D' (setup) and '1-D' (tactics) dimensions of negotiation?",
         "options": [
-          "3-D refers to negotiating in person versus 1-D negotiating by phone",
+          "3-D refers to the physical dimensions of the negotiation venue — the room, the table, the seating — while 1-D refers to the tone and posture that each party brings to it",
           "1-D is what happens at the table — moves, framing, persuasion — while 3-D happens before the table, shaping who's involved and what alternatives exist so the eventual table conversation is set up to succeed",
-          "1-D only applies to business deals, 3-D only to personal disputes",
-          "There is no meaningful difference; the terms are interchangeable"
+          "1-D applies only to formal business deals between corporations, while 3-D applies only to personal disputes between individuals that occur entirely outside a business context",
+          "There is no meaningful practical difference between the two, and the terms are simply interchangeable marketing labels for the same underlying toolkit of negotiation techniques"
         ],
         "correctIndex": 1,
         "explanation": "The '3-D' framework's insight is that a negotiator can be brilliant at the table (1-D) and still lose, if the setup — the parties involved, their alternatives, the sequencing — was structured against them before the conversation ever began."
@@ -502,10 +502,10 @@
       "quiz": {
         "question": "Why does Grant argue that 'otherish' givers outperform both takers and self-sacrificing givers over time?",
         "options": [
-          "Because giving is always immediately rewarded with reciprocal favors",
-          "Because takers always fail in the long run regardless of skill",
+          "Because every act of giving is always immediately rewarded with a reciprocal favor, so otherish giving works exactly like a short-term, one-for-one exchange system between willing partners",
+          "Because takers always fail spectacularly in the long run regardless of their personal skill, so the only remaining question is the relative long-run positioning of givers versus matchers overall",
           "Because they combine generosity with protecting their own interests and time, which avoids the burnout and exploitation that sink self-sacrificing givers while still building the reputation and trust that compound into long-term advantage",
-          "Because matchers are statistically the most successful group overall"
+          "Because matchers are statistically the most successful group overall once you control for industry, seniority, and geography, and otherish givers only appear more successful in the raw, unadjusted data"
         ],
         "correctIndex": 2,
         "explanation": "Grant's data shows self-sacrificing givers get exploited and burn out, landing at the bottom, while 'otherish' givers — generous but boundaried — build long-term trust and network effects without being drained by it, which is what lands them at the top instead."
@@ -662,10 +662,10 @@
       "quiz": {
         "question": "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
         "options": [
-          "That armies should always avoid combat under any circumstances",
-          "That war is fundamentally unwinnable and should never be attempted",
+          "That armies should always avoid direct combat under any circumstances, treating war as a complete failure of statecraft that a competent commander must never voluntarily initiate",
+          "That war is fundamentally unwinnable for the attacking side and should therefore never be attempted, no matter how overwhelmingly favorable the strategic situation appears to be",
           "That the highest form of strategic victory comes from positioning, intelligence, and shaping conditions so favorably that the opponent is defeated or deterred before any direct confrontation is even necessary",
-          "That negotiation and warfare have no meaningful strategic overlap"
+          "That negotiation and warfare have no meaningful strategic overlap, and that a commander's skills at the negotiating table are entirely irrelevant to how the campaign will unfold"
         ],
         "correctIndex": 2,
         "explanation": "Sun Tzu isn't arguing against ever fighting — he's arguing that the best strategists win the contest before it starts, through preparation, information, and positioning, so that when confrontation does happen, the outcome is close to already decided."
@@ -702,9 +702,9 @@
       "quiz": {
         "question": "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
         "options": [
-          "Because abstract statistics are usually inaccurate",
-          "Because audiences distrust numbers on principle",
-          "Because concrete language is required by advertising law",
+          "Because abstract statistics are usually inaccurate or misleading, while concrete sensory language is by definition a faithful representation of the underlying reality",
+          "Because modern audiences fundamentally distrust numbers on principle, so any statistic — however solid — is automatically discounted before the argument even begins",
+          "Because concrete, sensory language is required by advertising law in most jurisdictions, while abstract statistics carry legal liability that advertisers want to avoid",
           "Because concrete, specific images are easier for the brain to encode, remember, and mentally simulate than abstract claims, which makes them more likely to be recalled and acted on later"
         ],
         "correctIndex": 3,
@@ -743,9 +743,9 @@
         "question": "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
         "options": [
           "Because a logically sound argument that the audience doesn't trust the speaker on, or doesn't feel emotionally invested in, still fails to move people to act, since decisions are made emotionally and rationalized afterward",
-          "Because logic is always factually incorrect",
-          "Because audiences cannot process logical arguments at all",
-          "Because logos only applies to written arguments, not spoken ones"
+          "Because logic is always factually incorrect in the end, since the underlying premises of any argument are themselves unprovable and therefore worthless as a basis for real persuasion",
+          "Because most audiences simply cannot process sustained logical arguments at all, regardless of how carefully they are presented or how much time the speaker gives them to follow along",
+          "Because logos only applies to written arguments, not spoken ones, so a live speaker's only real options are pathos or ethos, no matter how rigorous the underlying logical case may be"
         ],
         "correctIndex": 0,
         "explanation": "Heinrichs's point, following Aristotle, is that persuasion requires all three levers working together — a flawless logical case still fails if the audience doesn't trust the speaker (ethos) or feel any emotional stake in the conclusion (pathos)."
