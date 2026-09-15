@@ -59,10 +59,10 @@
       "quiz": {
         "question": "Why do macroscopic events (like a breaking egg) demonstrate an Arrow of Time, while microscopic events (like particle collisions) are generally time-symmetric?",
         "options": [
-          "Microscopic particles do not experience the force of gravity",
+          "Subatomic elementary particles operate outside the classical gravitational curvature that structures macro bodies",
           "Macroscopic systems are governed by statistical probability, which heavily favors states of higher entropy (disorder)",
-          "Quantum mechanics overrides thermodynamics on a large scale",
-          "The observer effect forces macroscopic objects to decay"
+          "Quantum superposition principles mechanically suspend thermodynamic entropy production across macroscopic phases",
+          "The physical act of quantum wave function measurement forces macroscopic objects into continuous structural decay"
         ],
         "correctIndex": 1,
         "explanation": "The laws of physics work the same forwards and backwards. The only reason time has a direction (an 'arrow') is because the universe started in an unusually low-entropy state and is statistically overwhelming its way toward higher disorder."
@@ -133,9 +133,9 @@
       "quiz": {
         "question": "What psychological benefit is directly associated with increasing one's 'emotional granularity' by learning specific words for highly nuanced feelings?",
         "options": [
-          "It improves long-term memory retention",
-          "It permanently eliminates negative emotional responses",
-          "It slows down the subjective perception of time",
+          "It significantly enhances procedural memory consolidation across complex analytical domains",
+          "It permanently neutralizes biological stress cascades and depressive neurological episodes",
+          "It noticeably decelerates the subjective perception of the passage of psychological time",
           "It reduces anxiety and enhances emotional regulation by accurately contextualizing internal states"
         ],
         "correctIndex": 3,
@@ -171,9 +171,9 @@
         "question": "What foundational mathematical rule is required to make the Banach-Tarski paradox logically function?",
         "options": [
           "The Axiom of Choice applied to uncountably infinite point sets",
-          "The Pythagorean Theorem",
-          "The Second Law of Thermodynamics",
-          "Non-Euclidean spatial curvature"
+          "The classical Pythagorean Theorem for right-angled triangles",
+          "The Second Law of Thermodynamics governing entropy dissipation",
+          "Non-Euclidean metric tensors defining spatial curvature limits"
         ],
         "correctIndex": 0,
         "explanation": "The Banach-Tarski paradox proves that if you accept the Axiom of Choice, you can mathematically cut a solid sphere into pieces and reassemble them into two identical spheres, defying all physical intuition."

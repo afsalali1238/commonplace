@@ -22,10 +22,10 @@
       "quiz": {
         "question": "According to Perell, what is 'Writing from Abundance'?",
         "options": [
-          "Publishing raw, unedited thoughts directly to social media as fast as possible",
+          "Publishing unedited, stream-of-consciousness reactions across public social media feeds to test resonance",
           "Building a habit of capturing ideas and inspiration before you need them, so writing becomes editing and assembling rather than inventing from a blank page",
-          "Writing exclusively about currently trending news topics",
-          "Outsourcing the writing process entirely to freelance ghostwriters"
+          "Restricting your publication calendar strictly to whatever controversial cultural controversies are trending online",
+          "Outsourcing the structural ideation and initial draft generation entirely to anonymous freelance ghostwriters"
         ],
         "correctIndex": 1,
         "explanation": "Blank-page syndrome happens when you try to research and write simultaneously. 'Writing from abundance' means constantly collecting notes, so when you sit down to write, you are simply connecting ideas you already have."
@@ -61,10 +61,10 @@
       "quiz": {
         "question": "According to Bloom's framework (via James Austin), what characterizes 'Luck from Uniqueness'?",
         "options": [
-          "Randomly inheriting advantageous circumstances at birth",
-          "Hustling and saying yes to as many opportunities as possible to increase collisions",
+          "Passively inheriting exceptional socioeconomic privilege and influential family networks at birth",
+          "Aggressively pursuing every commercial opportunity and networking event to maximize random collisions",
           "A distinctive combination of skills, interests, and identity so specific that opportunities seek the person out rather than being chased",
-          "Studying a domain long enough to recognize subtle, faint opportunities others miss"
+          "Dedicating decades to an established discipline to identify subtle technical nuances that others overlook"
         ],
         "correctIndex": 2,
         "explanation": "While dumb luck happens to anyone, and hustling creates active luck, Type IV luck happens when you've built such a unique reputation that random, highly specific opportunities naturally gravitate toward you."
@@ -100,9 +100,9 @@
       "quiz": {
         "question": "What does interstitial journaling specifically ask you to do, according to Le Cunff?",
         "options": [
-          "Write a comprehensive journal entry only once, at the end of the day",
-          "Plan out every hour of the day in advance before starting any work",
-          "Avoid writing anything down and rely on memory to track progress",
+          "Draft a solitary, introspective long-form reflection at the conclusion of each working day",
+          "Construct an inflexible, minute-by-minute schedule covering every hour of the upcoming week",
+          "Discard written tracking systems entirely and rely on unassisted memory to recall milestones",
           "Write a short, timestamped note at the exact transition point between finishing one task and starting the next"
         ],
         "correctIndex": 3,

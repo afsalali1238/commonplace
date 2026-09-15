@@ -71,10 +71,10 @@
       "quiz": {
         "question": "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
         "options": [
-          "It doesn't matter either way for humanity's prospects",
-          "It only matters for funding decisions in astrobiology research",
+          "The temporal placement of the barrier carries no meaningful implications for our civilization's existential odds",
+          "It represents merely a narrow bookkeeping dispute regarding budgetary allocations for terrestrial radio astronomy",
           "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
-          "The filter has already been definitively located by radio telescope surveys"
+          "Deep space observational surveys have already pinpointed the exact astrophysical coordinates of the barrier"
         ],
         "correctIndex": 2,
         "explanation": "The Great Filter solves the Fermi Paradox by proposing an evolutionary step so hard that it wipes out almost all civilizations. If it's behind us, we survived the hardest part; if it's ahead of us, our doom is likely approaching."
@@ -120,9 +120,9 @@
       "quiz": {
         "question": "What is Sapolsky's central argument against free will in Determined?",
         "options": [
-          "That people should stop trying to make good decisions since nothing matters",
-          "That free will exists but only for a small percentage of highly disciplined people",
-          "That free will is a purely religious concept with no scientific relevance",
+          "That individuals should abandon ethical responsibility because physical determinism makes moral deliberation irrelevant",
+          "That genuine metaphysical volition emerges exclusively within exceptional individuals possessing extraordinary discipline",
+          "That moral agency is an obsolete theological invention that holds zero bearing on modern criminal justice jurisprudence",
           "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene"
         ],
         "correctIndex": 3,

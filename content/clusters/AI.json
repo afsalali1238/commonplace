@@ -23,9 +23,9 @@
         "question": "What was actually novel about Machiavelli's approach in The Prince compared to earlier political philosophy?",
         "options": [
           "He described how power is actually held and kept in practice, rather than prescribing an idealized virtuous ruler",
-          "He was the first to argue rulers should be virtuous above all else",
-          "He focused exclusively on religious justifications for rule",
-          "He argued that democracy was superior to monarchy"
+          "He formulated the initial philosophical defense asserting that statecraft must be guided by saintly Christian virtues",
+          "He argued that sovereign legitimacy derives exclusively from ecclesiastical coronation and theological natural law",
+          "He developed systematic constitutional arguments demonstrating that representative democracy surpasses monarchy"
         ],
         "correctIndex": 0,
         "explanation": "Earlier political philosophy largely described an ideal ruler; Machiavelli broke from that tradition to describe effective rulers as they actually operate, which is why the book still reads as startlingly blunt five centuries later."
@@ -61,9 +61,9 @@
       "quiz": {
         "question": "Why does Stigler's capture theory predict regulation will tend to favor the regulated industry over consumers?",
         "options": [
-          "Because regulators are always personally corrupt",
-          "Because regulators are legally required to consult industry representatives before writing any rule",
-          "Because consumers are unable to purchase regulated goods at any price",
+          "Because public regulatory officials operate under direct criminal bribery and personal monetary kickbacks from corporate leadership",
+          "Because statutory administrative procedure mandates that regulatory agencies adopt commercial industry lobbying submissions verbatim",
+          "Because retail consumers lack the financial liquidity necessary to purchase regulated goods and services at market clearing prices",
           "Because the regulated industry is small and concentrated with strong incentive to lobby, while consumers are numerous and diffuse with weak individual incentive to organize against any single rule"
         ],
         "correctIndex": 3,

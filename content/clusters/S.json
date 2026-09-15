@@ -100,10 +100,10 @@
       "quiz": {
         "question": "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
         "options": [
-          "They try to learn too many skills instead of specializing in one",
+          "They attempt to master too many distinct technical domains simultaneously rather than achieving deep expertise",
           "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
-          "They don't spend enough money on courses and certifications",
-          "They focus too much on writing instead of visual skills"
+          "They underinvest in expensive certified credentialing programs and accredited academic masterclasses",
+          "They devote too much early attention to written rhetoric while completely neglecting visual design skills"
         ],
         "correctIndex": 1,
         "explanation": "Technical skills are useless if no one knows you have them. You must first learn to communicate ideas and build an audience; only then do technical skills become highly leverageable."
@@ -266,9 +266,9 @@
       "quiz": {
         "question": "Why does Koe say willpower alone usually fails to sustain behavior change?",
         "options": [
-          "Because willpower is a myth and doesn't exist",
-          "Because most goals people set are objectively too difficult",
-          "Because change requires professional help to be lasting",
+          "Because human willpower is a complete neurochemical fiction that plays no role in habit formation",
+          "Because the performance objectives adults establish for themselves are mathematically unachievable",
+          "Because deep behavioral transformation can only be unlocked through prolonged psychiatric intervention",
           "Because the mind treats a threat to identity like a physical attack, triggering the same defensive survival response"
         ],
         "correctIndex": 3,

@@ -294,10 +294,10 @@
       "quiz": {
         "question": "How does Naval define 'Specific Knowledge' in his Income formula?",
         "options": [
-          "Any knowledge learned in a formal degree program.",
-          "Knowledge of financial markets specifically.",
+          "Any vocational capability mastered through an accredited degree or state certification program.",
+          "Specialized technical mastery concentrated exclusively on liquid capital markets and trading.",
           "Knowledge of how to do something society cannot yet easily train other people to do.",
-          "Any skill that can be fully automated by software."
+          "Any procedural workplace workflow that can be codified into routine software scripts."
         ],
         "correctIndex": 2,
         "explanation": "Naval's specific definition ties directly to why it can't be commoditized: because it isn't yet teachable through standard institutions, it resists being copied or automated the way trainable skills can be."

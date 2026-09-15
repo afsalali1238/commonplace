@@ -100,10 +100,10 @@
       "quiz": {
         "question": "What does the availability heuristic cause people to do?",
         "options": [
-          "Accurately judge frequency based on rigorous statistical analysis",
-          "Ignore all examples and rely purely on abstract reasoning",
+          "Derive frequency distributions strictly from thorough, unbiased statistical registries and actuarial tables",
+          "Dismiss concrete historical instances in favor of abstract, deductive axiomatic proofs about risk probabilities",
           "Estimate frequency or likelihood based on how easily examples come to mind, overweighting vivid or recent events",
-          "Underestimate the danger of all rare events equally"
+          "Discount the statistical hazard of rare, high-consequence phenomena uniformly across all assessment categories"
         ],
         "correctIndex": 2,
         "explanation": "We estimate the probability of an event by how easily we can recall examples of it. Because plane crashes are vivid and heavily reported, they are highly 'available' in memory, causing us to drastically overestimate their danger."
@@ -295,9 +295,9 @@
       "quiz": {
         "question": "What did Fischhoff and Beyth's Nixon study demonstrate about memory?",
         "options": [
-          "People accurately recall the probability estimates they made before an outcome was known",
-          "Political predictions are inherently more accurate than other types of forecasts",
-          "Memory of past predictions has no relationship to knowing the eventual outcome",
+          "Research subjects accurately reconstruct the probabilistic confidence scores they assigned prior to historical events",
+          "Electoral and diplomatic forecasts exhibit substantially higher empirical validity than other geopolitical conjectures",
+          "Prior subjective forecasts remain completely insulated from distortion once historical outcomes become common knowledge",
           "People systematically misremember their own past predictions, recalling higher confidence for outcomes that occurred than they actually reported beforehand"
         ],
         "correctIndex": 3,
@@ -335,9 +335,9 @@
         "question": "How can you use the Zeigarnik Effect to overcome procrastination?",
         "options": [
           "By starting a task for just five minutes and then pausing, creating an open loop that your brain will want to close.",
-          "By finishing all your easy tasks first to build momentum.",
-          "By refusing to write anything down so your brain remembers it.",
-          "By creating strict deadlines managed by the Panic Monster."
+          "By executing every low-friction clerical errand first so that you generate frictionless dopamine momentum.",
+          "By avoiding external task lists entirely so that biological working memory is forced to juggle all priorities.",
+          "By establishing artificial crisis deadlines designed to trigger the neurological fight-or-flight mechanism."
         ],
         "correctIndex": 0,
         "explanation": "Once a task is started but left incomplete, the Zeigarnik Effect kicks in. Your brain will hold onto the 'open loop' and nag you to finish it, overriding your procrastination."
@@ -373,10 +373,10 @@
       "quiz": {
         "question": "Why is 'Steelmanning' considered superior to attacking a weak argument?",
         "options": [
-          "It humiliates the opponent by showing you are smarter than them.",
+          "It decisively humiliates intellectual adversaries by highlighting elementary fallacies in their debating style.",
           "It is the only way to genuinely test if your own beliefs can survive contact with the strongest opposing evidence.",
-          "It forces the opponent to concede faster out of exhaustion.",
-          "It requires less cognitive effort than building a strawman."
+          "It exhausts opposing debaters by prolonging exchanges until they capitulate from sheer psychological fatigue.",
+          "It conserves mental energy by substituting a simplified caricature for a complex argumentative architecture."
         ],
         "correctIndex": 1,
         "explanation": "Truth-seeking requires testing your beliefs against the strongest possible counter-arguments, not the weakest ones."

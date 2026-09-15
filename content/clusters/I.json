@@ -23,9 +23,9 @@
         "question": "Why do incumbent companies usually ignore disruptive technologies at first?",
         "options": [
           "Because the technology initially looks like a low-quality 'toy' that doesn't meet the needs of their most profitable customers",
-          "Because the technology is illegal",
-          "Because they don't have enough software engineers",
-          "Because incumbents are legally barred from adopting new technologies"
+          "Because adopting novel software architectures violates industry standards and exposes corporate boards to legal liability",
+          "Because corporate engineering departments lack the technical skills required to build or understand modern software stacks",
+          "Because regulatory statutes explicitly prohibit market-leading incumbents from acquiring or integrating emerging inventions"
         ],
         "correctIndex": 0,
         "explanation": "Incumbents are economically incentivized to ignore 'toys' because their best customers don't want them and the margins are initially terrible."
@@ -134,9 +134,9 @@
         "question": "What was the main critique in 'What Happened to the Future?'",
         "options": [
           "Innovation had stalled in the physical world because investors were only funding low-risk software and social media apps",
-          "Venture capital was taking too much risk on unproven hardware",
-          "The government was preventing the invention of flying cars",
-          "Because open source projects never release updates"
+          "Venture capital partnerships were allocating far too much speculative risk capital toward unproven heavy hardware engineering",
+          "Federal regulatory agencies were actively suppressing aerospace startups from deploying commercial flying commuter vehicles",
+          "Open source software ecosystems had completely stopped publishing codebase updates or maintaining essential digital infrastructure"
         ],
         "correctIndex": 0,
         "explanation": "Thiel argued that investors had abandoned hard technological problems (aerospace, energy) in favor of easy, low-risk consumer internet apps (like Twitter)."
@@ -240,9 +240,9 @@
         "question": "What was the 'attention gap' that Mary Meeker frequently highlighted?",
         "options": [
           "The discrepancy between the high amount of time users spent on mobile devices and the low amount of advertising dollars spent there",
-          "The difference between adult and teenager internet usage",
-          "The lack of broadband access in rural areas",
-          "Because each acquisition is reviewed and approved by customers first"
+          "The widening generational divide in daily digital media consumption patterns observed between teenage and elderly cohorts",
+          "The persistent infrastructure disparity in gigabit broadband connectivity separating affluent metropolitan centers and rural areas",
+          "The procedural requirement that every enterprise technology acquisition undergo extensive prior review and signoff by customers"
         ],
         "correctIndex": 0,
         "explanation": "Meeker proved that advertisers were stubbornly spending money on legacy media (print/TV) while consumers had already migrated their attention to mobile, highlighting a massive mispricing of ad inventory."
@@ -388,9 +388,9 @@
         "question": "In the 'Moloch' framing, what does the metaphor point to?",
         "options": [
           "A coordination failure where locally rational incentives systematically produce globally terrible outcomes, even though no one wants them",
-          "A single corporation that secretly controls global markets through monopoly pricing",
-          "A new form of artificial intelligence that will inevitably dominate humanity",
-          "A historical empire that collapsed because its leaders were unusually cruel"
+          "A centralized corporate monopoly that secretly manipulates international commodities pricing through algorithmic collusion",
+          "An emergent artificial superintelligence whose opaque utility functions compel it to subjugate human populations systematically",
+          "A classical imperial dynasty whose historical decline was driven primarily by the personal vanity and cruelty of its emperors"
         ],
         "correctIndex": 0,
         "explanation": "Moloch is not a literal demon but a name for multipolar traps — races to the bottom that persist because defecting is individually rewarded."
@@ -535,10 +535,10 @@
       "quiz": {
         "question": "What is the core conclusion of Eliezer Yudkowsky's 'AGI Ruin'?",
         "options": [
-          "That AGI will solve climate change and poverty",
-          "That AGI is impossible to build",
+          "That transformative superintelligence will smoothly resolve climate change, disease, and global resource scarcity",
+          "That artificial general intelligence represents a theoretical impossibility that silicon architectures can never achieve",
           "That humanity is almost certainly doomed because aligning AGI is structurally harder than building it",
-          "Because regulators have already banned all advanced AI research"
+          "Because international non-proliferation treaties have already instituted binding moratoria on advanced cognitive research"
         ],
         "correctIndex": 2,
         "explanation": "Yudkowsky argues that building a superintelligent AI is easier than teaching it human ethics, meaning the default outcome is that we build something vastly smarter than us that doesn't care if we live or die."
@@ -573,9 +573,9 @@
         "question": "Why does Holden Karnofsky argue this is 'The Most Important Century'?",
         "options": [
           "Because we are likely to invent Transformative AI, which will lock in the trajectory of humanity's entire future",
-          "Because climate change will destroy the earth by 2100",
-          "Because humans will colonize Mars",
-          "Because technological change is expected to slow to zero this century"
+          "Because anthropogenic climate tipping points are guaranteed to trigger catastrophic societal collapse before 2100",
+          "Because sovereign space exploration programs will establish self-sustaining interplanetary colonies across the solar system",
+          "Because technological and macroeconomic growth rates are expected to experience a permanent secular stagnation this century"
         ],
         "correctIndex": 0,
         "explanation": "Karnofsky believes the invention of AI that can automate scientific research will trigger a rapid transition to a galaxy-spanning civilization, making this century the crucial pivot point for all future history."
@@ -646,10 +646,10 @@
       "quiz": {
         "question": "According to 'Situational Awareness', what happens immediately after AGI is achieved?",
         "options": [
-          "The economy crashes and humans go back to farming",
-          "AGI is released as open-source software for everyone to use",
+          "Global macroeconomic production collapses completely, forcing industrialized populations to return to subsistence agriculture",
+          "Advanced cognitive models are immediately compiled and released under open-source software licenses for public community access",
           "AGI begins automating AI research, triggering a rapid 'intelligence explosion' and a massive national security arms race",
-          "Because international treaties permanently cap AI compute spending"
+          "Multilateral non-proliferation treaties establish binding inspections that permanently freeze global data center power draw"
         ],
         "correctIndex": 2,
         "explanation": "Aschenbrenner argues that AGI won't just be a tool; it will be an automated researcher that rapidly improves itself, turning AI from a Silicon Valley product into the most critical national security asset in history."
@@ -684,9 +684,9 @@
         "question": "What is the primary tone and focus of Dario Amodei's 'Machines of Loving Grace'?",
         "options": [
           "It is an optimistic vision of how safely aligned AGI could radically accelerate biology, medicine, and human flourishing",
-          "It is a pessimistic warning that AI will inevitably destroy us",
-          "It is a technical manual for building GPU clusters",
-          "Because most jobs are intrinsically impossible to automate"
+          "It is a stark, cautionary warning arguing that autonomous frontier AI models will inevitably eliminate the human species",
+          "It is a highly specialized engineering blueprint explaining how to architect gigawatt-scale distributed supercomputing clusters",
+          "It is an economic treatise demonstrating that cognitive white-collar professions are mathematically impossible to automate"
         ],
         "correctIndex": 0,
         "explanation": "Unlike Yudkowsky's pessimistic essays, Amodei focuses on the massive upside of AGI, arguing it could compress a century of medical and scientific progress into a few years if managed safely."
@@ -720,10 +720,10 @@
       "quiz": {
         "question": "How does Marc Andreessen view the 'doomer' narrative that AI will destroy humanity?",
         "options": [
-          "He completely agrees with it and calls for a pause on AI research",
+          "He wholeheartedly endorses catastrophic risk forecasts and urges an emergency treaty pause on frontier training runs",
           "He dismisses it as a moral panic, arguing AI is just an empowering tool that will amplify human intelligence",
-          "He believes only the military should be allowed to use AI",
-          "Because AI systems are legally required to be open-sourced"
+          "He argues that sovereign defense ministries and intelligence agencies alone should possess frontier compute clusters",
+          "He believes that civil liability mandates already force every artificial intelligence lab to publish fully open models"
         ],
         "correctIndex": 1,
         "explanation": "Andreessen rejects the idea that AI has agency or a desire to harm us. He views it simply as the most powerful tool ever created to amplify human potential and solve real-world problems."
@@ -795,9 +795,9 @@
         "question": "According to Sam Altman, what economic shift must occur as AI automates labor?",
         "options": [
           "We must shift from taxing labor to taxing capital and land, redistributing the wealth as a universal dividend",
-          "We must ban AI from being used in physical robotics",
-          "We must force everyone to become software engineers",
-          "Because automation always raises wages for every worker equally"
+          "We must enact statutory prohibitions that legally prevent artificial intelligence from controlling physical robotic machinery",
+          "We must mandate that displacement programs retrain every affected worker to become a professional software engineer",
+          "We must rely on automated market forces to guarantee that productivity gains raise real wages across every trade equally"
         ],
         "correctIndex": 0,
         "explanation": "Because AI will make traditional human labor obsolete and worthless, Altman argues we have to tax the things that hold value (capital and land) to fund society."
@@ -1002,10 +1002,10 @@
       "quiz": {
         "question": "What is the central strategic difference TrendForce identifies between the US and Chinese approaches to humanoid robots?",
         "options": [
-          "The US is focused entirely on manufacturing cost reduction while China is focused entirely on novel hardware designs.",
+          "The US is prioritizing domestic fabrication cost subsidies, whereas Chinese manufacturers are experimenting with novel pneumatic actuators.",
           "The US is prioritizing AI intelligence and data flywheels as the deciding moat, while China is prioritizing supply-chain scale, cost, and rapid iteration — similar to its earlier EV playbook.",
-          "Both countries are pursuing identical strategies, with the only difference being funding levels.",
-          "China has abandoned humanoid robots entirely in favor of quadruped robots."
+          "Both nations are executing identical operational roadmaps, differing only in the amount of private venture capital deployed to date.",
+          "Chinese robotics programs have completely abandoned humanoid form factors to focus exclusively on industrial quadruped platforms."
         ],
         "correctIndex": 1,
         "explanation": "TrendForce explicitly compares China's approach to 'the early development model of electric vehicles' — building supply chain completeness and cost advantage first — while describing US firms as focused on building 'a data flywheel' to win through AI capability rather than hardware specs."

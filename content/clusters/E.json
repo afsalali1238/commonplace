@@ -71,9 +71,9 @@
       "quiz": {
         "question": "What is the practical danger of confusing closely related finance terms, such as liquidity and solvency?",
         "options": [
-          "There is no real danger; the terms are interchangeable in practice.",
-          "It only matters for accountants, not investors.",
-          "It affects tax filings but nothing else.",
+          "There is no meaningful operational distinction between the concepts; corporate treasurers treat the two terms as interchangeable.",
+          "The distinction is merely a formal accounting technicality that has no practical bearing on an investor's underwriting thesis.",
+          "The terminology only affects statutory tax depreciation schedules while leaving cash runway and solvency completely unaffected.",
           "Conflating two distinct concepts can lead to badly misjudging how serious a company's financial problem actually is."
         ],
         "correctIndex": 3,

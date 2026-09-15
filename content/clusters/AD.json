@@ -71,10 +71,10 @@
       "quiz": {
         "question": "What did Raichle's 2001 discovery of the default mode network overturn?",
         "options": [
-          "The theory that different brain regions are specialized for different functions",
-          "The theory that memories are stored primarily in the hippocampus",
+          "The classical neurological doctrine establishing that discrete cerebral lobes perform specialized neurocognitive computations",
+          "The anatomical model asserting that long-term episodic autobiographical memories are synthesized exclusively within the hippocampus",
           "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
-          "The belief that neurons communicate via electrical signals"
+          "The foundational biophysical principle that cortical neurons transmit information across synapses via bioelectrical action potentials"
         ],
         "correctIndex": 2,
         "explanation": "Brain scans had long treated the 'resting' state as a low-activity baseline; Raichle showed a specific network actually increases activity during rest, consuming a large share of the brain's energy budget on internally-directed thought."

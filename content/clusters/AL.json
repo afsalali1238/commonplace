@@ -22,10 +22,10 @@
       "quiz": {
         "question": "According to Getting to Yes, why does focusing on 'interests' instead of 'positions' open up more possible solutions?",
         "options": [
-          "Interests are easier to fake than positions, so negotiators can bluff more effectively",
-          "Positions are illegal to discuss in most formal negotiations",
+          "Underlying motivations can be misrepresented far more convincingly than formal contractual claims during high-stakes disputes",
+          "Statutory labor regulations prohibit bargaining delegates from raising explicit commercial claims during mediation proceedings",
           "A stated position is usually just one solution to an underlying need, and that same need can often be met several other ways once it's made explicit",
-          "Interests always favor the party who reveals them first"
+          "Disclosing personal motivations first guarantees that the opening party retains unilateral procedural leverage throughout discussions"
         ],
         "correctIndex": 2,
         "explanation": "A position like 'I want the window shut' hides the real interest ('I'm cold'), and once the interest is visible, other solutions — a sweater, a different seat — become available that neither side saw while arguing about the window."
@@ -182,10 +182,10 @@
       "quiz": {
         "question": "Why does Shell argue that knowing your default negotiating style matters, even before learning any specific tactics?",
         "options": [
-          "Because only one style — hard competitive bargaining — reliably wins, so everyone should learn to adopt it",
-          "Negotiating styles are fixed at birth and cannot be adjusted, so knowing yours only tells you which deals to avoid",
+          "Because an unyielding, hard-bargaining competitive stance represents the only posture that systematically extracts surplus",
+          "Because individual bargaining dispositions are genetically fixed at birth and cannot be adapted to shifting deal structures",
           "Most people unconsciously default to the same style in every negotiation regardless of fit, so recognizing that default is a precondition for choosing the style the situation actually requires",
-          "Style doesn't affect outcomes, so the audit is purely a self-awareness exercise with no tactical payoff"
+          "Because negotiation style exercises no measurable impact on outcomes, rendering personal stylistic audits purely academic"
         ],
         "correctIndex": 2,
         "explanation": "Shell's research found that negotiators tend to reuse whichever style feels most natural to them across very different situations, which means the first real skill isn't a tactic at all — it's recognizing your own habitual style so you can override it when the context calls for something else."
@@ -542,9 +542,9 @@
       "quiz": {
         "question": "Why does Nalebuff argue the pie — the value created specifically by the deal — should be split equally, even between parties of very different size?",
         "options": [
-          "Because larger parties are legally required in most jurisdictions to give smaller ones a fully equal share of the surplus",
-          "Because equal splits are always dramatically easier to calculate than proportional ones, saving both parties considerable time",
-          "Because the smaller party in any deal deserves automatic compensation for the sheer size difference between the two parties",
+          "Because antitrust legislation in most developed markets compels corporate entities to distribute joint venture proceeds on a 50/50 basis",
+          "Because calculating an equal numerical split eliminates the professional accounting and valuation fees associated with economic modeling",
+          "Because smaller corporate counterparties deserve statutory financial subsidies to offset the bargaining dominance of enterprise rivals",
           "Because neither party could have generated that specific incremental value alone, so the surplus created jointly belongs equally to both, regardless of each party's separate size or leverage outside the deal"
         ],
         "correctIndex": 3,
@@ -583,9 +583,9 @@
         "question": "What is the 'Yes-No-Yes' structure Ury proposes for a 'Positive No'?",
         "options": [
           "Affirming what you value first, then stating a clear no to the specific request, then offering a positive alternative or path forward — protecting both the relationship and your actual interests",
-          "Saying yes twice first, so that the eventual no is barely noticed by the other person in the natural flow of the talk",
-          "Asking the other person to say yes twice before you will consider saying no to their original, more ambitious request",
-          "A negotiation tactic that is only ever used in formal legal contract disputes and never in everyday life at all"
+          "Delivering two enthusiastic affirmations at the outset so that your ultimate declining of the core proposal passes unremarked",
+          "Demanding that your negotiating counterpart concede two preliminary demands before you evaluate their primary commercial request",
+          "A formulaic courtroom litigation maneuver designed strictly for cross-examination in commercial contract enforcement trials"
         ],
         "correctIndex": 0,
         "explanation": "The Yes-No-Yes structure works because it separates the relationship (affirmed in the first yes) from the specific refusal (the no) from the path forward (the second yes) — so the no doesn't have to carry the full weight of the relationship on its own."
@@ -782,10 +782,10 @@
       "quiz": {
         "question": "Why did citing 'the majority of guests in this room' outperform a generic environmental appeal in the hotel towel-reuse experiments?",
         "options": [
-          "Because guests fundamentally dislike environmental messaging on principle, so any more specific claim outperforms it",
+          "Because hotel guests exhibit an instinctive psychological aversion to environmental slogans, rejecting any collective sustainability claims",
           "Because specific, local social proof (people like me, in this exact situation) is a stronger behavioral cue than an abstract appeal to values, since it signals what similar others are actually doing right now",
-          "Because the towel signs in the majority-appeal group happened to be printed in a noticeably larger font than the others",
-          "Because guests were legally obligated to comply with any policy posted in their hotel room, whether specific or not"
+          "Because informational cards bearing localized social appeals were typeset in an unmistakably larger typography than baseline cards",
+          "Because municipal public health codes legally compelled guests to adhere to environmental conservation notices displayed in bathrooms"
         ],
         "correctIndex": 1,
         "explanation": "Social proof is strongest when it's specific and similar to the observer's own situation — 'guests in this room' is a much closer, more credible reference group than 'people who care about the environment,' which is why it moved behavior more even though the underlying request was identical."

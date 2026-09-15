@@ -216,9 +216,9 @@
         "question": "How did Sino-Forest fake its massive timber revenues?",
         "options": [
           "By using a web of opaque 'authorized intermediaries' to forge purchase and sale contracts",
-          "By hacking the Canadian stock exchange servers",
-          "By buying satellite imagery of forests they didn't own",
-          "By holding cash exclusively in foreign currencies"
+          "By executing unauthorized cyber intrusions into the regulatory reporting servers of exchanges",
+          "By submitting forged commercial satellite photography depicting mature timber concessions they lacked",
+          "By holding reported corporate reserves exclusively in unverified offshore paper notes in foreign banks"
         ],
         "correctIndex": 0,
         "explanation": "The company used 'authorized intermediaries' as a black box, claiming these middlemen handled all transactions, which allowed them to forge paperwork for timber that didn't exist without auditors verifying the assets."
