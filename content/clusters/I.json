@@ -210,7 +210,7 @@
           "Moore's Law",
           "Metcalfe's Law",
           "Wright's Law",
-          "Because fund returns are guaranteed by the SEC"
+          "Jevons' Paradox"
         ],
         "correctIndex": 2,
         "explanation": "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots."
@@ -918,9 +918,9 @@
       "quiz": {
         "question": "Why is this node marked with a cautious epistemic status rather than treated as a confirmed Naval Ravikant quote?",
         "options": [
-          "Because Naval Ravikant has publicly denied saying anything like this.",
-          "Because the claim is mathematically false.",
-          "Because Naval Ravikant does not have a podcast.",
+          "Because Naval Ravikant has publicly and explicitly denied ever saying anything like this in any known interview, podcast, or post",
+          "Because the underlying economic claim is mathematically false and can be straightforwardly disproven with a simple calculation",
+          "Because Naval Ravikant does not actually have a podcast, so no podcast episode could contain the claim in the first place",
           "Because the specific podcast episode containing this claim could not be independently located or verified, so it's presented as secondary commentary rather than a primary source."
         ],
         "correctIndex": 3,

@@ -22,10 +22,10 @@
       "quiz": {
         "question": "Deep work is best trained by:",
         "options": [
-          "Reading more books about focus.",
-          "Waiting for inspiration.",
+          "Reading more books about focus and concentration, which Cal Newport argues compounds over time",
+          "Waiting for inspiration to strike, since deep work only happens when the subject matter feels alive",
           "Scheduling protected time and building tolerance for the discomfort of undistracted work.",
-          "Using more productivity apps."
+          "Using more productivity apps to track and externalize every minute of the working day"
         ],
         "correctIndex": 2,
         "explanation": "Deep work is not a natural state; it is a highly trained skill. In a world optimized for shallow distraction, the ability to focus intensely on cognitively demanding tasks is the ultimate economic advantage."
@@ -409,10 +409,10 @@
       "quiz": {
         "question": "In Edward T. Thompson's example, what did the scientist's line 'the biota exhibited a one hundred percent mortality response' actually mean?",
         "options": [
-          "The fish population had doubled.",
+          "The fish had doubled.",
           "All the fish died.",
-          "The water quality had improved.",
-          "The experiment was inconclusive."
+          "The water had improved.",
+          "Nothing had happened."
         ],
         "correctIndex": 1,
         "explanation": "Thompson uses this as his central example of jargon: a simple, complete fact buried inside needlessly technical language, which he uses to argue for plain, familiar word combinations."
@@ -447,10 +447,10 @@
       "quiz": {
         "question": "Why did taking a week off fail to fix Rian Doris's burnout, according to his own account?",
         "options": [
-          "Because burnout can't be treated with rest under any circumstances.",
-          "Because he didn't take enough time off.",
+          "Because burnout simply cannot be treated with rest under any circumstances, no matter how long or how complete the break might be",
+          "Because he did not take enough time off; by his own account, a single week is never sufficient to reverse the full condition",
           "Because his specific triggers were lack of control, unfairness, and insufficient reward — not work overload, which is the only trigger that time off actually addresses.",
-          "Because burnout isn't a real medical phenomenon."
+          "Because burnout is not a real medical phenomenon, so no actual intervention other than raw willpower could ever be expected to help"
         ],
         "correctIndex": 2,
         "explanation": "Doris identifies six distinct burnout triggers; simple time off only resolves work overload, leaving the other active triggers (in his case, control, fairness, and reward) untouched."
@@ -527,9 +527,9 @@
       "quiz": {
         "question": "What does this excerpt claim distinguishes the roughly 2% of people it calls 'leaders'?",
         "options": [
-          "Having a formal leadership title or position.",
-          "Being born with exceptional natural talent.",
-          "Having access to more resources than average.",
+          "Having a formal leadership title or a senior position on the organization chart, which the excerpt treats as the marker",
+          "Being born with exceptional natural talent in their field, which the excerpt presents as the defining trait",
+          "Having reliable access to more resources than the average person, which the excerpt identifies as the real edge",
           "The ability to work entirely without external supervision or motivation, applying self-generated pressure instead."
         ],
         "correctIndex": 3,

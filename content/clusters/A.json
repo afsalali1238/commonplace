@@ -444,9 +444,9 @@
       "quiz": {
         "question": "Under what condition does 'blitzscaling' — deliberately sacrificing efficiency for speed — actually make strategic sense?",
         "options": [
-          "Only when a company has unlimited funding with no investor oversight",
-          "In any market, since speed is always better than efficiency",
-          "Only for companies that plan to go public within two years",
+          "Only when a company has effectively unlimited funding from patient investors who will not punish any loss of efficiency, no matter how large",
+          "In any market at any stage of the company's life, since speed is always a better strategy than efficiency and efficiency can simply be recovered later",
+          "Only for companies that plan to go public within the next two years, because public markets reward growth metrics far more than they reward profitability",
           "In winner-take-most markets, where being first lets you build a compounding, durable advantage (network effects, data, brand) that's hard for slower competitors to overcome"
         ],
         "correctIndex": 3,
@@ -566,10 +566,10 @@
       "quiz": {
         "question": "What does Eugene Wei mean by an 'invisible asymptote' in a growing business?",
         "options": [
-          "A ceiling caused by running out of investor funding",
+          "A ceiling caused by running out of investor funding, which Wei argues is the single most common reason that growth suddenly stops",
           "A structural, mechanical limit built into how the business currently works, which stays hidden in the growth curve until the business actually hits it",
-          "A legal cap on market share imposed by antitrust regulators",
-          "The point at which a company's stock price stops rising"
+          "A legal cap on market share imposed by antitrust regulators, which makes further growth impossible no matter how good the product is",
+          "The point at which a company's stock price stops rising, because investors stop rewarding any further improvement in the underlying business"
         ],
         "correctIndex": 1,
         "explanation": "Growth eventually stalls not because of competition, but because of a hard structural limit in the product itself—an 'invisible asymptote' that caps the addressable audience until the product is fundamentally reimagined."
@@ -626,10 +626,10 @@
       "quiz": {
         "question": "Why does Jerry Chen argue that a 'system of intelligence' is a stronger moat than older forms of competitive advantage?",
         "options": [
-          "Because it requires expensive proprietary hardware only large companies can afford",
-          "Because governments grant patents automatically to AI-based products",
+          "Because it requires expensive proprietary hardware and specialized physical infrastructure that only the very largest, best-funded companies can afford to build",
+          "Because governments grant patents automatically to AI-based products, which legally locks out all competitors from using the same technology for the full patent term",
           "Because it compounds over time through a data flywheel — usage generates data, data improves the product, a better product attracts more usage — which a copycat with no usage history can't quickly replicate",
-          "Because it eliminates the need for any sales or marketing spend"
+          "Because it eliminates the need for any sales or marketing spend whatsoever, so the product effectively sells itself and the moat deepens through pure market osmosis"
         ],
         "correctIndex": 2,
         "explanation": "While old moats relied on economies of scale or IP, modern moats are built on systems of intelligence: data flywheels where product usage generates data that makes the product better, driving more usage."
@@ -829,9 +829,9 @@
         "question": "According to Thiel, why does the 'kitchen sink' approach to distribution (a few salespeople, some ads, a viral feature) usually fail?",
         "options": [
           "Because distribution channels follow a power law — one channel dramatically outperforms the rest, and spreading effort thin across several usually means none of them get pursued hard enough to work.",
-          "Because it's illegal to use more than one distribution channel at once.",
-          "Because customers only trust companies that use a single marketing channel.",
-          "Because viral features are always counterproductive."
+          "Because it is effectively illegal to use more than one distribution channel at once, so any kitchen-sink approach would immediately breach platform terms of service",
+          "Because customers only trust companies that use a single marketing channel, and any visible diversity of channels is read as a sign of a confused strategy",
+          "Because viral features are always counterproductive and reliably destroy the brand equity that paid channels would have built for the company"
         ],
         "correctIndex": 0,
         "explanation": "Thiel's argument is structural: since one channel will vastly outperform the others for any given company, diluting effort across many channels usually means failing to find and commit to the one that would have actually worked."
@@ -868,10 +868,10 @@
       "quiz": {
         "question": "According to Andreessen's heuristic in this essay, what suggests an idea's timing might now be right?",
         "options": [
-          "The idea has never been attempted by anyone before.",
-          "The idea requires no new technology whatsoever.",
+          "The idea has never been attempted by anyone before, which is Andreessen's primary signal that the timing is finally ripe for the market",
+          "The idea requires no new technology whatsoever, since timing is determined entirely by the maturity of existing consumer demand",
           "The idea was 'hot' 3-4 years ago but the attempt at the time didn't quite work — suggesting infrastructure and market readiness may have since caught up.",
-          "A large company has already built a competing product."
+          "A large company has already built a competing product, which proves the market exists and the timing is now unquestionably right"
         ],
         "correctIndex": 2,
         "explanation": "The heuristic treats a prior near-miss as a timing signal: if the vision was validated as directionally right a few years ago but failed on execution or infrastructure, the gap has often since closed."

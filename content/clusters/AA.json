@@ -148,9 +148,9 @@
       "quiz": {
         "question": "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
         "options": [
-          "Because it proved the universe is not expanding after all",
-          "Because it was the first direct photograph ever taken of a galaxy",
-          "Because it disproved Einstein's theory of general relativity",
+          "Because it proved the universe is not expanding after all, exactly as the steady-state camp had always confidently predicted",
+          "Because it was the first direct photograph ever taken of a distant galaxy, confirming the Big Bang model's predictions of galaxies",
+          "Because it definitively disproved Einstein's entire theory of general relativity, ending the Big Bang model's credibility",
           "Because the Big Bang model predicted exactly this kind of uniform relic radiation from the universe's hot early state, while the rival Steady State model had no mechanism to produce it at all"
         ],
         "correctIndex": 3,

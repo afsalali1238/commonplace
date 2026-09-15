@@ -504,7 +504,7 @@
           "John Nash",
           "Anatol Rapoport",
           "John von Neumann",
-          "Robert Axelrod alone, with no prior originator"
+          "Robert Axelrod"
         ],
         "correctIndex": 1,
         "explanation": "Rapoport formalized 'tit for tat'—cooperate on the first move, then replicate your opponent's previous move—proving that a simple, forgiving, but retaliatory strategy is mathematically optimal."
@@ -643,9 +643,9 @@
         "question": "In the mammogram example used in this piece, why can a test that's 75% accurate still produce mostly false positives in absolute numbers?",
         "options": [
           "Because the underlying disease rate (the prior/base rate) is very low, so false positives from the much larger healthy population swamp true positives",
-          "Because the test itself is fundamentally broken",
-          "Because doctors deliberately misread the results",
-          "Because 75% accuracy is actually below chance level"
+          "Because the test itself is fundamentally broken and produces random results that have no relationship to the actual condition",
+          "Because doctors deliberately misread the positive results to inflate their diagnostic fees and extend the billing relationship",
+          "Because a reported 75% accuracy is actually below chance level once the two types of error are properly combined"
         ],
         "correctIndex": 0,
         "explanation": "Bayes' Theorem forces us to remember the base rate. Even an accurate test will produce mostly false alarms if it's screening for an extremely rare condition in a massive population."
@@ -877,10 +877,10 @@
       "quiz": {
         "question": "Why does this piece argue oceanic whitetip sharks may be more dangerous than their attack statistics suggest?",
         "options": [
-          "Because they are larger than great whites",
+          "Because they are physically larger than great white sharks, which makes any given attack far more likely to be fatal",
           "Because their attacks happen in the open ocean, in isolated situations with fewer potential survivors and witnesses to report them",
-          "Because they are faster swimmers",
-          "Because scientists have not studied them at all"
+          "Because they are significantly faster swimmers than great whites, which makes them harder to evade in the water",
+          "Because oceanic whitetips have never been scientifically studied, so their true danger level is genuinely unknowable"
         ],
         "correctIndex": 1,
         "explanation": "Because whitetip attacks usually happen far out at sea where there are no survivors to report them, our data is biased toward coastal sharks, causing us to drastically underestimate the whitetip's danger."
@@ -971,9 +971,9 @@
       "quiz": {
         "question": "What does the 'WEIRD' critique (Henrich, Heine, Norenzayan) argue about a large share of psychology research?",
         "options": [
-          "That psychology experiments are always too large to be useful",
-          "That anecdotes are always more accurate than statistics",
-          "That psychology research doesn't use human subjects at all",
+          "That psychology experiments are systematically too large in scale to be useful, which the WEIRD critique argues destroys their statistical power",
+          "That anecdotes are always more accurate than aggregate statistics, so individual case studies should replace experiments in research programs",
+          "That psychology research does not actually use human subjects at all, but relies entirely on animal models instead",
           "That findings from Western, Educated, Industrialized, Rich, Democratic subjects are generalized to all humans despite being one of the least representative populations available"
         ],
         "correctIndex": 3,
@@ -1065,10 +1065,10 @@
       "quiz": {
         "question": "What specific event is credited with giving Julia Child her breakthrough understanding of first-principles cooking?",
         "options": [
-          "Watching televised cooking shows as a child",
+          "Watching televised cooking shows as a child, which gave her an early intuition for decomposing dishes into fundamentals",
           "Enrolling at the Cordon Bleu cooking school in Paris in 1949, where she broke every dish down into its smallest steps",
-          "Being taught by her mother growing up",
-          "Reading cookbooks translated from French"
+          "Being taught systematically by her mother growing up, which instilled the habit of breaking recipes into component techniques",
+          "Reading translated French cookbooks before she ever set foot in a kitchen, which provided the theoretical foundation for her approach"
         ],
         "correctIndex": 1,
         "explanation": "Child didn't just memorize recipes; she deconstructed French cooking down to its fundamental techniques (knife skills, heat control), allowing her to build up any dish from scratch."
@@ -1112,10 +1112,10 @@
       "quiz": {
         "question": "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
         "options": [
-          "The signing of the Magna Carta",
-          "The Treaty of Westphalia",
+          "The signing of the Magna Carta, which the piece cites as the first treaty between two powers acting on mutual self-interest",
+          "The Treaty of Westphalia, which the piece frames as the origin of reciprocal non-aggression between sovereign states",
           "The 1259 BCE 'Eternal Treaty' between Egypt's Ramesses and the Hittite king Hattusili",
-          "The founding of the Silk Road"
+          "The founding of the Silk Road, which the piece presents as a commercial reciprocity arrangement between distant empires"
         ],
         "correctIndex": 2,
         "explanation": "The Egyptian-Hittite treaty demonstrates that the most durable reciprocity isn't based on altruism, but on aligned incentives and mutual self-interest between powerful equals."
@@ -1205,9 +1205,9 @@
         "question": "What is exaptation, as used in this piece's career-change framework?",
         "options": [
           "A trait or skill that evolved or was built for one purpose but gets repurposed for a completely different, unrelated use",
-          "A financial exit strategy for leaving a company",
-          "A type of severance negotiation",
-          "A formal certification process"
+          "A financial exit strategy for leaving a company, which the piece borrows from options theory to describe career transitions",
+          "A type of severance negotiation that lets departing employees keep their equity, as the piece reinterprets the term",
+          "A formal certification process for validating that a skill transfer is legitimate, as the piece defines it for career changers"
         ],
         "correctIndex": 0,
         "explanation": "Just as feathers evolved for warmth but were exapted for flight, skills you develop in one career (like communication or systems thinking) can be unexpectedly repurposed as massive advantages in a new field."
@@ -1661,10 +1661,10 @@
       "quiz": {
         "question": "According to the Spurious Correlations project, what is 'data dredging' and why does it produce misleading results?",
         "options": [
-          "Fabricating data points that don't exist in the real dataset.",
+          "Fabricating data points that do not exist in the real dataset, which the project argues is the most common form of misleading chart",
           "Testing enormous numbers of variable pairs against each other until some match up by pure chance, then presenting that chance match as if it were meaningful.",
-          "Rounding numbers to make a chart look smoother.",
-          "Using only data from a single, small country to avoid outliers."
+          "Rounding all the numbers in a series to make the resulting chart look smoother and therefore more trustworthy to viewers",
+          "Using only data from a single small country in order to avoid global outliers, as the project documents in its examples"
         ],
         "correctIndex": 1,
         "explanation": "Data dredging means comparing huge numbers of unrelated variables (Vigen's project runs over 600 million comparisons) until some pairs randomly align — the correlation is mathematically real, but finding it says nothing about causation, since a large enough search will always turn up coincidental matches."

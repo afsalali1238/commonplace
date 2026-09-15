@@ -23,9 +23,9 @@
         "question": "According to Nickerson, why is confirmation bias particularly hard to correct?",
         "options": [
           "It operates at the search, interpretation, and memory stages of reasoning, filtering evidence before contradicting facts can even register",
-          "It only affects people with low intelligence",
-          "It can be completely eliminated through simple willpower",
-          "It only occurs in political and religious beliefs"
+          "It only affects people with low intelligence, so most well-educated individuals are considered largely immune to it",
+          "It can be completely eliminated through simple willpower alone, once a person genuinely decides to think more carefully",
+          "It only occurs in political and religious beliefs, and never in scientific or medical reasoning of any kind"
         ],
         "correctIndex": 0,
         "explanation": "Confirmation bias isn't just ignoring facts; it actively distorts how we search for information, how we interpret ambiguous data, and what details we remember, making us completely blind to our own bias."
@@ -139,9 +139,9 @@
       "quiz": {
         "question": "What did the theater subscription study in 'The Psychology of Sunk Cost' demonstrate?",
         "options": [
-          "People who paid more for tickets enjoyed the plays more",
-          "Discounted tickets always lead to lower attendance",
-          "Sunk costs have no measurable effect on future behavior",
+          "People who paid more for their tickets genuinely enjoyed the plays more, which is why theaters raise their prices so strategically",
+          "Discounted tickets always lead to lower attendance overall, which the study originally took as proof of the sunk-cost effect",
+          "Sunk costs have no measurable effect on future behavior at all, even when the original prior payment was quite large",
           "People who paid a higher price for their season subscription attended more plays afterward, even though the price had no bearing on the plays' quality"
         ],
         "correctIndex": 3,
@@ -256,10 +256,10 @@
       "quiz": {
         "question": "What did Thorndike's original 1920 study of military officers reveal?",
         "options": [
-          "That officers accurately distinguished between soldiers' independent traits",
-          "That physical fitness has no bearing on perceived leadership ability",
+          "That officers could accurately distinguish between soldiers' supposedly independent traits, which fully validated their rating forms",
+          "That physical fitness has no measurable bearing whatsoever on how leadership ability is perceived by military evaluators",
           "That ratings across supposedly independent traits (physique, intelligence, character) correlated too strongly, suggesting one overall impression was bleeding into every specific judgment",
-          "That military training eliminates cognitive bias in evaluation"
+          "That formal military training reliably eliminates all cognitive bias in the way officers evaluate the people serving under them"
         ],
         "correctIndex": 2,
         "explanation": "The Halo Effect shows that if we perceive one positive trait in a person (like physical attractiveness), our brain lazily assumes they possess other positive traits (like intelligence or kindness) without any evidence."

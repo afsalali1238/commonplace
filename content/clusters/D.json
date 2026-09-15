@@ -257,9 +257,9 @@
         "question": "What is a 'Beautiful Deleveraging' in Dalio's framework?",
         "options": [
           "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
-          "When all debt is completely forgiven by the government",
-          "When a country adopts the gold standard to prevent inflation",
-          "By using only debt financing with no equity partners"
+          "When all of the country's debt is completely forgiven by the government in a single, universal act, eliminating every balance sheet claim",
+          "When a country adopts the gold standard to anchor its currency, which Dalio argues reliably resolves overhangs of private and public debt",
+          "When the central bank simply stops lending, forcing the private sector to deleverage on its own through a prolonged and unmanaged correction"
         ],
         "correctIndex": 0,
         "explanation": "A Beautiful Deleveraging occurs when central banks print exactly enough money to offset the deflationary pain of defaults and austerity, shrinking the debt-to-income ratio smoothly."

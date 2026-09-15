@@ -499,10 +499,10 @@
       "quiz": {
         "question": "What does BATNA (Best Alternative to a Negotiated Agreement) determine in a negotiation?",
         "options": [
-          "The exact price both sides must agree to.",
-          "How many rounds of bargaining are allowed.",
+          "The exact final price that both sides are required to agree to, which the BATNA calculates before the first meeting",
+          "How many rounds of bargaining the parties are allowed before the deal must either close or die",
           "Your walk-away point — the strongest position you have if the negotiation fails, which strengthens your leverage in the actual conversation.",
-          "The relationship history between the two parties."
+          "The entire relationship history between the two parties, which the BATNA summarizes into a single walk-away number"
         ],
         "correctIndex": 2,
         "explanation": "BATNA defines what you'll do if no agreement is reached — the stronger your alternative, the less pressure you're under to accept unfavorable terms, which is why identifying it before negotiating matters more than any single tactic used during the conversation."

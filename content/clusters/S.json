@@ -139,10 +139,10 @@
       "quiz": {
         "question": "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
         "options": [
-          "Because writing pays more per hour than any other skill",
-          "Because algorithms only reward text-based content over video",
+          "Because writing pays more per hour than any other skill available in the modern internet economy, according to Koe's own numbers",
+          "Because platform algorithms only reward text-based content over video, so writing is the only content format that reliably grows",
           "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
-          "Because writing requires no ongoing practice once learned"
+          "Because writing requires no ongoing practice at all once it is learned, unlike the performance-based creative skills"
         ],
         "correctIndex": 2,
         "explanation": "Writing clarifies thinking. Every piece of high-leverage digital media—from a podcast to a viral video to a sales funnel—starts as a written script or outline."
@@ -178,9 +178,9 @@
       "quiz": {
         "question": "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
         "options": [
-          "A lack of caffeine or physical energy",
-          "Working in an office instead of remotely",
-          "Not using enough productivity software",
+          "A simple lack of caffeine or physical energy, which Koe identifies as the root of most focus failure",
+          "Working in an office instead of remotely, since distraction from colleagues is the main cause",
+          "Not using enough productivity software, which leaves the attention unstructured all day",
           "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward"
         ],
         "correctIndex": 3,
@@ -306,9 +306,9 @@
         "question": "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
         "options": [
           "Because it's a meta-skill that increases the power of every other skill you learn, since humans control the money and opportunity you need",
-          "Because human nature never changes across cultures",
-          "Because AI cannot process psychological concepts",
-          "Because it requires no practice to master"
+          "Because human nature never changes across cultures or eras, so one well-built set of insights covers every possible context",
+          "Because AI fundamentally cannot process psychological concepts at all, so the skill remains completely safe from automation",
+          "Because it requires no practice at all to master, unlike any other genuinely high-value capability"
         ],
         "correctIndex": 0,
         "explanation": "Any specific skill can be automated or become obsolete, but the ability to understand what makes people pay attention and act underlies marketing, sales, leadership, and distribution regardless of which specific skill or tool you're using."
@@ -578,9 +578,9 @@
       "quiz": {
         "question": "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
         "options": [
-          "Because rest has no measurable effect on cognitive performance",
-          "Because rest is only necessary to avoid burnout, with no upside beyond that",
-          "Because most successful people work fewer than 10 hours a week total",
+          "Because rest has no measurable effect on cognitive performance whatsoever, so whether to rest is purely a matter of personal preference",
+          "Because rest is only necessary to avoid burnout, with no productive upside whatsoever beyond simply not crashing later",
+          "Because most genuinely successful people actually work fewer than ten hours a week in total, so rest is most of the job",
           "Because the brain's Default Mode Network, active during genuine unstructured rest, is where much of the real idea-generation and insight happens, which is then executed during focused work"
         ],
         "correctIndex": 3,
@@ -618,9 +618,9 @@
         "question": "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
         "options": [
           "They have a small set of deeply refined 'greatest hits' ideas, already thought through many times, that they deploy rather than generating brand-new insight live",
-          "They are naturally gifted improvisers",
-          "They memorize scripts word-for-word before every conversation",
-          "They avoid answering the actual question asked"
+          "They are all naturally gifted improvisers who were simply born able to speak coherently under pressure without preparation",
+          "They memorize complete word-for-word scripts in advance before every single conversation they ever have to have",
+          "They constantly avoid answering the actual question being asked, which makes them sound more articulate than they actually are"
         ],
         "correctIndex": 0,
         "explanation": "Articulation is downstream of a body of work — repeated writing or speaking on the same core ideas until they're refined enough to deliver with confidence, not spontaneous brilliance."
@@ -656,10 +656,10 @@
       "quiz": {
         "question": "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
         "options": [
-          "Second-order changes are illegal and first-order changes are legal",
+          "Second-order changes are technically illegal in most places while first-order changes are fully legal, as Koe explains in detail",
           "Second-order change means changing actions directly; first-order change means changing the underlying identity so the new actions follow naturally and don't require ongoing willpower",
-          "First-order changes only apply to health goals",
-          "There is no meaningful difference, it's just wording"
+          "First-order changes only ever apply to health and fitness goals, and never to career or relationship changes of any kind",
+          "There is no meaningful difference between the two terms at all, and Koe is simply using different wording for stylistic effect"
         ],
         "correctIndex": 1,
         "explanation": "A goal bolted onto an unchanged identity tends to erode once willpower runs out; changing identity first makes the new behavior the natural default rather than a constant fight."
@@ -695,10 +695,10 @@
       "quiz": {
         "question": "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
         "options": [
-          "Because it requires no marketing skills at all",
-          "Because it guarantees faster income than any other business model",
+          "Because it requires no marketing skills whatsoever, which makes it the only business model a true beginner can realistically run",
+          "Because it guarantees faster income than any other business model currently available anywhere in the creator economy",
           "Because it doesn't force you to niche down into one marketable skill — you become your own customer avatar, so pursuing several interests together becomes the business rather than a distraction from it",
-          "Because it was invented specifically for the AI era and didn't exist before"
+          "Because it was invented specifically for the AI era and has no real precedent in any earlier internet economy whatsoever"
         ],
         "correctIndex": 2,
         "explanation": "The Skill-Based path is one-dimensional and risks recreating a second job around a single skill; the Development-Based path uses your own multi-interest growth as the product itself."

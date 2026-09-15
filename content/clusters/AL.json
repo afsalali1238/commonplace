@@ -142,10 +142,10 @@
       "quiz": {
         "question": "What does Cialdini mean by a 'privileged moment' in Pre-Suasion?",
         "options": [
-          "A legal loophole that makes a contract unenforceable",
+          "A legal loophole in contract law that makes an otherwise fully valid agreement temporarily unenforceable in court",
           "A brief window right before a request where directing someone's attention to a related concept increases the odds they'll agree to what follows",
-          "The exact instant a negotiation legally becomes binding",
-          "A moment when persuasion techniques stop working entirely"
+          "The exact instant a negotiation legally becomes binding, which Cialdini argues is precisely the moment to frame the ask",
+          "A moment when all persuasion techniques stop working entirely, and the only remaining option is to accept or walk"
         ],
         "correctIndex": 1,
         "explanation": "Pre-suasion's central claim is that persuasion is won or lost before the ask itself — by controlling what's momentarily most vivid or salient in someone's attention, a persuader shapes the frame the eventual request gets evaluated in."
@@ -222,9 +222,9 @@
       "quiz": {
         "question": "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
         "options": [
-          "'No' always means the deal is permanently dead",
-          "It is a legal requirement in formal business negotiations",
-          "Saying no is a sign the negotiator has lost control of the conversation",
+          "'No' always means the deal is permanently dead, so inviting it is the fastest and cleanest way to end a negotiation",
+          "It is a strict legal requirement in formal business negotiations, and Camp's method is simply a way to comply with it",
+          "Saying no is a sign the negotiator has completely lost control of the conversation and badly needs to be rescued",
           "It removes the pressure of a forced yes, which makes the other party more comfortable being honest and more willing to genuinely engage, rather than agreeing just to escape discomfort"
         ],
         "correctIndex": 3,
@@ -263,9 +263,9 @@
         "question": "Why does Cohen argue that most concessions happen near a negotiation's deadline?",
         "options": [
           "Time pressure builds asymmetrically as a deadline approaches, and the side under more time pressure typically concedes more to avoid losing the deal entirely",
-          "Deadlines are legally required to trigger a final offer",
-          "Negotiators get bored and stop paying attention near deadlines",
-          "Deadlines have no measurable effect on negotiation outcomes"
+          "Deadlines are legally required in order to trigger a final offer, which is exactly why concessions cluster around them",
+          "Negotiators simply get bored and stop paying attention as deadlines approach, and quietly concede whatever is left",
+          "Deadlines have no measurable effect on negotiation outcomes at all, and any observed clustering is purely coincidental"
         ],
         "correctIndex": 0,
         "explanation": "Cohen's time variable works because the closer a real or perceived deadline gets, the more the party who fears missing it will trade away favorable terms just to close before time runs out — which is why skilled negotiators often manufacture or reveal deadlines strategically."
@@ -342,10 +342,10 @@
       "quiz": {
         "question": "Why does the book argue the 'What Happened' conversation is usually unwinnable as a dispute over facts?",
         "options": [
-          "Because facts don't matter in interpersonal conflict",
-          "Because memory is always completely unreliable",
+          "Because facts simply do not matter in interpersonal conflict, so arguing about them is a waste of everyone's valuable time",
+          "Because human memory is always completely unreliable, so neither party's account of the event can be taken seriously",
           "Because both parties typically experienced genuinely different, information-shaped versions of the same event, so debating whose version is 'true' misses that both can be honestly held",
-          "Because only one person is ever telling the truth in any disagreement"
+          "Because only one person is ever telling the truth in any disagreement, and finding that person is the whole goal"
         ],
         "correctIndex": 2,
         "explanation": "The authors' point isn't that facts are unknowable — it's that each party's account is shaped by different information, assumptions, and intentions they had access to, so 'who's right' is usually the wrong question when the real goal is understanding, not verdict."
@@ -542,9 +542,9 @@
       "quiz": {
         "question": "Why does Nalebuff argue the pie — the value created specifically by the deal — should be split equally, even between parties of very different size?",
         "options": [
-          "Because larger parties are legally required to give smaller ones an equal share",
-          "Because equal splits are always easier to calculate than proportional ones",
-          "Because the smaller party in any deal deserves compensation for the size difference",
+          "Because larger parties are legally required in most jurisdictions to give smaller ones a fully equal share of the surplus",
+          "Because equal splits are always dramatically easier to calculate than proportional ones, saving both parties considerable time",
+          "Because the smaller party in any deal deserves automatic compensation for the sheer size difference between the two parties",
           "Because neither party could have generated that specific incremental value alone, so the surplus created jointly belongs equally to both, regardless of each party's separate size or leverage outside the deal"
         ],
         "correctIndex": 3,
@@ -583,9 +583,9 @@
         "question": "What is the 'Yes-No-Yes' structure Ury proposes for a 'Positive No'?",
         "options": [
           "Affirming what you value first, then stating a clear no to the specific request, then offering a positive alternative or path forward — protecting both the relationship and your actual interests",
-          "Saying yes twice to soften the eventual no so it's barely noticed",
-          "Asking the other person to say yes twice before you'll consider saying no",
-          "A negotiation tactic used only in legal contract disputes"
+          "Saying yes twice first, so that the eventual no is barely noticed by the other person in the natural flow of the talk",
+          "Asking the other person to say yes twice before you will consider saying no to their original, more ambitious request",
+          "A negotiation tactic that is only ever used in formal legal contract disputes and never in everyday life at all"
         ],
         "correctIndex": 0,
         "explanation": "The Yes-No-Yes structure works because it separates the relationship (affirmed in the first yes) from the specific refusal (the no) from the path forward (the second yes) — so the no doesn't have to carry the full weight of the relationship on its own."
@@ -782,10 +782,10 @@
       "quiz": {
         "question": "Why did citing 'the majority of guests in this room' outperform a generic environmental appeal in the hotel towel-reuse experiments?",
         "options": [
-          "Because guests dislike environmental messaging on principle",
+          "Because guests fundamentally dislike environmental messaging on principle, so any more specific claim outperforms it",
           "Because specific, local social proof (people like me, in this exact situation) is a stronger behavioral cue than an abstract appeal to values, since it signals what similar others are actually doing right now",
-          "Because the towel signs were printed in a larger font",
-          "Because guests were legally obligated to comply with posted hotel policies"
+          "Because the towel signs in the majority-appeal group happened to be printed in a noticeably larger font than the others",
+          "Because guests were legally obligated to comply with any policy posted in their hotel room, whether specific or not"
         ],
         "correctIndex": 1,
         "explanation": "Social proof is strongest when it's specific and similar to the observer's own situation — 'guests in this room' is a much closer, more credible reference group than 'people who care about the environment,' which is why it moved behavior more even though the underlying request was identical."

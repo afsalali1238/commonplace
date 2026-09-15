@@ -226,9 +226,9 @@
       "quiz": {
         "question": "According to W. Brian Arthur, why do knowledge-based technology markets tend toward winner-take-all outcomes?",
         "options": [
-          "Because governments actively regulate these markets to favor one company",
-          "Because consumers are legally required to use the first product that enters a market",
-          "Because technology products always have higher switching costs than physical goods by definition",
+          "Because governments actively regulate these technology markets in order to favor one designated champion company over its potential competitors",
+          "Because consumers are legally required to use the first product that enters a knowledge-based market, which locks in its position permanently no matter what later entrants build",
+          "Because technology products always have much higher switching costs than physical goods by definition, regardless of any network effects or learning dynamics at all",
           "Because high upfront costs combined with near-zero reproduction costs, network effects, and switching costs create a feedback loop where an early lead compounds into a further lead, unlike traditional industries with diminishing returns"
         ],
         "correctIndex": 3,

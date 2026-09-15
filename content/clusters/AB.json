@@ -344,9 +344,9 @@
       "quiz": {
         "question": "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
         "options": [
-          "Older species were far less likely to go extinct than newly evolved ones",
-          "All species in the fossil record went extinct at exactly the same rate regardless of type",
-          "Extinction rates were found to be entirely random and unrelated to any biological factor",
+          "Older species in the fossil record were consistently found to be far less likely to go extinct than newly evolved ones",
+          "All species in the fossil record went extinct at exactly the same rate, regardless of their size, type, or geological era",
+          "Extinction rates were found to be entirely random in time and unrelated to any measurable biological factor whatsoever",
           "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too"
         ],
         "correctIndex": 3,

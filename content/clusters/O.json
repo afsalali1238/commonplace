@@ -206,7 +206,7 @@
       "layer2": "Where in your life right now is there a gap between what you say matters to you and what you actually do? Frankl would locate the 'existential vacuum' exactly there — what's one concrete action that would close that gap, even slightly, this week?",
       "quiz": {
         "question": "How long did it take Frankl to write the first draft of this book after his liberation from the camps?",
-        "options": ["Nine months", "Nine years", "Nine days", "He wrote it while still imprisoned"],
+        "options": ["Nine months", "Nine years", "Nine days", "Nine weeks"],
         "correctIndex": 2,
         "explanation": "Frankl poured his Holocaust experiences into a manuscript over nine days, driven by the profound realization that those who could find meaning in their suffering were the ones most likely to survive."
       },
@@ -689,9 +689,9 @@
         "question": "What is the 'hard problem of consciousness' as defined by Chalmers?",
         "options": [
           "Explaining why physical processing is accompanied by subjective experience at all, beyond just explaining the functions themselves",
-          "The difficulty of measuring brain activity accurately",
-          "The technical challenge of building conscious AI",
-          "Determining which animals are capable of feeling pain"
+          "The difficulty of measuring brain activity accurately enough to correlate it with reported subjective experience",
+          "The technical challenge of building artificial systems that are genuinely conscious rather than merely simulating one",
+          "The problem of determining which non-human animals are capable of feeling pain in any meaningful sense"
         ],
         "correctIndex": 0,
         "explanation": "Chalmers split the study of mind into 'easy' problems (how the brain processes data) and the 'hard' problem (why that processing actually *feels* like something from the inside)."
