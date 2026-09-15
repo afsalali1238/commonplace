@@ -8,6 +8,13 @@ import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  server: {
+    // Vite blocks unknown Host headers by default; the app is developed
+    // behind tunneling/preview proxies (Arena, ngrok, LAN devices) whose
+    // hostnames aren't known ahead of time. Dev-server only — production
+    // serves the built app from Vercel and is unaffected.
+    allowedHosts: true,
+  },
   resolve: {
     dedupe: ["react", "react-dom"],
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment

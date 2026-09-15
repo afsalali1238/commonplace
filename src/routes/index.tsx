@@ -16,7 +16,8 @@ import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
 import { BrandMark } from "@/components/BrandMark";
 import { IdeaGlyph } from "@/components/Artwork";
-import { FeedSkeleton } from "@/components/Skeleton";
+import { Bone, FeedSkeleton } from "@/components/Skeleton";
+import { useNodeBody, withBody } from "@/lib/bodies";
 import { buildFeed, type FeedSource } from "@/lib/feed";
 import { getFeedSeed, getSessionVisited } from "@/lib/feedSession";
 import { useStore, dueCount, readNextNodes } from "@/lib/store";
@@ -464,6 +465,10 @@ function FeedCard({
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
   const [quiz, setQuiz] = useState(false);
+  // The quiz lives in the on-demand body half of the node. Fetch only when
+  // the reader actually opens the quiz — a feed session can skim dozens of
+  // cards and must not pull a cluster file per card on mount.
+  const bodyState = useNodeBody(quiz ? node : undefined);
 
   function toggleReadNext() {
     if (queued) removeReadNext(node.id);
@@ -548,7 +553,23 @@ function FeedCard({
           </span>
         </Link>
 
-        {quiz && <Quiz node={node} />}
+        {quiz && (
+          <div>
+            {bodyState.status === "ready" ? (
+              <Quiz node={withBody(node, bodyState.body)} />
+            ) : bodyState.status === "error" ? (
+              <p className="mt-10 border-t border-line pt-8 text-sm text-ink-soft">
+                Couldn't load the quiz — you may be offline. The summary above is always available.
+              </p>
+            ) : (
+              <div aria-busy="true" className="mt-10 space-y-2.5 border-t border-line pt-8">
+                <Bone className="h-5 w-3/4" />
+                <Bone className="h-10 w-full" />
+                <Bone className="h-10 w-full" />
+              </div>
+            )}
+          </div>
+        )}
 
         <div id={`feed-card-meta-${node.id}`} className="mt-5 flex items-center justify-between">
           <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">

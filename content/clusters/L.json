@@ -110,9 +110,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
           "archive": {
-            "status": "full",
-            "path": "content/sources/L3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -198,9 +196,7 @@
           "source": "Farnam Street",
           "url": "https://fs.blog/opportunity-cost/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/L5-1.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -247,9 +243,7 @@
           "source": "Farnam Street",
           "url": "https://fs.blog/asymmetric-bets/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/L6-1.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -365,9 +359,7 @@
           "url": "https://ed.ted.com/lessons/5-tips-to-improve-your-critical-thinking-samantha-agoos",
           "type": "video",
           "archive": {
-            "status": "full",
-            "path": "content/sources/L10-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -405,9 +397,7 @@
           "url": "https://ed.ted.com/ted_ed_collections/the-demon-of-reason",
           "type": "video",
           "archive": {
-            "status": "full",
-            "path": "content/sources/L11-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

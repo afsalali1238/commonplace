@@ -115,9 +115,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -154,9 +152,7 @@
           "source": "Bueno de Mesquita & Smith / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Selectorate_theory",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -193,9 +189,7 @@
           "source": "Montesquieu / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Separation_of_powers",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -232,9 +226,7 @@
           "source": "Robert Michels",
           "url": "https://en.wikipedia.org/wiki/Iron_law_of_oligarchy",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -271,9 +263,7 @@
           "source": "Joseph Nye / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Soft_power",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -310,9 +300,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Overton_window",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AI8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

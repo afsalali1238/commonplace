@@ -37,9 +37,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Ship_of_Theseus",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y1-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -76,9 +74,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Arrow_of_time",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y2-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -115,9 +111,7 @@
           "source": "Stanford Encyclopedia of Philosophy",
           "url": "https://plato.stanford.edu/entries/consciousness/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y3-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -154,9 +148,7 @@
           "source": "House overview (linguistics)",
           "url": "https://www.youtube.com/watch?v=8nvt8zGY7cc",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -193,9 +185,7 @@
           "source": "Banach & Tarski / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -232,9 +222,7 @@
           "source": "House overview (Stoic philosophy / problem of luck)",
           "url": "https://www.youtube.com/watch?v=lQLBgPAcRhk",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -311,9 +299,7 @@
           "source": "Simons & Chabris / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Inattentional_blindness",
           "archive": {
-            "status": "full",
-            "path": "content/sources/Y8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         },
         {

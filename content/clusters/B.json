@@ -87,9 +87,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation",
           "archive": {
-            "status": "full",
-            "path": "content/sources/B2-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         },
         {
@@ -389,9 +387,7 @@
           "source": "Reid Hoffman",
           "url": "https://www.reidhoffman.org/linkedin-pitch-to-greylock/",
           "archive": {
-            "status": "full",
-            "path": "content/sources/B8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

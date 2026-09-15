@@ -215,9 +215,7 @@
           "source": "National Institute of General Medical Sciences",
           "url": "https://nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AD5-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -254,9 +252,7 @@
           "source": "Joseph LeDoux / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Amygdala",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AD6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -293,9 +289,7 @@
           "source": "Rizzolatti & Craighero / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Mirror_neuron",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AD7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -332,9 +326,7 @@
           "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Epigenetics",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AD8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

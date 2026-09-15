@@ -524,7 +524,6 @@
   <url><loc>https://commonplace.app/read/A15-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/A16-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B1-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/B2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B2-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B3-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B4-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -534,11 +533,9 @@
   <url><loc>https://commonplace.app/read/B6-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/B7-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/B8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/C4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/C7-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -554,10 +551,6 @@
   <url><loc>https://commonplace.app/read/D6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/D7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/D8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/D9-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/D10-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/D11-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/D12-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/D13-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/D14-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/D14-1</loc><lastmod>2026-09-15</lastmod></url>
@@ -568,9 +561,6 @@
   <url><loc>https://commonplace.app/read/E3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/E4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/E5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/E6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/E7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/E8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/F1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/F1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/F2-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -581,9 +571,6 @@
   <url><loc>https://commonplace.app/read/F4-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/F5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/F5-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/F6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/F7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/F8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/G1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/G1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/G2-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -616,84 +603,34 @@
   <url><loc>https://commonplace.app/read/H7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/H7-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/H8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I1-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I9-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I10-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I11-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I12-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I13-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I14-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I15-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I16-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I17-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I18-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I19-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I20-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I21-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I22-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I23-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/I24-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/I25-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/I26-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/I26-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/I27-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J6-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J7-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J8-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J9-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/P5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J10-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J10-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J11-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J11-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J12-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J12-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J13-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J13-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J14-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J15-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J16-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J16-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J17-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J17-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J18-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J18-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J19-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J19-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J20-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J20-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J21-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J22-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J22-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J23-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J24-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J24-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J25-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J26-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J26-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J27-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J27-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J28-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J28-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J29-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J29-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J30-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/J30-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J31-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J32-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/J34-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -708,20 +645,13 @@
   <url><loc>https://commonplace.app/read/K4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/K5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/K6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/K7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/K8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/L3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/L5-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/L6-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/L10-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/L11-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L12-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L13-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/L15-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -733,7 +663,6 @@
   <url><loc>https://commonplace.app/read/M1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/M2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/M3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/M4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/M5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/M6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/M7-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -745,8 +674,6 @@
   <url><loc>https://commonplace.app/read/N5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/N6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/N7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/N8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/N9-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/N12-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/N13-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/N14-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -802,18 +729,15 @@
   <url><loc>https://commonplace.app/read/P1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/P3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P6-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/P7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/P8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Q6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Q9-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -864,9 +788,6 @@
   <url><loc>https://commonplace.app/read/T3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/T4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/T5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/T6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/T7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/T8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/U1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/U2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/U3-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -896,108 +817,51 @@
   <url><loc>https://commonplace.app/read/V8-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/V9-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/V10-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/W1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/W2-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W4-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W5-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/W6-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/W7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/W8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X1-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X7-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/X8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y1-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/Y7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Y8-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z1-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/Z8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA5-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AA7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AA9-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AB4-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AB6-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB7-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AB9-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AC1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AC2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AC8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD2-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD3-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AD4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AD5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AD6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AD7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AD8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AE1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AE1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AE2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AE2-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AE3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AE4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AE5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AE6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AE7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AE8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AF1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AF1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AF2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AF2-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AF8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AG1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AG1-1</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AG2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AG2-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AG8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AH1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AH2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AH3-0</loc><lastmod>2026-09-15</lastmod></url>
@@ -1009,29 +873,12 @@
   <url><loc>https://commonplace.app/read/AH9-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AI1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AI2-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AI8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AJ1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AJ2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AJ3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AJ4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AJ5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AJ6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AJ7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AJ8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AK1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AK2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AK2-1</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK3-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK4-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK5-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK6-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK7-0</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://commonplace.app/read/AK8-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AL1-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AL2-0</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://commonplace.app/read/AL3-0</loc><lastmod>2026-09-15</lastmod></url>

@@ -44,7 +44,7 @@ export function seededPermutation(n: number, key: string, salt = 0): number[] {
   return order;
 }
 
-/** 
+/**
  * Fisher-Yates shuffle - unbiased, O(n). Mutates a copy, never the input.
  * Pass a custom rng for deterministic shuffles (seeded); defaults to Math.random.
  */

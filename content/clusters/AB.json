@@ -164,9 +164,7 @@
           "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance",
           "type": "paper",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AB4-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -244,9 +242,7 @@
           "url": "https://en.wikipedia.org/wiki/Punctuated_equilibrium",
           "type": "paper",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AB6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

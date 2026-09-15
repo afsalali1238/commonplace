@@ -187,8 +187,8 @@ function ClusterDetail({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; node
         </div>
       </div>
       <div className="divide-y divide-line border-y border-line">
-        {nodes.map((n, i) => (
-          <TrackRow key={n.id} node={n} index={i} />
+        {nodes.map((n) => (
+          <TrackRow key={n.id} node={n} />
         ))}
       </div>
     </div>

@@ -52,12 +52,12 @@ export function useOfflineWarmup() {
       if (cancelled) return;
 
       const firstNodeId = NODES[0]?.id;
-      // Every bottom-nav tab, sourced from MAIN_TABS (see lib/mainRoutes.ts)
-      // instead of a second hand-maintained list - a tab going missing here
-      // was exactly how Skim and Explore fell out of the offline precache
-      // once already. "/review" isn't a bottom-nav tab but is still a
-      // primary destination (linked from You), so it's added on top.
-      const documentUrls: string[] = [...MAIN_TAB_PATHS, "/review"];
+      // Every bottom-nav tab plus every secondary destination, both sourced
+      // from lib/mainRoutes.ts instead of hand-maintained lists here - the
+      // exact bug this guards is a destination silently falling out of the
+      // offline precache, which is how Skim and Explore fell out once
+      // already (and /review until it rejoined the tab bar).
+      const documentUrls: string[] = [...MAIN_TAB_PATHS, ...SECONDARY_PATHS];
       if (firstNodeId) documentUrls.push(`/node/${firstNodeId}`);
 
       for (const url of documentUrls) {
@@ -69,8 +69,10 @@ export function useOfflineWarmup() {
         if (cancelled) return;
         await router.preloadRoute({ to }).catch(() => {});
       }
-      if (cancelled) return;
-      await router.preloadRoute({ to: "/review" }).catch(() => {});
+      for (const to of SECONDARY_PATHS) {
+        if (cancelled) return;
+        await router.preloadRoute({ to }).catch(() => {});
+      }
       if (cancelled) return;
       if (firstNodeId) {
         await router.preloadRoute({ to: "/node/$id", params: { id: firstNodeId } }).catch(() => {});

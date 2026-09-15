@@ -246,9 +246,7 @@
           "source": "William Sharpe / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Capital_asset_pricing_model",
           "archive": {
-            "status": "full",
-            "path": "content/sources/E6-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -285,9 +283,7 @@
           "source": "Eugene Fama / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
           "archive": {
-            "status": "full",
-            "path": "content/sources/E7-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],
@@ -324,9 +320,7 @@
           "source": "J. L. Kelly / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Kelly_criterion",
           "archive": {
-            "status": "full",
-            "path": "content/sources/E8-0.md",
-            "retrieved": "2026-09-06"
+            "status": "unavailable"
           }
         }
       ],

@@ -1,8 +1,10 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { NODE_BY_ID } from "@/data/nodes";
+import { NODE_BY_ID, type NodeIndex } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
 import { Quiz } from "@/components/Quiz";
+import { Bone } from "@/components/Skeleton";
+import { useNodeBody, withBody } from "@/lib/bodies";
 import { useStore, dueIds, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
@@ -10,7 +12,7 @@ import { FirstTimeHint } from "@/components/FirstTimeHint";
 export const Route = createFileRoute("/review")({
   head: () => ({
     meta: [
-      { title: "Review — Unknown" },
+      { title: "Review — Commonplace" },
       { name: "description", content: "Spaced repetition for the ideas you've learned." },
     ],
   }),
@@ -34,7 +36,10 @@ function ReviewScreen() {
   // under a monotonically increasing index).
   const queue = useMemo(() => {
     if (!hydrated) return [] as string[];
-    const ids = dueIds(review);
+    // Filter to ids that still exist in the corpus: a node can be merged or
+    // removed between releases while its review entry persists locally, and
+    // an unknown id must never reach NODE_BY_ID[...].
+    const ids = dueIds(review).filter((id) => NODE_BY_ID[id]);
     return ids.sort(() => Math.random() - 0.5);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hydrated]);
@@ -66,11 +71,9 @@ function ReviewScreen() {
   }
 
   const id = queue[idx];
+  // Guaranteed by the queue filter above (due ids that no longer exist are
+  // dropped at memo time) — no setState-during-render skip hack needed.
   const node = NODE_BY_ID[id];
-  if (!node) {
-    setIdx(idx + 1);
-    return null;
-  }
 
   return (
     <div className="px-5 pt-8 pb-10">
@@ -90,10 +93,9 @@ function ReviewScreen() {
       )}
 
       <div className="mt-8">
-        <Quiz
+        <ReviewQuiz
           key={node.id}
-          node={node}
-          hideHeader
+          index={node}
           // Box number as the shuffle salt: each time this node comes back
           // around the options sit in a different order, so a 3rd sitting
           // can't be passed by remembering "it was C last time".
@@ -119,5 +121,44 @@ function ReviewScreen() {
         />
       </div>
     </div>
+  );
+}
+
+/**
+ * One due card's quiz. Lives in its own component because the quiz question
+ * comes from the on-demand body half of the node: the hook must run after
+ * ReviewScreen's early returns (caught-up screen, hydration placeholder),
+ * which only a child component allows.
+ */
+function ReviewQuiz({
+  index,
+  salt,
+  renderFooter,
+}: {
+  index: NodeIndex;
+  salt: number;
+  renderFooter: (correct: boolean) => ReactNode;
+}) {
+  const state = useNodeBody(index);
+
+  if (state.status === "error") {
+    return (
+      <p className="text-sm text-ink-soft">
+        Couldn't load this question — you may be offline. It will be back next session.
+      </p>
+    );
+  }
+  if (state.status !== "ready") {
+    return (
+      <div aria-busy="true" className="space-y-2.5">
+        <Bone className="h-6 w-5/6" />
+        <Bone className="h-12 w-full" />
+        <Bone className="h-12 w-full" />
+        <Bone className="h-12 w-full" />
+      </div>
+    );
+  }
+  return (
+    <Quiz node={withBody(index, state.body)} hideHeader salt={salt} renderFooter={renderFooter} />
   );
 }

@@ -20,7 +20,7 @@ export function FeedSkeleton() {
       <header className="shrink-0 flex items-center justify-between px-5 py-2.5">
         <div className="flex items-center gap-2">
           <img src="/logo.svg" alt="" className="h-6 w-6 spiral-spin" />
-          <span className="font-serif text-lg tracking-tight text-ink">Unknown</span>
+          <span className="font-serif text-lg tracking-tight text-ink">Commonplace</span>
         </div>
         <Bone className="h-3 w-14" />
       </header>
