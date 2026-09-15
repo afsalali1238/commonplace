@@ -124,10 +124,10 @@
       "quiz": {
         "question": "What combination of techniques allowed AlexNet to train a deep network fast enough to be practical in 2012?",
         "options": [
-          "A completely new type of computer chip designed specifically for the competition",
-          "Manually hand-labeling every single feature the network should look for",
+          "A specialized analog optical processor engineered exclusively for image classification that replaced conventional silicon semiconductor chips during training",
+          "An exhaustive manual labeling campaign where human annotators explicitly marked every intermediate visual feature and pixel coordinate before network training",
           "The ReLU activation function (faster training than sigmoid), dropout (reduces overfitting), and splitting the model across two GPUs to handle its 60 million parameters",
-          "Running the entire model on a single CPU over several months"
+          "Executing the entire feed-forward model sequentially on a solitary high-clock-speed CPU across several months of continuous uninterrupted computation"
         ],
         "correctIndex": 2,
         "explanation": "AlexNet triggered the deep learning revolution by combining algorithmic improvements (ReLU, dropout) with massive parallel processing on GPUs to train a remarkably deep and accurate network."
@@ -275,10 +275,10 @@
       "quiz": {
         "question": "What is 'in-context learning,' as demonstrated by GPT-3?",
         "options": [
-          "Retraining the model's weights every time it sees a new task",
+          "Iteratively updating the model's underlying neural weights through gradient descent whenever a user submits an unfamiliar task in the chat window",
           "Performing a new task correctly just from a description or a few examples shown in the prompt itself, without any weight updates or retraining",
-          "Learning exclusively from a fixed, curated textbook dataset",
-          "A method requiring internet access during inference to look up answers"
+          "Restricting the model's outputs exclusively to direct quotations retrieved from a curated, high-quality digital textbook reference collection",
+          "Querying external internet search engines dynamically during runtime inference to retrieve verified factual solutions before answering"
         ],
         "correctIndex": 1,
         "explanation": "GPT-3 proved that if a language model is scaled massively, it develops the emergent ability to perform new tasks simply by reading instructions in the prompt, without needing to be retrained."
@@ -326,10 +326,10 @@
       "quiz": {
         "question": "What specific guidance from the original Scaling Laws paper was later overturned by DeepMind's Chinchilla paper?",
         "options": [
-          "The claim that neural networks require labeled data to train at all",
-          "The claim that GPU hardware would never become a bottleneck for AI progress",
+          "The foundational premise that artificial neural networks require vast quantities of labeled textual data rather than self-supervised objectives to master language",
+          "The theoretical prediction that hardware semiconductor constraints and GPU memory bandwidth would never present practical bottlenecks for deep learning progress",
           "The recommendation that, for a fixed compute budget, model size should be scaled up much faster than training data — Chinchilla showed the two should scale together",
-          "The idea that language models could ever perform translation tasks"
+          "The hypothesis that large autoregressive language models could ever successfully perform zero-shot multilingual translation tasks across diverse language families"
         ],
         "correctIndex": 2,
         "explanation": "The initial scaling laws suggested that throwing more compute at a larger model was the best way to improve performance, though this was later corrected to show data must scale equally."

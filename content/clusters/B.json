@@ -71,10 +71,10 @@
       "quiz": {
         "question": "Why did Olsen and Anderson pitch selling circuit modules before pitching interactive computers?",
         "options": [
-          "Circuit modules were more profitable long-term than computers would ever be",
+          "Circuit module manufacturing was projected to deliver much wider profit margins and steady enterprise revenue than interactive computer systems ever could",
           "The computer business had a reputation as an investor money-loser at the time, so a smaller proven product de-risked the pitch and built credibility toward the bigger ambition",
-          "IBM required them to prove circuit expertise before entering the computer market",
-          "ARD's charter legally prohibited it from funding computer companies directly"
+          "Industry market leaders like IBM legally mandated that new hardware suppliers prove their sub-assembly competence before licensing commercial system designs",
+          "The venture firm's investment committee was contractually barred by its founding charter from providing seed financing to end-user computing manufacturers"
         ],
         "correctIndex": 1,
         "explanation": "Selling smaller, proven components (circuit modules) first generated immediate cash flow and proved the team's competence, which was essential to overcome investor skepticism about the actual goal of building computers."
@@ -120,10 +120,10 @@
       "quiz": {
         "question": "What did Roelof Botha's YouTube investment memo prioritize as evidence the company was worth backing, despite having little revenue?",
         "options": [
-          "A signed advertising contract with a major brand",
-          "A patent filing for YouTube's video compression technology",
+          "A confirmed multi-million-dollar annual sponsorship agreement already signed with a dominant consumer electronics conglomerate",
+          "A proprietary, patent-protected compression algorithm that reduced backend bandwidth consumption far below existing industry benchmarks",
           "The explosive volume and growth rate of user-generated video uploads, as a leading indicator of becoming the default place for online video",
-          "Projected profitability within the first 12 months"
+          "A highly conservative financial model demonstrating GAAP operating profitability and positive cash flow within the first full year"
         ],
         "correctIndex": 2,
         "explanation": "Sequoia looked past YouTube's lack of a clear revenue model, recognizing that its astonishing compounding growth in user-generated content and viewership signaled it would become the foundational platform for internet video."
@@ -271,10 +271,10 @@
       "quiz": {
         "question": "Why did the bootstrapped 'cereal box' story matter to Airbnb's fundraising, beyond being a memorable anecdote?",
         "options": [
-          "It generated enough direct revenue to fund the company without needing investors",
+          "It generated enough direct consumer product profit to achieve sustainable cash-flow breakeven without needing any external institutional venture capital support",
           "It demonstrated the founders' resourcefulness and execution under extreme constraint, which mattered for trust during a financial crisis when the core idea itself looked unproven",
-          "It was a marketing campaign specifically designed to attract Sequoia's attention",
-          "It proved there was already strong demand for the room-booking platform itself"
+          "It was an elaborately orchestrated media stunt designed primarily to capture the attention of tier-one venture firms by demonstrating sophisticated brand marketing",
+          "It provided rigorous empirical validation that widespread consumer demand for temporary homestays and peer-to-peer room rentals already existed at national scale"
         ],
         "correctIndex": 1,
         "explanation": "The 'Obama O's' cereal boxes proved to investors that the founders possessed extreme grit, resourcefulness, and a 'cockroach' survival mentality during a severe economic downturn."

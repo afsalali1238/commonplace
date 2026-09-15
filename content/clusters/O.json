@@ -345,10 +345,10 @@
       "quiz": {
         "question": "According to Kierkegaard, what makes despair so dangerous?",
         "options": [
-          "It always causes visible sadness that others can identify",
+          "It manifests as overt emotional sorrow and chronic lethargy that outside observers can immediately recognize",
           "It is a structural failure in the self's relation to itself, and the person carrying it often doesn't know they have it",
-          "It only affects people who have failed at their goals",
-          "It is identical to clinical depression"
+          "It strikes exclusively those individuals who have experienced catastrophic material or professional failure in life",
+          "It represents a temporary neurochemical imbalance that can be resolved entirely through pharmacological intervention"
         ],
         "correctIndex": 1,
         "explanation": "Kierkegaard defines despair not as sadness, but as a spiritual misalignment—a refusal to be one's true self. Because it's a structural condition, people can be in profound despair while outwardly appearing happy."
@@ -394,10 +394,10 @@
       "quiz": {
         "question": "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
         "options": [
-          "How to prove that free will exists",
-          "How to reconcile existentialism with Christian theology",
+          "How to mathematically prove the existence of human metaphysical free will using empirical cognitive science",
+          "How to reconcile radical existential freedom with traditional Christian scholastic dogma and divine command theory",
           "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes'",
-          "How to define happiness scientifically"
+          "How to formulate an objective psychological metric for defining and measuring human life satisfaction"
         ],
         "correctIndex": 2,
         "explanation": "Beauvoir tackled the biggest critique of existentialism: if there is no objective morality, why not be evil? She argued that since our freedom depends on the freedom of others, to oppress others is to contradict our own existence."
@@ -443,9 +443,9 @@
       "quiz": {
         "question": "What is the core discipline Marcus Aurelius repeatedly practices in Meditations?",
         "options": [
-          "Avoiding all difficult emotions through meditation techniques",
-          "Withdrawing from public and political life to focus on philosophy",
-          "Proving the existence of the Stoic gods through logic",
+          "Suppressing all instinctive emotional impulses through rigorous isolation and ascetic deprivation in private meditation",
+          "Relinquishing all imperial administrative obligations to pursue undisturbed metaphysical contemplation in the countryside",
+          "Constructing formal syllogistic proofs to demonstrate the benevolent design and rational providence of the pantheistic cosmos",
           "Separating what is in your control (judgments, reactions) from what isn't (external events), and only directing effort at the former"
         ],
         "correctIndex": 3,
@@ -541,10 +541,10 @@
       "quiz": {
         "question": "What does the Tao Te Ching's image of water illustrate?",
         "options": [
-          "That physical strength always overcomes obstacles eventually",
+          "That relentless physical assertion and unyielding discipline will reliably overpower opposing obstacles in the natural world",
           "That yielding, low-friction action can be more powerful over time than direct force, because it avoids generating resistance",
-          "That emotions should be suppressed to achieve inner peace",
-          "That leaders should remain completely passive and never act"
+          "That turbulent human emotions should be systematically suppressed through cognitive detachment to attain inner stillness",
+          "That wise statesmen should practice total administrative inaction and avoid participating in civic governance altogether"
         ],
         "correctIndex": 1,
         "explanation": "The Taoist concept of Wu Wei (non-action) doesn't mean doing nothing; it means acting effortlessly in alignment with the natural flow of things, much like water carving through rock by yielding to gravity."
@@ -639,9 +639,9 @@
       "quiz": {
         "question": "What is Nietzsche most worried about when he declares 'God is dead'?",
         "options": [
-          "That people will stop believing in an afterlife",
-          "That religious institutions will lose political power",
-          "That science will fail to explain the universe",
+          "A sudden resurgence of ancient dogmatic superstitions and clerical tyranny across modern European political systems",
+          "The total geopolitical collapse of traditional monarchies and aristocratic governance structures across the continent",
+          "The permanent inability of the natural sciences to offer coherent empirical explanations for the physical universe",
           "Nihilism — the collapse of meaning and values once their traditional foundation is gone, with nothing yet built to replace it"
         ],
         "correctIndex": 3,
@@ -786,10 +786,10 @@
       "quiz": {
         "question": "What does Kant's categorical imperative test for?",
         "options": [
-          "Whether an action produces the best overall outcome",
-          "Whether an action is legal in a given society",
+          "Whether an action maximizes aggregate hedonic satisfaction and minimizes physical suffering for the greatest number",
+          "Whether a chosen behavior conforms to the explicit statutory statutes and cultural norms of a sovereign jurisdiction",
           "Whether the underlying principle behind an action could be willed to become a universal law that everyone follows",
-          "Whether an action makes the person performing it happy"
+          "Whether an individual's decision produces lasting personal happiness and emotional equilibrium for the actor"
         ],
         "correctIndex": 2,
         "explanation": "Kant argued that morality must be based on pure reason, not outcomes. The Categorical Imperative demands that you only act according to rules that you would logically want everyone else in the world to follow."
@@ -1081,9 +1081,9 @@
         "question": "What is Rawls's 'veil of ignorance' thought experiment used to determine?",
         "options": [
           "What principles of justice rational people would choose for a society if they didn't know what position they'd occupy within it",
-          "The best strategy for winning a negotiation",
-          "Whether democracy is superior to other forms of government",
-          "How to eliminate all forms of inequality immediately"
+          "How competitive market participants can maximize their bargaining power during bilateral contract negotiations",
+          "Whether constitutional representative democracy is morally superior to all alternative historical systems of governance",
+          "What administrative mechanisms would be required to enforce absolute material and income equality across all citizens"
         ],
         "correctIndex": 0,
         "explanation": "Rawls argued that true justice requires impartiality. The 'veil of ignorance' forces you to design a society's rules without knowing if you will be born rich or poor, healthy or sick, ensuring you design a system fair to the worst-off."
@@ -1361,9 +1361,9 @@
       "quiz": {
         "question": "What operational test does Al-Beik propose for judging whether a technology or system is genuinely 'people-first'?",
         "options": [
-          "Whether the system generates the most revenue for its owners.",
-          "Whether the system uses the most advanced AI available.",
-          "Whether the system has the fewest number of steps to complete a task.",
+          "Whether the platform maximizes lifetime customer engagement and monetization efficiency for the enterprise operating the underlying service.",
+          "Whether the architecture incorporates autonomous machine learning agents and cutting-edge neural models to automate all critical user workflows.",
+          "Whether the user interface minimizes the total number of cognitive interactions and physical clicks required to complete a transactional task.",
           "Whether the system is designed for a person who is allowed to change their mind, rather than one whose past behavior is assumed to fix their future."
         ],
         "correctIndex": 3,

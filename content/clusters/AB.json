@@ -62,9 +62,9 @@
         "question": "What problem did Hamilton's theory of inclusive fitness solve that pure individual-survival selection couldn't explain?",
         "options": [
           "Why animals sometimes sacrifice their own survival or reproduction to help close relatives survive and reproduce",
-          "Why some species migrate seasonally",
-          "Why mutation rates vary between species",
-          "Why predator populations cycle with prey populations"
+          "Why diverse animal populations coordinate seasonal migratory voyages across international geographical barriers",
+          "Why baseline genetic mutation rates vary dramatically between rapidly reproducing single-celled and complex species",
+          "Why wild predator populations exhibit cyclical mathematical fluctuations synchronized with regional prey densities"
         ],
         "correctIndex": 0,
         "explanation": "Pure individual selection struggles to explain self-sacrificing altruism; Hamilton's insight was that a gene can spread by helping copies of itself in relatives survive, even at a cost to the individual carrying it."
@@ -186,9 +186,9 @@
       "quiz": {
         "question": "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
         "options": [
-          "It proved that genetics and evolution are completely unrelated fields that should be studied separately",
-          "It disproved Mendel's laws of inheritance in favor of blending inheritance",
-          "It showed that natural selection only applies to single-celled organisms",
+          "It concluded that molecular genetics and evolutionary biology represent fundamentally incompatible scientific paradigms that operate on entirely distinct timescales and must be studied within separate disciplines",
+          "It definitively invalidated Gregor Mendel's particulate laws of genetic segregation in favor of continuous ancestral blending models, proving that individual mutations cannot persist across generational lineages",
+          "It demonstrated that Darwinian natural selection operates exclusively upon primitive single-celled organisms, whereas higher multicellular organisms evolve primarily through directly acquired behavioral adaptations",
           "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population"
         ],
         "correctIndex": 3,
@@ -304,10 +304,10 @@
       "quiz": {
         "question": "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
         "options": [
-          "Because DNA molecules can only exist inside a laboratory",
-          "Because DNA has no physical structure and exists only as an abstract concept",
+          "Because nucleic acid polymers can only maintain chemical stability when synthesized under artificial, controlled temperature gradients within modern laboratories",
+          "Because genetic code functions purely as an abstract informational concept devoid of physical stereochemical constraints or molecular structural requirements",
           "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
-          "Because the double helix shape prevents any copying from occurring at all"
+          "Because the tightly twisted double-helical configuration physically blocks biochemical access, requiring cells to generate entirely novel chromosomes from scratch"
         ],
         "correctIndex": 2,
         "explanation": "The specific pairing rules (A with T, G with C) mean that if the two strands separate, each one alone contains enough information to rebuild an exact copy of its original partner — the structure itself explains the copying mechanism, which is why the paper's authors immediately flagged the implication."

@@ -132,10 +132,10 @@
       "quiz": {
         "question": "Regret minimization mostly protects against which asymmetry?",
         "options": [
-          "That people are too optimistic about the future.",
+          "That human decision-makers exhibit unwarranted, chronic optimism when assessing future outcomes.",
           "That short-term risks feel large while long-term inaction quietly compounds into the biggest regret.",
-          "That risk is impossible to measure.",
-          "That decisions have no consequences."
+          "That statistical probability cannot be reliably estimated in complex, fast-moving environments.",
+          "That high-stakes strategic choices rarely produce lasting emotional or practical consequences."
         ],
         "correctIndex": 1,
         "explanation": "When facing a difficult choice, project yourself to age 80 and ask which decision you will regret not taking. This framework cuts through short-term fear and clarifies long-term priorities."
@@ -218,10 +218,10 @@
       "quiz": {
         "question": "A venture firm loses money on 9 of 10 investments but the 10th returns 50x. Why does the firm still come out far ahead?",
         "options": [
-          "Because it correctly predicted which startup would win in advance.",
+          "Because investment partners possessed insider prescience that let them accurately identify the single breakout winner prior to fund deployment.",
           "Because the downside per bet was capped while the upside on the winner was effectively uncapped, so one win overwhelms nine capped losses.",
-          "Because diversification always guarantees a positive return.",
-          "Because losing bets don't count against fund performance."
+          "Because broad index diversification guarantees a mathematically positive net return across any arbitrary cohort of early-stage private startups.",
+          "Because failed portfolio investments are written off against future tax liabilities and do not diminish reported fund performance benchmarks."
         ],
         "correctIndex": 1,
         "explanation": "In domains like venture capital or extreme risk-taking, the math changes: you don't need a high win rate, you just need a few wins that are so massive they render your frequent losses irrelevant."
@@ -344,9 +344,9 @@
         "question": "Per this framework, what is the most common reason people reason badly, according to the lesson's own framing?",
         "options": [
           "Skipping one of the concrete steps (like considering other viewpoints) under time pressure, rather than a deficit of ability.",
-          "A lack of raw intelligence.",
-          "Not having access to enough information.",
-          "Being naturally predisposed to logical fallacies from birth."
+          "An inherent biological deficiency in general cognitive intelligence and abstract numerical reasoning capacity.",
+          "Operating in modern environments that suffer from an acute shortage of verifiable empirical facts and objective data.",
+          "Possessing genetic neurological predispositions that make individuals naturally susceptible to cognitive fallacies."
         ],
         "correctIndex": 0,
         "explanation": "The lesson frames critical thinking as a trainable process with discrete steps, and frames most reasoning failures as skipped steps rather than a fixed lack of capability."
@@ -419,10 +419,10 @@
       "quiz": {
         "question": "According to this reframing approach, why is a team's initial problem statement risky to treat as fixed?",
         "options": [
-          "Because initial problem statements are always factually incorrect.",
-          "Because problem statements should never be written down.",
+          "Because working problem definitions formulated by operational teams are almost invariably factually inaccurate and analytically flawed.",
+          "Because documenting a strategic problem in written form prematurely commits the organization to obsolete methodological paradigms.",
           "Because the framing already constrains which solutions get considered, so a poor framing can make a solvable problem look unsolvable.",
-          "Because only senior leadership is allowed to define problems."
+          "Because corporate governance rules dictate that only senior executive leadership possesses the authority to articulate challenge definitions."
         ],
         "correctIndex": 2,
         "explanation": "The article's central claim is that framing acts as an invisible filter on the solution space — reframing the question is often what unlocks a solution that direct analysis of the original framing couldn't reach."
@@ -459,9 +459,9 @@
       "quiz": {
         "question": "In the 5 Whys example (car won't start), why is fixing the alternator belt still an incomplete solution?",
         "options": [
-          "Because alternator belts are too expensive to replace regularly.",
-          "Because the car needed a new battery, not a new belt.",
-          "Because five whys is always excessive and three is sufficient.",
+          "Because replacement alternator components are excessively expensive and place an unsustainable financial burden on everyday vehicle owners.",
+          "Because diagnostic testing revealed that the vehicle suffered from a dead electrical battery rather than mechanical belt degradation.",
+          "Because asking five successive diagnostic questions introduces needless cognitive complexity when three inquiries are universally sufficient.",
           "Because it doesn't address the deeper root cause — the absence of a preventive maintenance schedule — which means a similar failure can recur."
         ],
         "correctIndex": 3,
@@ -580,9 +580,9 @@
         "question": "Which quadrant of the Eisenhower Matrix is most commonly neglected, and why?",
         "options": [
           "Important but not urgent, because nothing forces immediate action on it, so it gets crowded out by louder, more urgent demands even though it often produces the most compounding value.",
-          "Urgent and important, because crises are easy to ignore.",
-          "Urgent but not important, because it requires the most skill to complete.",
-          "Neither urgent nor important, because it's usually the majority of any schedule."
+          "Urgent and important, because high-stakes emergencies and pressing deadlines are emotionally exhausting, prompting workers to avoid engaging with critical operational responsibilities.",
+          "Urgent but not important, because handling reactive interruptions and administrative requests requires rare technical expertise that average professionals struggle to execute effectively.",
+          "Neither urgent nor important, because mindless leisure activities and trivial distractions consume the vast majority of weekly working schedules across typical modern organizational teams."
         ],
         "correctIndex": 0,
         "explanation": "Because important-but-not-urgent tasks have no deadline pressure, they're the easiest quadrant to postpone indefinitely — even though this is typically where planning, relationships, and long-term compounding work live."

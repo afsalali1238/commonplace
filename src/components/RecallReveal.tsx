@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useState, useId } from "react";
 import { MicroLabel } from "./MicroLabel";
 
 export function RecallReveal({ text }: { text: string }) {
   const [shown, setShown] = useState(false);
+  const takeawayId = useId();
+
   return (
-    <section className="mt-10 border-t border-line pt-8">
+    <section className="mt-10 border-t border-line pt-8" aria-label="Takeaway recall">
       <MicroLabel>The takeaway — recall it first</MicroLabel>
       <button
+        type="button"
         onClick={() => setShown(true)}
         disabled={shown}
+        aria-expanded={shown}
+        aria-controls={takeawayId}
+        aria-label={shown ? "Takeaway revealed" : "Tap to reveal takeaway"}
         className="mt-3 block w-full text-left"
       >
         <p
+          id={takeawayId}
           className={`font-serif text-2xl leading-snug transition-all duration-300 ${
             shown ? "" : "blur-md select-none"
           }`}

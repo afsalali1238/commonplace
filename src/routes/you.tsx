@@ -351,6 +351,8 @@ function Interests() {
           return (
             <button
               key={tag}
+              type="button"
+              aria-pressed={active}
               onClick={() => toggleInterest(tag)}
               className={cn(
                 "min-h-11 border px-3 py-2 font-serif text-sm",
@@ -366,6 +368,7 @@ function Interests() {
       </div>
       <div className="mt-4 flex items-center gap-4">
         <button
+          type="button"
           onClick={() => {
             redoOnboarding();
             navigate({ to: "/onboarding" });
@@ -375,6 +378,7 @@ function Interests() {
           Redo onboarding
         </button>
         <button
+          type="button"
           onClick={() => {
             resetHints();
             setHintsReset(true);
@@ -435,6 +439,9 @@ function AudioPreferences() {
         {speeds.map((s) => (
           <button
             key={s}
+            type="button"
+            aria-pressed={ttsRate === s}
+            aria-label={`Playback speed ${s}x`}
             onClick={() => setTtsRate(s)}
             className={cn(
               "border px-4 py-2 font-mono text-[11px]",
@@ -532,6 +539,8 @@ function Glossary() {
             <div className="flex items-baseline justify-between">
               <span className="font-serif text-lg text-ink">{g.term}</span>
               <button
+                type="button"
+                aria-label={`Remove glossary term ${g.term}`}
                 onClick={() => remove(g.id)}
                 className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-soft hover:text-accent"
               >
@@ -601,12 +610,14 @@ function Backup() {
       </p>
       <div className="mt-4 flex gap-2">
         <button
+          type="button"
           onClick={onExport}
           className="border border-ink px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink"
         >
           Export JSON
         </button>
         <button
+          type="button"
           onClick={() => fileRef.current?.click()}
           className="border border-line px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
         >

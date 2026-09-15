@@ -103,9 +103,9 @@
         "question": "Why does getting someone to make a small, voluntary commitment early make them more likely to agree to a bigger related request later?",
         "options": [
           "Once someone has acted or stated a position publicly, staying consistent with that self-image becomes a powerful internal pressure, even when the new request is much larger",
-          "It creates a legal obligation to comply with future requests",
-          "Small commitments are usually forgotten, so people default to agreeing anyway",
-          "It has no real effect"
+          "Agreeing to an initial small request establishes a binding legal precedent that obligates the participant to fulfill subsequent related agreements without objection",
+          "Small commitments are quickly forgotten by participants, so their cognitive fatigue leads them to passively approve larger follow-up requests out of sheer habit",
+          "Initial cooperation triggers a sense of indebtedness to the requester, convincing the person that refusing later overtures would be socially unacceptable and rude"
         ],
         "correctIndex": 0,
         "explanation": "Cialdini's commitment-and-consistency principle works because people want to see themselves (and be seen) as consistent — once you've said or done something small, contradicting it later with a refusal creates internal discomfort, which most people resolve by going along with the bigger ask."
@@ -423,9 +423,9 @@
         "question": "According to Malhotra, what do successful resolutions of 'impossible' negotiations typically have in common?",
         "options": [
           "They change the game itself — the process, the players, or the frame of what's being negotiated — rather than just arguing harder for the same position within the existing structure",
-          "One side eventually applies overwhelming pressure until the other concedes",
-          "A neutral third party always makes the final binding decision",
-          "Both sides simply wait until the deadline forces a compromise"
+          "One side eventually applies overwhelming economic leverage and coercive ultimatums until the opposing party has no practical choice but to concede fully",
+          "A formal neutral arbitrator is granted binding authority by treaty or contract to dictate terms that both parties are legally compelled to accept",
+          "Both sides strictly freeze discussions until an external hard deadline forces each team to split the difference evenly across all disputed items"
         ],
         "correctIndex": 0,
         "explanation": "Malhotra's case studies consistently show that the breakthrough in seemingly unsolvable negotiations came from redesigning the negotiation itself — who's involved, how it's structured, or what question is actually on the table — rather than from better arguments made inside an unchanged frame."
@@ -622,10 +622,10 @@
       "quiz": {
         "question": "Why does asking someone for a small favor (the 'Ben Franklin effect') tend to make them like you more, according to this line of research?",
         "options": [
-          "Because people enjoy being asked for favors more than giving compliments",
+          "Because performing a service creates an explicit reciprocal obligation that makes the helper expect generous compensation and return assistance in the future",
           "Because people resolve the discomfort of having helped someone by unconsciously concluding they must like that person, since helping someone you dislike feels inconsistent",
-          "Because favors create a binding legal obligation between two people",
-          "Because it has no measurable effect on liking at all"
+          "Because receiving a request for assistance boosts the helper's perceived social status, creating positive associations with the person who made the humble request",
+          "Because the interaction triggers an innate empathy response that permanently lowers emotional defenses, regardless of prior attitudes toward the requester"
         ],
         "correctIndex": 1,
         "explanation": "The effect works through self-perception: having already done someone a favor, people look for a reason that's consistent with their own action, and 'I must like them' resolves that inconsistency more comfortably than 'I helped someone I don't even like.'"

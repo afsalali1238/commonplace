@@ -114,6 +114,7 @@ export function SearchBar() {
         role="combobox"
         aria-expanded={showPanel}
         aria-controls={listboxId}
+        aria-haspopup="listbox"
         aria-autocomplete="list"
         aria-busy={indexingState}
         autoComplete="off"

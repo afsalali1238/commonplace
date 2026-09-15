@@ -22,10 +22,10 @@
       "quiz": {
         "question": "What is Bostrom's simulation argument actually claiming?",
         "options": [
-          "That we are definitely living in a computer simulation",
+          "That modern empirical physics provides conclusive mathematical evidence proving our physical universe was engineered within an alien ancestor simulation",
           "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one",
-          "That technology will never be advanced enough to simulate consciousness",
-          "That video games will eventually become indistinguishable from reality"
+          "That technological computing limits will permanently prevent future civilizations from ever possessing enough processing power to simulate consciousness",
+          "That photorealistic virtual reality gaming environments will inevitably advance to become experientially indistinguishable from physical baseline reality"
         ],
         "correctIndex": 1,
         "explanation": "Bostrom doesn't definitively claim we are in a simulation. He mathematically argues that either human-like civilizations go extinct, they lose interest in simulations, or we are almost certainly simulated."
@@ -170,9 +170,9 @@
         "question": "What historical decision does Goff's title 'Galileo's Error' refer to?",
         "options": [
           "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope",
-          "Galileo's incorrect claim that the Earth orbits the Sun",
-          "A mathematical error in Galileo's calculation of planetary motion",
-          "Galileo's rejection of Aristotelian philosophy"
+          "Galileo's mistaken historical assertion that the Earth maintains a perfectly circular orbit around the Sun rather than following an elliptical path",
+          "A fundamental mathematical miscalculation in Galileo's early telescopic calculations determining the exact rotational velocities of Jupiter's moons",
+          "Galileo's dogmatic refusal to consider Aristotelian natural philosophy, which delayed the development of classical physics by over a full century"
         ],
         "correctIndex": 0,
         "explanation": "To invent mathematical physics, Galileo deliberately excluded consciousness (colors, smells, feelings) from the scientific domain. Goff argues that trying to explain consciousness using a physics designed to exclude it is impossible."
@@ -355,9 +355,9 @@
       "quiz": {
         "question": "According to Dark Forest Theory, why does a civilization instantly annihilate a newly discovered species?",
         "options": [
-          "To harvest their planet's natural resources for energy.",
-          "Because of religious or ideological fanaticism.",
-          "Because they are bored and have nothing else to do.",
+          "To colonize their terrestrial environment and strip-mine their natural planetary resources for energy reserves.",
+          "Because imperial religious orthodoxy mandates the total ideological purification of the surrounding galactic arm.",
+          "Because advanced post-biological civilizations experience existential boredom and seek recreational diversions.",
           "Because the 'chain of suspicion' makes trust impossible, and letting them live risks your own eventual destruction."
         ],
         "correctIndex": 3,

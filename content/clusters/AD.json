@@ -160,9 +160,9 @@
       "quiz": {
         "question": "What does neuroplasticity fundamentally challenge about older models of brain development?",
         "options": [
-          "That the brain has no capacity to change at all, at any age.",
-          "That only physical injury can alter brain structure.",
-          "That memory and learning are unrelated to brain structure.",
+          "That human brain architecture is fundamentally static and possesses zero capacity for cellular adaptation at any life stage.",
+          "That traumatic physical trauma is the sole external mechanism capable of altering macro neural pathways in the human brain.",
+          "That long-term episodic memory storage and abstract learning occur completely independently of physical synaptic structure.",
           "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood."
         ],
         "correctIndex": 3,

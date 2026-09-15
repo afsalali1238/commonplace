@@ -13,7 +13,10 @@ export function BottomNav() {
   const tabs = MAIN_TABS;
 
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-40 border-t border-line bg-paper/95 backdrop-blur">
+    <nav
+      aria-label="Main Navigation"
+      className="fixed bottom-0 inset-x-0 z-40 border-t border-line bg-paper/95 backdrop-blur"
+    >
       <div className="mx-auto flex max-w-2xl">
         {tabs.map((t) => {
           const active = t.match(pathname);

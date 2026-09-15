@@ -485,13 +485,26 @@ function NodeScreen() {
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <button
+            type="button"
+            aria-pressed={hydrated && bookmarked}
+            aria-label={hydrated && bookmarked ? "Remove bookmark" : "Save bookmark"}
             onClick={() => toggleBookmark(node.id)}
             className="flex items-center gap-2 border border-line px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
           >
-            <span className={hydrated && bookmarked ? "text-accent" : "text-ink-soft"}>★</span>
+            <span
+              aria-hidden="true"
+              className={hydrated && bookmarked ? "text-accent" : "text-ink-soft"}
+            >
+              ★
+            </span>
             <span>{hydrated && bookmarked ? "Saved" : "Save"}</span>
           </button>
           <button
+            type="button"
+            aria-pressed={hydrated && queued}
+            aria-label={
+              hydrated && queued ? "Remove from Read Next queue" : "Add to Read Next queue"
+            }
             onClick={() => (queued ? removeReadNext(node.id) : addReadNext(node.id))}
             className={cn(
               "flex items-center gap-2 border px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors",
@@ -539,11 +552,13 @@ function NodeScreen() {
               <div className="mt-10">
                 {!showAllConnections ? (
                   <button
+                    type="button"
+                    aria-expanded={false}
                     onClick={() => setShowAllConnections(true)}
                     className="flex w-full items-center justify-between border-t border-line py-4 text-left font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink"
                   >
                     <span>Show {related.length - 1} other connections</span>
-                    <span>+</span>
+                    <span aria-hidden="true">+</span>
                   </button>
                 ) : (
                   <div className="rise">

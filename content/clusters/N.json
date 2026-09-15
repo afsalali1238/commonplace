@@ -333,9 +333,9 @@
       "quiz": {
         "question": "Per Steve Allen's approach, what mistake most often kills a person's enjoyment of a classic novel?",
         "options": [
-          "Reading a translation instead of the original language.",
-          "Choosing a book that's too short to develop real characters.",
-          "Reading it too quickly instead of slowly.",
+          "Reading a commercial modern vernacular translation rather than struggling directly through the author's original historical syntax.",
+          "Selecting an overly concise narrative that lacks sufficient length and exposition to construct rich psychological characters.",
+          "Pacing through the narrative with excessive speed rather than methodically annotating every archaic stylistic device along the way.",
           "Approaching it as a school assignment to survive rather than a book to be read on your own terms, and giving up before it opens up."
         ],
         "correctIndex": 3,
@@ -487,10 +487,10 @@
       "quiz": {
         "question": "Why is passive re-reading generally considered one of the least effective ways to retain information?",
         "options": [
-          "Because it takes too long compared to other methods.",
-          "Because reading itself doesn't engage the brain at all.",
+          "Because the visual processing required by repeated textual scanning consumes vastly more study time than writing synthetic notes.",
+          "Because quiet silent reading fails to engage the primary neural pathways responsible for language acquisition and comprehension.",
           "Because it creates a false sense of familiarity without requiring the effortful retrieval that actually builds durable memory.",
-          "Because it only works for fiction, not nonfiction."
+          "Because repetitive review techniques produce cognitive utility when applied to imaginative fiction but fail on factual nonfiction."
         ],
         "correctIndex": 2,
         "explanation": "Active recall and spaced repetition work because they force effortful retrieval; re-reading substitutes recognition (the material feels familiar) for the harder, memory-building work of reconstruction."

@@ -180,10 +180,10 @@
       "quiz": {
         "question": "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
         "options": [
-          "Sapiens had significantly larger brains and higher individual intelligence than all other human species",
-          "Sapiens were the only human species capable of using tools",
+          "Sapiens developed significantly greater cranial volume and higher individual analytical reasoning than all contemporary hominid competitors, allowing solitary individuals to outsmart rival foraging groups",
+          "Sapiens were the unique hominid lineage capable of fashioning complex composite tools and domesticating fire, granting their small hunting bands an insurmountable physical advantage in close-quarters warfare",
           "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
-          "Sapiens had no need for cooperation because they were physically stronger than rival species"
+          "Sapiens possessed superior physical endurance, denser musculature, and higher metabolic efficiency, allowing them to systematically overpower rival Neanderthal clans without requiring complex social cooperation"
         ],
         "correctIndex": 2,
         "explanation": "Harari's core claim isn't about raw intelligence or physical capability — it's that shared, collectively-believed fictions (money, law, nationhood) let strangers trust and coordinate with each other at a scale that purely personal, chimp-style relationships never could reach."
@@ -261,9 +261,9 @@
         "question": "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
         "options": [
           "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
-          "A single new experiment that instantly convinces the entire scientific community",
-          "A government or funding body mandating that scientists adopt a new theory",
-          "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions"
+          "A single decisive, highly publicized laboratory experiment that instantly produces universal consensus, compelling the global scientific community to abandon established foundational models virtually overnight",
+          "A coordinated policy directive enacted by state funding agencies and institutional university boards mandating that active academic researchers immediately adopt an officially sanctioned methodological doctrine",
+          "A seamless, continuous accumulation of empirical observations that steadily refines established theories without requiring any fundamental revision of baseline epistemological commitments or definitions"
         ],
         "correctIndex": 0,
         "explanation": "Kuhn's model rejects the idea of smooth cumulative progress — paradigm shifts happen when unresolved anomalies build into a crisis, and the resolution isn't just new data added to the old theory, it's a new framework that changes what counts as a relevant fact or valid explanation in the first place."

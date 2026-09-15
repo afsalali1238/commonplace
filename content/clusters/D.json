@@ -217,10 +217,10 @@
       "quiz": {
         "question": "What was the primary driver of the 'Sea Change' Howard Marks identified in 2022?",
         "options": [
-          "The invention of cryptocurrency",
-          "The transition from physical to digital retail",
+          "The global institutional adoption of algorithmic crypto assets and decentralized financial protocols",
+          "The comprehensive transition of consumer retail trade from physical storefronts to digital channels",
           "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
-          "By selling all holdings whenever a stock fell 10%"
+          "The universal introduction of automated quantitative stop-loss algorithms across asset managers"
         ],
         "correctIndex": 2,
         "explanation": "Marks argued that the 40-year tailwind of constantly falling interest rates had ended, fundamentally changing how assets are valued and how risk is priced."
@@ -522,10 +522,10 @@
       "quiz": {
         "question": "According to SK hynix's chairman and TSMC's CEO, why can't the AI-driven chip and memory shortage be resolved quickly even with aggressive capital spending?",
         "options": [
-          "Because chipmakers are refusing to raise capital expenditure despite strong demand signals.",
+          "Because leading semiconductor foundries have collectively decided to curtail capital expenditure and artificially restrict output, preserving elevated gross margins despite unprecedented consumer demand signals.",
           "Because building and ramping a new fab has a fixed lead time of roughly five to seven years regardless of how much capital is deployed, so today's spending increases can't produce supply before the early 2030s.",
-          "Because AI demand for chips is actually expected to decline within the next year.",
-          "Because export controls make it illegal to build new fabs anywhere outside of Taiwan."
+          "Because enterprise enterprise demand for high-bandwidth AI silicon and high-density memory modules is projected by market analysts to collapse dramatically over the next four quarters as corporate pilots conclude.",
+          "Because newly enacted multinational trade embargoes and technology transfer treaties make it legally impossible for global equipment vendors to deliver lithography machinery to fabrication facilities outside Taiwan."
         ],
         "correctIndex": 1,
         "explanation": "Both SK hynix's Chey Tae-won and TSMC's C.C. Wei independently cite the same structural constraint: a new fab's multi-year build-and-ramp timeline is fixed by physics and engineering complexity, not by capital availability — which is why both companies are raising 2026 spending while still forecasting shortages persisting through 2030."

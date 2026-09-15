@@ -170,10 +170,10 @@
       "quiz": {
         "question": "What is the 'bottom-up' adoption model in OpenCloud software?",
         "options": [
-          "Selling directly to the CEO via expensive dinners",
+          "Enterprise sales representatives pitching chief executive officers directly through exclusive corporate dinners",
           "Individual developers adopting a free open-source tool, which eventually forces the company to buy the enterprise tier",
-          "Forcing employees to use software built by the government",
-          "Because on-premise software requires no maintenance staff"
+          "Public sector mandates compelling corporate workforces to adopt software utilities developed by government bodies",
+          "Traditional on-premise IT architectures that require dedicated corporate maintenance teams and perpetual licenses"
         ],
         "correctIndex": 1,
         "explanation": "Bottom-up adoption bypasses the traditional executive sales pitch; it wins the hearts of the actual end-users (developers) first, making the software viral inside the organization."
@@ -206,12 +206,7 @@
       "layer2": "To forecast the future, do not model technologies in silos. Look for the intersection points where dropping costs in one sector unlock entirely new business models in another.",
       "quiz": {
         "question": "What economic law does ARK Invest use to model the declining costs of disruptive technologies?",
-        "options": [
-          "Moore's Law",
-          "Metcalfe's Law",
-          "Wright's Law",
-          "Jevons' Paradox"
-        ],
+        "options": ["Moore's Law", "Metcalfe's Law", "Wright's Law", "Jevons' Paradox"],
         "correctIndex": 2,
         "explanation": "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots."
       },
@@ -836,10 +831,10 @@
       "quiz": {
         "question": "What is the primary difference between a software-native company and an 'intelligence-native' company?",
         "options": [
-          "Software-native companies use Python; intelligence-native companies use C++",
+          "Software-native companies build customer workflows exclusively in Python, whereas intelligence-native organizations require bare-metal compiled C++ codebases",
           "Software-native companies rely on hard-coded deterministic logic, while intelligence-native companies use probabilistic neural networks for core decision routing",
-          "Intelligence-native companies do not use computers at all",
-          "Because employees resist any form of new software on principle"
+          "Software-native enterprises rely heavily on personal computing hardware, while intelligence-native firms eliminate computational hardware from daily workflows",
+          "Software-native organizations experience severe cultural friction because corporate knowledge workers instinctively reject algorithmic assistance on principle"
         ],
         "correctIndex": 1,
         "explanation": "An intelligence-native company doesn't just bolt AI onto its product; it replaces the core hard-coded logic of its operations with dynamic, probabilistic AI models."
@@ -873,10 +868,10 @@
       "quiz": {
         "question": "According to Balaji Srinivasan, what distinguishes a 'network state' from a traditional separatist movement or commune?",
         "options": [
-          "A network state starts with violence and then seeks legitimacy; a commune starts peacefully",
+          "A network state initiates through armed regional rebellion and then demands legitimacy; an intentional commune relies strictly on peaceful ideological secession within established borders",
           "A network state starts online, builds a trackable moral community, crowds into real territory incrementally, and seeks diplomatic recognition — using the startup playbook rather than revolution",
-          "A network state is purely digital and never acquires physical land",
-          "A network state requires a population of at least one million before it can seek recognition"
+          "A network state operates purely as a virtual online jurisdiction with no ambition to acquire physical sovereignty or construct tangible municipal infrastructure in the real world",
+          "A network state legally mandates a registered population of over one million verified cryptographic citizens before it can initiate formal diplomatic overtures to foreign sovereign nations"
         ],
         "correctIndex": 1,
         "explanation": "The startup analogy is central: iterate online first, acquire territory incrementally, then seek recognition — rather than seizing land first and building legitimacy afterward."
@@ -959,9 +954,9 @@
         "question": "According to Willison, why did the pelican-riding-a-bicycle test stop correlating well with real model quality after its first year?",
         "options": [
           "The test never measured the thing that came to matter most for real usage — reliable agentic tool-calling over long conversations — so as models specialized there, the test's relevance to real capability quietly decayed.",
-          "He is certain that AI labs specifically trained their models on his exact prompt to game the benchmark.",
-          "SVG generation became technically impossible for newer models to perform.",
-          "He stopped running the test after the first year, so there is no more data to compare."
+          "Frontier artificial intelligence research laboratories intentionally fine-tuned their foundation models on his exact prompt phrasing in order to artificially manipulate public benchmark leaderboards.",
+          "Vector graphics syntax and SVG rendering capabilities became technically impossible for contemporary transformer architectures to generate accurately as labs migrated to newer subword tokenization schemes.",
+          "The author ceased administering the visual evaluation protocol after the initial twelve-month testing cycle, meaning no subsequent empirical evaluation data was collected for modern frontier models."
         ],
         "correctIndex": 0,
         "explanation": "Willison explicitly says he isn't convinced labs are training for the benchmark — the more likely explanation is that the test simply never covered agentic tool use, which is now the dominant axis of real-world model quality, so the two measures drifted apart."
