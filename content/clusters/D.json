@@ -93,23 +93,31 @@
       "medium": "Memo",
       "category": "Macro Memo",
       "epistemicStatus": "Canonical",
-      "thesis": "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
-      "layer0": "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
-      "layer1": "During a market panic, forced selling creates a cascading effect where asset prices decouple entirely from fundamentals. Debt instruments were trading at prices that implied an apocalyptic default rate. Marks realized that even if the economy went into a severe depression, the liquidation value of the underlying assets would still yield a massive return on the distressed debt. The margin of safety was so wide that being wrong about the macro economy wouldn't ruin the trade.",
-      "layer2": "When evaluating a distressed investment, don't ask if the environment will get worse. Ask if the current price already assumes the worst possible scenario. If it does, you must buy.",
+      "thesis": "In a crash the real danger is not buying too early but freezing entirely; the cure is a reinvestment plan decided in advance.",
+      "layer0": "In March 2009, with markets in free fall, Jeremy Grantham warned that the danger wasn't buying too early — it was “terminal paralysis.” Investors sitting on cash would keep waiting for the bottom and miss the recovery entirely. In a panic, he argued, the failure to act costs far more than acting imperfectly.",
+      "layer1": "Grantham's diagnosis was behavioral. Every decline makes cash look more beautiful, until inertia “sets like concrete”: those who are fully invested go catatonic, and the few who are sitting in cash don't want to surrender the comfort of having been right so far. Both groups freeze at precisely the moment prices are most attractive. His cure was procedural rather than analytical. Build a battle plan for reinvestment before the crisis, get your investment committee to buy into it while markets are calm, then execute it mechanically — a few large steps rather than many small ones, because every act of buying in a panic has to overcome the same paralysis.",
+      "layer2": "Write your reinvestment plan while you are calm and treat the decision as already made. Seeking the optimal entry point is “a snare and delusion” — it only deepens the paralysis. A rough plan you actually follow beats a perfect one you don't.",
       "quiz": {
-        "question": "Why did Howard Marks aggressively buy distressed debt in 2008?",
+        "question": "According to Grantham, what is the only cure for “terminal paralysis” in a market crash?",
         "options": [
-          "Because he confirmed that the Federal Reserve would soon inject unprecedented liquidity into the banking system",
-          "Because corporate debt instruments issued by distressed companies are legally guaranteed against capital loss",
-          "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
-          "Because he relied on algorithmic quantitative systems that timed trades precisely to scheduled rate cuts"
+          "Having a battle plan for reinvestment that is made in advance and then stuck to",
+          "Waiting until the economic news has clearly turned positive before committing capital",
+          "Moving to cash early and holding it until the market has fully bottomed out",
+          "Diversifying across asset classes so that no single position can force a decision"
         ],
-        "correctIndex": 2,
-        "explanation": "Marks realized the market was pricing in the absolute worst-case scenario. Even if the economy remained terrible, the rock-bottom prices guaranteed a strong return on liquidation value."
+        "correctIndex": 0,
+        "explanation": "Grantham argued that paralysis, not imperfect timing, is what destroys returns in a crash: “There is only one cure for terminal paralysis: you absolutely must have a battle plan for reinvestment and stick to it.”"
       },
       "related": ["D2", "D4", "D10", "D12"],
       "furtherReading": [
+        {
+          "label": "Reinvesting When Terrified — the original GMO letter",
+          "source": "GMO",
+          "url": "https://www.gmo.com/americas/research-library/reinvesting-when-terrified_viewpoints/",
+          "archive": {
+            "status": "unavailable"
+          }
+        },
         {
           "label": "Related Klarman essay: The Forgotten Lessons of 2008",
           "source": "Farnam Street",
@@ -172,7 +180,7 @@
       "category": "Macro Memo",
       "epistemicStatus": "Canonical",
       "thesis": "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
-      "layer0": "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
+      "layer0": "In February 2007 — months before the credit crisis broke — Howard Marks warned about a “race to the bottom” in debt markets. Lenders competing for deals were abandoning the protections and covenants that had long kept them safe, accepting ever more risk for ever lower returns.",
       "layer1": "When capital is plentiful and yields are low, investors desperately chase returns. Borrowers take advantage of this by demanding 'covenant-lite' loans, stripping away the legal protections that allow lenders to intervene if the business struggles. This creates a dangerous asymmetric risk profile: the lenders accept a permanently capped upside (the low interest rate) while taking on essentially equity-like downside risk if the company defaults.",
       "layer2": "Never lower your standards just because everyone else is lowering theirs. In competitive markets, the winner of a bidding war is often the 'loser' who accepted the worst terms.",
       "quiz": {
@@ -188,6 +196,14 @@
       },
       "related": ["D1", "D2", "D3", "C11"],
       "furtherReading": [
+        {
+          "label": "The Race to the Bottom — the original Oaktree memo (Feb 2007)",
+          "source": "Oaktree Capital",
+          "url": "https://www.oaktreecapital.com/docs/default-source/memos/2007-02-14-the-race-to-the-bottom.pdf",
+          "archive": {
+            "status": "unavailable"
+          }
+        },
         {
           "label": "Line-by-line breakdown of Marks's \"Race to the Bottom\" memo",
           "source": "StreetFins",
@@ -328,22 +344,30 @@
       "category": "Macro Memo",
       "epistemicStatus": "Canonical",
       "thesis": "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
-      "layer0": "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
-      "layer1": "For decades, global trade relied on the 'Petrodollar' system: nations needed dollars to buy energy, forcing them to hold US Treasury bonds. Gromen argues this system is fraying as rival nations (like China and Russia) settle energy trades in their own currencies or gold. Because the US government has outsourced its manufacturing base and accumulated massive debt, it relies on inflating the money supply to fund its deficits, which incentivizes foreign nations to dump US Treasuries.",
-      "layer2": "If the global reserve currency system transitions to a multi-polar framework, hard assets like gold, energy infrastructure, and pristine real estate will dramatically outperform paper fiat currencies.",
+      "layer0": "In December 2020, Lyn Alden argued that the dollar reserve system is not about to collapse — it is slowly re-aligning. Taking a quantitative look at the near-50-year-old petrodollar arrangement, she traced how the mechanics that once locked the world into holding dollars are fraying, for the United States and its trading partners alike.",
+      "layer1": "The petrodollar system, built after Bretton Woods collapsed in 1971, worked because the world needed dollars to buy energy, and the dollars earned were recycled into US Treasuries. That structure carries the Triffin dilemma: a reserve-currency issuer has to run persistent current account deficits to supply the world with its currency, which gradually undermines the issuer's own balance sheet. Alden's point is that the incentives on both sides are weakening. China, which earns large dollar trade surpluses, increasingly uses them to finance hard-asset projects abroad rather than recycling them into US government debt. As the United States' means and motives to maintain the system weaken, foreign holders have less reason to keep funding it — and settlement in other currencies, gold, or central bank digital currencies becomes more attractive.",
+      "layer2": "Reserve-currency transitions are gradual rather than abrupt, and they devalue paper claims while hard assets — gold, energy infrastructure, real estate — reprice upward. Watch the plumbing rather than the headlines: who is settling trade in what, and who is still buying the debt.",
       "quiz": {
-        "question": "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
+        "question": "According to Alden, what structural feature of the reserve-currency system guarantees it will erode over time?",
         "options": [
-          "The domestic energy sector produces an excessive volume of oil, depressing bilateral terms of trade with global partners",
-          "Statutory restrictions strictly prohibit the Federal Reserve and Treasury from holding or intervening in foreign exchange",
-          "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
-          "Congressional budget rules enforce mandatory spending freezes whenever currency depreciation exceeds inflation targets"
+          "The issuer must run persistent deficits to supply the world with its currency",
+          "Foreign holders are legally required to redeem their dollars for gold on demand",
+          "Central banks are obliged to hold reserves in whatever currency trades in oil",
+          "The issuer must keep interest rates permanently below the inflation rate"
         ],
-        "correctIndex": 2,
-        "explanation": "The massive US debt load means high interest rates cause interest expense to explode, forcing the government to print even more money to pay the interest, creating a vicious cycle of currency debasement."
+        "correctIndex": 0,
+        "explanation": "This is the Triffin dilemma: the world needs a supply of dollars, and supplying them means the US runs deficits that accumulate as external liabilities — eroding confidence in the very currency the system depends on."
       },
       "related": ["D1", "D2", "D3"],
       "furtherReading": [
+        {
+          "label": "The Fraying of the US Global Currency Reserve System — the original essay",
+          "source": "Lyn Alden",
+          "url": "https://www.lynalden.com/fraying-petrodollar-system/",
+          "archive": {
+            "status": "unavailable"
+          }
+        },
         {
           "label": "The Changing World Order — dollar hegemony and reserve-currency cycles (Dalio)",
           "source": "House overview / Bridgewater",

@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Hebbian Theory",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Hebbian_theory",
           "archive": {
             "status": "full",
@@ -44,7 +44,7 @@
         },
         {
           "label": "Donald Olding Hebb",
-          "source": "article",
+          "source": "Canadian Association for Neuroscience",
           "url": "https://can-acn.org/donald-olding-hebb/",
           "archive": {
             "status": "full",
@@ -83,7 +83,7 @@
       "furtherReading": [
         {
           "label": "Default mode network",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Default_mode_network",
           "archive": {
             "status": "full",
@@ -96,9 +96,7 @@
           "source": "paper",
           "url": "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AD2-1.md",
-            "retrieved": "2026-07-20"
+            "status": "unavailable"
           }
         }
       ],

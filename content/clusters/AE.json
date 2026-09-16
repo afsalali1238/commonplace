@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "The Hero with a Thousand Faces",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces",
           "archive": {
             "status": "full",
@@ -44,7 +44,7 @@
         },
         {
           "label": "Joseph Campbell and the Hero's Journey",
-          "source": "article",
+          "source": "Joseph Campbell Foundation",
           "url": "https://www.jcf.org/learn/joseph-campbell-heros-journey",
           "archive": {
             "status": "full",
@@ -83,7 +83,7 @@
       "furtherReading": [
         {
           "label": "Mimetic theory",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Mimetic_theory",
           "archive": {
             "status": "full",
@@ -93,7 +93,7 @@
         },
         {
           "label": "René Girard (Britannica)",
-          "source": "article",
+          "source": "Encyclopædia Britannica",
           "url": "https://www.britannica.com/biography/Rene-Girard",
           "archive": {
             "status": "full",
