@@ -1,61 +1,95 @@
-# Handoff — after PR #7 (fresh pass, 2026-09-16)
+# Handoff — after PR #7 (fresh pass, updated 2026-09-16)
 
-Post-merge re-read of the tree on `main` @ `9e8e05d` (the PR #7 merge commit). Every number
-and every "done" claim below was re-checked against this checkout this pass — grep/command
-results are quoted inline so the next session can trust them without re-deriving.
-
-Previous session's handoff is superseded by this file. No code was changed to produce it.
+Post-merge re-read of the tree on `main` @ `9e8e05d` (the PR #7 merge commit), then the first
+network-free content pass on top of it. Every number below was measured this session;
+commands/greps are quoted so the next session can trust them without re-deriving.
 
 ---
 
 ## 0. State at a glance
 
-| Thing                       | Value                                                              | How verified                              |
-| --------------------------- | ------------------------------------------------------------------ | ----------------------------------------- |
-| Branch / commit             | `main` @ `9e8e05d`, tree clean                                     | `git log`, `git status`                    |
-| Nodes                       | **451** across 38 clusters (`A`–`Z` + `AA`–`AL`)                    | `validate-nodes.ts`, cluster file count    |
-| Validator                   | **0 errors**, **109 warnings** (all "quiz answer-length leak")      | `npx tsx scripts/validate-nodes.ts`        |
-| Tests                       | **9 files / 65 tests**, all passing                                | `vitest run`                               |
-| Lint                        | **0 errors / 6 warnings** (shadcn react-refresh; CI cap is 10)      | `eslint . --max-warnings 10`               |
-| Build                       | clean; SW precache = 92 assets + 39 bodies + 406 sources            | `npm run build`                            |
-| Largest client chunk        | `nodes-*.js` ≈ **128 KB gz** / 380 KB raw (cap 260 KB)              | build output, CI bundle step               |
-| furtherReading entries      | **619** = 403 `full` + 1 `excerpt` + **215 `unavailable`**          | script over `content/clusters/*.json`      |
-| Source files on disk        | **406** = 404 referenced + **2 orphans**                            | set-diff disk vs referenced paths          |
-| Body files                  | 39                                                                 | `public/content/bodies/`                   |
+| Thing                  | Value                                                            | How verified                          |
+| ---------------------- | ---------------------------------------------------------------- | ------------------------------------- |
+| Base / merge target    | `main` @ `9e8e05d` (PR #7)                                        | `git log`                             |
+| Nodes                  | **451** across 38 clusters (`A`–`Z` + `AA`–`AL`)                  | `validate-nodes.ts`                   |
+| Validator              | **0 errors**, **109 warnings** (all "quiz answer-length leak")    | `npx tsx scripts/validate-nodes.ts`   |
+| Tests                  | **9 files / 65 tests** passing                                    | `npm test`                            |
+| Lint                   | **0 errors / 6 warnings** (shadcn react-refresh; CI cap 10)       | `eslint . --max-warnings 10`          |
+| Build                  | clean; SW precache = 92 assets + 39 bodies + **399** sources      | `npm run build`                       |
+| Largest client chunk   | `nodes-*.js` ≈ **128 KB gz** / 380 KB raw (cap 260 KB)            | build output                          |
+| furtherReading entries | **622** = 398 `full` + 1 `excerpt` + **223 `unavailable`**        | script over `content/clusters/*.json` |
+| Source files on disk   | **399** = 399 referenced + **0 orphans**, 0 missing               | set-diff disk vs referenced paths     |
 
-**Gate output this pass** (`npm ci` → `npm run check`, exit 0):
-
-```
-Validated 451 nodes.
-OK — no errors.
-✖ 6 problems (0 errors, 6 warnings)
-Test Files  9 passed (9)
-     Tests  65 passed (65)
-✓ built in 2.12s
-Injected 92 assets, 39 node body files and 406 archived source files into sw.js precache manifest (version commonplace-8155dc8614)
-```
+**Gate this pass** (`npm run check`, exit 0): `Validated 451 nodes.` / `OK — no errors.` /
+`6 problems (0 errors, 6 warnings)` / `9 passed (9)` files, `65 passed (65)` tests /
+build clean / `Injected 92 assets, 39 node body files and 399 archived source files`.
 
 ---
 
 ## 1. Done — don't redo these
 
-All ten launch-hygiene fixes from PR #7 are on `main` and verified present:
+### 1a. Launch hygiene from PR #7 (all ten verified present in tree)
 
-| Fix                               | Evidence in tree                                              |
-| --------------------------------- | ------------------------------------------------------------- |
-| Fontsource-only fonts (no Google) | `src/styles.css:9-12`; zero `fonts.googleapis` hits in `src/`  |
-| Dark-mode favicon linked          | `src/routes/__root.tsx:124` → `/logo-dark.svg`                 |
-| Canonical + `og:url` every route  | `src/routes/__root.tsx:99,111` (from leaf pathname)            |
-| `useHydrated` waits for persist   | `src/lib/hydrated.ts:13-20` (`hasHydrated` / `onFinishHydration`) |
-| `/read` URL allowlist             | `src/lib/url.ts` (`safeHttpUrl`, `safeArchiveId`) + `url.test.ts` |
-| Download does a real `cache.put`  | `src/routes/node.$id.tsx:200-201` (`caches.open` → `put`)      |
-| Bottom nav pinned out of view transitions | `data-vt="nav"` on `BottomNav`                        |
-| CI installs with `npm ci`         | `.github/workflows/ci.yml` (bun installer gone)                |
-| Per-cluster body split            | `src/data/nodes.ts` index-only + `public/content/bodies/*.json` (39) |
-| Feed session resets on import/reset | `store.test.ts` covers it                                   |
+| Fix                                  | Evidence                                                      |
+| ------------------------------------ | ------------------------------------------------------------- |
+| Fontsource-only fonts (no Google)    | `src/styles.css:9-12`; zero `fonts.googleapis` hits in `src/` |
+| Dark-mode favicon linked             | `src/routes/__root.tsx:124` → `/logo-dark.svg`                |
+| Canonical + `og:url` every route     | `src/routes/__root.tsx:99,111` (from leaf pathname)           |
+| `useHydrated` waits for persist      | `src/lib/hydrated.ts:13-20`                                   |
+| `/read` URL allowlist                | `src/lib/url.ts` (`safeHttpUrl`, `safeArchiveId`) + tests     |
+| Download does a real `cache.put`     | `src/routes/node.$id.tsx:200-201`                             |
+| Bottom nav out of view transitions   | `data-vt="nav"` on `BottomNav`                                |
+| CI installs with `npm ci`            | `.github/workflows/ci.yml` (bun installer gone)               |
+| Per-cluster body split               | index-only `nodes.ts` + 39 body files                         |
+| Feed session resets on import/reset  | covered by `store.test.ts`                                    |
 
-Architecture, the Leitner loop, the lattice, and the visual system are **not** the problem.
-Do not redesign.
+### 1b. Cluster D accuracy (fixed this pass, primary sources verified)
+
+All three defects are resolved in `content/clusters/D.json`; the generated bundle and bodies
+were rebuilt. Which side was wrong differed per node, and each was checked against the
+original publication:
+
+- **D3 — *Reinvesting When Terrified*.** Title/author/year were **right**: Jeremy Grantham,
+  GMO Viewpoints, **March 10 2009**. The body and quiz were Howard Marks's 2008
+  distressed-debt buying. Rewritten to Grantham's actual argument (crisis paralysis;
+  a reinvestment "battle plan" built in advance; "a few large steps, not many small ones").
+- **D5 — *The Race to the Bottom*.** `year: 2007` was **right**: Oaktree memo, **Feb 14 2007**.
+  Layer 0's "In 2012" was the error — now "In February 2007 — months before the credit crisis
+  broke". Layer 1/2 (covenant-lite, asymmetric risk) were already accurate to the memo.
+- **D9 — *The Fraying of the US Global Currency Reserve System*.** Title/author/year were
+  **right**: Lyn Alden, published **Dec 2 2020**. The body and quiz described Luke Gromen.
+  Rewritten to Alden's actual thesis (petrodollar plumbing, the Triffin dilemma, China
+  redeploying dollar surpluses into hard assets); quiz replaced.
+
+Each of the three now also cites its own primary source in `furtherReading` (GMO letter,
+Oaktree PDF, lynalden.com essay), all `unavailable` pending the re-archive.
+
+### 1c. Archive attribution (fixed this pass, 44 snapshots)
+
+The re-fetch on 2026-07-17/18 wrote the node's `type` word into the archive frontmatter, so
+`/read` rendered bylines like "Originally published by article, article". Two classes, both
+fixed — **every remaining byline is now "by {author}, {publication}"**:
+
+- **22 files** had `author` *and* `source` both meaningless (the worst ones). Attribution was
+  recovered from evidence inside each snapshot (author lines, title pages, bylines, e.g.
+  Sarah Ferguson for the Hebb biography, Judith S. Kleinfeld for the Kleinfeld paper,
+  Tomasz Downarowicz for the Scholarpedia entropy article, Andrew Chen for the a16z excerpt).
+- **22 further files** had a correct author but a type-word `source`; source set from the
+  hosting publication (Wikipedia, Project Gutenberg, Stanford Encyclopedia of Philosophy,
+  Internet Archive, PubMed Central, MIT course reading, GW Regulatory Studies Center).
+
+Both layers were synced: the `.md` frontmatter + byline and the node-side
+`furtherReading[].source` (rebuilt via `build:content`).
+
+### 1d. Dead weight removed
+
+- **2 orphans deleted** (`AA1-entropy-0.md`, `AA2-relativity-0.md`): their curated metadata had
+  already been merged into the referenced `AA1-0.md` / `AA2-0.md`, which is why they existed.
+- **5 fake "offline copies" demoted to `unavailable` and deleted** — captures whose bodies
+  contain no article text at all, just block/nav chrome: `AB5-0` (JSTOR access check, 998 B),
+  `M3-0` (ScienceDirect block, 519 B), `K3-0` (JSTOR captcha), `AD2-1` (PNAS nav only, 1.4 KB),
+  `AG1-1` (archive.org UI counters, 1.4 KB). Serving a captcha as an offline copy is a lie;
+  these now link out and sit in the `--retry-unavailable` recovery queue.
 
 ---
 
@@ -63,153 +97,96 @@ Do not redesign.
 
 ### P0 — real origin
 
-`SITE_URL` is still the placeholder `https://commonplace.app` — a host that is not
-registered. Everything absolute ships pointing at a dead origin: 899 sitemap URLs,
-`robots.txt`, canonical, `og:url`, `og:image`.
+`SITE_URL` is still the placeholder `https://commonplace.app` (unregistered). Everything
+absolute ships pointing at a dead origin: 899 sitemap URLs, `robots.txt`, canonical,
+`og:url`, `og:image`.
 
-Touch points (all three hardcode it):
+- `src/lib/site.ts:11` — the constant
+- `public/robots.txt:3` — static, not generated
+- `scripts/generate-sitemap.ts` — reads env `SITE_URL` first, so Vercel can override the
+  sitemap **but not the other two**
 
-- `src/lib/site.ts:11` — `export const SITE_URL = "https://commonplace.app"` (the fallback)
-- `public/robots.txt:3` — `Sitemap: https://commonplace.app/sitemap.xml` (static, not generated)
-- `scripts/generate-sitemap.ts` — already reads `process.env.SITE_URL` first, so setting the
-  env var on Vercel fixes the sitemap, but **not** `site.ts` or `robots.txt`.
+Blocked on a product decision (register the domain vs use the `*.vercel.app` origin).
 
-Blocked on a product decision (register the domain, or pick the `*.vercel.app` origin), not on code.
+### P1 — re-archive (needs a machine with web access; still blocked here)
 
-### P1 — re-archive the missing sources (still blocked: no web access)
+Verified again this pass: `curl` to wikipedia/scholarpedia/forbes/youtube all return `000`.
 
-Verified this pass that **these sandboxes cannot do it**: `curl` to scholarpedia, forbes,
-youtube and **en.wikipedia.org** all fail (`000`). Same constraint the last session hit.
-
-Corrected numbers — the "161 missing" figure is stale:
-
-- Today: **215** furtherReading entries carry `"status": "unavailable"` (of 619 total).
-- The 161 was the count at demotion time; `demote-missing-archives.ts` has since been run over more.
-- Host breakdown of the 215 — this is what recovery can actually win:
-
-| Host                    | Count | Realistic outcome                          |
-| ----------------------- | ----- | ------------------------------------------ |
-| `en.wikipedia.org`      | 67    | **Recoverable** (and API-friendly)         |
-| `fs.blog`               | 34    | **Recoverable**                            |
-| `youtube.com`           | 31    | Stays unavailable (media) — expected       |
-| `ted.com` / `ed.ted.com`| 6     | Stays unavailable (media)                  |
-| `plato.stanford.edu`    | 3     | **Recoverable**                            |
-| `wsj.com`, `nature.com`, `cnbc.com` | 5 | Stays unavailable (paywall) — expected  |
-
-So the ceiling is roughly **180 of 215**, not "161 minus paywalls". Everything else is
-paywall/media long tail.
-
-Run (on a machine with web access):
+Now **223** entries are `unavailable` (of 622). Top recoverable hosts: `en.wikipedia.org` 67,
+`fs.blog` 34, `plato.stanford.edu` 3. Stays unavailable by nature: YouTube/TED 37, paywalls
+(WSJ, Nature, CNBC) ~5. Plus the 5 demoted block-page captures and 3 newly-cited primary
+sources (GMO, Oaktree PDF, lynalden.com) — all in the same recovery queue.
 
 ```bash
 npx tsx scripts/archive-sources.ts all --retry-unavailable
-npx tsx scripts/build-content.ts       # or: npm run build:content
+npx tsx scripts/build-content.ts
 npx tsx scripts/validate-nodes.ts      # expect 0 errors, 0 referenced-but-missing
 ```
 
-The archiver is idempotent and resume-safe (`MAX_RETRIES = 3`, skips anything already
-`full`/`excerpt` whose file exists, logs every miss to `archive-failures.log`, which is
-gitignored). Running it cluster-by-cluster is safe if a full pass is too slow.
+Idempotent and resume-safe (`MAX_RETRIES = 3`, skips anything already `full`/`excerpt` whose
+file exists, logs misses to gitignored `archive-failures.log`).
 
-### P2 — cluster D content accuracy (3 defects, confirmed verbatim)
+### P1 — wrong-page captures (found this pass, need network to re-capture)
 
-Read straight from `content/clusters/D.json` this pass:
+These three archives are marked `full` and have real text, but they are **not the cited work**.
+They cannot be fixed offline — re-capture them, don't re-attribute them:
 
-- **D3** — title/author say Jeremy Grantham, *Reinvesting When Terrified*; `layer0` opens
-  "In late 2008, Howard Marks wrote a memo…". Title body and author body disagree.
-- **D5** — *The Race to the Bottom* (Howard Marks) has `year: 2007`; `layer0` says "In 2012,
-  Howard Marks warned…".
-- **D9** — title/author say Lyn Alden, *The Fraying of the US Global Currency Reserve
-  System*; `layer0` says "Macro strategist Luke Gromen argues…".
+- `J2-0` — node J2 is "Second-Order Thinking" (Howard Marks memo); the capture is Oaktree's
+  *memos index* page (a list of dated memo titles).
+- `L1-0` — node L1 is "Expected Value" (Blaise Pascal, 1654); the capture is Annie Duke's
+  *Quit* book page. Unrelated to the node.
+- `M2-0` — node M2 is "Chesterton's Fence" (G.K. Chesterton, *The Thing*, 1929); the capture is
+  a Project Gutenberg browse page describing *The Man Who Knew Too Much*.
 
-Fix in `content/clusters/D.json`, then `npx tsx scripts/build-content.ts`. Hand edits to
-`src/data/nodes.ts` or `public/content/bodies/*` will be reverted by the next build.
+Also worth a look while re-capturing: `AG2-1` (node is Gibson's "Affordances"; capture is an
+NN/g design article) and `AD2-1`/`AG1-1`, already demoted above.
 
 ### P2 — quiz answer-length leak (109 nodes)
 
-109 of 451 quizzes have a correct option >1.3× the longest distractor — positions are
-shuffled, so this is "pick the longest", not "pick B". Worst ratio seen: **1.6×**.
-
-Distribution by cluster (top): `AL 7`, `J 6`, `D 6`, `U 5`, `O 5`, `I 5`, `AJ 5`, `AI 5`,
-`AF 5`, then a long tail. The fix is tightening distractors in `content/clusters/*.json`
-(lengthen distractors or shorten the key), not changing the validator. Flip
-`validate-nodes.ts --strict` once the backlog is cleared so it can't regress.
+109 of 451 quizzes have a correct option >1.3× the longest distractor, shuffled positions, so
+it reads as "pick the longest". Worst ratio 1.6×. By cluster: `AL 7`, `J 6`, `D 6`, `U 5`,
+`O 5`, `I 5`, `AJ 5`, `AI 5`, `AF 5`, long tail after that. Fix the distractors in
+`content/clusters/*.json`, then flip `validate-nodes.ts --strict` so it can't regress.
 
 ### P2 — tests: the weakest engineering aspect
 
-Coverage is real but shallow end-to-end: `store` (16), `feed` (9), `bodies` (7), `artwork` (8),
-`mainRoutes` (6), `url` (5), `quiz` (5), plus 2 axe files. **There is no route render test
-and no E2E.** `mainRoutes.test.ts` tests a helper, not a route.
+`store` (16), `feed` (9), `bodies` (7), `artwork` (8), `mainRoutes` (6), `url` (5), `quiz` (5),
+plus 2 axe files. **No route render test, no E2E.** Playwright is not in `devDependencies`.
 
-Two concrete gaps worth closing first:
-
-1. SSR smoke per route (including 404 and the wrapped 500 path in the server entry).
-2. Playwright pass: onboarding → feed swipe → node → quiz → review, plus reload-persistence.
-
-Playwright is **not** in `devDependencies` — this is new setup, not just new tests.
+1. SSR smoke per route, including 404 and the wrapped-500 path.
+2. Playwright: onboarding → feed swipe → node → quiz → review, plus reload persistence.
 
 ### P2 — docs are stale (numbers, not just dead files)
 
-`REBUILD-HANDOFF.md` and `REQUIREMENTS-TODO.md` are outright obsolete: they describe branch
-`content-workflow-rebuild`, `bun install`, `bun run`, and 270 nodes. Delete or move to
-`docs/archive/`.
+`REBUILD-HANDOFF.md` and `REQUIREMENTS-TODO.md` are obsolete (branch `content-workflow-rebuild`,
+`bun install`, 270 nodes). But **live** docs carry stale counts too:
 
-But **live** docs carry the stale 270 too, which is worse — those need a numbers refresh, not
-archiving:
+- `docs/FEED-SPEC.md:93,131`, `docs/QA-TEST-WORKFLOW.md:133` (270 nodes / 233 KB gz)
+- `docs/NODES-SPLIT-DECISION.md:9-12,38` (the split it proposes is shipped)
+- `TECH_DEBT.md` §3 still says "161 sources" (now 223), §2 is marked resolved
+- `docs/BRAND.md` is cited by `BrandMark.tsx:1`, `site.ts:2` and both expert reviews — it does
+  not exist
 
-- `docs/FEED-SPEC.md:93,131` ("270 nodes")
-- `docs/NODES-SPLIT-DECISION.md:9-12,38` (the whole 270/296 analysis predates the split; the
-  split is now *done*, so this doc reads as a proposal for shipped work)
-- `docs/QA-TEST-WORKFLOW.md:133` (270 nodes / 233 KB gz — actual index is ~128 KB gz)
-- `TECH_DEBT.md` §3 title still says "161 sources" (actual: 215)
-- `docs/STATUS-2026-09-04.md` is dated and may be left as history
+### P3 — carried over
 
-Also: **`docs/BRAND.md` does not exist** but is cited by `src/components/BrandMark.tsx:1`,
-`src/lib/site.ts:2`, and both recent expert reviews.
-
-### P3 — carried over, unchanged
-
-- CSP nonce (today `script-src 'unsafe-inline'` is required for streamed SSR).
-- `visitNode` marks the streak without a quiz — product call, inflates the retention signal.
-- Route files overdue for a split: `index.tsx` (695), `you.tsx` (643), `node.$id.tsx` (612).
-- ~50 unused shadcn/Radix primitives inflating the dependency graph (tree-shaken).
-- Manual VoiceOver/NVDA walkthrough before public launch (`TECH_DEBT.md` §1).
-- FEED-SPEC §3/4 vs shipped feed (inline deeper layers, double-tap save) — spec and product
-  disagree; update the spec to match the shipped choice.
+CSP nonce (`script-src 'unsafe-inline'` required for streamed SSR today); `visitNode` inflates
+the streak without a quiz; route files overdue for a split (`index.tsx` 695, `you.tsx` 643,
+`node.$id.tsx` 612); ~50 unused shadcn/Radix primitives; manual screen-reader walkthrough
+(`TECH_DEBT.md` §1); FEED-SPEC §3/4 disagrees with the shipped feed (inline deeper layers,
+double-tap save) — update the spec to match the product.
 
 ---
 
-## 3. New findings from this pass (not in the previous handoff)
+## 3. Notes for maintainers
 
-**1. Two orphan archive files, and they are not junk.**
-`public/content/sources/AA1-entropy-0.md` and `AA2-relativity-0.md` are unreferenced (nodes
-AA1/AA2 point at `AA1-0.md` / `AA2-0.md`, both present) yet still get precached — 406 files
-precached vs 404 referenced.
-
-They are the **better-metadata** versions, not duplicates:
-
-| File                  | Words | `author:`                                         |
-| --------------------- | ----- | ------------------------------------------------- |
-| `AA1-entropy-0.md`    | 391   | `Rudolf Clausius (article by Tomasz Downarowicz)` |
-| `AA1-0.md` (in use)   | 5,074 | `article`                                         |
-| `AA2-relativity-0.md` | 354   | `Albert Einstein`                                 |
-| `AA2-0.md` (in use)   | 9,005 | `paper`                                           |
-
-The 07-18 re-fetch won full text but lost the curated attribution. Delete the orphans only
-**after** copying their frontmatter worth into the referenced files.
-
-**2. The same attribution degradation is wider than those two: 22 files** ship a byline that
-renders as `Originally published by article, article` (22 have a generic `author:`, 44 a
-generic `source:`) — visible in `/read`:
-
-`AA1-0 AA2-0 AD1-1 AD2-1 AE1-1 AE2-1 AF1-1 AF2-1 AG1-1 AG2-1 AK2-1 J2-0 J4-0 K1-0 K2-0 K3-0 K4-0 L1-0 M1-0 M2-0 M3-0 N1-0`
-(cluster `K` is worst: 4/4).
-
-**3. `npm run build` leaves the tree dirty.** The `prebuild` regenerates `public/sitemap.xml`
-with `lastmod` = build date, rewriting all 899 URLs. So a correct gate run always produces a
-899-line diff in a committed file, and CI does **not** check sitemap freshness (only
-TOPICS-INDEX). Either gitignore the sitemap and generate it at deploy, or stop stamping every
-URL with the build date. Until then, don't commit that churn as if it were a change.
+- `npm run build` always dirties `public/sitemap.xml`: `prebuild` re-stamps all 899 `lastmod`
+  dates with the build date. CI checks TOPICS-INDEX freshness but **not** sitemap freshness.
+  Revert that churn (`git checkout -- public/sitemap.xml`) unless the diff is intended.
+- `furtherReading[].source` is a **publication** name; the node's `type` word
+  (article/paper/book) is a separate field. Don't write a type word into `source` — that is
+  exactly the defect fixed in §1c.
+- The two orphans were deleted only after their metadata was merged — if you re-add archive
+  files, check `archive-sources.ts` idempotency first (it skips anything whose file exists).
 
 ---
 
@@ -217,10 +194,10 @@ URL with the build date. Until then, don't commit that churn as if it were a cha
 
 - **Don't redesign.** The IA (Feed · Explore · Review · You) is settled.
 - **Don't rename the persist key `unknown:v1`** (`src/lib/store.ts:245`) — it wipes every install.
-- **Don't hand-edit** `src/data/nodes.ts` or `public/content/bodies/*` — generated; edit
+- **Don't hand-edit** `src/data/nodes.ts` or `public/content/bodies/*` — generated. Edit
   `content/clusters/*.json` and run `build-content.ts`.
-- Don't "fix" the archive path: disk write dir is `public/content/sources/`, stored path is
-  `content/sources/<id>-<i>.md` (URL form). The archiver asserts this.
+- Archive paths are deliberately split: disk = `public/content/sources/`,
+  stored path = `content/sources/<id>-<i>.md`. The archiver asserts this.
 - Don't commit `archive-failures.log` (gitignored, local diagnostic).
 
 ---
@@ -230,8 +207,8 @@ URL with the build date. Until then, don't commit that churn as if it were a cha
 ```bash
 git checkout main && git pull
 npm ci                     # package-lock.json is canonical; bun.lock is gitignored
-npm run check              # validate + lint + test + build — expect the §0 numbers
+npm run check              # expect the §0 numbers
 ```
 
-Then pick up at **P0** (origin) or **P1** (re-archive, needs web access). Cluster D (§2) and
-the quiz leak are the two content tasks that need no network and no design decisions.
+Then: **P0** (origin) or **P1** (re-archive + the three wrong-page captures, needs web access).
+The remaining network-free content task is the quiz leak backlog (§2 P2).
