@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { safeHttpUrl, safeArchiveId } from "./url";
-import { absoluteUrl, SITE_URL } from "./site";
+import { absoluteUrl, resolveSiteUrl, SITE_URL, PLACEHOLDER_ORIGIN } from "./site";
 
 describe("safeHttpUrl", () => {
   it("accepts http and https", () => {
@@ -28,6 +28,49 @@ describe("safeArchiveId", () => {
     expect(safeArchiveId("A1/../B1")).toBeUndefined();
     expect(safeArchiveId("")).toBeUndefined();
     expect(safeArchiveId("A1-0.md")).toBeUndefined();
+  });
+});
+
+describe("resolveSiteUrl", () => {
+  it("prefers the build-time define over every env source", () => {
+    // vite.config.ts bakes the origin in at build time; nothing at runtime
+    // should be able to override what the bundle was built with.
+    expect(
+      resolveSiteUrl("https://baked.test", {
+        SITE_URL: "https://env.test",
+        VERCEL_PROJECT_PRODUCTION_URL: "prod.vercel.app",
+        VERCEL_URL: "preview.vercel.app",
+      }),
+    ).toBe("https://baked.test");
+  });
+
+  it("reads SITE_URL from the environment and strips a trailing slash", () => {
+    expect(resolveSiteUrl(undefined, { SITE_URL: "https://commonplace.example/" })).toBe(
+      "https://commonplace.example",
+    );
+    expect(resolveSiteUrl(undefined, { SITE_URL: "https://commonplace.example" })).toBe(
+      "https://commonplace.example",
+    );
+  });
+
+  it("prefers the Vercel production domain over the per-deployment host", () => {
+    // Vercel sets both on preview builds. Canonical/og:url/sitemap must name
+    // the production domain, or every preview deploy publishes ~894
+    // near-duplicate URLs and leaves crawlers to guess which is canonical.
+    expect(
+      resolveSiteUrl(undefined, {
+        VERCEL_PROJECT_PRODUCTION_URL: "commonplace.vercel.app",
+        VERCEL_URL: "commonplace-git-topic-team.vercel.app",
+      }),
+    ).toBe("https://commonplace.vercel.app");
+  });
+
+  it("falls back to VERCEL_URL, then to the placeholder origin", () => {
+    expect(resolveSiteUrl(undefined, { VERCEL_URL: "commonplace-abc123.vercel.app/" })).toBe(
+      "https://commonplace-abc123.vercel.app",
+    );
+    expect(resolveSiteUrl(undefined, {})).toBe(PLACEHOLDER_ORIGIN);
+    expect(resolveSiteUrl(undefined, { SITE_URL: "", VERCEL_URL: "" })).toBe(PLACEHOLDER_ORIGIN);
   });
 });
 

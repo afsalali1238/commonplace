@@ -25,21 +25,40 @@ layer1/layer2/quiz/furtherReading live in `public/content/bodies/<cluster>.json`
 lazily on first node open and precached by the service worker (`docs/CONTENT-LAYER.md`).
 The CI bundle-size cap (260 KB largest chunk) enforces it. No action remaining.
 
-## 3. Missing Archive Snapshots (161 sources demoted to "unavailable")
+## 3. Missing / Untrustworthy Archive Snapshots (223 of 622 unavailable)
 
-**Current State:** The repo re-import (rename + squash) lost 161 of the archived source
-files under `public/content/sources/`. Rather than ship broken links,
-`scripts/demote-missing-archives.ts` (committed 2026-09-15) marked those
-`furtherReading[].archive` entries `"unavailable"` in `content/`. The app still shows the
-source's live URL; only the offline snapshot is absent.
+**Current State (measured 2026-09-16):** of 622 `furtherReading` entries, 398 are
+`full`, 1 is `excerpt`, and **223 are `"unavailable"`**. The original tranche was
+the 161 snapshots lost in the repo re-import (rename + squash): rather than ship
+broken links, `scripts/demote-missing-archives.ts` (committed 2026-09-15) marked
+those entries `"unavailable"` in `content/`. Since then the count grew — 5
+block-page captures were demoted on 2026-09-16 (below), 3 new primary-source
+citations were added directly as `unavailable` (cluster D), and content expansion
+between the two expert reviews added the rest. This repo is a single squashed
+commit, so the exact per-tranche breakdown is **not reconstructable**; re-measure
+with the validator/audit rather than re-deriving it from prose. The app still
+shows each source's live URL; only the offline snapshot is absent.
+
+**Block-page captures demoted 2026-09-16** (a captcha or access-check page is not
+an offline copy; these link out and sit in the recovery queue): `AB5-0` (JSTOR
+access check), `M3-0` (ScienceDirect block), `K3-0` (JSTOR captcha), `AD2-1`
+(PNAS nav only), `AG1-1` (archive.org UI counters).
+
+**Wrong-page captures (need network to re-capture, must not be re-attributed):**
+`J2-0` (node is Marks's _Second-Order Thinking_; capture is Oaktree's memos
+index), `L1-0` (node is Pascal's _Expected Value_; capture is Annie Duke's
+_Quit_), `M2-0` (node is Chesterton's _Chesterton's Fence_; capture is a Project
+Gutenberg browse page for a different work). Also worth a look while
+re-capturing: `AG2-1`.
 
 **Trigger Condition / "Done" Definition:**
 Re-archive on a machine with general web access (the build sandbox only allows
 registry/API hosts):
 
 ```bash
-npx tsx scripts/archive-sources.ts all --retry-unavailable   # refetches the 161; media/paywalls stay "unavailable"
-npx tsx scripts/build:content                                # regenerate bodies + manifest
+npx tsx scripts/archive-sources.ts all --retry-unavailable   # refetches the unavailable set; media/paywalls stay "unavailable"
+npx tsx scripts/build-content.ts                             # regenerate index + bodies + manifest
+npx tsx scripts/generate-sitemap.ts                          # /read URLs change with the archive set; CI checks this
 npx tsx scripts/validate-nodes.ts                            # expect 0 errors, 0 missing files
 ```
 

@@ -1,5 +1,17 @@
 # Decision: nodes.ts split (TECH_DEBT §2)
 
+> **Historical record — do not follow as current guidance.** Written 2026-07-16,
+> resolved 2026-09-04. The body of this document is preserved as written, which
+> means its numbers are now wrong on purpose (270 nodes, ~768 KB raw / ~233 KB
+> gz). The deferral it argues for expired when both of its own triggers were
+> exceeded (350 nodes, 400 KB gz), and the split shipped the same day;
+> `TECH_DEBT.md` §2 marks it RESOLVED. Current state: index-only
+> `src/data/nodes.ts` (451 nodes, ~128 KB gz) with per-cluster bodies in
+> `public/content/bodies/`, fetched lazily and SW-precached — see
+> `docs/CONTENT-LAYER.md` for the live design and `.github/workflows/ci.yml`
+> (bundle-size limit) for the live guard. Read this for the _reasoning_: why
+> deferring was right at 270 nodes, and what the measured trigger bought.
+
 **Date:** 2026-07-16
 **Decision: DEFER the runtime split. Set a concrete, measured trigger. Reduce the risk now
 by making the add-content flow the only writer and adding a validation gate.**
