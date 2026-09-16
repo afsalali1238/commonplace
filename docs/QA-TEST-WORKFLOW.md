@@ -130,7 +130,11 @@ This is the spaced-repetition engine's input — test the math explicitly.
 
 ### 3.4 Performance
 
-- First load ships the whole graph (~233KB gz, 270 nodes — see split decision doc). Measure LCP; note it against the 350-node/400KB split trigger.
+- First load ships the index only (~128 KB gz, 451 nodes); per-cluster bodies
+  arrive lazily on first node open (docs/CONTENT-LAYER.md). Measure LCP. The
+  350-node / 400KB-gz split trigger in docs/NODES-SPLIT-DECISION.md was exceeded
+  and the split shipped 2026-09-04 — that doc is now a historical record. The
+  live guard is the CI bundle-size cap (260 KB gz largest chunk).
 - No jank revealing layers or navigating clusters on a mid-range phone.
 
 ### 3.5 Error handling (`error-capture.ts` / `error-page.ts`)

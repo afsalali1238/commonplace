@@ -90,7 +90,9 @@ score(n) =
 next = argmax(score) with constraint(cluster != lastCluster)
 ```
 
-All in-memory over the 270 nodes — cheap, offline-friendly, no server.
+All in-memory over the bundled index (**451 nodes**; scoring reads index fields
+only — tags, related, visited — so the lazily-fetched layer bodies are never on
+this path). Cheap, offline-friendly, no server.
 
 ## 6. State additions (minimal, backward-compatible)
 
@@ -128,7 +130,10 @@ alone breeds junk; optimizing for "stopped to read deeper / saved it" keeps the 
 ## 10. Performance
 
 - Window the DOM: render current ± 2 cards only; recycle nodes. No raster images — the only image on a card is the idea's generated inline-SVG glyph (`docs/VISUAL-SYSTEM.md`), so cards stay text-cheap.
-- Preload the next 2 cards' layers. Whole graph already in memory (see NODES-SPLIT-DECISION — still fine at 270).
+- Preload the next 2 cards' layers. The index for the whole graph is already in
+  memory (~128 KB gz at 451 nodes); only the two next cards' cluster bodies are
+  fetched (docs/CONTENT-LAYER.md). The "ship the whole graph" concern that
+  NODES-SPLIT-DECISION debated is historical — the split shipped 2026-09-04.
 
 ## 11. Accessibility
 

@@ -1,8 +1,10 @@
-# Handoff — after PR #7 (fresh pass, updated 2026-09-16)
+# Handoff — after PR #8 + the origin & docs pass (updated 2026-09-16)
 
-Post-merge re-read of the tree on `main` @ `9e8e05d` (the PR #7 merge commit), then the first
-network-free content pass on top of it. Every number below was measured this session;
-commands/greps are quoted so the next session can trust them without re-deriving.
+Post-merge re-read of the tree on `main` @ `ea330ec` (the PR #8 merge commit), then two passes
+on top of it: the P0 origin plumbing (one env var now drives every absolute URL) and the docs
+refresh (missing `docs/BRAND.md` written, obsolete files deleted, stale counts corrected).
+Every number below was measured this session; commands/greps are quoted so the next session
+can trust them without re-deriving.
 
 ---
 
@@ -10,19 +12,22 @@ commands/greps are quoted so the next session can trust them without re-deriving
 
 | Thing                  | Value                                                            | How verified                          |
 | ---------------------- | ---------------------------------------------------------------- | ------------------------------------- |
-| Base / merge target    | `main` @ `9e8e05d` (PR #7)                                        | `git log`                             |
+| Base / merge target    | `main` @ `ea330ec` (PR #8)                                        | `git log`                             |
 | Nodes                  | **451** across 38 clusters (`A`–`Z` + `AA`–`AL`)                  | `validate-nodes.ts`                   |
 | Validator              | **0 errors**, **109 warnings** (all "quiz answer-length leak")    | `npx tsx scripts/validate-nodes.ts`   |
-| Tests                  | **9 files / 65 tests** passing                                    | `npm test`                            |
+| Tests                  | **9 files / 69 tests** passing                                    | `npm test`                            |
 | Lint                   | **0 errors / 6 warnings** (shadcn react-refresh; CI cap 10)       | `eslint . --max-warnings 10`          |
 | Build                  | clean; SW precache = 92 assets + 39 bodies + **399** sources      | `npm run build`                       |
-| Largest client chunk   | `nodes-*.js` ≈ **128 KB gz** / 380 KB raw (cap 260 KB)            | build output                          |
+| Largest client chunk   | `nodes-*.js` ≈ **128 KB gz** / 412 KB raw (cap 260 KB)            | build output                          |
+| Sitemap URLs           | **894** (was 899 committed — see §1e)                             | `grep -c "<url>" public/sitemap.xml`  |
 | furtherReading entries | **622** = 398 `full` + 1 `excerpt` + **223 `unavailable`**        | script over `content/clusters/*.json` |
 | Source files on disk   | **399** = 399 referenced + **0 orphans**, 0 missing               | set-diff disk vs referenced paths     |
 
 **Gate this pass** (`npm run check`, exit 0): `Validated 451 nodes.` / `OK — no errors.` /
-`6 problems (0 errors, 6 warnings)` / `9 passed (9)` files, `65 passed (65)` tests /
+`6 problems (0 errors, 6 warnings)` / `9 passed (9)` files, `69 passed (69)` tests /
 build clean / `Injected 92 assets, 39 node body files and 399 archived source files`.
+The working tree is now **unchanged by a build** (§1e) — verified byte-identical across
+two consecutive `npm run prebuild` runs.
 
 ---
 
@@ -91,22 +96,60 @@ Both layers were synced: the `.md` frontmatter + byline and the node-side
   `AG1-1` (archive.org UI counters, 1.4 KB). Serving a captcha as an offline copy is a lie;
   these now link out and sit in the `--retry-unavailable` recovery queue.
 
+### 1e. Origin plumbing + docs (this pass)
+
+**P0 origin, done.** The origin lived in three places that could disagree
+(`src/lib/site.ts`, `public/robots.txt`, and the env read inside
+`generate-sitemap.ts`). There is now one resolution, `resolveSiteUrl()` in
+`src/lib/site.ts`, baked into the client **and** SSR bundles by a Vite `define`
+in `vite.config.ts`. Precedence: define → `SITE_URL` →
+`VERCEL_PROJECT_PRODUCTION_URL` → `VERCEL_URL` → placeholder. Vercel production
+is preferred over `VERCEL_URL` because the latter is the per-deployment
+(preview) host — canonicals must never name a preview. Launching on a real
+domain is now: set one Vercel variable, redeploy, commit the two regenerated
+files. Full rules in `docs/BRAND.md` §2.
+
+- **`robots.txt` is generated** (`scripts/generate-robots.ts`, in `prebuild`)
+  instead of hand-maintained with an absolute `Sitemap:` line nothing checked.
+  Byte-identical at the current placeholder origin.
+- **`<lastmod>` dropped from the sitemap.** It stamped the build date on every
+  URL, so every build dirtied the tree (the churn §3 used to tell maintainers
+  to revert) and produced the "unreliable lastmod" signal crawlers discount.
+  Output is deterministic now.
+- **CI freshness gate** for `sitemap.xml` + `robots.txt`, mirroring the
+  TOPICS-INDEX check. Not hypothetical: the committed sitemap was already
+  stale — **899 URLs where the build produces 894** (the five §1d demotions
+  never came out of it). Regenerated here.
+- **4 unit tests** pin the precedence (`src/lib/url.test.ts`).
+- **Verified, not assumed:** `SITE_URL=https://verify-origin.test npm run build`
+  puts that origin in `dist/client`, `dist/server`, `sitemap.xml` and
+  `robots.txt`; the placeholder survives only as the unreachable terminal
+  fallback in the bundles.
+
+**Docs, done.** `docs/BRAND.md` written (cited by `BrandMark.tsx:1`, `site.ts:2`
+and both reviews, and missing) — name, mark geometry, tokens, shipped-asset
+inventory, origin rules, and a measured drift list in its §6.
+`REBUILD-HANDOFF.md` and `REQUIREMENTS-TODO.md` deleted (270-node /
+`content-workflow-rebuild` era; only historical prose referenced them). Stale
+counts refreshed in `docs/FEED-SPEC.md` (§5, §10),
+`docs/QA-TEST-WORKFLOW.md` (§3.4) and `TECH_DEBT.md` §3 (161 → 223 unavailable,
+plus the five demoted block pages and the three wrong-page captures);
+`docs/NODES-SPLIT-DECISION.md` carries a historical-record banner so it stops
+reading as a live proposal.
+
 ---
 
 ## 2. Open work, prioritised
 
-### P0 — real origin
+### P0 — real origin (CODE DONE; the domain itself is still a product call)
 
-`SITE_URL` is still the placeholder `https://commonplace.app` (unregistered). Everything
-absolute ships pointing at a dead origin: 899 sitemap URLs, `robots.txt`, canonical,
-`og:url`, `og:image`.
-
-- `src/lib/site.ts:11` — the constant
-- `public/robots.txt:3` — static, not generated
-- `scripts/generate-sitemap.ts` — reads env `SITE_URL` first, so Vercel can override the
-  sitemap **but not the other two**
-
-Blocked on a product decision (register the domain vs use the `*.vercel.app` origin).
+The code half shipped this pass (§1e): every absolute URL — canonical, `og:url`,
+`og:image`, `sitemap.xml`, `robots.txt` — resolves through `resolveSiteUrl()`,
+and CI fails if the committed generated files drift from what a build produces.
+What remains is the product decision the code was blocked on: register
+`commonplace.app`, or adopt the Vercel production origin. Either is now one
+Vercel variable + a redeploy + committing the two regenerated files, with no
+code change. Rules and launch checklist: `docs/BRAND.md` §2.
 
 ### P1 — re-archive (needs a machine with web access; still blocked here)
 
@@ -156,16 +199,21 @@ plus 2 axe files. **No route render test, no E2E.** Playwright is not in `devDep
 1. SSR smoke per route, including 404 and the wrapped-500 path.
 2. Playwright: onboarding → feed swipe → node → quiz → review, plus reload persistence.
 
-### P2 — docs are stale (numbers, not just dead files)
+### P2 — docs were stale (numbers, not just dead files) — DONE this pass
 
-`REBUILD-HANDOFF.md` and `REQUIREMENTS-TODO.md` are obsolete (branch `content-workflow-rebuild`,
-`bun install`, 270 nodes). But **live** docs carry stale counts too:
+All of the following landed in §1e: the two obsolete root docs deleted, the
+270-node / 233 KB-gz counts corrected in `FEED-SPEC` / `QA-TEST-WORKFLOW`,
+`TECH_DEBT` §3 brought to 223, `NODES-SPLIT-DECISION` bannered as historical,
+and the missing `docs/BRAND.md` written.
 
-- `docs/FEED-SPEC.md:93,131`, `docs/QA-TEST-WORKFLOW.md:133` (270 nodes / 233 KB gz)
-- `docs/NODES-SPLIT-DECISION.md:9-12,38` (the split it proposes is shipped)
-- `TECH_DEBT.md` §3 still says "161 sources" (now 223), §2 is marked resolved
-- `docs/BRAND.md` is cited by `BrandMark.tsx:1`, `site.ts:2` and both expert reviews — it does
-  not exist
+**One new finding from the refresh, deliberately not fixed here** (it changes
+shipped pixels, so it wants its own reviewable pass): the installed-icon family
+(`icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`)
+still shows the pre-rename **spiral** mark while the favicon pair and `og.png`
+show the current **Marginalia** asterisk — and `scripts/brand-assets.ts` now
+throws (`public/logo.svg: no path found`, line 68) because the mark changed from
+one spiral `<path>` to four `<line>`s, so those PNGs cannot currently be
+regenerated. Evidence and fix path in `docs/BRAND.md` §6.
 
 ### P3 — carried over
 
@@ -179,9 +227,10 @@ double-tap save) — update the spec to match the product.
 
 ## 3. Notes for maintainers
 
-- `npm run build` always dirties `public/sitemap.xml`: `prebuild` re-stamps all 899 `lastmod`
-  dates with the build date. CI checks TOPICS-INDEX freshness but **not** sitemap freshness.
-  Revert that churn (`git checkout -- public/sitemap.xml`) unless the diff is intended.
+- `npm run build` **no longer dirties** `public/sitemap.xml`: `<lastmod>` is gone (§1e), the
+  generators are deterministic, and CI checks sitemap + robots freshness the same way it
+  checks TOPICS-INDEX. If a build now dirties either file, that is a real content change
+  (nodes or archives moved) — commit it, don't revert it.
 - `furtherReading[].source` is a **publication** name; the node's `type` word
   (article/paper/book) is a separate field. Don't write a type word into `source` — that is
   exactly the defect fixed in §1c.
@@ -210,5 +259,6 @@ npm ci                     # package-lock.json is canonical; bun.lock is gitigno
 npm run check              # expect the §0 numbers
 ```
 
-Then: **P0** (origin) or **P1** (re-archive + the three wrong-page captures, needs web access).
-The remaining network-free content task is the quiz leak backlog (§2 P2).
+Then: **P1** (re-archive + the three wrong-page captures, needs web access) or the brand-icon
+regeneration pass (`docs/BRAND.md` §6 — the installed icons are still the old spiral). The
+remaining network-free content task is the quiz leak backlog (§2 P2).
