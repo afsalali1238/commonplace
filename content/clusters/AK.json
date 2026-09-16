@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Understanding Media: The Extensions of Man, Ch.1 (excerpt)",
-          "source": "book",
+          "source": "MIT (course reading)",
           "url": "https://web.mit.edu/allanmc/www/mcluhan.mediummessage.pdf",
           "archive": {
             "status": "excerpt",
@@ -73,7 +73,7 @@
       "furtherReading": [
         {
           "label": "Simulacra and Simulation",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Simulacra_and_Simulation",
           "archive": {
             "status": "full",
@@ -83,7 +83,7 @@
         },
         {
           "label": "Simulacra and Simulation (1981, full scan)",
-          "source": "book",
+          "source": "University of Michigan Press",
           "url": "https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf",
           "archive": {
             "status": "full",

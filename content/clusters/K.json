@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "The Psychology of Money",
-          "source": "book",
+          "source": "morganhousel.com",
           "url": "https://www.morganhousel.com/",
           "archive": {
             "status": "full",
@@ -73,7 +73,7 @@
       "furtherReading": [
         {
           "label": "Antifragile",
-          "source": "book",
+          "source": "Penguin Random House",
           "url": "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
           "archive": {
             "status": "full",
@@ -115,9 +115,7 @@
           "source": "paper",
           "url": "https://www.jstor.org/stable/1805621",
           "archive": {
-            "status": "full",
-            "path": "content/sources/K3-0.md",
-            "retrieved": "2026-07-14"
+            "status": "unavailable"
           }
         }
       ],
@@ -151,7 +149,7 @@
       "furtherReading": [
         {
           "label": "Antifragile",
-          "source": "book",
+          "source": "Penguin Random House",
           "url": "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
           "archive": {
             "status": "full",

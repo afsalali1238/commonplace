@@ -928,9 +928,9 @@ export const NODES: NodeIndex[] = [
     category: "Macro Memo",
     epistemicStatus: "Canonical",
     thesis:
-      "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
+      "In a crash the real danger is not buying too early but freezing entirely; the cure is a reinvestment plan decided in advance.",
     layer0:
-      "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
+      "In March 2009, with markets in free fall, Jeremy Grantham warned that the danger wasn't buying too early — it was “terminal paralysis.” Investors sitting on cash would keep waiting for the bottom and miss the recovery entirely. In a panic, he argued, the failure to act costs far more than acting imperfectly.",
     related: ["D2", "D4", "D10", "D12"],
     tags: ["Markets & Narrative", "Macro & Cycles"],
   },
@@ -962,7 +962,7 @@ export const NODES: NodeIndex[] = [
     thesis:
       "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
     layer0:
-      "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
+      "In February 2007 — months before the credit crisis broke — Howard Marks warned about a “race to the bottom” in debt markets. Lenders competing for deals were abandoning the protections and covenants that had long kept them safe, accepting ever more risk for ever lower returns.",
     related: ["D1", "D2", "D3", "C11"],
     tags: ["Markets & Narrative", "Macro & Cycles"],
   },
@@ -1026,7 +1026,7 @@ export const NODES: NodeIndex[] = [
     thesis:
       "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
     layer0:
-      "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
+      "In December 2020, Lyn Alden argued that the dollar reserve system is not about to collapse — it is slowly re-aligning. Taking a quantitative look at the near-50-year-old petrodollar arrangement, she traced how the mechanics that once locked the world into holding dollars are fraying, for the United States and its trading partners alike.",
     related: ["D1", "D2", "D3"],
     tags: ["Markets & Narrative", "Macro & Cycles"],
   },

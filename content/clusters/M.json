@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Goodhart's Law: Its Origins, Meaning, and Implications",
-          "source": "paper",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
           "archive": {
             "status": "full",
@@ -73,7 +73,7 @@
       "furtherReading": [
         {
           "label": "The Thing",
-          "source": "essay",
+          "source": "Project Gutenberg",
           "url": "https://www.gutenberg.org/ebooks/1720",
           "archive": {
             "status": "full",
@@ -115,9 +115,7 @@
           "source": "paper",
           "url": "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
           "archive": {
-            "status": "full",
-            "path": "content/sources/M3-0.md",
-            "retrieved": "2026-07-14"
+            "status": "unavailable"
           }
         }
       ],

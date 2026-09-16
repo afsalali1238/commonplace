@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "The Prince (full text)",
-          "source": "book",
+          "source": "Project Gutenberg",
           "url": "https://www.gutenberg.org/files/1232/1232-h/1232-h.htm",
           "archive": {
             "status": "full",
@@ -73,7 +73,7 @@
       "furtherReading": [
         {
           "label": "Let's Not Forget George Stigler's Lessons about Regulatory Capture",
-          "source": "article",
+          "source": "GW Regulatory Studies Center",
           "url": "https://regulatorystudies.columbian.gwu.edu/lets-not-forget-george-stiglers-lessons-about-regulatory-capture",
           "archive": {
             "status": "full",

@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Metcalfe's Law",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Metcalfe's_law",
           "archive": {
             "status": "full",
@@ -44,7 +44,7 @@
         },
         {
           "label": "Beyond Metcalfe's Law for Network Effects",
-          "source": "article",
+          "source": "Andreessen Horowitz (a16z)",
           "url": "https://a16z.com/beyond-metcalfes-law-for-network-effects/",
           "archive": {
             "status": "full",
@@ -83,7 +83,7 @@
       "furtherReading": [
         {
           "label": "Small-world experiment",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Small-world_experiment",
           "archive": {
             "status": "full",
@@ -93,7 +93,7 @@
         },
         {
           "label": "Could it be a Big World After All? The 'Six Degrees of Separation' Myth",
-          "source": "article",
+          "source": "Society (2002)",
           "url": "https://www.cs.princeton.edu/~chazelle/courses/BIB/big-world",
           "archive": {
             "status": "full",

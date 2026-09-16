@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Entropy",
-          "source": "article",
+          "source": "Scholarpedia",
           "url": "http://www.scholarpedia.org/article/Entropy",
           "archive": {
             "status": "full",
@@ -81,7 +81,7 @@
       "furtherReading": [
         {
           "label": "On the Electrodynamics of Moving Bodies (1905, English translation)",
-          "source": "paper",
+          "source": "Annalen der Physik (English translation via fourmilab.ch)",
           "url": "https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf",
           "archive": {
             "status": "full",

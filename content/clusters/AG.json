@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "Form follows function",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Form_follows_function",
           "archive": {
             "status": "full",
@@ -47,9 +47,7 @@
           "source": "article",
           "url": "https://archive.org/details/tallofficebuildi00sull",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AG1-1.md",
-            "retrieved": "2026-07-20"
+            "status": "unavailable"
           }
         }
       ],
@@ -83,7 +81,7 @@
       "furtherReading": [
         {
           "label": "Affordance",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Affordance",
           "archive": {
             "status": "full",
@@ -93,7 +91,7 @@
         },
         {
           "label": "Top 10 Application-Design Mistakes (affordances & signifiers)",
-          "source": "article",
+          "source": "Nielsen Norman Group",
           "url": "https://www.nngroup.com/articles/top-10-application-design-mistakes/",
           "archive": {
             "status": "full",

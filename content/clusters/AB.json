@@ -34,7 +34,7 @@
       "furtherReading": [
         {
           "label": "On the Origin of Species (1859, full text)",
-          "source": "book",
+          "source": "Project Gutenberg",
           "url": "https://www.gutenberg.org/files/1228/1228-h/1228-h.htm",
           "archive": {
             "status": "full",
@@ -73,7 +73,7 @@
       "furtherReading": [
         {
           "label": "The Genetical Evolution of Social Behaviour",
-          "source": "article",
+          "source": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Genetical_Evolution_of_Social_Behaviour",
           "archive": {
             "status": "full",
@@ -202,9 +202,7 @@
           "url": "https://www.jstor.org/stable/4444260",
           "type": "essay",
           "archive": {
-            "status": "full",
-            "path": "content/sources/AB5-0.md",
-            "retrieved": "2026-07-18"
+            "status": "unavailable"
           }
         }
       ],
