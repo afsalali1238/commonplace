@@ -34,6 +34,16 @@ jobs:
         run: |
           npx tsx scripts/topics-index.ts
           git diff --exit-code docs/TOPICS-INDEX.md docs/TOPICS-INDEX.csv || (echo "::warning::TOPICS-INDEX out of date — run npx tsx scripts/topics-index.ts and commit" && exit 1)
+      # `npm run build` above already regenerated both files via prebuild, so a
+      # non-empty diff here means the committed copies disagreed with what the
+      # build produces — usually a stale sitemap left behind after nodes or
+      # archives changed. The re-run is belt-and-braces so the step also works
+      # if the build step is ever reordered or skipped.
+      - name: Check sitemap + robots freshness
+        run: |
+          npx tsx scripts/generate-sitemap.ts
+          npx tsx scripts/generate-robots.ts
+          git diff --exit-code public/sitemap.xml public/robots.txt || (echo "::warning::sitemap.xml/robots.txt out of date — run npm run prebuild and commit the regenerated files" && exit 1)
       - name: Bundle size limit
         # Hard limit since the data-layer split (TECH_DEBT §2): the largest
         # client chunk is the generated index (~124 KB gzipped at 451 nodes,

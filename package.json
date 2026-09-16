@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "prebuild": "npx tsx scripts/generate-og-image.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/topics-index.ts",
+    "prebuild": "npx tsx scripts/generate-og-image.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-robots.ts && npx tsx scripts/topics-index.ts",
     "build": "vite build && npx tsx scripts/inject-manifest.ts",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
