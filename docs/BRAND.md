@@ -60,7 +60,7 @@ change is required.
 
 A sidenote asterisk: three arms in ink, **one arm in accent**, drawn as
 round-capped strokes on a `0 0 100 100` viewBox at stroke-width `14.8`.
-Geometry (`public/logo.svg`, identical in `BrandMark.tsx`):
+Geometry (single source: `src/lib/brandMark.ts`; `public/logo.svg` must match it — `brandMark.test.ts` checks):
 
 | Arm      | From         | To           | Stroke |
 | -------- | ------------ | ------------ | ------ |
@@ -124,11 +124,11 @@ inverted, deliberately not a stock blue-black tech theme.
 | ------------------------------ | -------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------- |
 | `public/logo.svg`              | light Marginalia mark, baked ink                   | hand-authored                                                     | `__root.tsx` favicon (light) |
 | `public/logo-dark.svg`         | dark twin of the above                             | hand-authored                                                     | `__root.tsx` favicon (dark)  |
-| `public/favicon.ico`           | legacy raster favicon, `sizes="16x16 32x32 48x48"` | rasterised                                                        | `__root.tsx`                 |
-| `public/apple-touch-icon.png`  | iOS home-screen icon                               | rasterised from `brand/icon.svg`                                  | `__root.tsx`                 |
-| `public/icon-192.png`          | PWA icon, `any`                                    | rasterised from `brand/icon.svg`                                  | manifest                     |
-| `public/icon-512.png`          | PWA icon, `any`                                    | rasterised from `brand/icon.svg`                                  | manifest                     |
-| `public/icon-maskable-512.png` | PWA icon, `maskable` (20% safe-zone padding)       | rasterised from `brand/icon-maskable.svg`                         | manifest                     |
+| `public/favicon.ico`           | raster favicon, 16 + 32 + 48 px, rounded tile      | `scripts/generate-icons.ts`, deterministic, runs in `prebuild`    | `__root.tsx`                 |
+| `public/apple-touch-icon.png`  | iOS home-screen icon, 180 px                       | `scripts/generate-icons.ts`, deterministic, runs in `prebuild`    | `__root.tsx`                 |
+| `public/icon-192.png`          | PWA icon, `any`                                    | `scripts/generate-icons.ts`, deterministic, runs in `prebuild`    | manifest                     |
+| `public/icon-512.png`          | PWA icon, `any`                                    | `scripts/generate-icons.ts`, deterministic, runs in `prebuild`    | manifest                     |
+| `public/icon-maskable-512.png` | PWA icon, `maskable` (mark inside the safe circle) | `scripts/generate-icons.ts`, deterministic, runs in `prebuild`    | manifest                     |
 | `public/og.png`                | 1200×630 share card, current mark + wordmark       | `scripts/generate-og-image.ts`, deterministic, runs in `prebuild` | `og:image` / `twitter:image` |
 | `public/manifest.webmanifest`  | PWA manifest                                       | hand-authored                                                     | `__root.tsx`                 |
 
@@ -143,52 +143,41 @@ the 38 `plate-<id>.svg`) are produced by `scripts/brand-assets.ts` and are
 **not** referenced by the app and not service-worker precached — they are
 reference/external-use files (decks, posts). Their current state is §6.
 
-PNGs are rasterised from the SVGs with headless Chromium so the webfonts
-render; re-run that step whenever `logo.svg`, the tokens, or `lib/artwork.ts`
-change (commands in `VISUAL-SYSTEM.md` §4).
+Every icon URL carries `?v=ICON_VERSION` (`src/lib/brandMark.ts`, mirrored in
+the manifest; the test checks they agree). Browsers cache favicons for weeks
+and installed apps only refresh their icon when the manifest's icon URLs
+change, so bump it whenever the shipped pixels change.
 
-## 6. Known drift (measured, not suspected)
+## 6. Drift — resolved 2026-10-02
 
-1. **The installed icons are the old mark.** `icon-192.png`, `icon-512.png`,
-   `icon-maskable-512.png` and `apple-touch-icon.png` all depict the pre-2026
-   single-stroke **spiral**, while the favicon pair and `og.png` show the
-   current **Marginalia** asterisk. So an installed app's home-screen icon
-   disagrees with its own favicon and share card. Verified by opening the
-   committed PNGs (2026-09-16).
-2. **`scripts/brand-assets.ts` cannot regenerate them.** It reads the mark as
-   one spiral `<path d="…">` out of `public/logo.svg` (`LOGO_PATH`), and throws
-   `public/logo.svg: no path found` at line 68 now that the mark is four
-   `<line>` elements. Reproduce with `npx tsx scripts/brand-assets.ts`. The
-   38 plates still regenerate byte-identically (they depend on `lib/artwork`,
-   not the logo); the OG card and icons die before they are written.
-3. **The committed brand SVGs are orphaned artifacts.** `public/brand/og.svg` /
-   `icon*.svg` carry the spiral geometry and a hand-patched `Commonplace`
-   label, while the script that would emit them says `Unknown`. Nothing imports
-   them, so the drift is invisible to users today — but they are the only
-   "source" a future maintainer would rasterise from, which would bake the
-   spiral back into a new icon set.
-4. **`favicon.ico` lineage is unverified** this pass; if it is spiral-era (the
-   rest of the raster family is), it belongs in the same regeneration as #1.
+The 2026-09-16 audit found every raster icon (`favicon.ico`, `apple-touch-icon.png`,
+`icon-192/512.png`, `icon-maskable-512.png`) still showing the pre-2026 **spiral**
+while the SVG favicons and `og.png` showed **Marginalia**, and
+`scripts/brand-assets.ts` crashing on the new four-line `logo.svg`. Fixed in one
+pass:
 
-**Fix path (deliberately not done here):** teach `brand-assets.ts` the
-four-line geometry (or import the mark constants from a shared module), fix the
-`Unknown` strings, re-run it, then re-rasterise the PNGs with headless Chromium
-and re-commit the whole icon family in one pass so it cannot half-land. That
-changes shipped brand pixels, so it should be its own reviewable change with
-visual verification, not a side effect of a docs or origin pass.
+- The mark's geometry and baked colours now live in one module,
+  `src/lib/brandMark.ts`, read by `<BrandMark />`, `generate-og-image.ts`,
+  `generate-icons.ts` and `brand-assets.ts`.
+- `scripts/generate-icons.ts` rasterises the whole icon family in `prebuild`;
+  CI fails if the committed rasters are stale.
+- `brandMark.test.ts` fails if `logo.svg` / `logo-dark.svg` or the `styles.css`
+  tokens drift from the module, or if the manifest's cache-buster disagrees.
+- `brand-assets.ts` emits the mark and the `Commonplace` name again; the
+  reference SVGs in `public/brand/` were regenerated (plates byte-identical).
 
 ## 7. Rules for changing the brand
 
-- Edit a token in `styles.css` **and** the matching `PAPER/INK/INK_SOFT/ACCENT`
-  constants in `scripts/brand-assets.ts` / `generate-og-image.ts` together; the
-  scripts do not import the CSS.
+- Edit a paper/ink/accent token in `styles.css` **and** `MARK_COLORS` in
+  `src/lib/brandMark.ts` together (the scripts don't import the CSS;
+  `brandMark.test.ts` fails if the two disagree).
 - Never hardcode an origin. Add it to `resolveSiteUrl` consumers via
   `SITE_URL` / `absoluteUrl`; both generated files and the bundles read the one
   constant (§2).
 - Favicon/app-icon families are deliberately static (baked ink) — do not try to
   make them theme-reactive; `BrandMark` is the dynamic twin.
-- Re-run the generators and the PNG rasterisation whenever the mark, the
-  tokens, or `lib/artwork.ts` change, and re-verify §6 is still accurate
-  afterwards.
+- Change the mark or its colours only in `src/lib/brandMark.ts` (and the two
+  `logo*.svg` files the test pins to it), run `npm run prebuild`, bump
+  `ICON_VERSION` + the manifest `?v=`, and commit the regenerated rasters.
 - New brand surfaces (per-idea OG cards at the edge, manifest `screenshots`)
   are the open follow-ups listed in `VISUAL-SYSTEM.md` §5 and `BRAND P9.1`.

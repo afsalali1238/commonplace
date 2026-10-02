@@ -33,13 +33,13 @@ Everything is built from the three primitives in the logo: **the spiral**,
 **the thread**, and **one accent dot**. That family resemblance is the
 point — the artwork should read as one voice, not decoration.
 
-| Artefact                   | Source                    | What it is                                                                                                                                                       | Where it appears                                                           |
-| -------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| **Topic plate**            | `plateSpec(clusterId)`    | A field of concentric arcs (the spiral, unwound) with a thread crossing it and one knot in accent. Four compositions × tight/open ring fields, chosen by the id. | Explore topic cards (cover), cluster page head (large, drawing itself on). |
-| **Idea glyph**             | `glyphSpec(nodeId)`       | 4–6 dots joined by one continuous thread plus a closing chord — a small piece of lattice. One dot in accent; `progress` lights more of them (Leitner box ÷ 5).   | Feed card, node page header (large), Skim card, topic list rows, Review.   |
-| **OG card**                | `scripts/brand-assets.ts` | 1200×630 share image: headline in Fraunces, plate F in a right-hand panel. Static; per-idea dynamic cards via `@vercel/og` are a possible follow-up.             | `og:image` / `twitter:image` on every page (`__root.tsx`).                 |
-| **App icons**              | `scripts/brand-assets.ts` | The mark on paper. `any` icons at 12% padding; maskable at 20% (W3C safe zone). Verified under iOS squircle and Android circular masks.                          | `public/icon-*.png`, `apple-touch-icon.png`, `manifest.webmanifest`.       |
-| **Per-cluster plate SVGs** | `scripts/brand-assets.ts` | The 38 plates as standalone files, for use outside the app (posts, decks).                                                                                       | `public/brand/plate-<id>.svg` — not referenced by the app, not precached.  |
+| Artefact                   | Source                         | What it is                                                                                                                                                                                                                        | Where it appears                                                             |
+| -------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Topic plate**            | `plateSpec(clusterId)`         | A field of concentric arcs (the spiral, unwound) with a thread crossing it and one knot in accent. Four compositions × tight/open ring fields, chosen by the id.                                                                  | Explore topic cards (cover), cluster page head (large, drawing itself on).   |
+| **Idea glyph**             | `glyphSpec(nodeId)`            | 4–6 dots joined by one continuous thread plus a closing chord — a small piece of lattice. One dot in accent; `progress` lights more of them (Leitner box ÷ 5).                                                                    | Feed card, node page header (large), Skim card, topic list rows, Review.     |
+| **OG card**                | `scripts/generate-og-image.ts` | 1200×630 share image: the mark plus a stroke-glyph wordmark, rasterised in `prebuild`. (`brand-assets.ts` also emits a Fraunces reference `brand/og.svg`, not shipped.)                                                           | `og:image` / `twitter:image` on every page (`__root.tsx`).                   |
+| **App icons + favicon**    | `scripts/generate-icons.ts`    | The Marginalia mark on paper, from `src/lib/brandMark.ts`. `any` icons map the viewBox onto 90% of the tile; maskable onto 80% (inside the W3C safe circle); favicon.ico is 16/32/48 on a rounded tile. Rasterised in `prebuild`. | `favicon.ico`, `icon-*.png`, `apple-touch-icon.png`, `manifest.webmanifest`. |
+| **Per-cluster plate SVGs** | `scripts/brand-assets.ts`      | The 38 plates as standalone files, for use outside the app (posts, decks).                                                                                                                                                        | `public/brand/plate-<id>.svg` — not referenced by the app, not precached.    |
 
 Rules the generator enforces (and `artwork.test.ts` pins):
 
@@ -94,18 +94,14 @@ return an empty `div` (a white flash between the SSR shell and content).
 bun run scripts/brand-assets.ts        # SVGs → public/brand/
 ```
 
-PNGs are rasterised from those SVGs with headless Chromium so the web fonts
-render (the OG card sets Fraunces + JetBrains Mono). The commands used are
-Playwright scripts equivalent to:
-
-```js
-// og.png: load public/brand/og.svg in a 1200×630 page with the Google
-// Fonts stylesheet, await document.fonts.ready, screenshot.
-// icons: load icon.svg / icon-maskable.svg at 512, 192, 180 px; screenshot.
-```
-
-Re-run both whenever `logo.svg`, the tokens, or `lib/artwork.ts` change.
-`og.png` is 54 KB; the four icon PNGs total 17 KB.
+The shipped rasters no longer go through headless Chromium. `og.png` and
+every icon (favicon.ico, apple-touch-icon, the three manifest PNGs) are
+rasterised in plain Node by `scripts/generate-og-image.ts` and
+`scripts/generate-icons.ts`, both reading the mark from
+`src/lib/brandMark.ts`. They run in `prebuild`, are deterministic (a build
+leaves the tree unchanged), and CI fails if the committed files are stale.
+Changing the mark or its colours: edit `brandMark.ts`, run
+`npm run prebuild`, bump `ICON_VERSION` (and the `?v=` in the manifest).
 
 ## 5. Not done / follow-ups
 
