@@ -9,25 +9,23 @@
 import * as zlib from "node:zlib";
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { MARK_ARMS, MARK_COLORS, MARK_STROKE_WIDTH } from "../src/lib/brandMark";
+import { hexToRgb, type RGB, type Seg } from "./lib/raster";
 
 const W = 1200;
 const H = 630;
 
-const PAPER = [0xfa, 0xf8, 0xf3];
-const INK = [0x1a, 0x1a, 0x17];
-const ACCENT = [0xb4, 0x53, 0x09];
+const PAPER = hexToRgb(MARK_COLORS.light.paper);
+const INK = hexToRgb(MARK_COLORS.light.ink);
+const ACCENT = hexToRgb(MARK_COLORS.light.accent);
 
-type Seg = [number, number, number, number];
-type RGB = [number, number, number];
-
-// Marginalia mark geometry, same 0..100 viewBox as public/logo.svg.
-const MARK: { seg: Seg; color: RGB }[] = [
-  { seg: [50, 24.6, 50, 75.4], color: INK },
-  { seg: [27.9, 37.3, 72.1, 62.7], color: INK },
-  { seg: [27.9, 62.7, 72.1, 37.3], color: INK },
-  { seg: [50, 50, 72.1, 37.3], color: ACCENT },
-];
-const MARK_RADIUS = 7.4;
+// Marginalia mark geometry (0..100 viewBox), from the shared source so the
+// share card can't drift from the favicon and app icons.
+const MARK: { seg: Seg; color: RGB }[] = MARK_ARMS.map((a) => ({
+  seg: [a.x1, a.y1, a.x2, a.y2],
+  color: a.accent ? ACCENT : INK,
+}));
+const MARK_RADIUS = MARK_STROKE_WIDTH / 2;
 
 // Angular 4x6 stroke glyphs (micro-label aesthetic). Segments in grid units.
 const GLYPHS: Record<string, Seg[]> = {

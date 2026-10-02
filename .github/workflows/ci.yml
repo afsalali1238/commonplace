@@ -44,6 +44,14 @@ jobs:
           npx tsx scripts/generate-sitemap.ts
           npx tsx scripts/generate-robots.ts
           git diff --exit-code public/sitemap.xml public/robots.txt || (echo "::warning::sitemap.xml/robots.txt out of date — run npm run prebuild and commit the regenerated files" && exit 1)
+      # Same idea for the brand rasters: prebuild regenerates them from
+      # src/lib/brandMark.ts, so a diff means the committed icons no longer
+      # show the current mark (they once kept the old spiral for months).
+      - name: Check icon + share-card freshness
+        run: |
+          npx tsx scripts/generate-icons.ts
+          npx tsx scripts/generate-og-image.ts
+          git diff --exit-code public/favicon.ico public/apple-touch-icon.png public/icon-192.png public/icon-512.png public/icon-maskable-512.png public/og.png || (echo "::warning::icons/og.png out of date — run npm run prebuild and commit the regenerated files" && exit 1)
       - name: Bundle size limit
         # Hard limit since the data-layer split (TECH_DEBT §2): the largest
         # client chunk is the generated index (~124 KB gzipped at 451 nodes,

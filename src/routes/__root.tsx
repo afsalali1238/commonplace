@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { SITE_URL, absoluteUrl } from "@/lib/site";
+import { ICON_VERSION } from "@/lib/brandMark";
 import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 import { useThemeSync } from "@/hooks/useThemeSync";
@@ -113,20 +114,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         // transparent ground and vanishes against dark browser chrome.
         // Fonts are self-hosted via Fontsource in styles.css — do not
         // re-add Google Fonts; CSP font-src is 'self' and would block them.
+        // Icon URLs carry ICON_VERSION so a changed mark actually reaches
+        // browsers, which otherwise keep a cached favicon for weeks.
         {
           rel: "icon",
-          href: "/logo.svg",
+          href: `/logo.svg?v=${ICON_VERSION}`,
           type: "image/svg+xml",
           media: "(prefers-color-scheme: light)",
         },
         {
           rel: "icon",
-          href: "/logo-dark.svg",
+          href: `/logo-dark.svg?v=${ICON_VERSION}`,
           type: "image/svg+xml",
           media: "(prefers-color-scheme: dark)",
         },
-        { rel: "icon", href: "/favicon.ico", sizes: "16x16 32x32 48x48" },
-        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "icon", href: `/favicon.ico?v=${ICON_VERSION}`, sizes: "16x16 32x32 48x48" },
+        { rel: "apple-touch-icon", href: `/apple-touch-icon.png?v=${ICON_VERSION}` },
         { rel: "manifest", href: "/manifest.webmanifest" },
       ],
     };

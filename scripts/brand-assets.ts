@@ -6,11 +6,13 @@
  *
  *   bun run scripts/brand-assets.ts            # writes SVGs to public/brand/
  *
- * Outputs (SVG; the PNG versions committed alongside were rasterised from
- * these with headless Chromium — see docs/VISUAL-SYSTEM.md for the exact
- * command, and re-run it whenever this file changes):
+ * Outputs are reference SVGs for use outside the app (decks, posts); the
+ * app itself never loads them. The shipped rasters come from other scripts
+ * that read the same mark geometry (src/lib/brandMark.ts): og.png from
+ * generate-og-image.ts, favicon.ico + app icons from generate-icons.ts.
  *
- *   public/brand/og.svg               1200×630 social share card (og:image)
+ *   public/brand/og.svg               1200×630 social share card
+ *   public/brand/icon*.svg            the app icon on paper (light/dark/maskable)
  *   public/brand/plate-<cluster>.svg  one topic plate per cluster, useful
  *                                     for anything outside the app (decks,
  *                                     posts) that needs a topic image
@@ -19,11 +21,21 @@ import fs from "node:fs";
 import path from "node:path";
 import { CLUSTERS } from "../src/data/nodes";
 import { arcPath, plateSpec } from "../src/lib/artwork";
+import { MARK_ARMS, MARK_COLORS, MARK_STROKE_WIDTH } from "../src/lib/brandMark";
+import { APP_NAME } from "../src/lib/site";
 
-const PAPER = "#faf8f3";
-const INK = "#1a1a17";
+const PAPER = MARK_COLORS.light.paper;
+const INK = MARK_COLORS.light.ink;
 const INK_SOFT = "#6b6b63";
-const ACCENT = "#b45309";
+const ACCENT = MARK_COLORS.light.accent;
+
+/** The Marginalia mark as SVG elements on its 0..100 viewBox. */
+function markSvg(colors: { ink: string; accent: string }): string {
+  return MARK_ARMS.map(
+    (a) =>
+      `<line x1="${a.x1}" y1="${a.y1}" x2="${a.x2}" y2="${a.y2}" stroke="${a.accent ? colors.accent : colors.ink}" stroke-width="${MARK_STROKE_WIDTH}" stroke-linecap="round"/>`,
+  ).join("\n    ");
+}
 
 const outDir = path.join(process.cwd(), "public", "brand");
 const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
@@ -60,18 +72,11 @@ for (const c of CLUSTERS) {
 }
 
 // --- OG card -----------------------------------------------------------------
-// The logo path, copied verbatim from public/logo.svg so the card and the
-// favicon can't diverge.
-const LOGO_PATH = fs
-  .readFileSync(path.join(process.cwd(), "public", "logo.svg"), "utf8")
-  .match(/d="([^"]+)"/)?.[1];
-if (!LOGO_PATH) throw new Error("public/logo.svg: no path found");
-
 // The plate on the card is the first cluster's (A, Startup Fundamentals) —
 // deterministic, and one of the better-balanced compositions.
 const W = 1200;
 const H = 630;
-const og = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Unknown — a latticework of powerful ideas">
+const og = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(APP_NAME)} — a latticework of powerful ideas">
   <rect width="${W}" height="${H}" fill="${PAPER}"/>
   <!-- topic plate, in its own panel on the right so the type area stays clean -->
   <defs>
@@ -88,10 +93,9 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" v
   <rect x="40" y="40" width="${W - 80}" height="${H - 80}" fill="none" stroke="${INK}" stroke-opacity="0.18" stroke-width="1"/>
   <!-- logo mark -->
   <g transform="translate(88 84) scale(0.72)">
-    <path d="${LOGO_PATH}" fill="none" stroke="#8a8478" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="53.29" cy="49.13" r="4.2" fill="${ACCENT}"/>
+    ${markSvg({ ink: INK, accent: ACCENT })}
   </g>
-  <text x="180" y="132" font-family="Fraunces, Georgia, serif" font-size="34" fill="${INK}" letter-spacing="-0.5">Unknown</text>
+  <text x="180" y="132" font-family="Fraunces, Georgia, serif" font-size="34" fill="${INK}" letter-spacing="-0.5">${esc(APP_NAME)}</text>
   <!-- headline -->
   <text font-family="Fraunces, Georgia, serif" font-size="74" fill="${INK}" letter-spacing="-1.5">
     <tspan x="88" y="330">A latticework of</tspan>
@@ -107,26 +111,22 @@ fs.writeFileSync(path.join(outDir, "og.svg"), og);
 console.log(`wrote ${CLUSTERS.length} plates + og.svg to public/brand/`);
 
 // --- App icons -----------------------------------------------------------------
-// The mark on paper. `any` icons keep generous padding so the spiral never
-// touches the edge on rounded-square platforms; the maskable one fills the
-// safe zone (inner 80%) per the W3C spec so Android's adaptive masks don't
-// clip it. PNGs are rasterised from these SVGs (see docs/VISUAL-SYSTEM.md).
-function iconSvg(size: number, pad: number, dark = false): string {
-  const bg = dark ? "#1c1a17" : PAPER;
-  const stroke = dark ? "#a39a8a" : "#8a8478";
-  const accent = dark ? "#d97706" : ACCENT;
-  const inner = size * (1 - 2 * pad);
-  const k = inner / 100;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="Unknown">
-  <rect width="${size}" height="${size}" fill="${bg}"/>
-  <g transform="translate(${size * pad} ${size * pad}) scale(${k})">
-    <path d="${LOGO_PATH}" fill="none" stroke="${stroke}" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="53.29" cy="49.13" r="4.2" fill="${accent}"/>
+// The mark on paper, at the same proportions generate-icons.ts rasterises:
+// the 0..100 viewBox mapped onto 90% of the tile for `any` icons, 80% for
+// the maskable one so every stroke stays inside Android's safe circle.
+function iconSvg(size: number, markScale: number, dark = false): string {
+  const c = dark ? MARK_COLORS.dark : MARK_COLORS.light;
+  const k = (size * markScale) / 100;
+  const o = (size * (1 - markScale)) / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(APP_NAME)}">
+  <rect width="${size}" height="${size}" fill="${c.paper}"/>
+  <g transform="translate(${o} ${o}) scale(${k})">
+    ${markSvg(c)}
   </g>
 </svg>
 `;
 }
-fs.writeFileSync(path.join(outDir, "icon.svg"), iconSvg(512, 0.12));
-fs.writeFileSync(path.join(outDir, "icon-maskable.svg"), iconSvg(512, 0.2));
-fs.writeFileSync(path.join(outDir, "icon-dark.svg"), iconSvg(512, 0.12, true));
+fs.writeFileSync(path.join(outDir, "icon.svg"), iconSvg(512, 0.9));
+fs.writeFileSync(path.join(outDir, "icon-maskable.svg"), iconSvg(512, 0.8));
+fs.writeFileSync(path.join(outDir, "icon-dark.svg"), iconSvg(512, 0.9, true));
 console.log("wrote icon.svg, icon-maskable.svg, icon-dark.svg");
