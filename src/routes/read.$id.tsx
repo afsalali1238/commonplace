@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
 import { Bone } from "@/components/Skeleton";
+import { fetchWithCacheFallback } from "@/lib/offline";
 import { safeArchiveId, safeHttpUrl } from "@/lib/url";
 
 const readSearchSchema = z.object({
@@ -89,7 +90,9 @@ function ReadScreen() {
       return;
     }
     setStatus("loading");
-    fetch(`/content/sources/${archiveId}.md`)
+    // Falls back to Cache Storage directly, so a downloaded copy opens
+    // offline even when the service worker isn't controlling this page.
+    fetchWithCacheFallback(`/content/sources/${archiveId}.md`)
       .then((r) => {
         if (!r.ok) throw new Error("not found");
         return r.text();

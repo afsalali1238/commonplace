@@ -8,6 +8,7 @@ import {
   type FurtherReading,
 } from "@/data/nodes";
 import { useNodeBody, withBody } from "@/lib/bodies";
+import { matchCached, requestPersistentStorage } from "@/lib/offline";
 import { Bone } from "@/components/Skeleton";
 import { MicroLabel } from "@/components/MicroLabel";
 import { IdeaGlyph } from "@/components/Artwork";
@@ -172,13 +173,11 @@ function DownloadButton({
 
   useEffect(() => {
     let cancelled = false;
-    if (typeof window === "undefined" || !("caches" in window)) return;
-    window.caches
-      .match(fileUrl)
-      .then((res) => {
-        if (!cancelled && res) setState("done");
-      })
-      .catch(() => {});
+    // Only a successful cached response counts — older service workers also
+    // cached 404/503s, which used to show "Downloaded" for a broken copy.
+    void matchCached(fileUrl).then((res) => {
+      if (!cancelled && res) setState("done");
+    });
     return () => {
       cancelled = true;
     };
@@ -196,9 +195,13 @@ function DownloadButton({
       // on the service worker intercepting the fetch, so tapping Download
       // before the SW controlled the page (or with SW unregistered) left
       // caches.match empty and the "Downloaded" badge lied.
+      // The service worker never deletes this cache on update (see
+      // public/sw.js), and asking for persistent storage keeps the browser
+      // from evicting it under disk pressure.
       if ("caches" in window) {
         const cache = await caches.open("commonplace-downloads");
         await cache.put(fileUrl, res.clone());
+        requestPersistentStorage();
       }
       setState("done");
     } catch {

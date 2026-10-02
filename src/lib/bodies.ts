@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NODE_BY_ID, type Node, type NodeBody, type NodeIndex } from "@/data/nodes";
+import { fetchWithCacheFallback } from "@/lib/offline";
 
 /**
  * Loads the on-demand half of a node (layer1, layer2, quiz, furtherReading)
@@ -36,7 +37,9 @@ export function loadClusterBodies(clusterId: string): Promise<ClusterBodies> {
   if (hit) return Promise.resolve(hit);
   const pending = inflight.get(clusterId);
   if (pending) return pending;
-  const p = fetch(bodiesUrl(clusterId), { credentials: "same-origin" })
+  // The body holds the Further reading list (and its Open/Download buttons),
+  // so it must load offline even without the service worker in control.
+  const p = fetchWithCacheFallback(bodiesUrl(clusterId), { credentials: "same-origin" })
     .then((r) => {
       if (!r.ok) throw new Error(`bodies ${clusterId}: HTTP ${r.status}`);
       return r.json() as Promise<ClusterBodies>;
