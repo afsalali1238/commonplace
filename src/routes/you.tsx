@@ -3,6 +3,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { Bone } from "@/components/Skeleton";
 import { InstallAppButton } from "@/components/InstallAppButton";
+import { useOfflineStatus } from "@/hooks/useOfflineStatus";
 import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
@@ -574,8 +575,36 @@ function Scratchpad() {
 function Offline() {
   return (
     <Section title="Offline" icon={CloudOff}>
+      <OfflineStatusLine />
       <InstallAppButton />
     </Section>
+  );
+}
+
+/**
+ * One line that answers "can I go offline now?". Before it existed, the
+ * installed app showed an empty Offline section (the install button hides
+ * itself once installed) and the first sign of a missing offline copy was
+ * the browser's own "not connected" page.
+ */
+function OfflineStatusLine() {
+  const status = useOfflineStatus();
+  if (status.state === "checking") return null;
+
+  const text =
+    status.state === "ready"
+      ? `Ready offline — the app and all ${status.total} saved articles open with no connection.`
+      : status.state === "saving"
+        ? `The app opens offline. Saving articles: ${status.saved} of ${status.total} — keep it open on a connection to finish.`
+        : status.state === "not-ready"
+          ? "Not saved for offline yet. Keep the app open with a connection for a moment."
+          : "This browser can't keep Commonplace for offline use.";
+
+  return (
+    <p role="status" className="mb-4 text-sm leading-relaxed text-ink-soft">
+      {status.state === "ready" && <span className="mr-1.5 text-accent">✓</span>}
+      {text}
+    </p>
   );
 }
 

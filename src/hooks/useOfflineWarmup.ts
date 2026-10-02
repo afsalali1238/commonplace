@@ -41,15 +41,23 @@ export function useOfflineWarmup() {
     let cancelled = false;
 
     async function warm() {
+      let registration: ServiceWorkerRegistration;
       try {
         // Wait until a service worker is actually active and controlling
         // fetches - warming before that would just hit the network
         // without landing in our offline cache.
-        await navigator.serviceWorker.ready;
+        registration = await navigator.serviceWorker.ready;
       } catch {
         return;
       }
       if (cancelled) return;
+
+      // Archived articles are downloaded by the worker itself, after the
+      // app shell is in place (public/sw.js, tier 2). Asking on every
+      // online launch is what makes that download resumable: on iOS a Home
+      // Screen app is suspended as soon as it's backgrounded, so the fill
+      // may take a few launches to finish.
+      registration.active?.postMessage({ type: "fill-archive" });
 
       const firstNodeId = NODES[0]?.id;
       // Every bottom-nav tab plus every secondary destination, both sourced

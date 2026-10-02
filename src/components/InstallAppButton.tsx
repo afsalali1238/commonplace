@@ -9,6 +9,7 @@ const INSTRUCTIONS: Record<InstallPlatform, { title: string; steps: string[] }> 
       "Tap the Share icon in Safari's toolbar.",
       'Scroll down and tap "Add to Home Screen".',
       'Tap "Add" to confirm.',
+      "Open Commonplace from your Home Screen once while online. It keeps its own offline copy, separate from Safari's — You › Offline shows when it's ready.",
     ],
   },
   android: {
